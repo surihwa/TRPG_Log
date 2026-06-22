@@ -1,0 +1,33 @@
+{
+  "id": "ses_twodays",
+  "folder": "캠페인 A",
+  "title": "이틀이 남지 않았다",
+  "date": "2024.12.18",
+  "theme": "light",
+  "cardImage": "image/이틀이 남지 않았다/_cover.png",
+  "characters": [
+    { "id": "c4", "name": "키셰", "role": "PC", "color": "#c2682f", "img": "image/이틀이 남지 않았다/키셰.png" },
+    { "id": "c5", "name": "샤헤리스", "role": "KPC", "color": "#2f8a78", "img": "" }
+  ],
+  "scenes": [
+    {
+      "id": "sc3",
+      "title": "여명 전의 결심",
+      "blocks": [
+        { "id": "b11", "type": "bgm", "ytId": "lTRiuFIWV54", "title": "여명 전 · 결심" },
+        { "id": "b12", "type": "dialogue", "speaker": "키셰", "segments": [
+          { "kind": "narr", "text": "언제나 마음대로 했지만, 샤헤리스의 허락 아닌 허락이 떨어졌으니 거리낄 게 없다." },
+          { "kind": "line", "text": "무엇이 되었든, 저는 주군과 함께 <i>살아남을</i> 거니까요." },
+          { "kind": "narr", "text": "걱정 말라는 듯 능청스레 웃어 보인다." }
+        ]},
+        { "id": "b13", "type": "dialogue", "speaker": "샤헤리스", "segments": [
+          { "kind": "line", "text": "…네 마음대로 해. 대신 <b>살아서</b> 돌아와." }
+        ]},
+        { "id": "b14", "type": "narration", "emphasis": true, "text": "샤헤리스의 명령을 어기고 키셰는 성을 나선다. 시간이 이틀도 남지 않았으니, 밤이라고 맘 편히 잘 수도 없는 노릇이다." },
+        { "id": "b15", "type": "narration", "emphasis": false, "text": "지능 판정" },
+        { "id": "b16", "type": "dice", "kind": "check", "speaker": "키셰", "item": "지능", "standard": "65/32/13", "roll": "47", "result": "보통 성공" },
+        { "id": "b17", "type": "narration", "emphasis": false, "text": "혹시 빈민가에서 훔쳐 온 망토를 쓰면 그들을 따라갈 수 있을지도 모른다는 생각이 스쳐 지나간다." }
+      ]
+    }
+  ]
+}

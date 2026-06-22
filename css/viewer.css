@@ -1,0 +1,109 @@
+/* =========================================================================
+   viewer.css — 시네마틱 장면 뷰어
+   ========================================================================= */
+.viewer{position:fixed; inset:0; z-index:80; display:none; overflow:hidden;}
+.viewer.show{display:block;}
+.viewer-scroll{position:absolute; inset:0; overflow-y:auto; scroll-behavior:smooth;}
+
+.viewer.light{--v-bg:#f3eee3; --v-panel:#fffdf7; --v-text:#2b2620; --v-soft:#7a7264; --v-line:#e3dccb; --v-bubble:#fffdf7; --v-narr:#4d473d; --v-bar:rgba(248,244,236,.92);}
+.viewer.dark{--v-bg:#0d1016; --v-panel:#161b25; --v-text:#e9e7e0; --v-soft:#8b93a3; --v-line:#252c39; --v-bubble:#171d28; --v-narr:#c3c8d2; --v-bar:rgba(13,16,22,.88);}
+.viewer{background:var(--v-bg); color:var(--v-text);}
+
+/* 상단 바 */
+.v-bar{position:sticky; top:0; z-index:20; background:var(--v-bar); backdrop-filter:blur(12px); border-bottom:1px solid var(--v-line);}
+.v-bar-inner{max-width:920px; margin:0 auto; padding:12px 22px; display:flex; align-items:center; gap:12px;}
+.v-title{font-family:var(--serif); font-size:16px; font-weight:600; min-width:0;}
+.v-title small{display:block; font-family:var(--sans); font-size:11px; color:var(--v-soft); font-weight:400; letter-spacing:.05em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.v-bar .spacer{flex:1;}
+.v-iconbtn{width:36px; height:36px; border-radius:9px; border:1px solid var(--v-line); background:transparent; color:var(--v-text); display:grid; place-items:center; font-size:15px; transition:.15s;}
+.v-iconbtn:hover{background:var(--v-panel);}
+
+/* 등장인물(PC/KPC만) */
+.v-cast{border-bottom:1px solid var(--v-line); background:var(--v-bar); backdrop-filter:blur(12px); position:sticky; top:61px; z-index:19;}
+.v-cast-inner{max-width:920px; margin:0 auto; padding:11px 22px; display:flex; gap:16px; overflow-x:auto;}
+.v-cast .pc{display:flex; align-items:center; gap:8px; flex-shrink:0;}
+.v-cast .pc .av{width:34px; height:34px; border:2px solid transparent;}
+.v-cast .pc .nm{font-size:13px; font-weight:600;}
+.v-cast .pc .tag{font-size:9.5px; font-weight:800; letter-spacing:.08em; color:var(--v-soft); border:1px solid var(--v-line); border-radius:5px; padding:1px 5px;}
+
+/* 본문 */
+.v-body{max-width:660px; margin:0 auto; padding:60px 22px 200px;}
+.v-scene-kicker{text-align:center; color:var(--v-soft); font-size:11px; letter-spacing:.22em; text-transform:uppercase; margin-bottom:10px;}
+.v-scene-title{font-family:var(--serif); font-size:30px; font-weight:600; text-align:center; margin:0 0 8px; letter-spacing:-.01em;}
+.v-scene-date{text-align:center; color:var(--v-soft); font-size:12px; letter-spacing:.18em; text-transform:uppercase; margin-bottom:54px;}
+
+/* 나레이션 — 강조형(중앙 세리프) */
+.v-narr-em{
+  font-family:var(--serif); font-weight:300; font-size:18px; line-height:2.05;
+  color:var(--v-narr); text-align:center; margin:34px auto; max-width:560px; letter-spacing:.005em;
+}
+/* 나레이션 — 일반형(지문 느낌: 좌측 정렬, 작고 기울임) */
+.v-narr-normal{
+  font-family:var(--serif); font-weight:300; font-style:italic; font-size:14.5px; line-height:1.95;
+  color:var(--v-soft); margin:18px auto; max-width:560px; padding-left:14px;
+  border-left:2px solid var(--v-line);
+}
+.v-narr-em b, .v-narr-normal b{font-weight:700;} .v-narr-em i, .v-narr-normal i{font-style:italic;}
+
+/* 대사 — 좌/우 정렬 */
+.v-line{display:flex; gap:14px; margin:26px 0; align-items:flex-start; animation:rise .5s ease both;}
+.v-line.right{flex-direction:row-reverse;}
+@keyframes rise{from{opacity:0; transform:translateY(14px);} to{opacity:1; transform:none;}}
+.v-line .av{width:46px; height:46px; display:grid; place-items:center; box-shadow:0 2px 8px rgba(0,0,0,.18); margin-top:3px;}
+.v-bubble-wrap{flex:1; min-width:0; max-width:78%;}
+.v-line.right .v-bubble-wrap{display:flex; flex-direction:column; align-items:flex-end;}
+.v-name{font-size:12.5px; font-weight:700; margin:0 0 5px 3px; letter-spacing:.01em;}
+.v-line.right .v-name{margin:0 3px 5px 0;}
+.v-bubble{
+  background:var(--v-bubble); border:1px solid var(--v-line);
+  border-left:3px solid var(--seal); border-radius:4px 13px 13px 13px;
+  padding:13px 17px; box-shadow:0 1px 3px rgba(0,0,0,.05); width:100%;
+}
+.v-line.right .v-bubble{border-left:1px solid var(--v-line); border-right:3px solid var(--seal); border-radius:13px 4px 13px 13px;}
+.v-bubble .speech{font-size:15.5px; line-height:1.78;}
+.v-bubble .speech + .speech{margin-top:7px;}
+.v-bubble .stage{font-family:var(--serif); font-weight:300; font-style:italic; font-size:13.5px; color:var(--v-soft); line-height:1.7; margin:6px 0; display:block;}
+.v-bubble b{font-weight:700;} .v-bubble i{font-style:italic;}
+
+/* 다이스 — 판정명 강조 헤더 */
+.v-dice{margin:10px 0 2px; border:1px solid var(--v-line); border-radius:10px; overflow:hidden; background:linear-gradient(180deg,transparent,rgba(176,141,79,.05));}
+.v-dice .dh{
+  display:flex; align-items:center; justify-content:center; gap:9px; padding:9px 13px;
+  border-bottom:1px solid var(--v-line); background:rgba(176,141,79,.1);
+}
+.v-dice .dh .d20{font-size:14px;}
+.v-dice .dh .check-name{font-family:var(--serif); font-size:15px; font-weight:700; color:var(--v-text); letter-spacing:.02em;}
+.v-dice .dh .roll-of{font-size:11px; color:var(--v-soft); letter-spacing:.1em; text-transform:uppercase;}
+.v-dice .db{display:flex; align-items:stretch;}
+.v-dice .cell{flex:1; padding:11px 13px; text-align:center; border-right:1px solid var(--v-line);}
+.v-dice .cell:last-child{border-right:0;}
+.v-dice .cell .k{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--v-soft); margin-bottom:3px;}
+.v-dice .cell .val{font-family:var(--serif); font-size:21px; font-weight:600; line-height:1;}
+.v-dice .cell.roll .val{color:var(--seal-soft);}
+.v-dice .result{padding:9px 13px; text-align:center; font-size:13px; font-weight:700; background:rgba(176,141,79,.08);}
+.v-dice .result.ok{color:#3f7d52;} .v-dice .result.crit{color:#b08d4f;} .v-dice .result.fail{color:var(--seal);}
+.v-dice-solo{max-width:440px; margin:24px auto;}
+.v-dice-solo .who{text-align:center; font-size:12px; color:var(--v-soft); margin-bottom:6px; font-weight:600;}
+
+/* 인라인 BGM 블록 */
+.v-bgm{
+  max-width:460px; margin:30px auto; display:flex; align-items:center; gap:14px;
+  border:1px solid var(--v-line); border-radius:12px; padding:13px 17px; background:var(--v-panel);
+  cursor:pointer; transition:.16s;
+}
+.v-bgm:hover{border-color:var(--seal-soft);}
+.v-bgm .play{
+  width:42px; height:42px; border-radius:50%; flex-shrink:0; display:grid; place-items:center;
+  background:var(--seal); color:#fff; font-size:16px; border:none;
+}
+.v-bgm.playing .play{background:var(--gold);}
+.v-bgm .info{flex:1; min-width:0;}
+.v-bgm .info .lbl{font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--v-soft); margin-bottom:2px;}
+.v-bgm .info .ttl{font-family:var(--serif); font-size:15px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.v-bgm .eq{display:flex; gap:2px; align-items:flex-end; height:18px; opacity:0;}
+.v-bgm.playing .eq{opacity:1;}
+.v-bgm .eq span{width:3px; background:var(--gold); border-radius:2px; animation:eq 1s ease-in-out infinite;}
+.v-bgm .eq span:nth-child(1){animation-delay:0s;} .v-bgm .eq span:nth-child(2){animation-delay:.2s;} .v-bgm .eq span:nth-child(3){animation-delay:.4s;}
+@keyframes eq{0%,100%{height:5px;} 50%{height:18px;}}
+
+@media (max-width:560px){.v-body{padding:40px 16px 160px;} .v-bubble-wrap{max-width:84%;}}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRPG Log Archive</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/library.css">
+<link rel="stylesheet" href="css/editor.css">
+<link rel="stylesheet" href="css/viewer.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <div class="brand" onclick="goMain()">TRPG Log Archive</div>
+    <span class="spacer"></span>
+    <button class="btn primary" onclick="openEditor()">＋ 로그 등록</button>
+  </div>
+</header>
+
+<!-- 홈(서가) -->
+<main id="view-main" class="view active">
+  <div class="wrap">
+    <div class="lib-head">
+      <h1>서가</h1>
+      <p>폴더(캠페인)를 선택해 세션을 둘러보세요. 세션을 열면 장면 목차가 나타납니다.</p>
+    </div>
+    <div class="folders" id="folders"></div>
+    <div class="card-grid" id="cardGrid"></div>
+  </div>
+</main>
+
+<!-- 장면 목차 -->
+<main id="view-toc" class="view">
+  <div class="wrap"><div id="tocRoot"></div></div>
+</main>
+
+<!-- 편집기 -->
+<main id="view-editor" class="view">
+  <div class="editor-wrap"><div id="editorRoot"></div></div>
+</main>
+
+<!-- 시네마틱 뷰어 -->
+<section id="viewer" class="viewer light">
+  <div class="viewer-scroll" id="viewerScroll"></div>
+</section>
+
+<!-- 토스트 -->
+<div id="toast"></div>
+
+<!-- 숨은 유튜브 플레이어 -->
+<div id="ytPlayer" style="position:fixed; width:0; height:0; overflow:hidden; left:-9999px;"></div>
+
+<script src="js/util.js"></script>
+<script src="js/parser.js"></script>
+<script src="js/data.js"></script>
+<script src="js/library.js"></script>
+<script src="js/viewer.js"></script>
+<script src="js/editor.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

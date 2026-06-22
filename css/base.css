@@ -1,0 +1,87 @@
+/* =========================================================================
+   base.css — 디자인 토큰 · 리셋 · 공통 컴포넌트 · 상단 바
+   ========================================================================= */
+:root{
+  --paper:#f5f3ee; --paper-2:#ece8df; --paper-3:#e4dfd2;
+  --ink:#20242c; --ink-soft:#5d616c; --ink-faint:#9a958a;
+  --line:#d9d3c5; --line-2:#cfc8b8;
+  --seal:#7c2d2d; --seal-soft:#9c4f43; --gold:#b08d4f;
+  --serif:'Noto Serif KR', serif;
+  --sans:'Pretendard','Noto Sans KR', system-ui, sans-serif;
+  --radius:13px; --shadow:0 1px 3px rgba(40,34,24,.07), 0 6px 22px rgba(40,34,24,.05);
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:var(--sans); color:var(--ink); background:var(--paper);
+  -webkit-font-smoothing:antialiased; line-height:1.6;
+}
+a{color:inherit;}
+img{max-width:100%;}
+button{font-family:inherit; cursor:pointer;}
+::selection{background:rgba(124,45,45,.16);}
+
+/* 버튼 */
+.btn{
+  border:1px solid var(--line-2); background:#fff; color:var(--ink);
+  padding:9px 16px; border-radius:9px; font-size:13.5px; font-weight:600;
+  transition:.15s; line-height:1.2;
+}
+.btn:hover{background:var(--paper-2); border-color:var(--ink-faint);}
+.btn.sm{padding:6px 11px; font-size:12.5px;}
+.btn.ghost{background:transparent; border-color:var(--line);}
+.btn.primary{background:var(--seal); border-color:var(--seal); color:#fff;}
+.btn.primary:hover{background:#682323;}
+.btn.danger{color:var(--seal); border-color:#e3c4c0;}
+.btn.danger:hover{background:#f6e9e7;}
+
+/* 입력 */
+input[type=text], input[type=url], select, textarea{
+  font-family:var(--sans); font-size:13.5px; color:var(--ink);
+  border:1px solid var(--line-2); border-radius:8px; padding:8px 11px;
+  background:#fff; width:100%; transition:.15s;
+}
+input:focus, select:focus, textarea:focus{
+  outline:none; border-color:var(--seal-soft); box-shadow:0 0 0 3px rgba(124,45,45,.1);
+}
+label.fld{display:block; font-size:12px; font-weight:600; color:var(--ink-soft); margin:0 0 5px;}
+
+/* 상단 바 */
+.topbar{
+  position:sticky; top:0; z-index:40; background:rgba(245,243,238,.86);
+  backdrop-filter:blur(12px); border-bottom:1px solid var(--line);
+}
+.topbar-inner{
+  max-width:1180px; margin:0 auto; padding:15px 26px;
+  display:flex; align-items:center; gap:16px;
+}
+.brand{
+  font-family:var(--serif); font-size:20px; font-weight:600; letter-spacing:.01em;
+  cursor:pointer; user-select:none;
+}
+.brand .dot{color:var(--seal);}
+.topbar .spacer{flex:1;}
+
+/* 토스트 */
+#toast{
+  position:fixed; left:50%; bottom:30px; transform:translateX(-50%) translateY(20px);
+  background:var(--ink); color:#fff; padding:11px 20px; border-radius:10px;
+  font-size:13.5px; opacity:0; pointer-events:none; transition:.28s; z-index:200;
+  box-shadow:0 8px 30px rgba(0,0,0,.25);
+}
+#toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+
+/* 뷰 전환 */
+.view{display:none;}
+.view.active{display:block;}
+
+/* 아바타(이미지 없으면 단색 원, 글자 없음) */
+.avatar{
+  border-radius:50%; background-size:cover; background-position:center;
+  flex-shrink:0; display:block;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important; transition:none !important; scroll-behavior:auto !important;}
+}
