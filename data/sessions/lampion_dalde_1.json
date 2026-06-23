@@ -1133,7 +1133,7 @@
           "id": "id_mqq7gh2q_5z",
           "type": "narration",
           "emphasis": true,
-          "text": "&lt;장미를 꺾으면 좋은 일이 생길 거예요.&gt;"
+          "text": "장미를 꺾으면 좋은 일이 생길 거예요."
         },
         {
           "id": "id_mqq7gh2q_60",
@@ -3823,7 +3823,7 @@
           "type": "handout",
           "style": "paper",
           "title": "식물도감 -장미편-",
-          "body": "<b>&lt;람피온&gt;</b><br>붉은 꽃잎 사이 노란 술이 꼭 타오르는 불꽃 같아 등롱이란 뜻의 이름이 붙었다. 여름에 피어나는 정통적인 장미로 모양새가 풍부하고 색이 화려한데, 바짝 말려서 보관해도 생화일 적과 흡사하게 유지되어 드라이플라워로 유행한다.",
+          "body": "<b>람피온</b><br>붉은 꽃잎 사이 노란 술이 꼭 타오르는 불꽃 같아 등롱이란 뜻의 이름이 붙었다. 여름에 피어나는 정통적인 장미로 모양새가 풍부하고 색이 화려한데, 바짝 말려서 보관해도 생화일 적과 흡사하게 유지되어 드라이플라워로 유행한다.",
           "image": ""
         },
         {
@@ -6604,7 +6604,7 @@
           "id": "id_mqqbaf8l_cq",
           "type": "bgm",
           "ytId": "eUHyUtnNBmg",
-          "title": " [Deemo] Mellow"
+          "title": "[Deemo] Mellow"
         },
         {
           "id": "id_mqqb5emn_br",
@@ -7737,7 +7737,7 @@
     },
     {
       "id": "id_mqqbpmwu_ev",
-      "title": "VI. 외전: 행복에 이름을 붙인다면",
+      "title": "외전. 행복에 이름을 붙인다면",
       "blocks": [
         {
           "id": "id_mqqbr7np_fp",
