@@ -94,6 +94,7 @@
 .b-type.narration-em{background:#f3eee0; color:#9a7d3a;}
 .b-type.dialogue{background:#eef0f6; color:#4f5b86;}
 .b-type.dice{background:#f6ece9; color:#9c5043;}
+.b-type.handout{background:#efe7d6; color:#8a6322;}
 .b-type.bgm{background:#e9eef3; color:#3f6483;}
 .b-head .b-type-sel{margin-left:0;}
 .b-head .b-type-sel select{width:auto; padding:5px 8px; font-size:12px;}
@@ -108,7 +109,7 @@
 
 .b-edit{
   min-height:34px; border:1px solid var(--line); border-radius:7px; padding:8px 11px;
-  font-size:13.5px; line-height:1.7; background:var(--paper);
+  font-size:13.5px; line-height:1.7; background:var(--paper); white-space:pre-wrap;
 }
 .b-edit:focus{outline:none; border-color:var(--seal-soft); box-shadow:0 0 0 3px rgba(124,45,45,.1); background:#fff;}
 .b-edit b{font-weight:700;} .b-edit i{font-style:italic;}

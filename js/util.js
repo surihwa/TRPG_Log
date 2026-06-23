@@ -45,14 +45,37 @@ function avatarStyle(ch){
   return `background-color:${(ch && ch.color) || '#9a9a9a'}`;
 }
 
-/* Rich Text 위생: <b>,<strong>,<i>,<em> 만 허용 후 b/i 로 정규화 */
+/* Rich Text 위생: <b>,<strong>,<i>,<em>,<br> 만 허용 후 b/i/br 로 정규화 */
 function applyRich(str){
   let s = String(str == null ? '' : str);
+  s = s.replace(/<\s*br\s*\/?\s*>/gi, '\u0001br\u0002');
   s = s.replace(/<\s*(\/?)\s*(b|strong|i|em)\s*>/gi, '\u0001$1$2\u0002');
   s = s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   s = s.replace(/\u0001(\/?)(?:b|strong)\u0002/gi, (m, sl) => '<' + sl + 'b>')
-       .replace(/\u0001(\/?)(?:i|em)\u0002/gi,    (m, sl) => '<' + sl + 'i>');
+       .replace(/\u0001(\/?)(?:i|em)\u0002/gi,    (m, sl) => '<' + sl + 'i>')
+       .replace(/\u0001br\u0002/gi, '<br>');
   return s;
+}
+
+/* contenteditable → 이스케이프된 텍스트 + <b>/<i>/<br> (여러 줄 지원) */
+function escapeText(t){ return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function editableToRich(el){
+  function ser(node){
+    let out = '';
+    node.childNodes.forEach(ch => {
+      if(ch.nodeType === 3){ out += escapeText(ch.nodeValue); return; }
+      if(ch.nodeType !== 1) return;
+      const tag = ch.tagName.toLowerCase();
+      if(tag === 'br'){ out += '<br>'; return; }
+      if(tag === 'b' || tag === 'strong'){ out += '<b>' + ser(ch) + '</b>'; return; }
+      if(tag === 'i' || tag === 'em'){ out += '<i>' + ser(ch) + '</i>'; return; }
+      const block = ['div','p','li','tr','h1','h2','h3','h4','section','article','blockquote'].includes(tag);
+      if(block){ if(out && !/<br>\s*$/.test(out)) out += '<br>'; out += ser(ch); }
+      else out += ser(ch);
+    });
+    return out;
+  }
+  return ser(el).replace(/(\s*<br>\s*)+$/i, '').replace(/^(\s*<br>\s*)+/i, '').replace(/\u00a0/g, ' ');
 }
 
 /* HTML → 허용 태그만 남기는 위생 처리 */

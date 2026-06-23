@@ -37,9 +37,9 @@
   font-family:var(--serif); font-weight:400; font-size:18px; line-height:2.05;
   color:var(--v-narr); text-align:center; margin:34px auto; max-width:560px; letter-spacing:.005em;
 }
-/* 나레이션 — 일반형(지문 느낌: 좌측 정렬, 작고 기울임) */
+/* 나레이션 — 일반형(지문 느낌: 좌측 정렬, 기본 정자체) */
 .v-narr-normal{
-  font-family:var(--serif); font-weight:400; font-style:italic; font-size:14.5px; line-height:1.95;
+  font-family:var(--serif); font-weight:400; font-size:14.5px; line-height:1.95;
   color:var(--v-soft); margin:18px auto; max-width:560px; padding-left:14px;
   border-left:2px solid var(--v-line);
 }
@@ -62,7 +62,7 @@
 .v-line.right .v-bubble{border-left:1px solid var(--v-line); border-right:3px solid var(--seal); border-radius:13px 4px 13px 13px;}
 .v-bubble .speech{font-size:15.5px; line-height:1.78; color:var(--v-text);}
 .v-bubble .speech + .speech{margin-top:7px;}
-.v-bubble .stage{font-family:var(--serif); font-weight:400; font-style:italic; font-size:13.5px; color:var(--v-soft); line-height:1.7; margin:6px 0; display:block;}
+.v-bubble .stage{font-family:var(--serif); font-weight:400; font-size:13.5px; color:var(--v-soft); line-height:1.7; margin:6px 0; display:block;}
 .v-bubble b{font-weight:700;} .v-bubble i{font-style:italic;}
 
 /* 다이스 — 판정명 강조 헤더 */
@@ -107,3 +107,54 @@
 @keyframes eq{0%,100%{height:5px;} 50%{height:18px;}}
 
 @media (max-width:560px){.v-body{padding:40px 16px 160px;} .v-bubble-wrap{max-width:84%;}}
+
+/* =========================================================================
+   핸드아웃 — 본문 중간에 끼우는 독립 문서 (접기/펼치기)
+   ========================================================================= */
+.v-handout{max-width:600px; margin:42px auto; position:relative;}
+.v-handout .ho-head{
+  display:flex; align-items:center; gap:12px; cursor:pointer; user-select:none;
+  padding:15px 20px; transition:.18s;
+}
+.v-handout .ho-icon{font-size:18px; flex-shrink:0;}
+.v-handout .ho-title{font-family:var(--serif); font-weight:700; font-size:17px; flex:1; min-width:0;}
+.v-handout .ho-toggle{font-size:11px; letter-spacing:.12em; text-transform:uppercase; opacity:.7; white-space:nowrap;}
+.v-handout .ho-body{max-height:0; overflow:hidden; transition:max-height .45s ease;}
+.v-handout.open .ho-body{max-height:4000px;}
+.v-handout .ho-inner{padding:4px 22px 22px;}
+.v-handout .ho-img{width:100%; border-radius:6px; margin:0 0 14px; display:block;}
+.v-handout .ho-text{line-height:1.85; font-size:14.5px; white-space:pre-line;}
+.v-handout .ho-text b{font-weight:700;} .v-handout .ho-text i{font-style:italic;}
+.v-handout .ho-toggle .when-open{display:none;}
+.v-handout.open .ho-toggle .when-open{display:inline;}
+.v-handout.open .ho-toggle .when-closed{display:none;}
+
+/* 1) 낡은 서류/쪽지 느낌 */
+.v-handout.paper{filter:drop-shadow(0 6px 16px rgba(60,40,15,.22));}
+.v-handout.paper .ho-card{
+  background:
+    radial-gradient(120% 80% at 80% -10%, rgba(120,80,30,.10), transparent 60%),
+    linear-gradient(180deg,#f3e7cd,#ece0c2);
+  border:1px solid #cdb585; border-radius:3px; color:#43351c;
+  box-shadow:inset 0 0 38px rgba(120,84,32,.16);
+  transform:rotate(-.5deg);
+}
+.v-handout.paper .ho-title{color:#5a3d18;}
+.v-handout.paper .ho-icon{color:#7a5320;}
+.v-handout.paper .ho-head{border-bottom:1px dashed rgba(120,84,32,.35);}
+.v-handout.paper:not(.open) .ho-head{border-bottom:none;}
+.v-handout.paper .ho-toggle{color:#7a5320;}
+.v-handout.paper .ho-text{font-family:var(--serif); color:#43351c;}
+
+/* 2) 깔끔한 디지털 문서 느낌 */
+.v-handout.digital .ho-card{
+  background:var(--v-panel); border:1px solid var(--v-line); border-radius:11px;
+  border-top:3px solid var(--seal-soft); color:var(--v-text);
+  box-shadow:0 4px 20px rgba(0,0,0,.10);
+}
+.v-handout.digital .ho-title{color:var(--v-text);}
+.v-handout.digital .ho-icon{color:var(--seal-soft);}
+.v-handout.digital .ho-head{border-bottom:1px solid var(--v-line);}
+.v-handout.digital:not(.open) .ho-head{border-bottom:none;}
+.v-handout.digital .ho-toggle{color:var(--v-soft);}
+.v-handout.digital .ho-text{font-family:var(--sans); color:var(--v-text);}

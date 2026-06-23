@@ -6,22 +6,21 @@ let viewerScene   = null;
 
 /* ---- 다이스 박스 (판정명 헤더 강조) ---- */
 function diceBoxHTML(b){
+  // 레거시 vs → 기준치(check)로 정규화
+  if(b.kind === 'vs'){ b = Object.assign({}, b, { kind:'check', standard: b.standard || b.target }); }
   const v = diceVerdict(b);
   const name = applyRich(b.item || '판정');
   let cells = '';
-  if(b.kind === 'vs'){
-    cells =
-      `<div class="cell"><div class="k">등급</div><div class="val">${applyRich(b.grade || '-')}</div></div>` +
-      `<div class="cell roll"><div class="k">굴림</div><div class="val">${applyRich(b.roll)}</div></div>` +
-      `<div class="cell"><div class="k">목표</div><div class="val">${applyRich(b.target)}</div></div>`;
-  } else if(b.kind === 'check'){
-    cells =
-      `<div class="cell"><div class="k">기준치</div><div class="val">${applyRich(b.standard || '-')}</div></div>` +
-      `<div class="cell roll"><div class="k">굴림</div><div class="val">${applyRich(b.roll)}</div></div>`;
-  } else { // simple
+  if(b.kind === 'simple'){
     cells =
       `<div class="cell"><div class="k">${applyRich(b.formula || 'roll')}</div><div class="val">—</div></div>` +
       `<div class="cell roll"><div class="k">결과</div><div class="val">${applyRich(b.roll)}</div></div>`;
+  } else { // check (기준치)
+    const gradeCell = (b.grade && b.grade !== '-')
+      ? `<div class="cell"><div class="k">등급</div><div class="val">${applyRich(b.grade)}</div></div>` : '';
+    cells = gradeCell +
+      `<div class="cell"><div class="k">기준치</div><div class="val">${applyRich(b.standard || '-')}</div></div>` +
+      `<div class="cell roll"><div class="k">굴림</div><div class="val">${applyRich(b.roll || '-')}</div></div>`;
   }
   const result = v.text ? `<div class="result ${v.cls}">${applyRich(v.text)}</div>` : '';
   return (
@@ -44,6 +43,24 @@ function viewerBlockHTML(ses, b){
   if(b.type === 'narration'){
     const cls = b.emphasis ? 'v-narr-em' : 'v-narr-normal';
     return `<div class="${cls}">${applyRich(b.text)}</div>`;
+  }
+  if(b.type === 'handout'){
+    const style = (b.style === 'paper') ? 'paper' : 'digital';
+    const icon  = style === 'paper' ? '✉' : '📄';
+    const img   = b.image ? `<img class="ho-img" src="${resolveImg(b.image)}" alt="">` : '';
+    const text  = b.body ? `<div class="ho-text">${applyRich(b.body)}</div>` : '';
+    return (
+      `<div class="v-handout ${style}">` +
+        `<div class="ho-card">` +
+          `<div class="ho-head" onclick="toggleHandout(this)">` +
+            `<span class="ho-icon">${icon}</span>` +
+            `<span class="ho-title">${applyRich(b.title || '핸드아웃')}</span>` +
+            `<span class="ho-toggle"><span class="when-closed">펼치기 ▾</span><span class="when-open">접기 ▴</span></span>` +
+          `</div>` +
+          `<div class="ho-body"><div class="ho-inner">${img}${text}</div></div>` +
+        `</div>` +
+      `</div>`
+    );
   }
   if(b.type === 'dice'){
     const who = b.speaker ? `<div class="who">${applyRich(b.speaker)}</div>` : '';
@@ -135,6 +152,10 @@ function toggleViewerTheme(){
   const v = $('#viewer');
   v.classList.toggle('dark'); v.classList.toggle('light');
   if(viewerSession) viewerSession.theme = v.classList.contains('dark') ? 'dark' : 'light';
+}
+function toggleHandout(headEl){
+  const ho = headEl.closest('.v-handout');
+  if(ho) ho.classList.toggle('open');
 }
 
 /* =========================================================================

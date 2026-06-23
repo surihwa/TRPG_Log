@@ -25,7 +25,8 @@
         ]},
         { "id": "b14", "type": "narration", "emphasis": true, "text": "샤헤리스의 명령을 어기고 키셰는 성을 나선다. 시간이 이틀도 남지 않았으니, 밤이라고 맘 편히 잘 수도 없는 노릇이다." },
         { "id": "b15", "type": "narration", "emphasis": false, "text": "지능 판정" },
-        { "id": "b16", "type": "dice", "kind": "check", "speaker": "키셰", "item": "지능", "standard": "65/32/13", "roll": "47", "result": "보통 성공" },
+        { "id": "b16", "type": "dice", "kind": "check", "speaker": "키셰", "item": "지능", "grade": "", "standard": "65", "roll": "47", "result": "보통 성공" },
+        { "id": "bh2", "type": "handout", "style": "digital", "title": "수배 전단 · 키셰", "image": "", "body": "현상금 <b>5,000 길</b><br>죄목: 왕성 무단 이탈, 기밀 누설 혐의<br>특징: 검은 망토, 좌측 눈가의 흉터<br><br>발견 시 즉시 위병대에 신고할 것." },
         { "id": "b17", "type": "narration", "emphasis": false, "text": "혹시 빈민가에서 훔쳐 온 망토를 쓰면 그들을 따라갈 수 있을지도 모른다는 생각이 스쳐 지나간다." }
       ]
     }

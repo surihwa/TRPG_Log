@@ -36,8 +36,9 @@ const SAMPLE_SESSIONS = [
         { id:'b5', type:'bgm', ytId:'5qap5aO4i9A', title:'설원 · 적막' },
         { id:'b6', type:'narration', emphasis:true, text:'릴리아와 서리화, 그리고 에스티니앙은 차례차례 성벽의 작은 틈 사이로 빠져나온다. 사방에는 자작나무와 전나무가 빽빽하게 서 있고, 온통 흰빛이다.' },
         { id:'b7', type:'narration', emphasis:false, text:'멀리서 무언가 무너지는 소리가 들린다.' },
-        { id:'b8', type:'dice', kind:'vs', speaker:'릴리아 올드로즈', item:'Sanity', grade:'보통', roll:'63', target:'79', result:'' },
-        { id:'b9', type:'dice', kind:'vs', speaker:'에스티니앙', item:'Sanity', grade:'보통', roll:'52', target:'60', result:'' },
+        { id:'bh1', type:'handout', style:'paper', title:'찢겨진 지도 조각', image:'', body:'북쪽 능선을 따라 <b>세 갈래 길</b>이 갈라진다.<br>가운데 길은 지워져 알아볼 수 없다.<br><br><i>― 가장자리에 휘갈긴 글씨</i>' },
+        { id:'b8', type:'dice', kind:'check', speaker:'릴리아 올드로즈', item:'Sanity', grade:'보통', standard:'79', roll:'63', result:'' },
+        { id:'b9', type:'dice', kind:'check', speaker:'에스티니앙', item:'Sanity', grade:'보통', standard:'60', roll:'52', result:'' },
         { id:'b10', type:'dice', kind:'simple', speaker:'서리화', item:'행운', formula:'1d100', roll:'80', result:'' }
       ]}
     ]
@@ -62,7 +63,8 @@ const SAMPLE_SESSIONS = [
         ]},
         { id:'b14', type:'narration', emphasis:true, text:'샤헤리스의 명령을 어기고 키셰는 성을 나선다. 시간이 이틀도 남지 않았으니, 밤이라고 맘 편히 잘 수도 없는 노릇이다.' },
         { id:'b15', type:'narration', emphasis:false, text:'지능 판정' },
-        { id:'b16', type:'dice', kind:'check', speaker:'키셰', item:'지능', standard:'65/32/13', roll:'47', result:'보통 성공' },
+        { id:'b16', type:'dice', kind:'check', speaker:'키셰', item:'지능', grade:'', standard:'65', roll:'47', result:'보통 성공' },
+        { id:'bh2', type:'handout', style:'digital', title:'수배 전단 · 키셰', image:'', body:'현상금 <b>5,000 길</b><br>죄목: 왕성 무단 이탈, 기밀 누설 혐의<br>특징: 검은 망토, 좌측 눈가의 흉터<br><br>발견 시 즉시 위병대에 신고할 것.' },
         { id:'b17', type:'narration', emphasis:false, text:'혹시 빈민가에서 훔쳐 온 망토를 쓰면 그들을 따라갈 수 있을지도 모른다는 생각이 스쳐 지나간다.' }
       ]}
     ]

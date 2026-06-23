@@ -239,23 +239,19 @@ function editorConvert(){
 
 function editorLoadSample(){
   $('#pasteArea').innerText =
-`에스티니앙: "한 번 들여보내줬다고 써먹을 때까지 써먹을 심산이시군, 공주님." 중얼거리고는 경비병들에게 다가갑니다.
-:두 사람은 성벽의 그림자에 몸을 붙인 채 숨을 죽인다.
-릴리아 올드로즈: 작게 속삭이며 손짓한다. "지금이에요. 교대 시간은 길지 않아요."
-릴리아 올드로즈
-Sanity
-보통
-63
-vs.
-79
-키셰의 지능 기준치:65/32/13굴림:47판정결과:보통 성공
-서리화
-rolling 1d100
-(
-80
-)
-=
-80`;
+`먼지 (GM):소리 없이 한 송이의 목을 꺾자 꽃송이 사이로 틈이 벌어집니다.
+그리고 철창의 틈새로 달리아는 상대와 눈이 마주칩니다.
+:람피온의 저택에서 한 번도 본 적 없는 사람입니다.
+달리아 리모스:누구지? 몸을 살짝 더 기울인다. "너 누구야?"
+달리아 리모스:"아, 잃어버린 걸 찾으러...!" 이 깊은... 깊은
+달리아 리모스intelligence보통
+실패
+77vs.65
+bonus / penalty
+:깊은...숲...이었나? 기억이 가물가물합니다.
+키셰:
+지능기준치:65/32/13굴림:47판정결과:보통 성공
+:혹시 빈민가에서 훔쳐 온 망토를 쓰면 따라갈 수 있을지도 모릅니다.`;
   toast('예시 로그를 넣었습니다. [변환]을 눌러보세요.');
 }
 
@@ -281,7 +277,7 @@ function gapEl(insertAt){
 let _insertAt = 0;
 function editorInsertMenu(at){
   _insertAt = at;
-  const types = [['narration-normal','일반 나레이션'],['narration-em','강조 나레이션'],['bgm','BGM'],['dialogue','대사'],['dice','주사위']];
+  const types = [['narration-normal','일반 나레이션'],['narration-em','강조 나레이션'],['handout','핸드아웃'],['bgm','BGM'],['dialogue','대사'],['dice','주사위']];
   // 간단한 선택: prompt 대신 순환 메뉴 → 토스트로 안내하기보다 바로 일반 나레이션 추가 + 타입 변경 가능
   const menu = document.createElement('div');
   // 인라인 미니 메뉴를 토스트처럼 표시
@@ -301,9 +297,10 @@ function editorInsertBlock(type){
   const sc = activeScene(); let b;
   if(type === 'narration-normal') b = { id:genId(), type:'narration', emphasis:false, text:'' };
   else if(type === 'narration-em') b = { id:genId(), type:'narration', emphasis:true, text:'' };
+  else if(type === 'handout') b = { id:genId(), type:'handout', style:'paper', title:'', body:'', image:'' };
   else if(type === 'bgm') b = { id:genId(), type:'bgm', ytId:'', title:'' };
   else if(type === 'dialogue') b = { id:genId(), type:'dialogue', speaker:(E().characters[0]||{}).name||'', segments:[{kind:'line',text:''}] };
-  else if(type === 'dice') b = { id:genId(), type:'dice', kind:'vs', speaker:(E().characters[0]||{}).name||'', item:'판정', grade:'보통', roll:'', target:'', result:'' };
+  else if(type === 'dice') b = { id:genId(), type:'dice', kind:'check', speaker:(E().characters[0]||{}).name||'', item:'판정', grade:'보통', standard:'', roll:'', result:'' };
   sc.blocks.splice(_insertAt, 0, b);
   const m = $('#insertChooser'); if(m) m.remove();
   renderBlocks();
@@ -333,6 +330,7 @@ function buildBlockCard(b, idx){
       <option value="narration-em" ${b.type==='narration'&&b.emphasis?'selected':''}>강조 나레이션</option>
       <option value="dialogue" ${b.type==='dialogue'?'selected':''}>대사</option>
       <option value="dice" ${b.type==='dice'?'selected':''}>주사위</option>
+      <option value="handout" ${b.type==='handout'?'selected':''}>핸드아웃</option>
       <option value="bgm" ${b.type==='bgm'?'selected':''}>BGM</option>
     </select>`;
 
@@ -361,30 +359,39 @@ function buildBlockCard(b, idx){
   }
   else if(b.type === 'dice'){
     const kindSel = `<select onchange="editorSetDiceKind('${b.id}',this.value)" style="width:auto;padding:5px 8px;font-size:12px;">
-        <option value="vs" ${b.kind==='vs'?'selected':''}>대상치(vs)</option>
-        <option value="check" ${b.kind==='check'?'selected':''}>기준치</option>
+        <option value="check" ${b.kind!=='simple'?'selected':''}>기준치</option>
         <option value="simple" ${b.kind==='simple'?'selected':''}>단순 굴림</option></select>`;
     let fields = '';
-    if(b.kind === 'vs') fields = `
-      <div class="field"><label class="fld">판정명</label><input value="${escAttr(b.item)}" oninput="editorSetField('${b.id}','item',this.value)"></div>
-      <div class="field"><label class="fld">등급</label><input value="${escAttr(b.grade)}" oninput="editorSetField('${b.id}','grade',this.value)"></div>
-      <div class="field"><label class="fld">굴림</label><input value="${escAttr(b.roll)}" oninput="editorSetField('${b.id}','roll',this.value)"></div>
-      <div class="field"><label class="fld">목표치</label><input value="${escAttr(b.target)}" oninput="editorSetField('${b.id}','target',this.value)"></div>`;
-    else if(b.kind === 'check') fields = `
-      <div class="field"><label class="fld">판정명</label><input value="${escAttr(b.item)}" oninput="editorSetField('${b.id}','item',this.value)"></div>
-      <div class="field"><label class="fld">기준치</label><input value="${escAttr(b.standard)}" oninput="editorSetField('${b.id}','standard',this.value)"></div>
-      <div class="field"><label class="fld">굴림</label><input value="${escAttr(b.roll)}" oninput="editorSetField('${b.id}','roll',this.value)"></div>
-      <div class="field"><label class="fld">결과</label><input value="${escAttr(b.result)}" oninput="editorSetField('${b.id}','result',this.value)"></div>`;
-    else fields = `
+    if(b.kind === 'simple') fields = `
       <div class="field"><label class="fld">판정명</label><input value="${escAttr(b.item)}" oninput="editorSetField('${b.id}','item',this.value)"></div>
       <div class="field"><label class="fld">공식</label><input value="${escAttr(b.formula)}" oninput="editorSetField('${b.id}','formula',this.value)"></div>
       <div class="field"><label class="fld">결과값</label><input value="${escAttr(b.roll)}" oninput="editorSetField('${b.id}','roll',this.value)"></div>
       <div class="field"><label class="fld">판정결과(선택)</label><input value="${escAttr(b.result)}" oninput="editorSetField('${b.id}','result',this.value)"></div>`;
+    else fields = `
+      <div class="field"><label class="fld">판정명</label><input value="${escAttr(b.item)}" oninput="editorSetField('${b.id}','item',this.value)"></div>
+      <div class="field"><label class="fld">등급</label><input value="${escAttr(b.grade)}" oninput="editorSetField('${b.id}','grade',this.value)" placeholder="보통 등"></div>
+      <div class="field"><label class="fld">기준치</label><input value="${escAttr(b.standard)}" oninput="editorSetField('${b.id}','standard',this.value)"></div>
+      <div class="field"><label class="fld">굴림</label><input value="${escAttr(b.roll)}" oninput="editorSetField('${b.id}','roll',this.value)"></div>
+      <div class="field"><label class="fld">판정결과</label><input value="${escAttr(b.result)}" oninput="editorSetField('${b.id}','result',this.value)"></div>`;
     body = `<div class="b-head"><span class="b-type dice">주사위</span>${typeSel}<span class="spacer"></span>${tools}</div>
       <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;">
         <span style="font-size:12px;color:var(--ink-soft);">화자</span>${speakerSelectHTML(b)}
         <span style="font-size:12px;color:var(--ink-soft);">유형</span>${kindSel}</div>
       <div class="dice-fields">${fields}</div>`;
+  }
+  else if(b.type === 'handout'){
+    const styleSel = `<select onchange="editorSetField('${b.id}','style',this.value)" style="width:auto;padding:5px 8px;font-size:12px;">
+        <option value="paper" ${b.style!=='digital'?'selected':''}>낡은 서류/쪽지</option>
+        <option value="digital" ${b.style==='digital'?'selected':''}>디지털 문서</option></select>`;
+    body = `<div class="b-head"><span class="b-type handout">핸드아웃</span>${typeSel}<span class="spacer"></span>${tools}</div>
+      <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;">
+        <span style="font-size:12px;color:var(--ink-soft);">스타일</span>${styleSel}</div>
+      <div class="field"><label class="fld">제목</label>
+        <input value="${escAttr(b.title)}" oninput="editorSetField('${b.id}','title',this.value)" placeholder="예: 발견한 쪽지"></div>
+      <div class="field"><label class="fld">이미지 경로(선택)</label>
+        <input value="${escAttr(b.image)}" oninput="editorSetField('${b.id}','image',this.value)" placeholder="image/세션명/핸드아웃.png"></div>
+      <div class="field"><label class="fld">내용</label>${RT_TOOLBAR}
+        <div class="b-edit" contenteditable="true" data-bid="${b.id}" data-field="body" oninput="editorSaveInline(this)">${b.body||''}</div></div>`;
   }
   else if(b.type === 'bgm'){
     body = `<div class="b-head"><span class="b-type bgm">BGM</span>${typeSel}<span class="spacer"></span>${tools}</div>
@@ -403,8 +410,9 @@ function buildBlockCard(b, idx){
 function getBlock(id){ const sc = activeScene(); return sc ? sc.blocks.find(b => b.id === id) : null; }
 function editorSaveInline(el){
   const b = getBlock(el.dataset.bid); if(!b) return;
-  const html = cleanInlineHTML(el);
+  const html = editableToRich(el);        // <b>/<i>/<br> 보존(여러 줄)
   if(el.dataset.seg != null) b.segments[+el.dataset.seg].text = html;
+  else if(el.dataset.field === 'body') b.body = html;
   else b.text = html;     // 재렌더 안 함 → 커서 유지
 }
 function editorSetField(id, field, val){ const b = getBlock(id); if(b) b[field] = val; }
@@ -420,24 +428,26 @@ function editorSetSeg(id, si, kind){ const b = getBlock(id); if(b) b.segments[si
 function editorAddSeg(id){ const b = getBlock(id); if(b){ b.segments.push({kind:'line',text:''}); renderBlocks(); } }
 function editorDelSeg(id, si){ const b = getBlock(id); if(b){ b.segments.splice(si,1); if(!b.segments.length) b.segments.push({kind:'line',text:''}); renderBlocks(); } }
 function editorSetDiceKind(id, kind){
-  const b = getBlock(id); if(!b) return; b.kind = kind;
-  if(kind==='vs'){ b.grade=b.grade||'보통'; b.target=b.target||''; delete b.standard; delete b.formula; }
-  if(kind==='check'){ b.standard=b.standard||''; b.result=b.result||''; delete b.target; delete b.grade; delete b.formula; }
-  if(kind==='simple'){ b.formula=b.formula||'1d100'; delete b.target; delete b.grade; delete b.standard; }
+  const b = getBlock(id); if(!b) return;
+  if(kind !== 'simple') kind = 'check';
+  b.kind = kind;
+  if(kind==='check'){ b.grade=b.grade||''; b.standard=b.standard||''; b.result=b.result||''; delete b.target; delete b.formula; }
+  else { b.formula=b.formula||'1d100'; b.result=b.result||''; delete b.target; delete b.grade; delete b.standard; }
   renderBlocks();
 }
 function editorSetBlockType(id, t){
   const b = getBlock(id); if(!b) return;
-  const text = b.text || (b.segments? b.segments.map(s=>s.text).join(' ') : '');
+  const text = b.text || b.body || (b.segments? b.segments.map(s=>s.text).join('<br>') : '');
   if(t === 'narration-normal'){ stripBlock(b,'narration'); b.emphasis=false; b.text=text; }
   else if(t === 'narration-em'){ stripBlock(b,'narration'); b.emphasis=true; b.text=text; }
   else if(t === 'dialogue'){ stripBlock(b,'dialogue'); b.speaker=b.speaker||(E().characters[0]||{}).name||''; b.segments=[{kind:'line',text:text}]; }
-  else if(t === 'dice'){ stripBlock(b,'dice'); b.kind='vs'; b.speaker=b.speaker||''; b.item=b.item||'판정'; b.grade='보통'; b.roll=''; b.target=''; b.result=''; }
+  else if(t === 'dice'){ stripBlock(b,'dice'); b.kind='check'; b.speaker=b.speaker||''; b.item=b.item||'판정'; b.grade='보통'; b.standard=''; b.roll=''; b.result=''; }
+  else if(t === 'handout'){ stripBlock(b,'handout'); b.style='paper'; b.title=b.title||''; b.body=text; b.image=''; }
   else if(t === 'bgm'){ stripBlock(b,'bgm'); b.ytId=b.ytId||''; b.title=b.title||text||''; }
   renderBlocks();
 }
 function stripBlock(b, newType){
-  ['emphasis','text','speaker','segments','kind','item','grade','roll','target','standard','formula','result','ytId','title'].forEach(k => delete b[k]);
+  ['emphasis','text','speaker','segments','kind','item','grade','roll','target','standard','formula','result','ytId','title','style','body','image'].forEach(k => delete b[k]);
   b.type = newType;
 }
 
