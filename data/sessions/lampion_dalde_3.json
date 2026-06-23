@@ -1,0 +1,3826 @@
+{
+  "id": "id_mqqhvo68_0",
+  "folder": "람피온의 저택-달데",
+  "title": "3부: 꽃의 뼈",
+  "date": "",
+  "theme": "light",
+  "cardImage": "image/lampion_dalde/card3.png",
+  "characters": [
+    {
+      "id": "id_mqqhvo68_1",
+      "name": "달리아",
+      "role": "PC",
+      "color": "#a30f1e",
+      "img": "image/lampion_dalde/dahlia3.jpg"
+    },
+    {
+      "id": "id_mqqhwe7n_3",
+      "name": "데시",
+      "role": "PC",
+      "color": "#e8c0d7",
+      "img": "image/lampion_dalde/dessy3.png"
+    },
+    {
+      "id": "id_mqqhwwcn_4",
+      "name": "선생님",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/teacher.png"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "id_mqqhvo68_2",
+      "title": "I. 15살의 봄방학",
+      "blocks": [
+        {
+          "id": "id_mqqi01gg_u",
+          "type": "bgm",
+          "ytId": "Fegw6xrxyOU",
+          "title": "작은 행복으로부터"
+        },
+        {
+          "id": "id_mqqhzvfw_7",
+          "type": "narration",
+          "emphasis": true,
+          "text": "꽃의 뼈<br>울새의 노래는 둥지에 갇혀 있다."
+        },
+        {
+          "id": "id_mqqhzvfw_8",
+          "type": "narration",
+          "emphasis": false,
+          "text": "삐걱거리는 마루 소리, 누군가의 분주한 발걸음 소리, 달그락, 식기끼리 부딪치는 소리..... 그리운 기시감과 함께 달리아는 눈을 뜹니다. 오늘 아침, 울새는 울지 않습니다.<br>이곳은 람피온의 저택이 아니기 때문이죠. 달리아가 자리에서 일어나 기지개를 켜고 있으면, 감자 수프의 고소한 냄새가 코를 간지럽힙니다.<br>그래요, 달리아는 15살의 봄방학을 맞아 집으로 돌아왔습니다.<br>집으로 갈 수 있다는 걸 알게 되었을 때 얼마나 신나던지요. 흥에 겨웠던 건 다른 아이들도 마찬가지였습니다. 신은 봄방학만을 기다리며 작은 여행용 가방에 꾸역꾸역 짐을 담은 채 꼭 껴안고 잠들었습니다. 아리아는 부모님께 보여주고자 밀린 5년치의 일기를 몰아서 쓰기도 했죠.<br>방학 동안 건강하게 지내야 한다는 선생님의 마지막 당부를 끝으로, 달리아를 포함한 아이들은 저택을 나와 여태껏 나고 자란 마을로 돌아왔습니다.<br>그리고 데시는......"
+        },
+        {
+          "id": "id_mqqi0hbv_v",
+          "type": "narration",
+          "emphasis": true,
+          "text": "지능 판정"
+        },
+        {
+          "id": "id_mqqhzvfw_5",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "65",
+          "roll": "70",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqhzvfw_b",
+          "type": "narration",
+          "emphasis": false,
+          "text": "깜빡, 깜빡. 달리아는 자신도 모르게 눈을 여러 번 감았다가 뜹니다. 그러고보니 찜찜한 꿈을 꾼 것 같기도 한데, 내용이 잘 기억나지 않습니다. 잠자리가 바뀌어서 신경이 예민해진 걸까요?<br>다시 데시에 대해 떠올려보자면.....<br>데시는 저택에 남았습니다. 달리아의 함께 가지 않겠냐는 제안에도 그저 묵묵히 웃으며 고개를 저었을 뿐입니다."
+        },
+        {
+          "id": "id_mqqhzvfw_c",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "같이 오면 재밌었을텐데... 아쉽다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqhzvfw_d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "생각해보면 조금 이상한 일입니다. 그야, 데시는 언제 어디서든 달리아와 잠시라도 떨어지고 싶지 않은 것처럼 굴곤 했잖아요.<br>결국, 달리아는 데시를 두고 홀로 저택을 떠났습니다.<br>생각에 빠져 있으면, 아래층에서 달리아의 이름을 부르는 목소리가 들립니다.<br>엄마의 목소리네요. 엄마는 식사 준비가 끝났으니 어서 태려오라고 독촉합니다."
+        },
+        {
+          "id": "id_mqqhzvfw_e",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "맛있는 냄새가 난다! 내려갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqhzvfw_f",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아가 아래층으로 내려가자 수프의 향은 더 짙어집니다."
+        },
+        {
+          "id": "id_mqqhzvfw_g",
+          "type": "dialogue",
+          "speaker": "엄마",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "어서 오렴, 수프가 다 식겠어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqhzvfw_h",
+          "type": "narration",
+          "emphasis": false,
+          "text": "좋아하는 음식들이 테이블 위에 잔뜩 차려져 있습니다.<br>초콜릿이 박힌 스콘에 곁들일 버터와 포도잼, 천혜향 소스와 차돌을 곁들인 더덕구이, 성게 알을 올린 크림 파스타, 향긋한 버섯볶음, 산초폼과 미나리로 장식한 생선구이, 트러플 오일과 당근 샐러드를 곁들인 흑돼지 안심구이, 색색의 모둠 채소 구이와 양 갈비 스테이크, 후식으로는 라즈베리 치즈 케이크와 얼린 청포도가 있습니다. 무알콜 포도주와 사과 샴페인까지.<br>다소 호화로운 차림새입니다."
+        },
+        {
+          "id": "id_mqqhzvfw_i",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "뭘 이렇게 차리셨어... 누가보면 여왕님이 행차하시는 식사 자리라고 생각할 수도."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi15gt_w",
+          "type": "narration",
+          "emphasis": true,
+          "text": "원래 달리아의 집에선 이렇게 차려 먹곤 했나요?"
+        },
+        {
+          "id": "id_mqqhzvfw_j",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "전혀 그러진 않았는데... 부족하진 않았지만 이렇게 가짓수가 많고 호화롭지는 않았습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqhzvfw_k",
+          "type": "narration",
+          "emphasis": false,
+          "text": "무언가 이상합니다. 이렇게 호화스러운 식탁은 어디에서도 받아본 적이 없습니다! 그러니까, 꼭, 많은 돈이 생긴 것처럼.....<br>그렇다면 갑작스러운 돈은 어디서 생겼을까요?"
+        },
+        {
+          "id": "id_mqqi1bds_x",
+          "type": "narration",
+          "emphasis": true,
+          "text": "지능 판정"
+        },
+        {
+          "id": "id_mqqhzvfw_6",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "65",
+          "roll": "15",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqhzvfw_n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>람피온을 내놓지 않으려는 부모가 없냐고? 그야 당연히 있지! 그럼 로즈는 아이를 셋을 기를 수 있는 돈을 내놓는다더라. 그래도 거부한다면? 글쎄, 그런 경우는 아직 들어본 적이 없네. 없는 거 아닐까?</i><br>어느 쪽이건 불쾌한 경우의 수군요.<br>달리아는 가족을 의심하나요?"
+        },
+        {
+          "id": "id_mqqhzvfw_o",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "의심이 아니라 확신입니다. 아마 저를 보내고... 보낼 수 밖에 없었다고 생각해요. 어떻게 평범한 가정집에서 초능력을 가진 람피온을 데리고 키우고... 교육할 수 있겠어요. 타당한 결정이라고 생각합니다. 그에 대한 보상이 있다면 더욱이요. 물론 제게 똑같은 상황이 닥친다고 하면 같은 결정을 내리진 않았을 겁니다. 조금은 가족이 밉기도... 하지만 반가움이 더 앞서 미움은 흐려집니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqhzvfw_p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아가 어떻게 생각하건, 가족은 기억과 똑같은 얼굴, 똑같은 모습으로 다정하게 식사를 권합니다."
+        },
+        {
+          "id": "id_mqqi1tc7_y",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"자, 어서 먹으렴.\""
+        },
+        {
+          "id": "id_mqqhzvfw_q",
+          "type": "narration",
+          "emphasis": false,
+          "text": "자, 식사합시다. 마음껏 먹고 마셔도 좋습니다. 음식을 한 입 먹으면 의심은 누그러지고 날 선 감각은 부드럽게 녹아듭니다.<br>아, 그래요. 오랜만에 돌아오는 집인 걸요. 자식을 배불리 먹이고 싶은 건 어느 부모나 똑같은 마음일 거예요.<br>여전히 다정한 가족, 사랑스러운 추억, 따뜻한 향기. 마음이 충족되고 그동안의 외로움이 보상되는 이곳은......<br>의심할 여지 없이 <b>당신의 집</b>입니다.<br>비로소 있어야 할 곳으로 돌아온 것입니다."
+        },
+        {
+          "id": "id_mqqhzvfw_r",
+          "type": "dialogue",
+          "speaker": "엄마",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오늘부터 축제가 시작이잖니, 모처럼 돌아온 김에 다녀오렴."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqhzvfw_s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "때마침 바깥이 소란스러워집니다. 축제의 시작을 알리는 뿔피리 소리가 창공에 울려퍼지고, 마을 한복판에서부터 타악기를 두드리는 듯한 일정한 리듬이 들려옵니다."
+        },
+        {
+          "id": "id_mqqhzvfw_t",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "...혼자 다녀오라는 건가? 하긴, 오랜만에 만난 가족은 조금 어색하긴 합니다. 축제를 함께 돌아다녀봤자 그리 즐거울 것 같지도 않습니다. 데시가 있었다면 더 좋았을텐데 말이에요."
+            },
+            {
+              "kind": "line",
+              "text": "...네!"
+            },
+            {
+              "kind": "narr",
+              "text": "굳이 가지 않겠다고 할 이유는 없습니다. 재밌는 걸 잔뜩 보고, 듣고,,, 저택으로 돌아가면, 그때 데시에게 전부 얘기해주면 됩니다. 데시는 즐겁게 들어줄 거예요."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_mqqi291o_z",
+      "title": "II. 꽃의 축제",
+      "blocks": [
+        {
+          "id": "id_mqqi493h_1b",
+          "type": "narration",
+          "emphasis": true,
+          "text": "꽃의 축제<br>봄마다 돌아오는<br>[March Flower]"
+        },
+        {
+          "id": "id_mqqi493h_1d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "마치 플라워는 꽃과 봄, 그리고 찬란한 햇빛이 함께하는 축제입니다.<br>매년 3월, 달리아의 마을을 둘러싼 꽃나무에 꽃이 흐드러지게 필 무렵 열립니다.<br>축제가 열리는 동안에는 곳곳에서 많은 사람이 찾아와 춤을 추고 소원을 빌며 한 해의 시작을 축복합니다.<br>마치 플라워의 명물은 밀가루 반죽에 한가운데 꿀이 그득한 꽃을 넣고 얇게 부친 꽃전과 달콤한 꽃술입니다. 꽃술의 경우 도수가 낮고 맛이 좋아 인기가 하늘을 찌른다고 합니다.<br>오늘따라 날씨도 매우 화창합니다. 축제를 즐기기엔 더할 나위 없겠어요.<br>거리는 축제를 즐기는 사람들로 꽉 차 있으며, 흥겨운 노랫소리가 들립니다. 지나가는 사람마다 화사한 꽃으로 얽은 화관을 얹고 있습니다.<br>그때, 달리아의 앞으로 긴 흰 머리의 사람이 지나갑니다."
+        },
+        {
+          "id": "id_mqqi493h_1e",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqqi493h_10",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "32",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqi493h_1h",
+          "type": "narration",
+          "emphasis": false,
+          "text": "방금 새하얀 머리카락은 분명...데시 아닌가요?<br>자세히 볼 겨를도 없이, 그 사람은 빠르게 멀어져 인파 속으로 들어갑니다."
+        },
+        {
+          "id": "id_mqqi493h_11",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "추적",
+          "grade": "보통",
+          "standard": "20",
+          "roll": "80",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqi493h_1k",
+          "type": "narration",
+          "emphasis": false,
+          "text": "데시는 빠르게 멀어져 어디로 갔는지 알 수 없습니다.<br>돌아다니다 보면 다시 마주칠 수도 있지 않을까요? 축제라도 즐겨봅시다."
+        },
+        {
+          "id": "id_mqqi493h_1l",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "안 따라오겠다 했으면서... 뭐지."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493h_1m",
+          "type": "narration",
+          "emphasis": false,
+          "text": "축제의 <b>노점상</b>과 <b>광장</b>을 돌아볼 수 있습니다."
+        },
+        {
+          "id": "id_mqqi493h_1n",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "노점상을 둘러본다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493h_1o",
+          "type": "narration",
+          "emphasis": false,
+          "text": "언제든지 든든하게 식사핢 수 있게 마련된 <b>먹거리 장터</b>, 기념품을 판매 중인 <b>간이 매대</b>, 마치 플라워의 명물인 꽃술과 꽃전을 나눠주는 가게, <b>어린 봄의 달</b>이 있습니다."
+        },
+        {
+          "id": "id_mqqi493h_1p",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "원래 이런 곳에 오면 명물부터 즐겨야하는 것이지. 어린 봄의 달로 향한다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493h_1q",
+          "type": "narration",
+          "emphasis": false,
+          "text": "분홍색과 흰색으로 단장한 가게. 조화와 생화를 적절히 배치하여 유난히 화려합니다. 마치 플라워 기간에만 열리는 가게로 <b>꽃술과 꽃전</b>을 나눠줍니다. 요즈은 들어선 <b>축제용 코르사주와 부토니에르</b>도 판매한다군요."
+        },
+        {
+          "id": "id_mqqi493h_1r",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "일단 축제에 왔으면 맵시부터 갖춰야지. 축제용 코르사주를 본다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493h_1s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "직원 셋이 각각 분주하게 꽃을 다듬고, 리본을 묶고, 핀을 구부리고 잇습니다. 코르사주를 찾으면 \"어떤 꽃이 좋으신가요?\"라고 묻습니다."
+        },
+        {
+          "id": "id_mqqi493h_1t",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "이제 빨간 꽃은 좀 질릴 법도 합니다."
+            },
+            {
+              "kind": "line",
+              "text": "하얀 꽃 있나요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493h_1u",
+          "type": "narration",
+          "emphasis": false,
+          "text": "하얀 꽃이라면, 데이지도 있고, 백합도 있고, 안개꽃도 있고, 은방울꽃 등등...많이 있죠!<br>직원은 친절하게 대답해줍니다."
+        },
+        {
+          "id": "id_mqqi493h_1v",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음... 하얀 장미도 있나요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493h_1w",
+          "type": "narration",
+          "emphasis": false,
+          "text": "직원은 마침 백장미가 예쁘게 핀 게 있다면서 보여줍니다. \"이걸로 해드릴까요?\""
+        },
+        {
+          "id": "id_mqqi493h_1x",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "정말 예쁘게 피었네요. 저보다 더 잘 어울릴 사람이 있을 거 같아요. 저는 은방울꽃으로 부탁드려요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493h_1y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "아쉬워하지도 않고 금방 백장미를 내려놓고선 은방울꽃을 예쁘게 포장해줍니다."
+        },
+        {
+          "id": "id_mqqi5wv4_4m",
+          "type": "narration",
+          "emphasis": true,
+          "text": "행운 판정"
+        },
+        {
+          "id": "id_mqqi493h_12",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "75",
+          "roll": "31",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqi493i_21",
+          "type": "narration",
+          "emphasis": false,
+          "text": "가격은 20유로. 마침 방금 가족에게 받은 용돈이 주머니에 있습니다."
+        },
+        {
+          "id": "id_mqqi493i_22",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "돈을 건넨다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_23",
+          "type": "narration",
+          "emphasis": false,
+          "text": "직원은 웃으며 사양합니다."
+        },
+        {
+          "id": "id_mqqi69a9_4n",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"돈은 필요하지 않아요. 왜냐면 당신은......\"<br>정신력 판정"
+        },
+        {
+          "id": "id_mqqi493h_13",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "정신력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "91",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqi493i_25",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"람피온인걸요.\""
+        },
+        {
+          "id": "id_mqqi493i_26",
+          "type": "narration",
+          "emphasis": false,
+          "text": "직원은 상냥하게 그리 말합니다.<br>......동정일까요?<br>다음 손님이 계속해서 비집고 들어오기 때문에 작달만한 가게는 금세 붐비기 시작합니다.<br>\"어이! 계산했으면 나오라고!\""
+        },
+        {
+          "id": "id_mqqi493i_27",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "당황한 채 어버버 거리다가 그대로 가게를 나옵니다."
+            },
+            {
+              "kind": "narr",
+              "text": "어떻게 알았지...?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_28",
+          "type": "narration",
+          "emphasis": false,
+          "text": "가게에서 나오자, 또다시 익숙한 뒷모습이 스쳐갑니다. 데시가 분명합니다. 이번에야말로 놓치지 말아야할텐데...!"
+        },
+        {
+          "id": "id_mqqi6x3a_4o",
+          "type": "narration",
+          "emphasis": true,
+          "text": "추적 판정 (보너스 주사위+1)"
+        },
+        {
+          "id": "id_mqqi493h_14",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "추적",
+          "grade": "보통",
+          "standard": "20",
+          "roll": "7",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqi493i_2a",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "데시를 쫓아가기"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2b",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아는 정신없이 인파를 치우고 나아가 데시를 붙잡습니다. 행인과 어깨를 부딪치기도, 욕설을 듣거나 시비에 휘말렸을 수도 있지만, 지금 당신이 붙잡은 사람은 분명......"
+        },
+        {
+          "id": "id_mqqi493i_2c",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "다, 달리아?"
+            },
+            {
+              "kind": "narr",
+              "text": "반사적으로 고개를 돌려 당신을 발견하자 조금 놀란 듯 동그랗게 토끼눈을 합니다. 그러다 반가운지 이내 웃어 보입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2d",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "마주 휘둥그레한 표정을 짓습니다. 정말 데시잖아!"
+            },
+            {
+              "kind": "line",
+              "text": "데시!"
+            },
+            {
+              "kind": "narr",
+              "text": "난데 없이 만난 것과는 별개로 반가움에 따라 웃어 보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "여긴 어쩐 일이야? 저택에 있겠다며?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2e",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "네가 방학 동안 심심할까봐 놀러왔어. 잠시뿐이지만..."
+            },
+            {
+              "kind": "narr",
+              "text": "달리아의 양손을 잡아보입니다. 적당히 서늘한 체온, 그리고 약간 따뜻한 체온이 오갑니다. 이 온기가 그리웠다는 듯 손을 꼭 잡습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi7ytn_4p",
+          "type": "narration",
+          "emphasis": true,
+          "text": "심리학 판정"
+        },
+        {
+          "id": "id_mqqi493h_15",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "심리학",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "87",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqi493i_2g",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그렇구나...!<br>데시의 손을 마주 꼭 잡습니다. 정말 잠깐 떨어졌을 뿐인데 이 서늘한 체온이 그리웠어요. 저를 위해 놀러왔다는 말에 더 방긋 웃어 보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "날 찾고 있었구나! 나도 널 봐서 찾아볼 겸 돌아다니고 있었거든!"
+            },
+            {
+              "kind": "narr",
+              "text": "자연스럽게 제가 받은 은방울꽃을 귀 위로 꽃아 줍니다."
+            },
+            {
+              "kind": "line",
+              "text": "음, 잘 어울린다! 그럼 이제 같이 다닐 수 있는거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2h",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "귓가를 매만지며 웃습니다."
+            },
+            {
+              "kind": "line",
+              "text": "고마워, 그럼 축제 구경시켜줄거지? 기대하고 있었어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2i",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "저도 본 것은 별로 없지만. 구경시켜주는 것은 달리아 전문입니다."
+            },
+            {
+              "kind": "line",
+              "text": "여기 명물있대. 꽃전 먹으러 가보자! ...되면은 꽃술도!"
+            },
+            {
+              "kind": "narr",
+              "text": "키득 웃습니다. 익숙한 듯 데시의 손을 잡고 앞장 섭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi9mfb_4q",
+          "type": "bgm",
+          "ytId": "ipaL3oylvjA",
+          "title": "Happy Breeze"
+        },
+        {
+          "id": "id_mqqi493i_2j",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달달한 꽃술과 꽃전의 향으로 코가 간지럽습니다. 분수대에서는 분홍색 꽃술이 계속 쏟아지고, 자그마한 화덕들이 줄지어 붙은 벽에선 꽃전을 만들 수 있습니다. 값을 치를 필요는 없지만, 직접 뜨고 만들어야 하는 식입니다."
+        },
+        {
+          "id": "id_mqqi493i_2k",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "대놓고 꽃술을 뜹니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "주인장이 와서 제재합니다. \"청소년에겐 팔지 않습니다.\""
+        },
+        {
+          "id": "id_mqqi493h_16",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "은밀 행동",
+          "grade": "보통",
+          "standard": "40",
+          "roll": "56",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqi493i_2n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "꽃전을 만드는 쪽으로 가려는 척하다가 다시 꽃술을 뜨려 했지만..."
+        },
+        {
+          "id": "id_mqqi493i_2o",
+          "type": "narration",
+          "emphasis": false,
+          "text": "\"거참, 팔지 않는대도. 술을 마시고 싶으면 얌전히 몇 년만 기다리셔.\" 주인장이 엄하게 말하며 둘을 쫓아냅니다."
+        },
+        {
+          "id": "id_mqqi493i_2p",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "쳇..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2q",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "앗, 꽃전도 못 먹었네."
+            },
+            {
+              "kind": "narr",
+              "text": "아쉬운 듯 중얼거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2r",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "너무해! 꽃전은 맛보게 해주지..."
+            },
+            {
+              "kind": "narr",
+              "text": "아쉬운 듯 입맛을 다시다가. 가게를 노려봅니다. 제가 먼저 판매하지 않는 것을 슬쩍하려고 했던 사실은 생각나지 않는 듯, 가게를 향해 메롱하고는. 뒤를 돕니다."
+            },
+            {
+              "kind": "line",
+              "text": "사실, 별 거 아니었을거야! 우린 함께니까 이제 더 재밌는 걸 즐기면 되거든."
+            },
+            {
+              "kind": "narr",
+              "text": "괜히 입맛을 다시며 먹거리 장터로 이동합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_2s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "다양한 음식을 판매하고 있습니다. 신선한 채소와 기름을 듬뿍 넣어 볶앙낸 파스타, 파릇파릇한 샐러드에 화려한 꽃장식이 더해진 요리, 이것저것 넣고 펄펄 끓인 닭고기 수프, 포슬포슬한 촉감의 갓 구운 빵까지."
+        },
+        {
+          "id": "id_mqqia4u7_4r",
+          "type": "narration",
+          "emphasis": true,
+          "text": "정신력 판정"
+        },
+        {
+          "id": "id_mqqi493h_17",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "정신력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "5",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqqi493i_2v",
+          "type": "narration",
+          "emphasis": false,
+          "text": "아까 아침을 배부르게 먹어서인지, 아직은 배가 고프지 않습니다."
+        },
+        {
+          "id": "id_mqqi493h_18",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "데시",
+          "item": "정신력",
+          "grade": "보통",
+          "standard": "45",
+          "roll": "18",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqi493i_2y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "데시도 그다지 배가 고파보이지는 않습니다. 그래도 간단한 간식 정도는 먹을 수 있지 않을까요?"
+        },
+        {
+          "id": "id_mqqi493i_2z",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "데시를 향해 물어봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "뭐 먹고 싶은 거 있어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_30",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음...배는 안 고픈데...저 빵은 어때?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_31",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "빵이라면 들고 다니면서 천천히 먹을 만 할 것 같습니다."
+            },
+            {
+              "kind": "line",
+              "text": "좋아!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_32",
+          "type": "narration",
+          "emphasis": false,
+          "text": "빵을 파는 가게로 가자, 표지판이 하나 달려 있습니다."
+        },
+        {
+          "id": "id_mqqiau1k_4s",
+          "type": "narration",
+          "emphasis": true,
+          "text": "빵을 사면 포춘쿠키를 하나씩 드립니다!"
+        },
+        {
+          "id": "id_mqqi493i_33",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "몇년 전의 기억이 떠오릅니다. 그때도 밥을 먹고 선생님께 받았던 기억이... 재밌을 거 같아요!"
+            },
+            {
+              "kind": "line",
+              "text": "하나씩 사볼래? 아니면 하나 사서 나눠먹어도 좋고!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_34",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "포춘 쿠키가 궁금하니까 하나씩 사보자."
+            },
+            {
+              "kind": "narr",
+              "text": "그러고보니 데시에겐 포춘 쿠키가 처음일지도 모릅니다. 그때도 람피온들만 받은 거였으니까요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_35",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "무슨 빵 먹을거야?"
+            },
+            {
+              "kind": "narr",
+              "text": "사실 빵의 종류는 중요하지 않지만 ㅡ오로지 포춘쿠키를 위한 구매이니까요ㅡ 이왕이면 맛있고 좋아하는 걸로 사야지요. 주머니를 뒤적거리며 돈을 꺼내둡니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_36",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "매대를 찬찬히 보다가, 크루아상을 가리킵니다. 안에 딸기크림이 든 크루아상인 것 같습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_37",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "딸기크림 크루아상을 가리키며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "이거 두 개 주세요! 포춘쿠키도 두 개 주시는 거 맞죠?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_38",
+          "type": "narration",
+          "emphasis": false,
+          "text": "가게 주인은 웃으며 그렇다고 합니다. 밑에서 종이봉지를 꺼내 크루아상을 2개 담아 주고는, 옆의 바구니에서 포춘 쿠키를 뽑아가라고 합니다. 이런 건 자기가 뽑아야 한다면서요."
+        },
+        {
+          "id": "id_mqqi493i_39",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "돈을 건넵니다... 도둑이 될 순 없어요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "\"아이고, 내 정신을 봤나. 고마워요.\""
+        },
+        {
+          "id": "id_mqqi493i_3b",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "당연한 일이지만 뿌듯합니다. 데시를 끌고 옆의 바구니로 향합니다. 냅다 자기 것을 하나 뽑고 데시에게 눈짓합니다. 어서 뽑으라고요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3c",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "눈을 반짝이며 포춘 쿠키 하나를 집어듭니다. 그러고는 바삭 깨뜨려 열어 쪽지를 꺼내 읽습니다."
+            },
+            {
+              "kind": "line",
+              "text": "소원을 성취하기 위해선 추락해야 하는 법. 떨어지고자 한다면 가장 높은 곳으로 올라가세요. ...되게 오묘하다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3d",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "왜...추락해야하지?"
+            },
+            {
+              "kind": "narr",
+              "text": "흠 오묘하고 이상합니다. 제 것도 까볼까요. 빠작"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqibf6y_4t",
+          "type": "narration",
+          "emphasis": true,
+          "text": "길을 잃으면 꽃의 뼈를 꺾으세요. 부러진 뼈가 가리키는 방향이 곧 종착지입니다."
+        },
+        {
+          "id": "id_mqqi493i_3e",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "...포춘...이 맞나?"
+            },
+            {
+              "kind": "narr",
+              "text": "제 쪽지를 데시에게 읽어줍니다. 그러고는."
+            },
+            {
+              "kind": "line",
+              "text": "뭔가 내용이 다 조금 무섭네."
+            },
+            {
+              "kind": "narr",
+              "text": "선생님이 줬던 포춘쿠키 쪽지의 내용을 떠올립니다. 꽃을 꺾었더니 데시를 만났지요. 은근 포춘쿠키는 거짓말 하지 않는 것 같습니다. 염두에 둘 필요가 있네요. 데시의 것이 조금 걱정되지만... 소원을 성취한다는 건 좋은 뜻 아니겠어요? 긍정적으로 생각합시다."
+            },
+            {
+              "kind": "line",
+              "text": "그래도 길 잃는 건 안 좋으니까, 안 잃게 조심해야겠다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3f",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고개를 끄덕이며 달리아의 손을 꼭 잡습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3g",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "간이 매대로 향합니다. 친구들에게 줄 선물을 살 필요가 있으니까요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3h",
+          "type": "narration",
+          "emphasis": false,
+          "text": "축제의 기념품을 판매 중입니다. 잘 말린 꽃으로 만든 장신구, 정교한 조화, 투명한 액체 안에서 흔들리는 하바리움, 꽃무늬가 인쇄된 원피스와 셔츠 등 다양한 기념품을 구매할 수 있습니다.<br>달리아와 데시가 간이 매대 앞을 지나가면 너나 할 것 없이 많은 장사꾼이 자신이 파는 물건을 추천합니다."
+        },
+        {
+          "id": "id_mqqibsts_4u",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"사랑이 이루어지는 반지는 어떠신가요? 유리구슬 안에 작은 꽃을 넣어 아주 아름답습니다. 사랑하는 이에게 선물한다면 영원한 사랑을 이뤄줄 거예요!\"<br>\"선물용으로는 목걸이가 좋죠. 이 호박 목걸이로 말할 것 같으면, 안에 예쁜 곤충이나 꽃을 박제한 희귀품입니다. 다른 곳에선 구매할 수 없어요!\"<br>\"그 사람이 당신을 좋아할까요? 궁금하지 않으십니까? 꽃점 치는 방법과 해설문이 적힌 서적이 단돈 3유로!\"<br>\"봉숭아 물이라고 아십니까? 손끝을 예쁘게 물들이는 건데.....\"<br>정신력 판정"
+        },
+        {
+          "id": "id_mqqi493h_19",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "정신력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "28",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqi493i_3k",
+          "type": "narration",
+          "emphasis": false,
+          "text": "다들 가격에 비해 퀄리티가 조잡합니다. 꽃은 싸구려 조화인지 색이 얼룩덜룩하고, 보석은 플라스틱같은 빛깔입니다. 꽃점이라니, 그냥 꽃잎을 떼는 게 전부인 것 아닌가요? 이런 호객 행위에는 넘어가지 않습니다."
+        },
+        {
+          "id": "id_mqqi493i_3l",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "날카로운 눈빛으로 살핍니다. 저런 조잡한 것들을 선물 할 수는 없습니다."
+            },
+            {
+              "kind": "narr",
+              "text": "데시에게 속삭입니다."
+            },
+            {
+              "kind": "line",
+              "text": "여기는 다 구린 것들밖에 없다. 나중에 선물 사줄게!"
+            },
+            {
+              "kind": "narr",
+              "text": "그러곤 짓궂게 웃으며 광장으로 데시를 이끕니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3m",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "어, 어어, 고마워...!"
+            },
+            {
+              "kind": "narr",
+              "text": "아직 받지도 않았는데 뭐가 고맙다는 건지, 얼결에 감사인사를 하며 따라갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "거대한 <b>꽃나무</b>의 주변을 사람들이 빙글빙글 돌며 춤추고 있습니다. 그 옆에 자리한 악단은 축제에 어울릴만한 곡을 연주하며 흥을 돋우고 있습니다. 축제를 즐기는 인파로 인해 정신없이 왁자지껄합니다.<br>달리아는 주변을 둘러보다 <b>새하얀 옷을 입은 여인</b>과 눈이 마주칩니다."
+        },
+        {
+          "id": "id_mqqi493i_3o",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "눈 마주친 사람은 무시하면 안됩니다! 뭐가 안되는지 모르겠지만, 예의에 어긋나는게 아닐까요? 고개를 꾸벅이며 새하얀 옷을 입은 여인에게 다가가 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "안녕하세요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "큼직한 바구니를 든 여인은 화려한 화관을 쓰고 있습니다. 훌쩍 다가와 바구니에서 화관을 두 개 꺼내어 씌워줍니다."
+        },
+        {
+          "id": "id_mqqi493i_3q",
+          "type": "dialogue",
+          "speaker": "여인",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "축제는 재미있게 즐기고 계시나요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3r",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "데시를 슬쩍 봅니다. 같이 있는데 뭔들 재미가 없겠어요!"
+            },
+            {
+              "kind": "line",
+              "text": "네!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3s",
+          "type": "dialogue",
+          "speaker": "여인",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "다행이네요, 그럼 연극도 보시면 더 즐거운 축제가 되지 않을까요? 곧 시작한답니다. 시간 내어 와주시면 좋겠어요."
+            },
+            {
+              "kind": "narr",
+              "text": "허름해 보이는 천막을 가리킵니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3t",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "곧이요? 바로 시작해요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3u",
+          "type": "dialogue",
+          "speaker": "여인",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "10분 남았답니다. 표는 저쪽에서 구매할 수 있어요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3v",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "십 분이면... 정말 곧이네요. 감사하다는 말 대신 고개를 격하게 꾸벅이며 표를 구매하러 갑니다. 데시의 의향은 묻지 않았지만 당연히 같이 보지 않을까요? 두 장을 구매합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_3w",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "당연한 듯이 따라갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqicn5l_4v",
+          "type": "bgm",
+          "ytId": "CTAgZdFG5vs",
+          "title": "사의 찬미 - 난 그런 사랑을 원해"
+        },
+        {
+          "id": "id_mqqi493i_3x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "표를 구매하고 천막 안으로 들어가면, 내부는 무척 허름하고 누추합니다. 그래도 무대는 그럴싸하게 꾸며져 있습니다. 사람들이 많아 몸을 구겨 넣어야 간신히 두 사람분의 자리가 만들어집니다.<br>달리아와 데시가 자리에 앉으면, 연극이 시작됩니다. 천장에 매달린 조명이 어둠을 가르며 쏟아지고, 가면을 쓴 주인공의 독백으로 이야기는 시작됩니다."
+        },
+        {
+          "id": "id_mqqidaot_4w",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"나는 람피온. 영웅이자 꽃을 꺾고 나뭇가지를 태울 자로소이다.\""
+        },
+        {
+          "id": "id_mqqi493i_3y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "영웅 람피온이 불타지 않는 나뭇가지를 찾아 여정을 떠나며 극이 시작됩니다.<br>그는 여정 중 어떤 왕국의 괴물에 대해 듣습니다.<br>흉악하고 차가운 괴물. 숨결 한 번으로 성이 얼어버리며, 두 번의 한숨을 내쉬면 나라가 얼음 속에 갇힌다는 무시무시한 재앙이었습니다. 람피온은 기꺼이 괴물을 물리치기 위해 왕 앞에 나서고, 엄숙한 신탁이 내려옵니다."
+        },
+        {
+          "id": "id_mqqidiqh_4x",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"꽃의 뼈를 꺾으면 그것이 마땅히 영웅을 위한 열쇠가 될 것입니다.\"<br>\"벽을 허물어 새길을 내고 호수를 갈라 땅을 내니 영웅은 이를 기회로 삼으시오.\""
+        },
+        {
+          "id": "id_mqqi493i_3z",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그는 담대히 미로에 들어가, 수많은 수수께끼를 풀고 함정을 해치우며 앞으로 나아갑니다. 비극을 부수고 승리를 거머질 영웅! 람피온은 마침내 미로의 끝에서 괴물이라 부를 수 없는 괴물과 마주칩니다. 무척 인간다웠거든요.<br>그리하여 괴물을 즉시 쳐 죽이지 못하고 고뇌합니다. <i>같은 괴물인 우리는 어째서 함께 서지 못하고 용사와 재앙이라는 위치로 마주하게 된 걸까요?</i><br>람피온은 괴물을 동정하고, 이해했습니다. 가여운 동족을 태워죽여 예우를 다하곤, 미로에 무덤을 세웁니다.<br>그러나 미로의 끝까지 도달해서도 출구는 찾을 수 없었습니다. 꽃의 뻐를 꺾으라 하였으나 꽃은 커녕 이파리 하나 보이지 않습니다. 신탁 또한 그를 버린 것이 분명합니다."
+        },
+        {
+          "id": "id_mqqidn1g_4y",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"아, 한날한시에 태어난 괴물과 괴물을 단숨을 처치하고자 하는가!\""
+        },
+        {
+          "id": "id_mqqi493i_40",
+          "type": "narration",
+          "emphasis": false,
+          "text": "신의 뜻을 이해한 그가 함께 죽고자 괴물의 무덤에 눈물을 떨구었을 때.....<br>무덤에서 한 송이의 장미가 피어납니다. 아름다운 분홍색 장미.<br>람피온이 홀린 듯이 그 장미를 꺾자, 줄기는 굽이치며 열쇠의 형태를 이룹니다.<br>그가 담벼락에 열쇠를 꽂으면 미궁의 유일한 문이 나타납니다. 열린 문 너머로 환한 햇살이 쏟아지고 있었습니다.<br>미로를 벗어난 람피온은 성으로 돌아가 왕에게 고합니다.<br><i></i>\"괴물은 죽었으며, 다시는 당신의 나라를 위협하지 않을 것입니다.\""
+        },
+        {
+          "id": "id_mqqi493i_41",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그에 크게 감복한 왕은 람피온에게 왕국의 일원이 될 것을 권하였지만, 람피온은 거절합니다. 나뭇가지를 찾기 위한 여정은 끝나지 않았기 때문입니다.<br>거절당한 왕은 극히 노하여 영웅을 내쫓습니다. 사람들은 괴물의 시체를 가져오지 않은 람피온을 거짓말쟁이라 조롱합니다.<br>명예를 잃은 영웅은 끝나지 않을 것처럼 길고, 험한, 목적지가 보이지 않는 여행을 계속합니다......"
+        },
+        {
+          "id": "id_mqqidwrt_4z",
+          "type": "narration",
+          "emphasis": true,
+          "text": "지능 판정"
+        },
+        {
+          "id": "id_mqqi493h_1a",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "65",
+          "roll": "38",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqi493i_44",
+          "type": "narration",
+          "emphasis": false,
+          "text": "연극을 관람하는 내내 기시감이 듭니다. 특히 장미가 열쇠로 변하는 부분에서 등장한 소품은 <i>달리아가 데시를 저택 내부로 들일 때 사용했던 것</i>과 아주 비슷한 모양입니다.<br>원인 모를 위화감에 잠시 멍해질 무렵 막이 내립니다. 안타까운 결말이었네요. 무대 위로 배우들이 나와 손을 잡고 인사하면, 그대로 연극의 끝입니다.<br>귀가 먹어버릴 것 같은 박수 수로, 이어서 조명이 밝아지고 사람들이 천막 밖으로 빠져나가기 시작합니다. 달리아와 데시도 인파 속에 휩쓸려 밖으로 나옵니다."
+        },
+        {
+          "id": "id_mqqi493i_45",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이게 대체 무슨 연극이지..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_46",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "여운에 잠긴 듯 한참 말이 없다가 입을 엽니다."
+            },
+            {
+              "kind": "line",
+              "text": "...다른 데도 가볼까?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_47",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "데시도 무언가를 느낀 걸까요? 여운에 잠길 만한 연극이었는지 되짚어 보지만 계속 드는 감정은 위화감과 기시감 뿐입니다."
+            },
+            {
+              "kind": "line",
+              "text": "그래, 근데 그 전에... 연극 어땠어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_48",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...묘했어. 신탁이 정말로 거짓말이었던 걸까? 꽃의 뼈가 뭐였던 걸까.."
+            },
+            {
+              "kind": "narr",
+              "text": "생각에 잠겨 있습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_49",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "머릿속이 어지럽습니다. ...뭐든 닥치게 되면 알지 않을까요? 일단은 눈 앞에 있는 꽃나무에 시선을 던집니다."
+            },
+            {
+              "kind": "line",
+              "text": "...일단 마저 구경하자! 즐기러 왔으니 고뇌의 시간은 잠시 넣어두자구."
+            },
+            {
+              "kind": "narr",
+              "text": "생각에 잠긴 데시를 끌고 꽃나무로 향합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqielxz_50",
+          "type": "bgm",
+          "ytId": "jtFDklau8o0",
+          "title": "Piano Man"
+        },
+        {
+          "id": "id_mqqi493i_4a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "분홍빛을 띤 꽃이 흐드러지게 핀 꽃나무입니다. 모란과 벚꽃 사이의 크기와 색감을 가진 나무는 다른 어디도 아닌 달리아의 고향에서만 피는 특별한 꽃입니다. 마치 플라워란 이 꽃을 가리키는 이름이기도 하죠.<br>꽃나무 아래에는 꽃잎을 닮은 색깔의 종이가 넉넉하게 갖춰져 있습니다. 이 종이에는 소원을 적어 매달거나 불태울 수 있다고, 나무 옆에 서 있던 축제 관리 직원이 설명합니다."
+        },
+        {
+          "id": "id_mqqi493i_4b",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나무에 거는 종이에는 보통 지키는 내용의 소원이 적혀 있습니다."
+            },
+            {
+              "kind": "line",
+              "text": "지금 가진 것, 지금 사랑하는 사람, 지금 자신의 자리...... 현상 유지를 원하고 언제까지나 지금 같기를 바란다면 나무에 걸어 소원을 빕니다. 거대한 무언가에게 보호받길 바라는 거죠."
+            },
+            {
+              "kind": "line",
+              "text": "반면 태우는 종이에는 보통 성취를 기원하는 내용이 적혀있습니다."
+            },
+            {
+              "kind": "line",
+              "text": "앞으로 갖고 싶은 것, 앞으로 얻길 바라는 사랑, 앞으로의 미래, 도전을 원하고 변화를 기대한다면 종이를 태워 소원을 빕니다. 여태까지의 과거를 대가로 바칠 테니 미래를 달라는 퍼포먼스 성향이 강해요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_4c",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "조용히 종이에 무언가를 저고 있습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_4d",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "건들면 안되겠다... 나는 뭘 적지... 태울까? 걸어야할까? 잠시 고민에 빠지지만 금방 결론을 내립니다. 우린 나아가야 하니까요. 행복하고 안정적인 미래를 갈망하는 것은 어떤가요? 지금보다 더 나은 미래를요. 종이에 서슴없이 적습니다. '모두와 행복한 미래를 즐기는 것'"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_4e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "데시는 다 적은 듯 종이를 곱게 접고는 끈을 가져다 나뭇가지에 매답니다. 분홍색 종이가 바람에 휘날리는 것이 꼭 꽃잎 같습니다."
+        },
+        {
+          "id": "id_mqqi493i_4f",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "뭐라 적었는지 봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqifddy_51",
+          "type": "narration",
+          "emphasis": true,
+          "text": "달리아와 계속 행복하게 해주세요."
+        },
+        {
+          "id": "id_mqqi493i_4g",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "크게 적혀진 제 종이 아래 작은 공간에 작게 욱여 넣습니다. '데시는 무조건 함께' 라고요."
+            },
+            {
+              "kind": "narr",
+              "text": "아무 일도 없었다는 듯, 뿌듯하게 웃습니다."
+            },
+            {
+              "kind": "line",
+              "text": "어떻게 태우면 되나요?"
+            },
+            {
+              "kind": "narr",
+              "text": "직원에게 묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_4h",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "여기 나무 아래 모닥불이 있으니, 여기에 태우면 된답니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_4i",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "냅다 태운다. 재를 손으로 휘적이며 날린다. 꼭 이루어지길 바라며!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_4j",
+          "type": "narration",
+          "emphasis": false,
+          "text": "타다닥 소리를 내며 타들어가는 불꽃 너머로 더 붉은 태양이 보입니다. 어느새 해가 기울고 있습니다.<br>지는 석양은 불꽃이 되어 지평선을 적시고, 땅이 불타는 것처럼 더위가 무성합니다. 꼭, 여름 같네요. 여전히 악기 소리는 꺼지지 않고, 짙은 꽃향기에 정신이 아득해집니다.<br>그때, 데시가 문득 달리아의 손을 잡아당깁니다."
+        },
+        {
+          "id": "id_mqqi493i_4k",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "내가 무엇을 해야 하는지 이제 알겠어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqi493i_4l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "의미심장한 말을 툭 흘리면서요."
+        }
+      ]
+    },
+    {
+      "id": "id_mqqifro7_52",
+      "title": "III. 유령이 머무는 신전",
+      "blocks": [
+        {
+          "id": "id_mqqigxjf_82",
+          "type": "bgm",
+          "ytId": "VagES3pxttQ",
+          "title": "Sociopath"
+        },
+        {
+          "id": "id_mqqigtqc_5f",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"이 마을에서 가장 높은 곳으로 데려다줄래?\"<br>지능 판정"
+        },
+        {
+          "id": "id_mqqigtqc_53",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "65",
+          "roll": "61",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqigtqc_5i",
+          "type": "narration",
+          "emphasis": false,
+          "text": "마을에서 가장 높은 곳은 언덕 위 <b>버려진 신전</b>입니다.<br>종교란 평화로울수록 민심에서 멀어지는 법, 해마다 여는 축제로 풍족한 수입을 얻는 마을에서 신이란 더는 매달릴 대상이 아니므로, 사실상 버려진 장소입니다. 달리아는 그 위치를 잘 알고 있습니다."
+        },
+        {
+          "id": "id_mqqigtqc_5j",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "왜?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5k",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "소원을 성취해야 하니까. 포춘 쿠키가 그렇게 말했잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "조곤조곤한 목소리로 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5l",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "하지만..."
+            },
+            {
+              "kind": "narr",
+              "text": "데시의 포춘 쿠키 내용을 떠올립니다."
+            },
+            {
+              "kind": "line",
+              "text": "떨어져야한다며."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5m",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그저 미소짓습니다."
+            },
+            {
+              "kind": "line",
+              "text": "나는 소원을 꼭 이루고 싶어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5n",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그럼 나랑 손 놓지 않기로 약속하면 데려다 줄게."
+            },
+            {
+              "kind": "narr",
+              "text": "불안합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5o",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "알았어. 꼭 잡고 있을게."
+            },
+            {
+              "kind": "narr",
+              "text": "차가운 손가락을 달리아의 손가락 사이로 끼워 잡습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5p",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "찜찜하지만. 데시가 먼저 요구했던 적이 많았던가요? 물론 있기야 했지만 ㅡ그리고 항상 무언가의 사건이 일어나긴 했지만ㅡ 소원을 이루고 싶다는 사랑스러운 아이의 말을 어찌 거부할 수 있겠습니까. 달리아는 데시를 버려진 신전으로 데려갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5q",
+          "type": "narration",
+          "emphasis": false,
+          "text": "평평한 마을을 벗어나면 축제로 한참 떠들썩하던 거리는 점차 조용해지고, 야트막한 언덕길이 나옵니다.<br>봄을 맞아 새순이 고개를 내밀었는지 좌우의 언덕길은 연한 녹색을 띠고 있습니다. 희고 동그란 토끼풀을 밟으며 오르고 오르다 보면 허물어진 신전의 <b>담벼락</b>이 보입니다.<br>허물어진 담벼락의 단면이 우둘투둘합니다. 바닥에 떨어진 <b>돌조각</b>들이 반짝입니다. 담벼락은 드문드문 떨어져 있는 형태인데, 총 열두 개가 세워져 있으며 <b>벽화</b>가 그려져 있습니다. 담벼락 너머에는 <b>꽃밭</b>이 펼쳐집니다."
+        },
+        {
+          "id": "id_mqqigtqc_5r",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "돌조각을 살핍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "황혼을 받아 반짝이는 돌조각들이 바닥에 산재했습니다. 붉음으로 시작해 황금으로 끝나는 색. 일몰을 담은 양 이글거리며 타오르는 광채. 눈물 모양으로 섬세하게 세공된......<br>람피온의 씨앗.<br>바닥에 떨어진 돌조각들은 모두 람피온의 씨앗입니다. 섬세하게 가공된 단면으로 햇빛이 떨어지면, 투명하게 관통하여 바닥으로 빛무리를 뿌립니다.<br>람피온의 저택이 아닌 곳에, 람피온이라곤 있지도 않을 이곳에, 어째서 이것들이 버려져 있는 걸까요?"
+        },
+        {
+          "id": "id_mqqigtqc_5t",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "주워서 살펴봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5u",
+          "type": "narration",
+          "emphasis": false,
+          "text": "람피온의 씨앗은 손바닥 아래에서 천천히 고동칩니다. 씨앗을 줍는 순간, 씨앗의 온도가 기하급수적으로 상승합니다. 화상을 입을 것처럼 뜨겁게 달궈집니다."
+        },
+        {
+          "id": "id_mqqii9ma_83",
+          "type": "narration",
+          "emphasis": true,
+          "text": "건강 판정"
+        },
+        {
+          "id": "id_mqqigtqc_54",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "건강",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "93",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqigtqc_5x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "손바닥의 피부는 붉게 달아오르고 씨앗은 녹아내려 흔적도 없이 사라졌습니다. 두근, 두근, 두근. 심장이 뛰는 속도가 거세지고 귀며 뺨 언저리가 뜨겁게 달아오릅니다."
+        },
+        {
+          "id": "id_mqqiii27_84",
+          "type": "narration",
+          "emphasis": true,
+          "text": "HP -1"
+        },
+        {
+          "id": "id_mqqigtqc_5y",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "재빠르게 손을 털어내려하지만 씨앗은 이미 녹아내린 후입니다. 람피온의 씨앗을 다른 람피온이 만지면 안되는 것일까요? 빨라진 심장 박동과 뜨거워진 뺨에 당황하며 정신없이 고개를 휘젓다가. 묘한 표정으로 데시를 바라봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "...뜨거웠어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_5z",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "괜찮아?"
+            },
+            {
+              "kind": "narr",
+              "text": "걱정스러운 눈빛으로 붉어진 손을 매만집니다. 서늘하니 한결 기분이 나아지는 온도입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_60",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...안 괜찮았는데... 네가 차가워서 다행이야."
+            },
+            {
+              "kind": "narr",
+              "text": "데시가 만져주는 것으로 잠시간 숨을 고르고 벽화를 봅니다. 대체 여긴 뭐지."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqc_61",
+          "type": "narration",
+          "emphasis": false,
+          "text": "떨어진 담벼락들은 꼭 비석처럼 보입니다. 흰 벽 위에 그려진 화풍은 거칠고 투박하지만 섬세한 이야기를 담고 있습니다. 벽화 아래에는 글씨가 쓰여 있는데 아주 오랜 세월을 버텼는지 풍화되어 제대로 남은 것이 거의 없습니다."
+        },
+        {
+          "id": "id_mqqiivm6_86",
+          "type": "handout",
+          "style": "paper",
+          "title": "첫 번째 벽화",
+          "body": "<i>붉은 머리카락과 황금색 눈동자를 가진 아이가 태어났습니다. 아이는 스스로 빛나고 있으며 그를 안은 아비는 타죽었습니다. 아이의 탄생을 축하하는지 검은 나뭇가지 끝에서 별이 빛나고 있습니다.</i>",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqc_62",
+          "type": "narration",
+          "emphasis": true,
+          "text": "모국어 판정"
+        },
+        {
+          "id": "id_mqqigtqc_55",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "모국어",
+          "grade": "보통",
+          "standard": "30",
+          "roll": "87",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqigtqc_65",
+          "type": "narration",
+          "emphasis": false,
+          "text": "벽화 아래에 쓰인 글씨가 너무 풍화되어 읽기 힘듭니다."
+        },
+        {
+          "id": "id_mqqijhtv_87",
+          "type": "handout",
+          "style": "paper",
+          "title": "두 번째 벽화",
+          "body": "<i>성장한 붉은 머리카락의 청년이 신에게 기도를 드리고 있습니다. 제단에는 새끼 양과 살진 소의 좋은 부위, 백향목과 비싼 향유, 잘 영근 포도와 탐스러운 무화과가 활활 불타고 있습니다. 청년은 간절하게 손을 모으고 소원합니다.</i>",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqc_66",
+          "type": "narration",
+          "emphasis": false,
+          "text": "벽화 아래의 글씨는 하나도 남아 있지 않습니다."
+        },
+        {
+          "id": "id_mqqijsfo_88",
+          "type": "handout",
+          "style": "paper",
+          "title": "세 번째 벽화",
+          "body": "<i>활활 타오르는 불길 속에서도 흰 나뭇가지 하나가 생생하게 살아있습니다. 불길을 머금더니 더욱 향기로워집니다. 신은 그 나뭇가지로 흰 머리카락과 분홍색 눈동자를 가진 여인을 빚었습니다. 두 사람은 첫눈에 운명을 느끼고 끌어안습니다.</i>",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqc_67",
+          "type": "narration",
+          "emphasis": true,
+          "text": "모국어 판정"
+        },
+        {
+          "id": "id_mqqigtqc_56",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "모국어",
+          "grade": "보통",
+          "standard": "30",
+          "roll": "1",
+          "result": "대성공"
+        },
+        {
+          "id": "id_mqqigtqc_6a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "벽화 아래에는 <i>미뉴에트</i>라고 적혀 있습니다. 여신, 미뉴에트의 탄생 장면인 걸까요?<br>그러나 그는 여신이라기보단......"
+        },
+        {
+          "id": "id_mqqikdzr_89",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqqigtqc_57",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "86",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqigtqc_6d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "창백하고 흐릿하여 유령처럼 보입니다."
+        },
+        {
+          "id": "id_mqqikmby_8a",
+          "type": "handout",
+          "style": "paper",
+          "title": "네 번째 벽화",
+          "body": "담벼락은 완전히 무너져 벽화를 알아볼 수 없습니다.",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqc_6e",
+          "type": "handout",
+          "style": "paper",
+          "title": "다섯 번째 벽화",
+          "body": "지워진 걸까요? 아니면 덧씌워진 걸까요? 그림은 도통 알아볼 수 없도록 새까맣게 칠해져 있습니다. 바닥이 희게 칠해져 있지만 그뿐입니다. 어두컴컴하군요.",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqc_6f",
+          "type": "handout",
+          "style": "paper",
+          "title": "여섯 번째 벽화",
+          "body": "담벼락은 완전히 무너져 벽화를 알아볼 수 없습니다.",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqc_6g",
+          "type": "handout",
+          "style": "paper",
+          "title": "일곱 번째 벽화",
+          "body": "담벼락은 완전히 무너져 벽화를 알아볼 수 없습니다.",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqc_6h",
+          "type": "handout",
+          "style": "paper",
+          "title": "여덟 번째 벽화",
+          "body": "<i>여인의 발아래에 사람들이 엎드러져 있습니다. 한 치 앞을 구별하기 어려울 정도로 어두운 밤중에 그들은 차마 고개를 들지 못하고 울며......</i>",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqc_6i",
+          "type": "narration",
+          "emphasis": true,
+          "text": "심리학 판정"
+        },
+        {
+          "id": "id_mqqigtqc_58",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "심리학",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "63",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqigtqc_6l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "두려움에 떱니다. 벌을 받는 걸까요?"
+        },
+        {
+          "id": "id_mqqim03g_8b",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqqigtqc_59",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "93",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqigtqc_6o",
+          "type": "narration",
+          "emphasis": false,
+          "text": "엎드린 이들은 피부를 하나도 드러내지 않고 옷감으로 꼭꼭 숨겼습니다. 그림이니 온도를 느낄 순 없지만, 겨울날이었을지도 모릅니다. 그와 달리 여인은 꽤 가벼운 차림새네요.<br>벽화 아래의 글씨는 남아 있지 않습니다."
+        },
+        {
+          "id": "id_mqqigtqc_6p",
+          "type": "handout",
+          "style": "paper",
+          "title": "아홉 번째 벽화",
+          "body": "<i>이번에 미뉴에트의 발아래 떨어진 것은 피 묻은 칼입니다. 그리고 그녀는 양손에 잘린 머리와 박동하는 고깃덩어리를 들고 있습니다. 피에 젖어 더욱 붉은 머리카락과 검게 죽은 눈동자, 뽑혔음에도 박동하고 환히 빛나는 황금 덩어리.</i> <b><i>람피온의 머리와 심장</i></b> <i>입니다. 미뉴에트는 손을 들어 머리와 심장을 각각 우편의 하늘과 좌편의 하늘에 걸어 두었습니다.</i>",
+          "image": ""
+        },
+        {
+          "id": "id_mqqimm18_8c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "흐르는 피, 쏟아진 잔해를 집요하게 담아낸 그림을 보는 순간 직감합니다."
+        },
+        {
+          "id": "id_mqqimpf6_8d",
+          "type": "narration",
+          "emphasis": true,
+          "text": "지능 판정"
+        },
+        {
+          "id": "id_mqqimtpj_8e",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "21",
+          "roll": "65",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqigtqd_6s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "람피온과 미뉴에트! 언제나 빼앗기만 하던 그녀가 기어코 남은 목숨마저 빼앗고 만 것입니다. 취하고 훔치고 빼앗으며 잃고 사라지고 없어지는 운명은 지금도 연쇄되고 있습니다.<br>이것은 분명히 우리의 이야기이기도 하다는 확신이 듭니다. 이유를 설명할 수 없건만 의심은 일말도 들지 않습니다."
+        },
+        {
+          "id": "id_mqqin6ia_8f",
+          "type": "narration",
+          "emphasis": true,
+          "text": "불길한 현상을 본 달리아, 이성 판정 (0/1)"
+        },
+        {
+          "id": "id_mqqigtqc_5b",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "이성",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "44",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqigtqd_6v",
+          "type": "handout",
+          "style": "paper",
+          "title": "열 번째 벽화",
+          "body": "<i>우편에 달린 머리는 해가 되고 좌편에 달린 심장은 달이 되었습니다. 본디 하나여야 하는 것이니 갈라진 둘은 서로를 쫓고 하늘을 회전합니다. 심장이 박동할 때마다 줄어들었다 늘어나기를 반복하니 달이 차고 기우는 주기입니다.</i>",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqd_6w",
+          "type": "handout",
+          "style": "paper",
+          "title": "열한 번째 벽화",
+          "body": "<i>밤하늘의 먹구름에 숨어 등롱을 끌어안은 미뉴에트가 눈물을 흘립니다. 발치에는 가슴이 붉은 울새와 분홍색 꽃송이, 흰 가지를 가진 장미 나무가 그려져 있습니다. 흘리는 눈물은 점점이 흩어져 별이 됩니다.</i>",
+          "image": ""
+        },
+        {
+          "id": "id_mqqintjk_8g",
+          "type": "handout",
+          "style": "paper",
+          "title": "열두 번째 벽화",
+          "body": "담벼락은 완전히 무너져 벽화를 알아볼 수 없습니다. 보통 이대로라면 이야기는 끝이 나야 마땅할 텐데, 마지막 한 칸엔 어떤 풍경이 그려져 있던 걸까요?",
+          "image": ""
+        },
+        {
+          "id": "id_mqqigtqd_6y",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "멍하니 무너진 담벼락을 쳐다본 채로... 중얼거리듯, 제 옆의 미뉴에트를 향해 말하듯 중얼거립니다."
+            },
+            {
+              "kind": "line",
+              "text": "우리는 만나면 안 됐던 걸까?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_6z",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "운명이 그렇다 해도, 나는 따르지 않을 거야."
+            },
+            {
+              "kind": "narr",
+              "text": "제 사명을 거스르고 찻잔을 뺏어 마셨던 때처럼, 자기를 배신자라 부르는 이들을 불태웠던 때처럼 비장하게 읊조립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_70",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그래요. 직접 봐왔습니다. 제 찻잔을 뺏어 죽어가던 아이를 떠올립니다. 배신자라고 불렸지만 직접 불을 붙이던 데시를요. 제 손에 얽혀 있는 데시의 손을 더 꽉 잡습니다. 꽃밭으로 발을 디딥니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_71",
+          "type": "narration",
+          "emphasis": false,
+          "text": "머리가 조금 어지럽고 관자놀이가 지끈거립니다. 해가 지고 있는데도 유난히 날씨가 더운 것처럼 느껴집니다.<br>신전까지 오르는 길에는 수수하니 자그마한 토끼풀만 가득했는데, 버려진 신전의 담벼락 안에는 분홍색 꽃들이 무수히 만개했습니다.<br>모란과 벚꽃 사이의 크기와 색감을 가진 이 품종은 다른 어디도 아닌 달리아의 고향에서만 피는 특별한 꽃입니다. 마치 플라워란 이 꽃을 가리키는......"
+        },
+        {
+          "id": "id_mqqioh1e_8h",
+          "type": "narration",
+          "emphasis": true,
+          "text": "잠깐.<br>이 꽃의 이름이 정말 마치 플라워인가요?<br>정신력 판정"
+        },
+        {
+          "id": "id_mqqigtqc_5c",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "정신력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "40",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqigtqd_74",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아는 이전에 단 한번도 마치 플라워 축제에 참여한 적이 없습니다. 그야...... 봄 축젝도, 마치 플라워란 이름을 가진 꽃도 존재하지 않았으니까요.<br>달리아는 이미 이 꽃의 이름을 알고 있습니다.<br>봄의 한낮 같은 분홍색 꽃잎과 금세 사라질 듯 희미한 꽃술.<br><b>미뉴에트</b>입니다.<br>쨍쨍한 햇살 아래 미뉴에트는 활짝 꽃잎을 열고 달리아와 데시를 반기고 있습니다. 어째서 이 꽃을 알아보지 못했을까요. 어떻게 이 꽃이 달리아의 고향에 피어 있는 걸까요.<br>대체 왜,"
+        },
+        {
+          "id": "id_mqqigtqd_75",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이곳에 있을 리 없는 미뉴에트가......<br>데시와 눈이 마주칩니다.<br>깜빡이지 않는 시선은 분홍색."
+        },
+        {
+          "id": "id_mqqigtqd_76",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...햇볕이 강하니까, 들어가서 얘기할까?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_77",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그래."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqip0cd_8i",
+          "type": "bgm",
+          "ytId": "Ez8EzRJ60CA",
+          "title": "사의 찬미 - 죽음의 비밀"
+        },
+        {
+          "id": "id_mqqigtqd_78",
+          "type": "narration",
+          "emphasis": false,
+          "text": "파빌리온 형태의 지붕 아래 세워진 신전은 청렴하고 순결한 흰색으로 칠해져 있습니다. 기다란 기둥 여덟 개가 사방으로 지붕을 지탱하고 테두리마다 아름다운 꽃과 기하학 문양이 섬세하게 새겨져 있습니다.<br>담벼락과 마찬가지로 지붕 일부와 기둥 몇 개는 마모되고 풍화되어 겨우 흔적만 남긴 채 구색을 갖추고 있습니다. 그러나 여전히 눈이 시릴 정도로 흰색입니다. 엷게 붉은 고운 색의 꽃밭과 밝고 선명하게 흰색의 건물이라니 낭만적이기 작이 없는데, 분위기는 스산하기 그지없습니다.<br>회랑을 따라 걷는 내내 달콤한 향기가 납니다. 달리아가 지겹게 맡던 미뉴에트의 향기입니다. 신전 내부에는 낮은 세 칸의 계단이 있고, 얕은 시내가 흐르고 있습니다. 가장 안쪽에 <b>여신의 조각상</b>과 <b>제단</b>이 있습니다.<br>어쩐지 오한이 들어 으슬으슬합니다. 옷깃을 여며 봐도 추위는 가시지 않고 머릿속과 목 안이 뜨겁습니다."
+        },
+        {
+          "id": "id_mqqigtqd_79",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "몸을 살짝 떨며, 여신의 조각상을 바라봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "품에는 등롱을 안고, 손끝에는 울새를 올린 여신은 아름답고 위엄이 넘치지만, 온통 석고로 빚어 희디희며 창백합니다. 발아래에는 얼기설기 엮은 흰 나뭇가지들이 쌓여 있습니다. 제물로 바쳐지는 것이 누구인지 알 수 없는 꼴이네요. 가시밭길을 걷는 것 같기도 하고요."
+        },
+        {
+          "id": "id_mqqipqda_8j",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqqigtqc_5d",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "5",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqqigtqd_7d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>이 땅에 열흘의 유예를 주리니</i><br><i>깨어 있는 자들은 친히 너희를 위하여 예비하신 등을 들고</i><br><i>향기로운 기름을 채워 세상 끝까지 밝힐지어다</i><br>조각상 아래에 적혀있는 문구의 일부입니다."
+        },
+        {
+          "id": "id_mqqigtqd_7e",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "제단을 살펴봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7f",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이제 숨쉬기가 버거울 정도로 열이 납니다. 눈 안쪽도 뜨거운 탓에 바짝 말라붙었는지 시야가 흐릿하게 일그러지곤 합니다.<br>제단에는 새끼 양과 살진 소의 좋은 부위, 백향목과 비싼 향유, 잘 영근 포도와 탐스러운 무화과는 커녕 아무것도 없습니다. 오래도록 버려진 신전이었다니 당연한 이야기입니다."
+        },
+        {
+          "id": "id_mqqigtqd_7g",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "달리아, 괜찮아? 얼굴이 빨개."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7h",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "숨을 불규칙적이게 몰아쉽니다."
+            },
+            {
+              "kind": "line",
+              "text": "...안 괜찮아."
+            },
+            {
+              "kind": "narr",
+              "text": "데시의 손을 더 꼬옥 잡습니다. 마지막 동아줄이라도 된 것 처럼요. 데시는 괜찮나요? 데시를 살펴봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7i",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그저 달리아가 걱정스러운 듯 안절부절못할 뿐 별다른 이상은 없어보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "<i>시간</i>이 얼마 안 남았나 봐."
+            },
+            {
+              "kind": "narr",
+              "text": "알 수 없는 말을 내뱉고선 심호흡을 합니다. 중요한 말을 하려는 듯이."
+            },
+            {
+              "kind": "line",
+              "text": "있잖아, 달리아. 겨울방학..기억나? 눈사람도 만들고...재밌었잖아."
+            },
+            {
+              "kind": "line",
+              "text": "그때 우린 람피온의 저택에 있었잖아. 우린 그다음, 다음, 또다시 다음의 방학도 저택에서 보냈어. 람피온의 저택은......아이들을 돌려보내지 않아."
+            },
+            {
+              "kind": "line",
+              "text": "이번이 예외인 게 아니야. 넌 한 번도 집으로 돌아가거나 갈 수 있었던 적이 없어. 이 마을은...... 네가 만들어낸 꿈속 공간이야."
+            },
+            {
+              "kind": "line",
+              "text": "10살, 처음 능력을 각성할 때처럼 람피온은 5년 주기로 여름이 시작되면 긴 열병을 앓는대. 현실의 넌 <i>아흐레</i>째 열병을 앓느라 못 일어나고 있어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7j",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나는....널 데려가려고 온 거야."
+            },
+            {
+              "kind": "narr",
+              "text": "숨을 내뱉듯 진실을 털어낸 후, 달리아의 손을 양손으로 꼭 잡습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7k",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "... 날 구해주러 온 거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7l",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "천천히 고개를 끄덕입니다. 흰 머리카락이 커튼처럼 살랑거립니다."
+            },
+            {
+              "kind": "line",
+              "text": "이 열병을 견디지 못하면 죽을 수도 있어. 그러니까....나는 소원을 이루기 위해, 달리아랑 행복하기 위해 왔어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7m",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "궁금한 게 있어."
+            },
+            {
+              "kind": "narr",
+              "text": "숨을 느리게 쉽니다."
+            },
+            {
+              "kind": "line",
+              "text": "왜 만나자마자 얘기해주지 않은거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7n",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나가는 방법을 몰라서...확실하지 않은 때에, 축제를 즐기고 있는 너에게 말해주는 건 너무 잔인한 것 같았어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7o",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고개를 끄덕입니다."
+            },
+            {
+              "kind": "line",
+              "text": "그러면 지금... 나가는 방법을 아는 거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7p",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "길을 잃으면 꽃의 뼈를 꺾어야 하고 소원을 이루려면 가장 높은 곳으로 올라가야 하는 거라잖아. 여태 꽃의 뼈가 뭔지 알 수 없었는데, 아마도......"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqiqhbr_8k",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"저걸 말하는 것 같아.\""
+        },
+        {
+          "id": "id_mqqigtqd_7q",
+          "type": "narration",
+          "emphasis": false,
+          "text": "데시가 가리킨 손가락 끝에는 미뉴에트 나무가 가지를 뻗고 있습니다.<br>신전 가장 안쪽에, 어느새 여신의 조각상은 자취를 감추고 같은 이름의 나무가 자라난 것입니다.<br>끝없이 얽히고 얽혀 하나의 거대한 군체를 이룬...... 가히 신성하다 여겨질 만큼 웅장한 나무. 이곳은 굴이 아니지만, 천장까지 닿을 만큼 높이 자란 것은 여전합니다.<br>어쩌면 그때와 같은 나무가 아닌가 고민할 수도 있습니다. 그러나 신전의 미뉴에트 나무에는 <b>꽃이 딱 한 송이만 피었습니다.</b><br>가지의 흰 표면에는 알파벳이 기어다니고 있습니다. 익숙한 철자가 눈에 밟히기 시작하면 그것은 곧 어떤 이의 이름이 됩니다."
+        },
+        {
+          "id": "id_mqqiqrrr_8l",
+          "type": "narration",
+          "emphasis": true,
+          "text": "데시."
+        },
+        {
+          "id": "id_mqqigtqd_7r",
+          "type": "narration",
+          "emphasis": false,
+          "text": "나가기 위해서는 꽃의 뼈를 꺾어야 합니다.<br>영웅 람피온은 미로의 끝에서 꽃을 꺾어 무사히 세계로 돌아갓습니다."
+        },
+        {
+          "id": "id_mqqigtqd_7s",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<b>그 꽃을 꺾으면 돌아갈 수 있을 거야.</b>"
+            },
+            {
+              "kind": "narr",
+              "text": "달리아의 손을 꼭 잡은 채로, 그 꽃의 가지를 쥐여줍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7t",
+          "type": "narration",
+          "emphasis": false,
+          "text": "나뭇가지가 희고 딱딱해 꼭 사람의 뼈를 만지는 것 같습니다. 하지만 무척 얄팍하기 때문에 조금만 손에 힘을 주어도 쉽게 분지를 수 있을 겁니다. 어렵지 않은 일이에요."
+        },
+        {
+          "id": "id_mqqir10m_8m",
+          "type": "narration",
+          "emphasis": true,
+          "text": "달리아, 꽃을 꺾겠습니까?"
+        },
+        {
+          "id": "id_mqqigtqd_7u",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이 꿈속 공간은 너 스스로 너를 가두기 위해 만들었으니까 네 꿈이 끝나면 나도 쫓겨날 거야. 같이 깨어나자."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7v",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소원을 이루고 싶다던 데시의 말을 떠올립니다. 저와 행복해지고 싶다는 소원을 말이에요. 데시의 소원과 제 소원이 이루어질려면 우리는 꼭 같이 깨어나야 합니다. 꼭이요..."
+            },
+            {
+              "kind": "line",
+              "text": "...그럼 내 소원도 이루어질 수 있을까"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqirawc_8n",
+          "type": "narration",
+          "emphasis": true,
+          "text": "심리학 판정"
+        },
+        {
+          "id": "id_mqqigtqc_5e",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "심리학",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "18",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqigtqd_7x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "데시는 진심으로 바라고 있습니다. 달리아가 깨어나서, <b>함께</b> 행복해질 수 있기를요."
+        },
+        {
+          "id": "id_mqqigtqd_7y",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...알지? 나 네가 없으면 행복할 수 없는 거?"
+            },
+            {
+              "kind": "narr",
+              "text": "손을 달달 떨며 가지를 꾹 쥡니다. 조금만 더 힘을 주면 분지를 수 있을 정도로요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_7z",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "천천히 고개를 끄덕입니다. 그리고 달리아의 손을, 손 안에 쥐어진 가지를 바라봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_80",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "꽃을 꺾습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqigtqd_81",
+          "type": "narration",
+          "emphasis": false,
+          "text": "가지를 꺾으면, 아찔한 현기증이 일더니......<br>이윽고 <b>암전.</b>"
+        }
+      ]
+    },
+    {
+      "id": "id_mqqis6g8_8o",
+      "title": "IV. 꽃의 뼈를 꺾으라",
+      "blocks": [
+        {
+          "id": "id_mqqiv5ko_9s",
+          "type": "bgm",
+          "ytId": "_iF7lkXKHlA",
+          "title": " .Goëtia."
+        },
+        {
+          "id": "id_mqqit5lm_8u",
+          "type": "narration",
+          "emphasis": false,
+          "text": "눈을 뜨면 달리아는 불타버린, 폐허가 된 숲속에 서 있습니다.<br>주위를 둘러보면 온통 잿더미만 가득합니다. 새 우는 소리도, 짐승의 형형한 눈동자도 없는......완전히 죽은 숲입니다.<br>주위의 나무들은 온통 검고, 몸통마다 일정한 간격을 두고 흰 지흔을 가지고 있습니다. 길게 그어진 자국들이 꼭 다닥다닥 달라붙은 눈알 같군요.<br>분명히 신전에서 데시와 돌아가는 방법을 상의 중이었는데 말이에요. 영문을 알 수 없습니다. 확실한 것은,. 이런 숲은 달리아의 마을에도 기억에도 전혀 없다는 겁니다."
+        },
+        {
+          "id": "id_mqqit5lm_8v",
+          "type": "narration",
+          "emphasis": false,
+          "text": "탄내가 자욱합니다. 우선은 이 숲을 벗어나는 게 좋겠습니다.<br>달리아가 걸음을 옮기자 눈 대신 붉은 불티가 흩날립니다. 그리고 그것이 잿더미에 떨어지면 화려한 장미가 피어납니다. 품종은 언제나 그랬든 람피온. 아름다운 광경이지만 있을 수 없는 일에 섬찟하기도 합니다.<br>어느새 탄내는 저물고 장미 향기가 가득합니다. 얼마나 걸은 걸까요. 장미 향기를 더는 맡지 못할 지경이 되면......<br>넓은 호수에 도착합니다. 완전히 얼어붙은 호수는 유리 같기도 하고 거울 같기도 합니다. 단단해 보이지만 겉보기만으로는 모르니 올라가지 않는 게 좋겠죠."
+        },
+        {
+          "id": "id_mqqitg9h_9n",
+          "type": "narration",
+          "emphasis": true,
+          "text": "지능 판정"
+        },
+        {
+          "id": "id_mqqit5lm_8p",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "65",
+          "roll": "61",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqit5ln_8y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "선생님의 방에서 본 사진 속 릭 호수의 정경과 비슷하다는 걸 알 수 있습니다.<br>다 불타버린 탓에 그 아름다운 풍경이 맞나 싶지만......하긴, 기사 내용도 화재 사건을 다루고 있었죠.<br>앞뒤가 맞아 떨어지네요.<br>그때, 말소리가 들립니다.<br>호수 정중앙에 어떤 남자가 서 있습니다. 조금 전까지만 해도 없었는데! 발소리도 들리지 않았는데 언제 저기에 올라선 건가요? 풍기는 분위기가 인간이라기엔 이질적입니다."
+        },
+        {
+          "id": "id_mqqitsc8_9o",
+          "type": "narration",
+          "emphasis": true,
+          "text": "듣기 판정"
+        },
+        {
+          "id": "id_mqqit5lm_8q",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "33",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqit5ln_91",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남자가 누군가를 저주하고 모욕하며 모독적인 말을 뱉고 있다는 걸 알아듣습니다. 달리아가 모르는 언어지만 뿌리 깊은 원한만은 피부 위를 따끔따끔 찌르곤 합니다."
+        },
+        {
+          "id": "id_mqqiu1b4_9p",
+          "type": "narration",
+          "emphasis": true,
+          "text": "근원을 알 수 없는 공포에 이성 판정 (0/1)"
+        },
+        {
+          "id": "id_mqqit5lm_8r",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "이성",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "48",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqit5ln_93",
+          "type": "narration",
+          "emphasis": true,
+          "text": "심리학 판정"
+        },
+        {
+          "id": "id_mqqit5lm_8s",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "심리학",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "22",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqit5ln_96",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남자는 폐허가 된 숲을 보고 이를 갈며 분노하고 있음을 알 수 있습니다.<br>한참 저주를 퍼붓던 남자가 고개를 휙 듭니다."
+        },
+        {
+          "id": "id_mqqiukxm_9q",
+          "type": "narration",
+          "emphasis": true,
+          "text": "은밀 행동 판정"
+        },
+        {
+          "id": "id_mqqit5lm_8t",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "은밀 행동",
+          "grade": "보통",
+          "standard": "40",
+          "roll": "5",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqqit5ln_99",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남자는 대수롭지 않게 고개를 돌립니다. 그가 호수를 바라보자 많던 물이 바짝 마르고, 그 아래로 크기를 가늠할 수 없는 거대하고 끔찍한 혼돈이 기어듭니다.<br>땅 아래 자리를 잡은 그것은 제일 먼저 흙을 덮어 지붕을 쌓고 람피온과 비슷하게 생긴 미뉴에트를 만들며, 꿈틀거리는 괴물을 낳습니다. 달리아는 숨어 모든 광경을 볼 수 있습니다.<br>흉측한 괴물은 꽃잎을 삼키고 곧 익숙한 얼굴로 일어서더니,"
+        },
+        {
+          "id": "id_mqqiuz34_9r",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"가서 람피온의 근원을 훔쳐오렴.\""
+        },
+        {
+          "id": "id_mqqit5ln_9a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<b><i>데시</i></b>가 걷습니다. 굴의 구불구불한 길을 걷고 걸어 뒷모습은 점점 작아지고 멀어집니다.<br>아, 데시는 이대로 람피온의 저택을 향할 테고, 우리는 철창 너머로 또다시 만나게 될 테지요."
+        },
+        {
+          "id": "id_mqqivjon_9t",
+          "type": "narration",
+          "emphasis": true,
+          "text": "달리아는 데시를 말리고 싶나요?<br>아니면, 그대로 두고 싶나요?"
+        },
+        {
+          "id": "id_mqqit5ln_9b",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "데시를 믿습니다. 운명에 저항한다고 했으니까요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqit5ln_9c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "생각하는 것과 동시에 확 몸이 뒤로 쏠리고,<br>누군가 어깨를 붙잡습니다."
+        },
+        {
+          "id": "id_mqqivnxe_9u",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"괜찮아\"<br>\"오직 그녀만이 너를 해칠 수 있다면, 너를 구할 수 있는 것도 오직 그녀뿐일테니.\""
+        },
+        {
+          "id": "id_mqqit5ln_9d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "낯선 목소리는 무척 부드럽습니다. 동시에 달리아는 큰 바람에 휩쓸립니다.<br>요란하게 불어오는 바람이 머리카락과 옷자락을 헤집고, 머리에 씌워진 화관을 저 멀리 날려버립니다. 그리고 이대로 바람에 꿰뚫려 죽을 것 같다고 느끼는 순간 발밑이 아득해집니다.<br><i>흐윽, 흑, 흐으으윽......</i><br>불길한 울음소리만이 추락하는 그 순간까지 집요하게 귀를 괴롭힙니다."
+        },
+        {
+          "id": "id_mqqivufd_9w",
+          "type": "bgm",
+          "ytId": "5C9ltv2Ei94",
+          "title": "The End Of the Story"
+        },
+        {
+          "id": "id_mqqivt2a_9v",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"달리아! 괜찮아?!\""
+        },
+        {
+          "id": "id_mqqit5ln_9e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "눈을 뜨면 데시의 얼굴이 보입니다.<br>걱정이 가득한 얼굴로 그는 달리아의 이마를 짚습니다. 피부에 닿는 체온이 차가워서 기분 좋습니다.<br>그런데, 날씨가 왜 이렇게 덥죠?"
+        },
+        {
+          "id": "id_mqqit5ln_9f",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "괜찮아? 정신이 들어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqit5ln_9g",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "으응. 데시, 너는 괜찮아?"
+            },
+            {
+              "kind": "narr",
+              "text": "누운 상태로 데시를 살핍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqit5ln_9h",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "지금 그게 문제가 아니야!"
+            },
+            {
+              "kind": "narr",
+              "text": "거의 울상이 된 표정으로 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqit5ln_9i",
+          "type": "narration",
+          "emphasis": false,
+          "text": "데시의 어깨너머로 보이는 태양이 왜인지 몹시 가깝습니다.<br>황혼이라지만 이건 좀 심하지 않......<br>......왜 계속 밤이 오지 않는 걸까요?<br>태양은 언제부터 저기 걸려있을 셈이죠?<br>언제까지?<br>아니, 다 떠나서"
+        },
+        {
+          "id": "id_mqqit5ln_9j",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<b>이 세계가 타들어가고 있어!</b>"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqit5ln_9k",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이 지독한 탄내란 대체 다 뭔가요?<br>달리아는 끔찍한 광경을 보게 됩니다.<br>오, 이런. 그 사이 세계가 멸망했던가요? 마을과 들판에 온통 불이 붙어 활활 타고 있습니다.<br>검게 죽은 나뭇가지가 축 늘어진 팔처럼 바닥으로 휘어지고, 건물 위로 매캐한 연기가 피어오르고 있습니다.<br>사람들은 공포에 질려 아우성칩니다.<br>신전과 꽃밭만 남긴 채 담벼락 바깥의 모든 것이 차근차근 불타 사라지고 있습니다. 달리아가 만들었다던 작은 세계는 무너지고 멸망하는 중입니다."
+        },
+        {
+          "id": "id_mqqit5ln_9l",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "꽃을 꺾었는데 돌아갈 수 없었어."
+            },
+            {
+              "kind": "narr",
+              "text": "결연한 시선으로 덧붙입니다."
+            },
+            {
+              "kind": "line",
+              "text": "하긴, 꽃의 줄기도 가지도 뼈라곤 부를 순 없지......"
+            },
+            {
+              "kind": "narr",
+              "text": "그리고 달리아의 손을 잡아선"
+            },
+            {
+              "kind": "line",
+              "text": "오직 나만이 너를 구하고 데리고 나갈 수 있다고 그랬어."
+            },
+            {
+              "kind": "narr",
+              "text": "자신의 목덜미에 대어주곤"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqit5ln_9m",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<b>뼈를 가진 꽃은 여기 있었는데.</b>"
+            },
+            {
+              "kind": "narr",
+              "text": "손등을 겹쳐 쥡니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqixno1_9y",
+          "type": "narration",
+          "emphasis": true,
+          "text": "당신을 훔치기 위해 태어나고,<br>당신에게 이름과 존재가치를 부여받고,<br>당신 때문에 세상에 홀로 되어,<br>당신이 개화시킨,<br>당신의 꽃.<br>미뉴에트."
+        },
+        {
+          "id": "id_mqqixno1_9z",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<b>달리아...이건 꿈이야.</b>"
+            },
+            {
+              "kind": "line",
+              "text": "<b>꺾어야 해...</b>"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqixno1_a0",
+          "type": "narration",
+          "emphasis": false,
+          "text": "점차 불이 그리는 원은 좁아지고, 좁아지고, 좁아집니다.<br>담벼락을 넘어 곧 불길이 쳐들어올 겁니다.<br>이미 태양이 쏟아지고 있어요.<br>시간이 얼마 남지 않았습니다. 많은 힘은 필요하지 않습니다.<br>모름지기 꿈이란 말도 안 되는 일들이 일어나는 곳이니까요.<br>자, 그러니 달리아."
+        },
+        {
+          "id": "id_mqqixno1_a1",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>어서......</i>"
+        },
+        {
+          "id": "id_mqqixno1_a2",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "나를 뺏으러 온, 결국 운명에 저항하던 아이를 제 눈물로 살렸는데. 다시 제 손으로 꺾어야 하는 걸까요? 아무리 꿈이라고 해도 말이에요. 달리아는 하염없이 눈물을 흘립니다. 상상으로도 불가능한 것을 이토록 생생한 꿈 속에서 어떻게 실현하겠어요. 겹쳐 쥔 손이 바들바들 떨립니다."
+            },
+            {
+              "kind": "narr",
+              "text": "견딜 수 없는 상황에 오히려 웃음이 비집고 새어 나옵니다. 눈물은 흐르고 입꼬리는 떨리며 이상하게 올라가 있습니다. 그래요, 내가 이름을 지어준, 나의 꽃... 나의 데시. 그녀의 시작을 제가 만들었으니 끝맺음도 나의 몫입니다. 정말 이기적인 생각이에요. 하지만 어쩔 수 없습니다. 달리아는 그런 아이인걸요. 욕심이 많은 아이에게 온, 유일무이한... 귀중한 존재. 달리아는 그것을 손에 놓는 법을 배우지 못했습니다. 차라리 제 손에서 망가지는 한이 있어도요."
+            },
+            {
+              "kind": "narr",
+              "text": "맞아요, 이건 꿈이에요. 꿈이어야만 합니다. 이런 결정을 현실에서 하는 일은 없어야만 해요. 우리는 다시 눈을 뜨고, 다시 행복한 삶을 보내야만 해요. 달리아는 손에 힘을 줍니다. 떨리는 목소리로 나지막이 얘기합니다."
+            },
+            {
+              "kind": "line",
+              "text": "...난, 데시. 네가 있어야만 해..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqixno1_a3",
+          "type": "narration",
+          "emphasis": false,
+          "text": "움켜쥔 손아귀 아래에서는 맥박이 느껴지지 않습니다. 서늘하고 매끄러워서 정말로 꽃의 줄기, 혹은 뼈를 쥐고 있는 것 같습니다.<br>달리아가 \"꺾겠다\"라고 마음먹은 순간,"
+        },
+        {
+          "id": "id_mqqizx5t_ag",
+          "type": "bgm",
+          "ytId": "bDXnNJ_bBec",
+          "title": " Twelve Pieces for Solo Piano - No 9: Valse"
+        },
+        {
+          "id": "id_mqqiydfx_ae",
+          "type": "narration",
+          "emphasis": true,
+          "text": "뚝."
+        },
+        {
+          "id": "id_mqqixno1_a4",
+          "type": "narration",
+          "emphasis": false,
+          "text": "둔탁한 소리와 함께 손안의 몸이 풀썩 쓰러집니다. 데시가 쓰고 있던 화관과 옷자락만 바닥에 쏟아지고 시체랄 것은 보이지 않습니다.<br>흰 대리석 바닥, 얕은 물, 바닥에 떨어진 <b>꽃 한 송이</b>......<br>바닥에 떨어진 꽃송이를 쥐자 흐느적거리지 않고 단단하게 굳어집니다. 분홍색 장미가 매달린 흰색 열쇠. 언젠가 그 열쇠와 똑같이 생겼군요.<br>첫 만남 때 문을 열어준 데시가 결국 달리아에게 목숨을 내어주었다면, 지금 이 일은 그날의 등가교환일지도 모릅니다."
+        },
+        {
+          "id": "id_mqqiyj0p_af",
+          "type": "narration",
+          "emphasis": true,
+          "text": "듣기 판정"
+        },
+        {
+          "id": "id_mqqixno1_9x",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "75",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqixno1_a7",
+          "type": "narration",
+          "emphasis": false,
+          "text": "문이 열리는 소리가 희미하게 들립니다.<br>투명한 물은 흰 대리석 바닥을 비추는데, 아까는 없던 문의 이음새가 생겼습니다. 물은 차고 넘쳐가 계단 세 칸을 채우고도 쏟아질 듯 위태롭게 출렁거립니다.<br>문고리에는 열쇠 구멍이 있습니다.<br>열쇠를 끼우자 부드럽게 돌아갑니다.<br>물에서는 무척 좋은 향기가 납니다. 아, 장미 향기. 지긋지긋하지만 이 이상 익숙할 수 없는 냄새. 달리아의 돌아갈 곳임을 증명하는 람피온의 흔적입니다.<br>문을 열고 너머의 계단을 내려가자 물이 점점 차오릅니다."
+        },
+        {
+          "id": "id_mqqixno1_a8",
+          "type": "narration",
+          "emphasis": false,
+          "text": "발목, 무릎, 허벅지, 허리, 배, 가슴, 어깨......<br>물은 몸을 담그기 딱 좋은 미지근한 온도고, 바깥에서 일렁이던 태양과 불꽃은 잠시 멈칫합니다.<br>그리고 머리끝까지 물에 잠기는 순간."
+        },
+        {
+          "id": "id_mqqj0c8x_ah",
+          "type": "narration",
+          "emphasis": true,
+          "text": "P■'n■lu■ m■lw'na■h ■t■■g■a<br>Fo■■lh■■t n'■ha-g■■a n■■'lth■■n<br>l■! ■a! C■■■gh■!"
+        },
+        {
+          "id": "id_mqqixno1_a9",
+          "type": "narration",
+          "emphasis": false,
+          "text": "제대로 발음하고 흉내낼 수 없는 모독적인 노래가 머릿속을 어지럽힙니다.<br>신을 찬양하는 것도 같고, 신이 인류를 부르는 것도 같고, 신이 신을, 인간이 인간을 저주하는 것도 같습니다.<br>물이 점차 차가워집니다.<br>차고, 차고, 차가워져선 얼음장처럼 말단의 감각을 지워나갑니다.<br>하지만 호흡은 편안하고 이제야 제 온도를 찾은 듯 안정감이 밀려옵니다......<br>그리고 미지근한 무언가가 얼굴 위로 미끄러집니다."
+        },
+        {
+          "id": "id_mqqixno1_aa",
+          "type": "narration",
+          "emphasis": false,
+          "text": "몸을 일으키면 무척 무겁고 찌뿌둥합니다.<br>오래도록 누워 있었는지 제대로 움직이기가 쉽지 않습니다. 얼굴에 떨어진 것은 다 식은 물수건입니다.<br>데시는 머리맡에 엎드린 채 잠들어 있습니다.<br>......아직 깨지 못한 걸까요?<br>달리아를 그토록 기다리다 못해 찾으러 왔을 정도니 눈을 뜬다면 제일 먼저 보고 싶었을 텐데 말이에요. 깨우는 게 좋을 것 같습니다.<br>데시에게 손을 대는 순간 지글지글 끓는 체온을 느낍니다."
+        },
+        {
+          "id": "id_mqqixno1_ab",
+          "type": "narration",
+          "emphasis": false,
+          "text": "뺨이며 이마, 귀 따위가 여름의 람피온보다 선명히 붉습니다.<br>데시는 달리아의 손을 붙잡고 얼굴을 기댑니다. 열감이 가시는지 한결 표정이 편해 보입니다.<br>그렇게 잠시 시간이 지나면."
+        },
+        {
+          "id": "id_mqqixno1_ac",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "......아."
+            },
+            {
+              "kind": "narr",
+              "text": "느릿느릿하게 눈을 깜빡입니다."
+            },
+            {
+              "kind": "narr",
+              "text": "아직 열이 서리고 잠에 취해 혼몽하지만 그래도 똑바로 달리아를 바라보고 있습니다. 붙잡은 손을 깨닫고도 놓지 않은 채 달리아에게 인사를 건넵니다."
+            },
+            {
+              "kind": "line",
+              "text": "<b>좋은 아침, 달리아.</b>"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqixno1_ad",
+          "type": "narration",
+          "emphasis": false,
+          "text": "장미 향기가 가득한 정원에서 때마침 울새가 울었습니다."
+        },
+        {
+          "id": "id_mqqj2ci1_ai",
+          "type": "narration",
+          "emphasis": true,
+          "text": "END 2. 꽃을 꺾으면 세계가 무너진다."
+        },
+        {
+          "id": "id_mqqj2dyi_aj",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아, 데시 생환<br>에필로그로 이어집니다."
+        }
+      ]
+    },
+    {
+      "id": "id_mqqj2muo_ak",
+      "title": "V. 에필로그",
+      "blocks": [
+        {
+          "id": "id_mqqj38tz_b3",
+          "type": "bgm",
+          "ytId": "YMlzmaInFFI",
+          "title": "가슴만 알죠 - 사의 찬미"
+        },
+        {
+          "id": "id_mqqj3138_an",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아가 깨어난 것은 6월 11일.<br>열병을 앓은 날로부터 딱 열흘째 되던 날이었습니다.<br>선생님의 말씀에 따르면 달리아를 구하기 위해 꿈속으로 파고든 데시는 사흘 동안 깨어나지 않았다고 합니다. 현실과 꿈의 시간에는 속도 차가 있다더니......"
+        },
+        {
+          "id": "id_mqqj3138_ao",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "달리아....나 목말라."
+            },
+            {
+              "kind": "narr",
+              "text": "옷자락을 잡아당기며 웅얼거립니다. 침대에 목 끝까지 이불을 덮고 있는 모습이 여름과는 퍽 어울리지 않습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj3138_ap",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그날로부터 어언 일주일. 데시는 마치 순서를 넘겨받은 것처럼 열병에 시달리고 있습니다. 늘 서늘하던 체온은 람피온의 것을 뛰어넘고, 뺨이며 목덜미, 귓가가 열꽃으로 얼룩덜룩합니다. 데시의 병간호는 당연히 달리아의 몫입니다."
+        },
+        {
+          "id": "id_mqqj3138_aq",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나..푸딩 먹고 싶어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj3138_ar",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그래도 다행인 것이라면, 데시는 정신을 잃지도 무방비하게 잠에 빠지지도 않았습니다.<br>한참 열에 달뜨던 데시가 문득 푸딩을 찾습니다.<br>달리아를 구하기 위해 대신 아파주고 있는 데시이니, 거절할 수 없습니다. 푸딩을 찾으러 가볼까요?"
+        },
+        {
+          "id": "id_mqqj3138_as",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그러게 누가 나 대신 아프래? 괜히 속으로 툴툴대지만 말을 할 수는 없습니다. 소중한 이가 저 대신 아프고 있는데 마냥 기분이 좋을 자가 있겠습니까. 거절은 못하지만 입은 댓 발 나와있습니다."
+            },
+            {
+              "kind": "line",
+              "text": "...갖고 올게. 잠깐만 기다려봐."
+            },
+            {
+              "kind": "narr",
+              "text": "불만 가득한 말투에는 애정이 잔뜩 묻어있습니다. ...빠르게 찾아와야겠어요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj3138_at",
+          "type": "narration",
+          "emphasis": false,
+          "text": "푸딩을 찾으러 개인실을 나서면 복도와 계단은 쥐죽은 듯 조용합니다.<br>다른 람피온들은 이제 막, 간신히 열이 떨어지고 있거든요.<br>선생님은 다른 친구들의 상태를 살피느라 무척 바쁜 모양입니다. 몇몇 아이들은 열병에서 깨어났음에도 통 상태가 좋아지지 않았거든요.<br>덕택에 주방도 싸늘하기 짝이 없습니다. 냉장고도 지키는 사람이 없고요."
+        },
+        {
+          "id": "id_mqqj3t3y_b4",
+          "type": "narration",
+          "emphasis": true,
+          "text": "행운 판정"
+        },
+        {
+          "id": "id_mqqj3138_al",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "75",
+          "roll": "17",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqqj3138_aw",
+          "type": "narration",
+          "emphasis": false,
+          "text": "어제 막 도착한 부드러운 캐러멜 푸딩을 발견합니다."
+        },
+        {
+          "id": "id_mqqj3138_ax",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "원래 증거는 인멸해야합니다. 푸딩을 전부 챙겨 올라갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj3138_ay",
+          "type": "narration",
+          "emphasis": false,
+          "text": "조용한 람피온의 저택. 아이들이라곤 전부 잡아 먹힌 것처럼 고요한 풍경.<br>매일매일을 보낸 곳임에도 지독하게 낯설게 느껴지는 것은, 소리의 부재 때문일까요?<br>달리아가 주방을 나서고 식당을 지나면......<br>선생님의 목소리가 들립니다."
+        },
+        {
+          "id": "id_mqqj448c_b5",
+          "type": "narration",
+          "emphasis": true,
+          "text": "듣기 판정"
+        },
+        {
+          "id": "id_mqqj3138_am",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "40",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqj3138_b1",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "다른 아이들에게도 미뉴에트가 있었다면......"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj3138_b2",
+          "type": "narration",
+          "emphasis": false,
+          "text": "계단을 오르는 선생님의 어깨가 무척 좁고, 정처없이 흔들립니다.<br>복도의 모퉁이를 돌아 마틸다의 방으로 사라지는 뒷모습은 꼭 유령의 것처럼 보일 정도입니다.<br>개인실에 돌아오면 데시는 그새 잠이 들었습니다.<br>새근새근, 일정한 숨소리에서는 도통 죽음의 그늘을 찾아볼 수 없습니다."
+        },
+        {
+          "id": "id_mqqj4nx0_b6",
+          "type": "narration",
+          "emphasis": false,
+          "text": "울긋불긋한 열꽃도 시간이 지나면 점차 사그라들 테니...... 이날의 기억도 언젠가는 흐릿해지고 말 테죠.<br>아니, 종종 그 마을의 꿈을 꿀지도 모릅니다. 마치 플라워, 버려진 신전, 흐드러진 꽃밭과 손 아래에서 꺾이던 꽃의 뼈.<br>......깨어난 이상 한여름 밤의 꿈에 불과한데도,<br>어쩐지 달리아에겐 잊지 못할 만큼 선명하게만 느껴집니다."
+        },
+        {
+          "id": "id_mqqj4umr_b7",
+          "type": "narration",
+          "emphasis": true,
+          "text": "Epilogue. 꽃을 꺾은 흔적, END"
+        },
+        {
+          "id": "id_mqqj52nu_b8",
+          "type": "narration",
+          "emphasis": false,
+          "text": "데시는 며칠간 길게 앓겠지만 곧 자리를 털고 일어날 겁니다. 이 또한 지나가는 과정 중 하나이니까요."
+        },
+        {
+          "id": "id_mqqj52nu_b9",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "기껏 푸딩 두 개나 가져왔는데!"
+            },
+            {
+              "kind": "narr",
+              "text": "꼭 일어나면 하나씩 나눠 먹을 거예요. 데시가 더 먹고 싶다고 하면 두 개 다 데시의 몫이 될 겁니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_mqqj5m7s_ba",
+      "title": "외전1. 오르골의 열쇠",
+      "blocks": [
+        {
+          "id": "id_mqqj5vil_c8",
+          "type": "bgm",
+          "ytId": "d81lHuKLdGE",
+          "title": " 꽃잎, 떨어지다"
+        },
+        {
+          "id": "id_mqqj5sgc_bc",
+          "type": "narration",
+          "emphasis": false,
+          "text": "꽃의 뼈를 꺾고, 달리아와 데시는 드디어 열병에서 벗어날 수 있었습니다.<br>드디어 지긋지긋한 방안 생활도 묽은 죽과 수프로 이루어진 식사도 끝입니다. 아침 8시가 조금 넘은 시각, <i>똑똑</i>. 노크 소리가 문을 두드립니다."
+        },
+        {
+          "id": "id_mqqj5sgc_bd",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "좋은 아침이에요, 달리아."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_be",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "문을 열고 웃어보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "좋은 아침이에요, 선생님."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bf",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "식사가 담긴 트레이를 건네주며 미안한 얼굴로 당부합니다."
+            },
+            {
+              "kind": "line",
+              "text": "아직 다른 친구들의 열병이 완전히 끝나지 않아서, 당분간 병간호가 더 필요할 것 같아요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bg",
+          "type": "narration",
+          "emphasis": false,
+          "text": "선생님은 달리아와 데시의 상태가 비교적 온전하다는 이유로 돌봐주지 못하는 것이 퍽 미안한 모양입니다. 달리아는 어떻게 생각할까요? 식사도, 놀이도, 숙제도 오직 두 사람으로 이루어지는 일상. 그것은 지나치게 지루하거나 편안한 구성일 겁니다."
+        },
+        {
+          "id": "id_mqqj5sgc_bh",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "선생님이 저를 챙기지 않는다며 칭얼거릴 시절은 한참 지났습니다. 어쩌면 그런 시절은 존재하지 않았을 수도. 데시가 제게 와준 날부터 달리아에게 가장 중요한 것은 언제나 하나 뿐이었으니까 말이에요. 그것만 변치 않는다면, 무엇이 어떻게 되어버리든 간에, 좋은 게 좋은 거 아니겠습니까."
+            },
+            {
+              "kind": "line",
+              "text": "괜찮아요, 선생님. 선생님이 가장 힘드실텐데 너무 무리하지 마세요."
+            },
+            {
+              "kind": "narr",
+              "text": "트레이를 받아들며 대꾸합니다. 저는 전혀 신경 쓰지 말라며 환하게 웃어보입니다. 다른 애들한테는 미안하지만, 데시와 둘이 만들어나갈 일상이 기대되기도 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bi",
+          "type": "narration",
+          "emphasis": false,
+          "text": "선생님은 두 사람을 보며 미소를 짓습니다. 그리고 떠나기 직전 당부합니다."
+        },
+        {
+          "id": "id_mqqj5sgc_bj",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "식사한 그릇은 싱크대에 넣어주세요. 환기하는 것도 잊지 말고요. 창고에 새 시트가 있을 테니 두 사람의 것이라도 갈아둘래요? 부탁해요, 달리아, 데시."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bk",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "이렇게 당부하는 것이, 평소의 선생님 같아서 다행입니다. 주어진 지시를 듣고 고개를 끄덕입니다."
+            },
+            {
+              "kind": "line",
+              "text": "분부대로 하겠습니다, 이 달리아만 믿으시지요."
+            },
+            {
+              "kind": "narr",
+              "text": "장난스레 얘기하며 선생님을 배웅합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bl",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "달리아의 장난스러운 말투에 푸훗, 가벼운 웃음이 터진 것은 선생님이 아니라 데시입니다. 덩달아 선생님께 고상하게 인사를 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj70s2_c9",
+          "type": "bgm",
+          "ytId": "Cl8a9b76GMg",
+          "title": "Color"
+        },
+        {
+          "id": "id_mqqj5sgc_bm",
+          "type": "narration",
+          "emphasis": false,
+          "text": "선생님이 떠나고 나면, 손에 들린 아침식사만 남았습니다.<br>트레이에 담긴 아침 식사는 단출합니다. 돌볼 아이들이 많으니 손이 많이 가는 음식은 아무래도 준비하기 어려웠겠죠. <b>당근과 감자, 양파 따위를 잘게 썰어 끓인 카레와 고슬고슬한 흰 밥, 갓 튀긴 새우튀김과 닭튀김.</b> 후식으로는 <b>오리 모양의 망고 젤리</b>가 담겨 있습니다.<br>식사합시다! 금강산도 식후경이라니까요."
+        },
+        {
+          "id": "id_mqqj5sgc_bn",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "밥을 떠서 한입 오물오물 먹으며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "그래도 이제 스프 같은 게 아니라 이런 밥을 먹을 수 있어서 좋아."
+            },
+            {
+              "kind": "narr",
+              "text": "직전까지 달리아 대신 열병을 앓았던 데시는 한동안 그런 것만 먹어야 했죠."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bo",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "나란히 앉아 같이 밥을 오물거리며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "스프는 질리긴 하지."
+            },
+            {
+              "kind": "narr",
+              "text": "저도 냄새에 질렸다는 듯 이상한 표정을 잠시 지어보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "다음부터는 그럴 일 없으면 돼."
+            },
+            {
+              "kind": "narr",
+              "text": "이런 열병따위는 더 이상 사양이라는 듯 단호히 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "서로 간호해주는 일은 이번을 마지막으로 하자."
+            },
+            {
+              "kind": "narr",
+              "text": "마저 밥을 입에 밀어넣으며 가벼이 약속하자 합니다. 아프지 말자는 다짐이에요. 서로서로."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bp",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "....그랬으면 좋겠다. 더이상 아프면 안 돼."
+            },
+            {
+              "kind": "narr",
+              "text": "고개를 끄덕입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bq",
+          "type": "narration",
+          "emphasis": false,
+          "text": "평소와 달리 방 안에서 이루어진 식사는 어느덧 바닥을 드러냅니다. 식사를 끝낸 달리아는 무엇을 할까요?"
+        },
+        {
+          "id": "id_mqqj5sgc_br",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "분부대로, 진행합니다! 식기를 싱크대에 넣어두고, 방을 환기시킵니다. 함께 데시에게 창고에 가자고 제안합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bs",
+          "type": "narration",
+          "emphasis": false,
+          "text": "싱크대에 식기를 넣으면 어느새 가득찬 그릇들이 눈에 띱니다."
+        },
+        {
+          "id": "id_mqqj5sgc_bt",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "원래라면 쏙 식기만 넣고 빠졌을테지만. 바빠보이던 선생님을 떠올립니다. 데시에게 고무장갑을 끼워주고 옆에 세웁니다. 그러고는 뽀득뽀득 문질러 거품이 잔뜩 묻은 그릇을 데시에게 넘깁니다. 분담하면 빠르게 끝날거예요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bu",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "얼떨결에 설거지에 참여합니다. 건네받은 그릇을 깨끗하게 헹궈 올려놓습니다. 깨끗해진 그릇들을 보니 기분이 좋아집니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bv",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "혼자할 때보다 조금 부산스럽겠지만 기쁘고 즐겁게 설거지를 마무리합니다. 오늘도 착한 일 했다! 뿌듯합니다. 손을 탈탈 털고 데시를 이끌어 빠르게 방으로 돌아갑니다. 환기 시키고, 시트도 갈고. 해야할 일이 많아요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bw",
+          "type": "narration",
+          "emphasis": false,
+          "text": "방으로 가서 창문을 열면, 후덥지근한 여름의 바람이 붑니다. 케케묵은 먼지들은 창 너머로 쏟아지는 햇살에 이리저리 몸을 뒤틉니다. 방을 한 바퀴 돌아보면, 열병에 시달리기 전과 똑같습니다. 시간이 오래 지난 것 같은데 말이에요.<br>달리아의 시선이 문득 책상에 닿습니다. 구석에 놓인 것은...... <b>오르골</b>입니다.<br>미뉴에트를 불태우고 무너지는 흙더미 사이에서 찾아낸 오르골입니다. 네 개의 낮은 다리가 지탱하는 몸체는 금속으로 촘촘히 엮여 있고, 장미가 조각되어 있습니다. 단단히 잠겨있어 무슨 수를 써도 열리지 않았는데. 오늘도 마찬가지입니다.<br>오르골을 살피고 있으면, 데시가 문 앞에서 서서 고개를 갸웃합니다. 창고에 가지 않느냐는 듯합니다."
+        },
+        {
+          "id": "id_mqqj5sgc_bx",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "낑낑대며 언제나 처럼 열려고 시도해봅니다. 하다 못해 데시를 불러 열어보라고 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_by",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "달리아가 부르자 와서 오르골을 열어보려 하지만, 열리지 않는 건 똑같습니다."
+            },
+            {
+              "kind": "line",
+              "text": "...역시 열쇠가 있어야 하는 거 아닐까?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_bz",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "역시..."
+            },
+            {
+              "kind": "line",
+              "text": "나중에 열쇠 같은 거 찾으면 꼭 얘기해줘. 시도해봐야지."
+            },
+            {
+              "kind": "narr",
+              "text": "누가 이기나 해보자는 듯 말합니다. 마저 데시와 함께 창고로 내려갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_c0",
+          "type": "narration",
+          "emphasis": false,
+          "text": "창고에는 새 시트가 차곡차곡 졉혀 있습니다. 흰 시트에서는 햇볕에 잘 말린 따뜻한 냄새가 납니다.<br>방에 돌아와 기존 시트를 벗기면, <i>쨍그랑</i>. 날카로운 소리와 함께 베개 아래에서 <b>열쇠</b>가 떨어집니다.<br>상아를 깎아 만든 듯 흰색의 열쇠. 끄트머리에 분홍색 장미가 조각되어 있습니다. 익숙한 생김새입니다. 꿈의 문을 열어준 바로 그 열쇠니까요.<br>꿈에서 본 그 열쇠가 어떻게 여기에 있는 걸까요?"
+        },
+        {
+          "id": "id_mqqj5sgc_c1",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이게 왜...?"
+            },
+            {
+              "kind": "narr",
+              "text": "데시를 쳐다봅니다. ...아는 게 있냐는 듯이요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_c2",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "영문을 모르는 얼굴입니다. 그리고는 무언가 떠오른 듯 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "이상하지만...그래도 이것도 열쇠네."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_c3",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이렇게 가까이 있을 줄 알았으면 이상하게 힘 빼지 않았어도 되는 거였잖아!"
+            },
+            {
+              "kind": "narr",
+              "text": "조금 억울한 듯 말합니다. 이 열쇠가 당연히 오르골을 열어줄 것이라고 믿으면서요. 믿음에 당연하게 오르골에 열쇠를 꽂아 돌려봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj5sgc_c4",
+          "type": "narration",
+          "emphasis": false,
+          "text": "오르골에 새로운 열쇠를 끼우면 찰칵, 경쾌한 소리와 함께 돌아갑니다.<br>그리고 열린 오르골 안에선...... 어떤 소리도 나지 않습니다.<br>작은 손잡이를 돌려봐도 소리없이 잠잠하고 고요합니다. 복잡하게 얽힌 태엽과 부품은 빙글빙글 돌아가지만, 여전히 묵음. 작은 상자는 끊임없는 침묵에 빠집니다.<br>고장 난 건가? 겉보기엔 멀쩡해 보이는데 말이에요."
+        },
+        {
+          "id": "id_mqqj7wuf_ca",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqqj5sgc_bb",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "36",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqqj5sgc_c7",
+          "type": "narration",
+          "emphasis": false,
+          "text": "내부에 결함이 숨어 있다는 걸 눈치챕니다. 손가락 한 마디에 못 미치는 작은, 아주 작고 작은 태엽 하나가 없다는 것을요. 이토록 복잡하고 정밀한 오르골이란 때론 부품 하나가 모자라 소리를 내지 못하고 쓸모를 잃는 법이죠.<br>열쇠가 마련되었고, 문 또한 열렸으나 소리는 들리지 않았습니다.<br>창밖으로 우는 새소리만 시끄러웠던 것 같습니다.<br>우리는 도저히 마지막 부품이 어디 있는지 알 수 없었어요."
+        },
+        {
+          "id": "id_mqqj8czt_cb",
+          "type": "narration",
+          "emphasis": true,
+          "text": "외전3. 오르골의 열쇠, END"
+        }
+      ]
+    },
+    {
+      "id": "id_mqqj8m1f_cc",
+      "title": "외전2. 부러진 자리",
+      "blocks": [
+        {
+          "id": "id_mqqj96fg_cs",
+          "type": "bgm",
+          "ytId": "k78Xttz84U0",
+          "title": "landscape"
+        },
+        {
+          "id": "id_mqqj8vqn_ce",
+          "type": "narration",
+          "emphasis": false,
+          "text": "시간은 흐르고, 흐릅니다. 이번 이야기는 평범한 일상으로 되돌아간 이후의 어느 날입니다.<br>늦은 새벽, 달리아는 묵직한 무게감을 느끼며 잠에서 깨어납니다. 천장 대신 보이는 것은, 어둠 속에서 형형히 빛나고 있는 데시의 두 눈입니다.<br>데시는 당신의 몸 위에 올라타 당신을 내려다보고 있습니다. 침대의 중심이 기울어지고, 삐걱, 소리가 적막한 방에 울려 퍼집니다.<br>커튼까지 꽁꽁 닫힌 방 내부로는 빛 한 점 들어오지 않습니다. 그러니 그녀가 무슨 표정을 짓고 있는지, 보일 리가 없죠. 데시의 이름을 부르거나, 몸을 밀어내어 봐도 반응하지 않습니다.<br>......본능적인 공포가 밀려옵니다."
+        },
+        {
+          "id": "id_mqqj8zuu_cr",
+          "type": "narration",
+          "emphasis": true,
+          "text": "이성 판정 (0/1)"
+        },
+        {
+          "id": "id_mqqj8vqm_cd",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "달리아",
+          "item": "이성",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "90",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqqj8vqn_cg",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "끌어안는다. 무서우면 정면 돌파입니다. 적어도 안고 있는 동안에는 뭘 못하지 않을까요? 라고 생각하면서요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj8vqn_ch",
+          "type": "narration",
+          "emphasis": false,
+          "text": "끌어안으면, 데시는 그대로 몸을 숙입니다. 얇은 머리카락이 중력을 따라 커튼처럼 쏟아져 세계와 두 사람을 단절시킵니다.<br>달리아가 뭔가를 할 틈도 없이, 입술이 맞닿습니다.<br>입맞춤은 몇 초 이어지지 않고, 데시가 소스라치듯 놀라 떨어지며 끝납니다.<br>문득 10살의 겨울, 굴 아래에서 본 장면이 떠오릅니다. 어린 람피온에게 입맞춰 근원을 탐하던 미뉴에트, 창백한 얼굴로 안겨있던 사라.<br><i>미뉴에트가 빼앗으려 하던 것은 무엇이었나요?</i><br>달리아가 자신의 초능력을 확인하더라도, 줄어들거나 약화하진 않은 것 같습니다. 훔치기엔 지나치게 짧은 시간이었으니까요."
+        },
+        {
+          "id": "id_mqqj8vqn_ci",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그가...달리아의 것을 훔치라고 했어."
+            },
+            {
+              "kind": "narr",
+              "text": "달리아의 눈을 마주치지 못한 채, 기어들어가는 목소리로 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "머릿속에서 목소리가 계속, 계속 울려."
+            },
+            {
+              "kind": "line",
+              "text": "참기가 어려워. 난 훔치는 방법을 알고 있잖아. 그러기 위해 태어났고."
+            },
+            {
+              "kind": "narr",
+              "text": "손으로 얼굴을 감싸쥡니다."
+            },
+            {
+              "kind": "line",
+              "text": "그래서 자꾸만....여태 한 번도 그러지 않았는데, 요즘 들어 자꾸 그래. 널 볼 때마다 삼키고 싶고, 입 맞추고 싶고......"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj8vqn_cj",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "본능을 거스를 수 없는 것처럼."
+            },
+            {
+              "kind": "narr",
+              "text": "얼굴에서 손을 떼고 달리아를 바라봅니다. 분홍빛 눈동자는 금방이라도 눈물이 고일 듯 일렁입니다."
+            },
+            {
+              "kind": "line",
+              "text": ".....하지만 나는 그러고 싶지 않은데. 달리아를 해치고 싶지 않아. 떨어지는 게 나을까, 나는 역시.......네 곁에서 떠나는 편이 나은 걸까?"
+            },
+            {
+              "kind": "narr",
+              "text": "데시, 아니, 미뉴에트의 어깨는 잘게 떨리고 있습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj8vqn_ck",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "잘게 떨리는 데시의 어깨를 살짝 잡고. 이마에 가볍게 입맞춤을 남깁니다. 걱정하지 말라며 미소 짓습니다."
+            },
+            {
+              "kind": "line",
+              "text": "난 널 믿어."
+            },
+            {
+              "kind": "narr",
+              "text": "네가 본능에 굴하지 않을 존재란 것을 말이야. 작게 중얼거립니다."
+            },
+            {
+              "kind": "narr",
+              "text": "막연한 믿음입니다. 조금 무모할테지만, 정말 데시가 자신의 것을 앗아간다고 한들, 지금을 놓고 싶지는 않습니다. 물론 끝까지 저항할테지만 제 곁에 데시를 둔 것을 후회하지는 않을 거예요. 데시를 진정시킵니다."
+            },
+            {
+              "kind": "line",
+              "text": "난 네가 있어주는 게 좋아."
+            },
+            {
+              "kind": "narr",
+              "text": "물론 버티는 것은 데시일테지만, 힘든 것은 데시의 몫일뿐인, 달리아의 욕심이지만요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj8vqn_cl",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아의 대답을 들은 데시는 자리에서 일어나 커튼을 열어젖힙니다. 새까맣게 어두운 방 안에 창백한 푸른 빛이 들이닥칩니다. 희미한 달빛을 등지고 선 데시의 눈매에는 짙은 슬픔이 매달려 있습니다."
+        },
+        {
+          "id": "id_mqqj8vqn_cm",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "홀로 살아갈지언정 홀로 죽지 않게 해달라고...... 빌면 이루어질까?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj8vqn_cn",
+          "type": "narration",
+          "emphasis": false,
+          "text": "창 너머의 풍경은 지독한 여름의 한 폭. 당신의 또 다른 이름을 가진 꽃이 흐드러졌습니다. 마치 당신을 추억하는 것처럼 어둡고 선연한 붉은색을 띱니다. 한 여름밤의 악몽이라기엔 지나치게 서정적인 배경입니다."
+        },
+        {
+          "id": "id_mqqj8vqn_co",
+          "type": "dialogue",
+          "speaker": "데시",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "창가에 선 데시는 슬픔과 불안을 한 꺼풀 삼킨 후에야 간신히 묻습니다."
+            },
+            {
+              "kind": "line",
+              "text": "......이제 그러지 않을게. 같이 자면 안 돼?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj8vqn_cp",
+          "type": "dialogue",
+          "speaker": "달리아",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "말 없이 자리를 내어주다가 뒤늦게 입을 엽니다."
+            },
+            {
+              "kind": "line",
+              "text": "데시가 원한다면 얼마든지."
+            },
+            {
+              "kind": "narr",
+              "text": "온화하게 답합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqqj8vqn_cq",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그날은 도저히 잊을 수 없는, 긴 밤이었습니다.<br><i>이후 4년 간, 몇 번 비슷한 상황이 발생했습니다.</i><br>데시는 허기를 호소하며 달리아와 입을 맞춰 능력을 일정량 삼킨 후에야 평소의 모습으로 돌아왔습니다.<br><i>달리아의 초능력 기능치를 13 하향합니다.</i>"
+        },
+        {
+          "id": "id_mqqja6h1_ct",
+          "type": "narration",
+          "emphasis": true,
+          "text": "외전4. 부러진 자리, END."
+        }
+      ]
+    }
+  ]
+}
