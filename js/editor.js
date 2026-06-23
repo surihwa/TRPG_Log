@@ -137,6 +137,7 @@ function renderCharList(){
     const row = document.createElement('div');
     row.className = 'char-row';
     row.innerHTML = `
+      <div class="avatar av-prev" data-prev="${c.id}" style="${prev}"></div>
       <input type="text" value="${escAttr(c.name)}" placeholder="이름" oninput="editorCharField('${c.id}','name',this.value)">
       <select onchange="editorCharField('${c.id}','role',this.value)">
         <option value="PC"  ${c.role==='PC'?'selected':''}>PC</option>
@@ -154,7 +155,17 @@ function editorRemoveChar(id){ E().characters = E().characters.filter(c => c.id 
 function editorCharField(id, field, val){
   const c = E().characters.find(x => x.id === id); if(!c) return;
   c[field] = val;
-  if(field === 'color' || field === 'img') renderCharList();
+  // 입력 도중 목록 전체를 다시 그리면 입력칸 포커스를 잃고(이미지 경로가 한 글자씩만 입력됨)
+  // 색상 선택창도 닫히므로, 여기서는 모델만 갱신하고 미리보기 원만 즉석에서 바꾼다.
+  if(field === 'color' || field === 'img'){
+    const prev = document.querySelector('.av-prev[data-prev="' + id + '"]');
+    if(prev){
+      const url = resolveImg(c.img);
+      prev.style.cssText = url
+        ? "background-image:url('" + url + "')"
+        : "background-image:none;background-color:" + c.color;
+    }
+  }
 }
 
 /* ---- 장면 ---- */
