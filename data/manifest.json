@@ -1,7 +1,5 @@
 {
   "sessions": [
-    "data/sessions/ses_wall.json",
-    "data/sessions/ses_twodays.json",
     "data/sessions/lampion_dalde_1.json"
   ]
 }
