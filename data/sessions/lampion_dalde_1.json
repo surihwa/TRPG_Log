@@ -1,0 +1,1693 @@
+{
+  "id": "id_mqq711uu_2e",
+  "folder": "람피온의 저택-달데",
+  "title": "1부: 람피온의 저택",
+  "date": "",
+  "theme": "light",
+  "cardImage": "image/lampion_dalde/card1.png",
+  "characters": [
+    {
+      "id": "id_mqq711uu_2f",
+      "name": "달리아 리모스",
+      "role": "PC",
+      "color": "#941434",
+      "img": "image/lampion_dalde/dahlia1.png"
+    },
+    {
+      "id": "id_mqq71rvy_2h",
+      "name": "데시",
+      "role": "KPC",
+      "color": "#f5cce0",
+      "img": "image/lampion_dalde/dessy1.png"
+    },
+    {
+      "id": "id_mqq71s75_2i",
+      "name": "선생님",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/teacher.png"
+    },
+    {
+      "id": "id_mqq71skd_2j",
+      "name": "아리아",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/aria.png"
+    },
+    {
+      "id": "id_mqq71t3x_2k",
+      "name": "게일",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/gale.png"
+    },
+    {
+      "id": "id_mqq71tis_2l",
+      "name": "제이",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/jei.png"
+    },
+    {
+      "id": "id_mqq73zim_2m",
+      "name": "마틸다",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/matilda.png"
+    },
+    {
+      "id": "id_mqq742a8_2n",
+      "name": "리샤이",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/rishai.png"
+    },
+    {
+      "id": "id_mqq744lh_2o",
+      "name": "사라",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/sarah.png"
+    },
+    {
+      "id": "id_mqq7598u_2p",
+      "name": "신",
+      "role": "NPC",
+      "color": "#7c2d2d",
+      "img": "image/lampion/shin.png"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "id_mqq711uu_2g",
+      "title": "I. 람피온의 저택과 소문",
+      "blocks": [
+        {
+          "id": "id_mqq76rzq_4y",
+          "type": "bgm",
+          "ytId": "QTvY-ZlCFDs",
+          "title": "TO THE MOON ~ Having Lived (Piano Cover)"
+        },
+        {
+          "id": "id_mqq76jdn_2q",
+          "type": "narration",
+          "emphasis": true,
+          "text": "람피온의 덩굴 아래에는 시체가 묻혀있다"
+        },
+        {
+          "id": "id_mqq76jdn_2r",
+          "type": "narration",
+          "emphasis": false,
+          "text": "흑, 흑흑……."
+        },
+        {
+          "id": "id_mqq76jdn_2s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아는 머리맡에서 들리는 익숙한 울음소리와 함께 눈을 뜹니다."
+        },
+        {
+          "id": "id_mqq76jdn_2t",
+          "type": "narration",
+          "emphasis": false,
+          "text": "람피온의 저택에 도착한 지 어언 일주일, 이른 아침에 제일 먼저 들리는 소리입니다. 한번을 거르는 법이 없습니다. 오늘도 음울하고 울적한 아침이에요."
+        },
+        {
+          "id": "id_mqq76jdn_2u",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아, 관찰력 판정"
+        },
+        {
+          "id": "id_mqq76jdn_2v",
+          "type": "dice",
+          "kind": "vs",
+          "speaker": "",
+          "item": "관찰력",
+          "grade": "보통",
+          "roll": "15",
+          "target": "50",
+          "result": ""
+        },
+        {
+          "id": "id_mqq76jdn_2z",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "(와)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_30",
+          "type": "narration",
+          "emphasis": false,
+          "text": "주위를 둘러보면, 창가에는 붉은 가슴을 가진 갈색 새가 앉아있습니다."
+        },
+        {
+          "id": "id_mqq76jdn_31",
+          "type": "narration",
+          "emphasis": false,
+          "text": "새는 고개를 갸웃거리며 또 웁니다. 흑흑, 흑, 흑흑흑……."
+        },
+        {
+          "id": "id_mqq76jdn_32",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이 저택에서 기를는 것은, 어째 새마저 사람이 흐느끼는 양 울어댑니다. 영 경쾌하지가 못하군요."
+        },
+        {
+          "id": "id_mqq76jdn_33",
+          "type": "narration",
+          "emphasis": false,
+          "text": "눈을 뜨니 익숙한 우리 집이라면 얼마나 좋을까. 현실은 녹록하지 않습니다."
+        },
+        {
+          "id": "id_mqq76jdn_34",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아는 자신이 오늘도 <b>람피온의 저택</b>에서 깨어났다는 사실을 깨닫습니다."
+        },
+        {
+          "id": "id_mqq76jdn_35",
+          "type": "narration",
+          "emphasis": true,
+          "text": "람피온의 저택에 흐드러진 여름 장미를 본 적 있니?"
+        },
+        {
+          "id": "id_mqq76jdn_36",
+          "type": "narration",
+          "emphasis": true,
+          "text": "사시사철 피어있는 붉은 꽃들은 사실, 시체를 숨기기 위해 심은 거래."
+        },
+        {
+          "id": "id_mqq76jdn_37",
+          "type": "narration",
+          "emphasis": false,
+          "text": "초능력자 람피온을 기르고 가르치는 교육 기관."
+        },
+        {
+          "id": "id_mqq76jdn_38",
+          "type": "narration",
+          "emphasis": false,
+          "text": "사전에서는 그렇게 정의하지만, 정말 그렇게 믿는 사람은 얼마 없습니다."
+        },
+        {
+          "id": "id_mqq76jdn_39",
+          "type": "narration",
+          "emphasis": false,
+          "text": "세간에는 흉흉한 소문이 가득합니다. 람피온으로 인체 실험을 한다, 시체는 장미 덤불 아래 은닉한다. 그래서 10살 이후의 람피온을 찾을 수 없다……."
+        },
+        {
+          "id": "id_mqq76jdn_3a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아는 그것을 믿고 있나요?"
+        },
+        {
+          "id": "id_mqq76jdn_3b",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "내가 살아있는데 무슨 소리야 (흥) 그거 다 미신이야."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_3c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "10번째 생일."
+        },
+        {
+          "id": "id_mqq76jdn_3d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아의 눈동자는 금색으로 빛났고, 특별한 능력을 거머쥐었습니다. 람피온의 저택으로 향하는 것은 정해진 운명이었지요."
+        },
+        {
+          "id": "id_mqq76jdn_3e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아가 소문을 믿든 말든 간에, 달리아의 생각은 중요하지 않았습니다. 그나마 다행이라면, 소문과 달리 저택의 일상이 꽤 평온하단 걸까요."
+        },
+        {
+          "id": "id_mqq76jdn_3f",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아는 자신의 방을 둘러볼 수 있습니다. <b>책상</b>과 <b>침대</b>, <b>옷장</b>이 딸린 방은 어린아이 하나가 쓰기엔 넓은 편입니다. 바닥에 깔린 <b>양탄자</b>가 푹신푹신합니다."
+        },
+        {
+          "id": "id_mqq76jdn_3g",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "(시계를 본다.)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_3h",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아가 시계를 확인하면, <b>아침 7시 55분</b>을 조금 넘었다는 걸 알 수 있습니다."
+        },
+        {
+          "id": "id_mqq76jdn_3i",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "슬슬 일어나볼까 (침대를 확인한다.)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_3j",
+          "type": "narration",
+          "emphasis": false,
+          "text": "나무 침대에는 푹신한 이불이 깔려있습니다. 특이한 점이라면 2층 침대라는 것입니다. 1인 1실이면서 말이에요. 예전에는 람피온의 수가 더 많았던 걸까요? 그렇다면 그 많던 람피온은 다 어디로 간 걸까요?"
+        },
+        {
+          "id": "id_mqq76jdn_3k",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "(1층에서 일어나며 온몸으로 쭉 기지개를 핀다.) 이층 침대라니 청소하기 힘들겠는 걸! 내 할일은 아니지만... (옷매무새를 정리하고 옷장을 살핀다.)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_3l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "빳빳하게 걸린 교복과 생활복 따위가 보입니다. 마지막 수업이 끝날 때까지 교복을 착용합니다. 교복에서는 어쩐지 희미하게 장미 향기가 납니다."
+        },
+        {
+          "id": "id_mqq76jdn_3m",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음, 나쁘지 않은 향이네! (옷장 깊이 코를 묻고는 강아지 마냥 킁킁 댄다. 기분이 좋아지는 것 같기도.) (책상을 본다.!)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_3n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "책장이 연결되어 있는 나무 책상. 좋은 재질을 썻는지 표면이 매끄럽습니다. 벽에 <b>시간표</b>가 붙어 있습니다. 책상과 서랍, 책장의 소지품은 특별할 것이 없습니다."
+        },
+        {
+          "id": "id_mqq76jdn_3o",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "(시간표를 본다!)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_3p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "기상 7시 30분, 취침 23시 30분. 식사시간은 아침 8시, 정오 12시, 저녁 19시입니다. 간식시간은 오후 2시고, 수업은 아침 9시부터 오후 5시까지입니다."
+        },
+        {
+          "id": "id_mqq76jdn_3q",
+          "type": "narration",
+          "emphasis": false,
+          "text": "지금 7시 55분이니까, 아침 식사에 지각하지 않으려면 서두르는 것이 좋겠습니다."
+        },
+        {
+          "id": "id_mqq76jdn_3r",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음 늦겠다! 곧 아침 먹을 시간이잖아! (새삼스럽지 않다는 듯, 경쾌히 말한다. 늦겠다는 말과는 다르게 여전히 느긋하기만 하다.) 일단 내 방 정리는 마저 하고 가야지. (양탄자도 본다 다 보자)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_3s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "어두운 붉은색의 양탄자는 금실로 가두리에 무늬를 넣어 고풍스러워 보입니다. 상당히 두꺼워서 나무 바닥의 삐걱거리는 소리를 가려줍니다."
+        },
+        {
+          "id": "id_mqq76jdn_3t",
+          "type": "narration",
+          "emphasis": true,
+          "text": "달리아, 관찰력 판정"
+        },
+        {
+          "id": "id_mqq76jdn_3u",
+          "type": "dice",
+          "kind": "vs",
+          "speaker": "",
+          "item": "관찰력",
+          "grade": "보통",
+          "roll": "8",
+          "target": "50",
+          "result": ""
+        },
+        {
+          "id": "id_mqq7ardg_4z",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "(오오)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_3z",
+          "type": "narration",
+          "emphasis": false,
+          "text": "양탄자 밑으로 검은 무언가가 보입니다. 그저 그림자라기엔 무언가 위화감이 느껴집니다."
+        },
+        {
+          "id": "id_mqq76jdn_40",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "(냅다 양탄자 뒤집기)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_41",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아가 양탄자를 걷어보자, 가려진 바닥에서 <b>그을음</b>을 발견합니다."
+        },
+        {
+          "id": "id_mqq76jdn_42",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그을음? (주위를 한 번 둘러본다. 뭔가 이상한 것을 찾은 것에 대한 예의랄까.) 불이 났었나? 보수를 대충 하셨나보네!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_43",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아 배고파! 이러다가 정말 정말로 늦어버리겠는 걸! 밥 먹으러 가야지! (밥 먹으러 가자)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_44",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "여러분, 아침 식사시간이에요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_45",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<b>선생님</b>의 다정한 목소리가 문 너머에서 달리아를 부릅니다."
+        },
+        {
+          "id": "id_mqq76jdn_46",
+          "type": "narration",
+          "emphasis": false,
+          "text": "어느새, 울음소리는 사라졌습니다."
+        },
+        {
+          "id": "id_mqq7dg8d_50",
+          "type": "bgm",
+          "ytId": "0UkRqMFMZic",
+          "title": "Home (UNDERTALE Soundtrack)"
+        },
+        {
+          "id": "id_mqq76jdn_47",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "(문 밖으로 나선다. 선생님의 목소리를 따라 발을 옮긴다.) 밥 시간이다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_48",
+          "type": "narration",
+          "emphasis": false,
+          "text": "계단을 한 칸 내려가면 요란한 소리가 납니다. 아래층에서부터 맛있는 냄새가 풍깁니다. 음, 아마 오늘의 메뉴는 <b>토스트와 토마토 수프</b>인 모양입니다."
+        },
+        {
+          "id": "id_mqq76jdn_49",
+          "type": "narration",
+          "emphasis": false,
+          "text": "복도의 문이 하나, 둘 열리고 잠기운이 서린 아이들이 나옵니다. 몇몇은 우당탕 계단을 뛰어 내려갑니다."
+        },
+        {
+          "id": "id_mqq76jdn_4a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "1층 거실에는 양쪽으로 계단이 펼쳐지고, 여러 개의 문이 나 있습니다. 식당, 도서관, 창고라거나 놀이방 따윈가 딸려 있기 때문입니다. 거실 좌측의 가장 안쪽 문이 <b>식당</b>입니다."
+        },
+        {
+          "id": "id_mqq76jdn_4b",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "(우당탕 뛰어 내려가는 애들 사이로 차분히 걸어내려간다. 일찍 간다고 더 맛있는 것도 아닌데 말이야.) 넘어져도 난 모른다. (애들한테 들리지도 않게끔 중얼거리고는 식당으로 들어간다.) 좋은 아침이에요! (모두에게 들리듯 큰 소리로 아침 인사를 건넨다.)"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_4c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "옆방의 <b>게일</b>이 탐사자를 보고 손을 흔듭니다."
+        },
+        {
+          "id": "id_mqq76jdn_4d",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "안녕, 너도 오늘 그 울음소리 들었어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_4e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "게일은 10살치고 꽤 험악하게 생겼습니다만, 소심하고 겁이 많습니다. 특히 심령 현상을 무척 싫어해서 툭하면 들리는 울음소리를 무척 무서워합니다."
+        },
+        {
+          "id": "id_mqq76jdn_4f",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음~ 들었지! 딱, 겁쟁이 게일이 무서워할 소리였잖아!"
+            },
+            {
+              "kind": "narr",
+              "text": "인사에 화답하듯 방긋 웃는다. 밝은 말투에는 딱히 놀리는 듯한 티는 안났지만."
+            },
+            {
+              "kind": "line",
+              "text": "잠을 못 잔거는 아니지? 게일.."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdn_4g",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아, 아냐! 자긴 잤다고...울음소리 때문에 깨긴 했지만. 역시, 유령이 있는 게 분명해......."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4h",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "작게 키득 웃는다."
+            },
+            {
+              "kind": "line",
+              "text": "진짜 유령이 있다고 해도 게일은 어떻게 못 하잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "확실히 놀리는 어조로 게일을 흘겨본다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4i",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이익...유령한테는 누구도 어떻게 할 수 없을 걸? 선생님이 쫓아주시면 좋겠는데."
+            },
+            {
+              "kind": "narr",
+              "text": "기어들어가는 목소리로 말하곤 식당으로 터덜터덜 들어갑니다."
+            },
+            {
+              "kind": "line",
+              "text": "너무 많이 먹으면 제일 먼저 잡아먹힐 거야..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4j",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "게일 말대로, 선생님도 유령 앞에서는 별 수 없을 걸?"
+            },
+            {
+              "kind": "narr",
+              "text": "게일을 따라 식당으로 들어간다."
+            },
+            {
+              "kind": "line",
+              "text": "그럼 게일 오늘 밥 많이 먹어! 난 조금만 먹을게!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4k",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나도 조, 조금만 먹을 거야!"
+            },
+            {
+              "kind": "narr",
+              "text": "다소 커진 목소리로 더듬으며 달리아에게 외칩니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "식당으로 들어가면, 서른 개 남짓의 의자가 놓인 긴 <b>테이블</b>이 먼저 보입니다. 테이블 너머로 보이는 쪽문을 통해 <b>주방</b>에 들어갈 수 있습니다."
+        },
+        {
+          "id": "id_mqq76jdo_4m",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "테이블을 쳐다본다. 애들이 많이 왔으려나?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "식사하는 아이, 반쯤 조는 아이, 다 먹고 거실로 나가는 아이. 가지각색의 얼굴들은 어쩌면 조금 낯설지도 모릅니다. 그도 그럴 게, 이제 겨우 일주일을 넘겼을 뿐인걸요."
+        },
+        {
+          "id": "id_mqq76jdo_4o",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "일단 나는 가장 먼저 잡아먹히지 않겠다. 거실로 나가는 아이를 쳐다보며 속으로 웃는다. 주방에 선생님이 있으려나?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "쪽문을 열고 들어가면 주방입니다. 벽면에 <b>화이트보드</b>가 걸려있고, 기다란 싱크대와 커다란 <b>냉장고</b>가 보입니다. 반대쪽에는 오븐이 설치되어 있습니다."
+        },
+        {
+          "id": "id_mqq76jdo_4r",
+          "type": "narration",
+          "emphasis": false,
+          "text": "싱크대 앞에서 <b>선생님</b>이 아침 식사의 뒷정리를 하고 있습니다."
+        },
+        {
+          "id": "id_mqq76jdo_4s",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "선생님!"
+            },
+            {
+              "kind": "narr",
+              "text": "선생님께 가까이 다가간다. 벌써 뒷정리를? 빠르시네."
+            },
+            {
+              "kind": "line",
+              "text": "오늘 메뉴는 뭐예요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4u",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "달리아, 좋은 아침이에요. 오늘은 토스트와 스크램블 에그, 토마토 수프랍니다. 편식하지 말고 깨끗하게 먹어야 해요?"
+            },
+            {
+              "kind": "narr",
+              "text": "선생님은 웃으며 식사가 담긴 쟁반을 달리아에게 건네줍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4v",
+          "type": "narration",
+          "emphasis": false,
+          "text": "쟁반 위에는 <b>갓 구은 토스트와 보들보들한 스크램블 에그, 싱싱하다 못해 파릇파릇한 샐러리, 새콤달콤한 오렌지 주스, 수프가 담긴 그릇</b>이 올려져 있습니다. 그릇에 한가득 담긴 <b>토마토 수프</b> 안에서 큼직한 고깃덩이가 떠다닙니다."
+        },
+        {
+          "id": "id_mqq76jdo_4w",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "맛있어 보이는 쟁반 위 식사 메뉴에 눈길 한번 주고는, 다시 선생님을 쳐다본다."
+            },
+            {
+              "kind": "line",
+              "text": "선생님, 새가 사람처럼 울 수도 있어요? 흑흑흑 하고?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq76jdo_4x",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그렇게 우는 새라면, 울새일 거에요. 사람이 우는 소리처럼 울어서 울새라고 불린답니다."
+            },
+            {
+              "kind": "narr",
+              "text": "다정하게 설명해줍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_51",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "게일한테 아는 척 할 거리가 생겨서 조금, 기쁠지도."
+            },
+            {
+              "kind": "line",
+              "text": "선생님은 모르는 게 없으시네요!"
+            },
+            {
+              "kind": "narr",
+              "text": "감사해요, 라고 꾸벅 고개를 숙이며 자연스럽게 주방 안 쪽으로 이동한다. 화이트보드에 뭐가 적혀있지?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_52",
+          "type": "narration",
+          "emphasis": false,
+          "text": "화이트보드에는 요리에 필요한 재료 따위가 적혀있습니다."
+        },
+        {
+          "id": "id_mqq7gh2q_53",
+          "type": "narration",
+          "emphasis": true,
+          "text": "<i>당근과 양파, 감자, 사과는 잘게 썰어둘 것. 토마토는 설탕에 절여둘 것, 우유는 무슨 맛으로 하지?</i>"
+        },
+        {
+          "id": "id_mqq7gh2q_54",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "토마토는 설탕이지. 고개를 끄덕인다. 눈은 화이트 보드에 고정한 채로 입을 연다"
+            },
+            {
+              "kind": "line",
+              "text": "선생님! 우유는 초코가 좋아요!"
+            },
+            {
+              "kind": "narr",
+              "text": "아마 다들 좋아할 거예요. 선생님의 고민을 덜어드렸다는 마음에 뿌듯하다."
+            },
+            {
+              "kind": "line",
+              "text": "조심조심 쟁반을 들고 뒤로 이동하다가. 아 맞다. 냉장고도 구경하고 가야지."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_56",
+          "type": "narration",
+          "emphasis": false,
+          "text": "양쪽으로 문을 여는 구조의 양문형 냉장고. 간식 시간 외에는 함부로 열 수 없습니다."
+        },
+        {
+          "id": "id_mqq7gh2q_57",
+          "type": "narration",
+          "emphasis": false,
+          "text": "…그렇지만, 몰래 한 개만 가져가면 안 들키지 않을까요?"
+        },
+        {
+          "id": "id_mqq7gh2q_58",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "오늘 밥은 맛있어보이니, 당장은 괜찮을지도... . 음, 좋은 생각이 났다! 선생님 눈치를 보고 하나를 슬쩍한다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_59",
+          "type": "narration",
+          "emphasis": true,
+          "text": "달리아, 은밀 행동 판정"
+        },
+        {
+          "id": "id_mqq7gh2q_5a",
+          "type": "dice",
+          "kind": "vs",
+          "speaker": "",
+          "item": "은밀 행동",
+          "grade": "보통",
+          "roll": "65",
+          "target": "40",
+          "result": ""
+        },
+        {
+          "id": "id_mqq7gh2q_5e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "달리아가 슬쩍 냉장고 문을 열어보려는 찰나, 뒤를 돌아본 선생님과 눈이 마주쳤습니다."
+        },
+        {
+          "id": "id_mqq7gh2q_5f",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "달리아, 선생님 허락없이 멋대로 냉장고를 열면 못 써요. 간식은 간식 시간에 먹어야죠?"
+            },
+            {
+              "kind": "narr",
+              "text": "방금전 설명해주던 목소리와는 달리 엄해진 목소리입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5g",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "억울해, 내가 먹을게 아니었는데!"
+            },
+            {
+              "kind": "line",
+              "text": "지금 받아두고 간식 시간에 먹어도 되잖아요!"
+            },
+            {
+              "kind": "narr",
+              "text": "말도 안되는 떼를 쓴다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5h",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "선생님은 잠시 고민하는 듯 하다가 여전히 엄한 목소리로 입을 엽니다."
+            },
+            {
+              "kind": "line",
+              "text": "식사를 편식하지 않고 다 먹고 그릇을 반납하러 온다면 후식을 선물로 줄게요. 어때요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5i",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "오늘 간식이 뭔지 모르겠지만, 오기가 생겨서 뭔가 먹고 싶지 않은 마음이 생긴다."
+            },
+            {
+              "kind": "line",
+              "text": "싫어요, 편식할거예요! 샐러리 맛없어요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5j",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "맛없다고 편식하면 못 써요! 오늘 간식 시간에 달리아는 안 먹어도 괜찮은 거죠?"
+            },
+            {
+              "kind": "narr",
+              "text": "선생님은 무섭게 엄포를 놓고 뒤돌아 다시 정리하는 척 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5k",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "앗, 그런 의도는 아니었는데. ...쟁반을 든 채로 뒷걸음질 치며 우물쭈물 한다."
+            },
+            {
+              "kind": "line",
+              "text": "아, 안 먹겠다는 건 아니구요..."
+            },
+            {
+              "kind": "narr",
+              "text": "깔끔하게 비우면 되는거죠? 주방을 나가 식당으로 향한다. 선생님의 대답은 더 듣지 않겠어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "서둘러 나가는 달리아의 뒷모습을 보며 선생님은 미소를 지어보였지만, 달리아에게는 보이지 않았겠네요."
+        },
+        {
+          "id": "id_mqq7gh2q_5m",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "음식이 쏟아지지 않도록 조심스럽게, 하지만 서둘러 테이블의 빈자리에 가서 식사할 준비를 한다. 어떻게든 비우면 되니까... 앉은 자리의 주위를 둘러본다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "선생님과 간식을 두고 실랑이하는 사이에 어느새 대부분의 아이가 식사를 끝내고 나간 것 같습니다."
+        },
+        {
+          "id": "id_mqq7gh2q_5o",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "게일은 있지 않을까"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "열심히 게일을 찾아보니, 저쪽에 밥을 먹는 둥 마는 둥 스크램블 에그를 숟가락으로 깨작깨작 찌르고 있는 게일이 보입니다."
+        },
+        {
+          "id": "id_mqq7gh2q_5q",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "토스트를 입에 욱여넣으며 게일의 옆으로 쟁반을 끌고간다."
+            },
+            {
+              "kind": "line",
+              "text": "게일, 왜 그래? 입맛이 없어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5r",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아, 아니, 난 그냥...조금만 먹어서 유령의 밥이 되지 않을 거야!"
+            },
+            {
+              "kind": "narr",
+              "text": "게일은 숟가락을 내려놓고 일어서려다가, 배에서 꼬르륵 소리가 나자 슬그머니 다시 앉습니다."
+            },
+            {
+              "kind": "line",
+              "text": "그, 그래도 이정도는 괜찮을 지도..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5s",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "우물우물"
+            },
+            {
+              "kind": "line",
+              "text": "맞아, 먹고 죽은 귀신이 때깔도 곱다잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "어딘가에서 주워들은 동방의 격언(?)을 얘기한다."
+            },
+            {
+              "kind": "line",
+              "text": "게일이 너무 배고프면 안되지, 같이 못 놀잖아!"
+            },
+            {
+              "kind": "narr",
+              "text": "해맑게 말하며 슬그머니 한 입 먹은 샐러리를 게일의 쟁반 위로 올린다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5t",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "갑자기 자신의 쟁반 위로 올려진 샐러리를 내려다보던 게일은 좋은 생각이 났다는 듯 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "그래 맞아, 이런 맛없는 거 안 먹고 수프만 먹으면 유령한테도 안 잡아먹힐지도 몰라."
+            },
+            {
+              "kind": "narr",
+              "text": "불쌍하게도, 게일은 선생님께 간식을 못 받을지도 모르겠네요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5u",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그럼 물론이지. 게일은 맛있는 거만 먹어!"
+            },
+            {
+              "kind": "narr",
+              "text": "빠르게 비워진 자신의 쟁반을 들고는 자리를 박차고 일어난다. 먼저 게일에게 말을 건 것은 달리아임에도 한 번 돌아보지 않고 주방을 향해 토도독 달려간다."
+            },
+            {
+              "kind": "line",
+              "text": "선생님! 다 먹었어요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5v",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "정말이네요, 약속을 지키다니 달리아는 착한 아이에요!"
+            },
+            {
+              "kind": "narr",
+              "text": "언제 엄하게 혼냈냐는 듯, 선생님은 웃으며 달리아를 칭찬해줍니다. 달리아에게 받은 쟁반을 싱크대에 넣고, 후식이라며 <b>포춘 쿠키</b>를 쥐어줍니다."
+            },
+            {
+              "kind": "line",
+              "text": "착한 아이에게는 선물을 줘야죠."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5w",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "역시 선생님의 태세 전환은 조금 무서워. 속으로 말을 삼키며 방긋 웃는다. 자신이 한 행동에 대해 별 생각 없이 떳떳하다."
+            },
+            {
+              "kind": "line",
+              "text": "잘 먹었습니다. 선생님! 게일은 편식한대요!"
+            },
+            {
+              "kind": "narr",
+              "text": "밖에서 게일이 듣든 말든 중대한 사실을 선생님께 전하고는 받은 포춘 쿠키를 바로 까본다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_5x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "구부러진 세모 모양의 과자는 얇고 바삭합니다. 반지르르한 표면이 먹음직스럽습니다."
+        },
+        {
+          "id": "id_mqq7gh2q_5y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "딱, 경쾌한 소리와 함께 과자를 부수면 안에서 흰 종이가 나옵니다."
+        },
+        {
+          "id": "id_mqq7gh2q_5z",
+          "type": "narration",
+          "emphasis": true,
+          "text": "&lt;장미를 꺾으면 좋은 일이 생길 거예요.&gt;"
+        },
+        {
+          "id": "id_mqq7gh2q_60",
+          "type": "narration",
+          "emphasis": false,
+          "text": "선생님은 달리아를 물끄러미 보다가 웃습니다. 창밖에서 울새가 지지배배 웁니다. 아침만 해도 그토록 서글프더니, 지금은 꼭 그렇지도 않습니다."
+        },
+        {
+          "id": "id_mqq7gh2q_61",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "새의 울음소리는 귀한 손님이 온다고 알리는 거랍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_62",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그래 봤자 외딴 섬, 아니, 깊은 숲속에 유배된 상황이지만요."
+        },
+        {
+          "id": "id_mqq7gh2q_63",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그럼 오늘 아침에 새가 흑흑 하고 울던 것도 귀한 손님이 온다는 거였을까요?"
+            },
+            {
+              "kind": "narr",
+              "text": "너무 서럽게 울던데요. 하고는 자신의 손에 쥐여진 종이를 바라본다. 장미를 꺾는다고? 식물을 꺾거나 뽑는 것은 좋지 않다고 알고 있는데 말이야. 일단 쿠키는 입 안에 우겨넣고 종이를 구겨 주머니 안에 넣는다."
+            },
+            {
+              "kind": "line",
+              "text": "이 포춘쿠키는 선생님이 만든 건가요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_64",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그럴지도 모르죠. 울새는 귀한 손님이 오는 데도 왜 그렇게 슬프게 운 걸까요?"
+            },
+            {
+              "kind": "narr",
+              "text": "선생님은 달리아가 상상해보라는 듯 되묻습니다."
+            },
+            {
+              "kind": "line",
+              "text": "그리고 요리는 다 선생님이 하고 있답니다. 오늘 식사는 맛있었나요?"
+            },
+            {
+              "kind": "narr",
+              "text": "조금 기대한다는 듯이 웃으며 달리아를 쳐다봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_65",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "내가 물어봤는데... 질문에 질문으로 답하는 선생님께 어색한 미소를 지어보인다. 역시 많은 걸 알려면 직접 돌아다니는 수 밖에 없나!"
+            },
+            {
+              "kind": "line",
+              "text": "맛있었어요! 샐러리도 싱싱해서 좋았어요!"
+            },
+            {
+              "kind": "narr",
+              "text": "음, 이것만 물어보고 가야겠다."
+            },
+            {
+              "kind": "line",
+              "text": "선생님, 어디있는 장미를 꺾어야 해요?"
+            },
+            {
+              "kind": "narr",
+              "text": "종이를 들이밀어 선생님께 보여준다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_66",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "장미라면, 우리 저택 바깥에 있는 정원에 있는 장미들을 말하는 것 아닐까요? 장미를 꺾을 때는 가시에 찔리지 않도록 조심하도록 해요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_67",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "장미를 꺾어도 돼요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_68",
+          "type": "dialogue",
+          "speaker": "선생님",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "포춘 쿠키에서 좋은 일이 생긴다고 했으니, 이번에만 허락해줄게요. 조심한다고 약속한다면요."
+            },
+            {
+              "kind": "narr",
+              "text": "선생님은 장미를 함부로 꺾는다는 것보다는 달리아가 다치지 않는 게 우선인 듯 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7gh2q_69",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음, 네! 감사해요!"
+            },
+            {
+              "kind": "narr",
+              "text": "선생님이 허락하신다니까, 뭐. 허락도 맡았겠다. 지금 꺾으러 가야하는지 잠시 고민한다. 다른 애들은 어디에 있지? 거실로 나가본다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7ko5r_6l",
+          "type": "bgm",
+          "ytId": "TaL5o9JPGs0",
+          "title": " Professor Layton Vs Ace Attorney Bewitching Puzzle"
+        },
+        {
+          "id": "id_mqq7gh2q_6a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "천장에는 낡은 샹들리에가 걸려있고, 푹 꺼지기 직전의 소파가 구색을 갖추고 있습니다. 소파 앞의 낮은 테이블이면 소파 여기저기에 아이들이 널브러져 있습니다."
+        },
+        {
+          "id": "id_mqq7gh2q_6b",
+          "type": "narration",
+          "emphasis": false,
+          "text": "오늘은 금요일이라 숙제가 없는 날이니까, 다들 한가한 모양입니다."
+        },
+        {
+          "id": "id_mqq7gh2q_6c",
+          "type": "narration",
+          "emphasis": true,
+          "text": "달리아, 듣기 판정"
+        },
+        {
+          "id": "id_mqq7gh2q_6d",
+          "type": "dice",
+          "kind": "vs",
+          "speaker": "",
+          "item": "듣기",
+          "grade": "보통",
+          "roll": "22",
+          "target": "60",
+          "result": ""
+        },
+        {
+          "id": "id_mqq7gh2q_6h",
+          "type": "narration",
+          "emphasis": false,
+          "text": "아이들은 시시덕거리고 있습니다. 아침식사가 맛있었다거나, 점심에는 뭘 먹고 싶다든가, 수업 듣기 싫다는...... 초능력자라곤 볼 수 없는, 평범한 10살짜리들의 대화입니다. 다들 그럭저럭 잘 적응하고 있는 모양이에요."
+        },
+        {
+          "id": "id_mqq7gh2q_6i",
+          "type": "narration",
+          "emphasis": true,
+          "text": "“나 진짜 들었다니까? 사람 목소리였어.”"
+        },
+        {
+          "id": "id_mqq7gh2q_6j",
+          "type": "narration",
+          "emphasis": false,
+          "text": "대수롭지 않은 목소리 사이에서 뾰족, 누군가 튀어나온 것은 그때입니다."
+        },
+        {
+          "id": "id_mqq7gh2q_6k",
+          "type": "narration",
+          "emphasis": false,
+          "text": "건넛방의 마틸다입니다. 테이블에 아예 자리를 잡고 앉은(선생님에게 들키면 분명히! 혼이 날 텐데) 마틸다는 몇 번이고 주장합니다. 외부인을 봤다고!"
+        },
+        {
+          "id": "id_mqq7mxop_6m",
+          "type": "dialogue",
+          "speaker": "아리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "또 울새 아니야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_6n",
+          "type": "dialogue",
+          "speaker": "리샤이",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "맞아. 어제 다 수업 중이었는데 사람은 무슨 사람이야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_6o",
+          "type": "dialogue",
+          "speaker": "제이",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "여기 외부인은 절대 출입금지잖아."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_6p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "대충 들어보니, 수업 시간에 화장실을 다녀오겠다고 나선 마틸다가 담벼락 너머에서 사람 목소리를 들었다는 것 같습니다."
+        },
+        {
+          "id": "id_mqq7mxop_6q",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그러나 아이들은 영 믿지 않는 눈치입니다. 애당초, 람피온의 저택에는 우리와 선생님이 전부인걸요. 정기적으로 음식과 생필품이 보급되지만, 그마저도 깊은 새벽에 이루어져 일주일째 외부인이라곤 한 번도 보지 못했습니다."
+        },
+        {
+          "id": "id_mqq7mxop_6r",
+          "type": "dialogue",
+          "speaker": "마틸다",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아냐, 진짜 사람이었대도? 말을 했다니까!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_6s",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "유령도 말은 할 수 있어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_6t",
+          "type": "dialogue",
+          "speaker": "마틸다",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그, 그러고보니...."
+            },
+            {
+              "kind": "narr",
+              "text": "마틸다는 곰곰이 생각하다가 어물거리며 말을 꺼냅니다."
+            },
+            {
+              "kind": "line",
+              "text": "목소리가 작아서 잘 못 들었지만, 여기가 맞냐고, 어서 찾아야 한다고 그랬어. 강도일까봐 무서워서...목소리가 사라질 때까지 기다렸다가 살짝 훔쳐봤는데……"
+            },
+            {
+              "kind": "line",
+              "text": "<b>그런데, 뭔가 이상했어. 발소리도 들리지 않았고, 그렇게 오래 지나지도 않았는데 흔적도 없이 사라졌거든.</b>"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_6x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "마틸다의 설명에 이야기를 듣던 모두의 얼굴이 희미하게 질립니다. 가장 눈에 띄게 새하얘진 게일이 새되게 비명을 지릅니다."
+        },
+        {
+          "id": "id_mqq7mxop_6y",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "진짜 유령인 거 아냐?! 람피온의 저택에 유령이 산다는 <b>소문</b>이 사실인가 봐!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_6z",
+          "type": "narration",
+          "emphasis": false,
+          "text": "람피온의 저택이 얼마나 소문이 흉흉한 곳인지는 이미 설명했죠?"
+        },
+        {
+          "id": "id_mqq7mxop_70",
+          "type": "narration",
+          "emphasis": false,
+          "text": "하지만 소문이란 바깥에서 나는 것이 있다면 안에서 고이는 것이 있기 마련."
+        },
+        {
+          "id": "id_mqq7mxop_71",
+          "type": "narration",
+          "emphasis": false,
+          "text": "람피온의 저택에서 알음알음 전해지는 이야기가 있습니다. 입학 첫날, 선생님이 얄궂게 웃으며 들려준 소문이었습니다. <i>(유령에 관한 소문은 없었습니다만)</i>"
+        },
+        {
+          "id": "id_mqq7mxop_72",
+          "type": "dialogue",
+          "speaker": "사라",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<b>유령은 분홍색 눈을 가졌다더라. 사람의 피를 머금어서 그런 색을 띤대.</b>"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_73",
+          "type": "narration",
+          "emphasis": false,
+          "text": "괴담을 좋아하는 사라가 속삭이자 다들 소스라칩니다."
+        },
+        {
+          "id": "id_mqq7mxop_74",
+          "type": "narration",
+          "emphasis": false,
+          "text": "꺄악, 부러 소리높인 비명이 오히려 꽤 즐겁습니다. 저택에 끌려온 첫날, 하나 같이 죽상을 하던 아이들은 어느덧 웃음과 장난을 되찾았습니다."
+        },
+        {
+          "id": "id_mqq7mxop_75",
+          "type": "narration",
+          "emphasis": false,
+          "text": "음, 그러니까, 꽤 평범한 기숙학원처럼 느껴질 정도로요."
+        },
+        {
+          "id": "id_mqq7mxop_76",
+          "type": "narration",
+          "emphasis": false,
+          "text": "흑흑, 흑, 흐윽……. 창밖에선 또다시 울새가 웁니다."
+        },
+        {
+          "id": "id_mqq7mxop_77",
+          "type": "dialogue",
+          "speaker": "마틸다",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "정말 유령이었을까..?"
+            },
+            {
+              "kind": "narr",
+              "text": "마틸다는 달리아에게 포춘 쿠키에서 나온 듯한 종이조각을 보여주며 말을 겁니다."
+            },
+            {
+              "kind": "line",
+              "text": "여기에서는 분명 모르는 사람을 경계하라고만 적혀있었단 말이야. 사람이라고 써있었다구...너는 뭐가 나왔어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_78",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "마틸다도 간식 받았구나!"
+            },
+            {
+              "kind": "narr",
+              "text": "흠, 마틸다의 종이조각을 유심히 보더니 제 주머니를 뒤져 자신의 종이조각을 건네 보인다."
+            },
+            {
+              "kind": "line",
+              "text": "나는, 장미를 꺾으래. 좋은 일이 있을 거라는데... 내가 장미를 꺾으면 유령도, 모르는 사람도 사라지지 않을까?"
+            },
+            {
+              "kind": "narr",
+              "text": "그게 좋은 일일 수도! 친구들을 한번 쭉 둘러본다."
+            },
+            {
+              "kind": "line",
+              "text": "다른 친구들은 포춘쿠키에서 뭐 나왔어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_79",
+          "type": "dialogue",
+          "speaker": "신",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나는 불을 조심하라는 거야. 어...불을 쓸 수 있는 친구 있어? 오늘만 나랑 멀리 지내자^^"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7a",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "다른 친구들은 뭘 받았으려나,,, 궁금해하며 기다린다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7b",
+          "type": "dialogue",
+          "speaker": "아리아",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "난 일찍 자고 일어나면 침대 밑에 좋은 게 있을 거래! 뭐가 있으려나~ 예쁜 목걸이 같은 거면 좋겠다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7c",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나, 나는 밤에 누군가를 만날 수 있을 거래. 유령이면 어떡해? 누가 나랑 밤에 같이 있어 줘..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7d",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "게일, 너도 간식 받았구나?"
+            },
+            {
+              "kind": "narr",
+              "text": "눈을 동글 뜨고는, 입꼬리를 올려 웃는다. 선생님이 나에게만...!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7e",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "다 먹으라고 좀 혼나긴 했지만...그치만 다 먹어서 유령한테 잡아먹히면 어떡하냐고 했더니 선생님이 간식 주셨어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7f",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "쳇"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7g",
+          "type": "dialogue",
+          "speaker": "사라",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "후훗, 이런 걸 남들한테 다 얘기하고 다니면 효과가 없어지는 거 몰라? 난 비밀로 할게."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7h",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 사라... 일리있는 말인 걸?"
+            },
+            {
+              "kind": "narr",
+              "text": "그럼 나는 장미를 꺾어도 효과가 별로려나. 흠, 사라의 말에 조금 난처한 듯 표정을 짓다가, 이내 방긋 웃는다. 몇 명 안 들었으니까 괜찮아."
+            },
+            {
+              "kind": "line",
+              "text": "나, 장미 꺾으러 나갈건데, 같이 갈 사람?"
+            },
+            {
+              "kind": "narr",
+              "text": "게일을 빠안히 쳐다본다."
+            },
+            {
+              "kind": "line",
+              "text": "나랑 같이 가주면 나도 한 번 도와줄게~."
+            },
+            {
+              "kind": "narr",
+              "text": "없으면 말고!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7i",
+          "type": "dialogue",
+          "speaker": "게일",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "..정말? 정말이다? 약속한 거야?"
+            },
+            {
+              "kind": "narr",
+              "text": "게일이 우물쭈물 달리아를 따라갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqq7mxop_7j",
+          "type": "dialogue",
+          "speaker": "달리아 리모스",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "좋은 일 생기면 얘기해줄게!"
+            },
+            {
+              "kind": "narr",
+              "text": "친구들에게 호언장담을 하고는 게일을 끌고 정원으로 나선다."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
