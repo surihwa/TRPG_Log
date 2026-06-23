@@ -5,8 +5,8 @@
 .viewer.show{display:block;}
 .viewer-scroll{position:absolute; inset:0; overflow-y:auto; scroll-behavior:smooth;}
 
-.viewer.light{--v-bg:#f3eee3; --v-panel:#fffdf7; --v-text:#2b2620; --v-soft:#7a7264; --v-line:#e3dccb; --v-bubble:#fffdf7; --v-narr:#4d473d; --v-bar:rgba(248,244,236,.92);}
-.viewer.dark{--v-bg:#0d1016; --v-panel:#161b25; --v-text:#e9e7e0; --v-soft:#8b93a3; --v-line:#252c39; --v-bubble:#171d28; --v-narr:#c3c8d2; --v-bar:rgba(13,16,22,.88);}
+.viewer.light{--v-bg:#f3eee3; --v-panel:#fffdf7; --v-text:#171310; --v-soft:#534b3e; --v-line:#e3dccb; --v-bubble:#fffdf7; --v-narr:#322c22; --v-bar:rgba(248,244,236,.92);}
+.viewer.dark{--v-bg:#0d1016; --v-panel:#161b25; --v-text:#f4f2ec; --v-soft:#b3bac7; --v-line:#252c39; --v-bubble:#171d28; --v-narr:#dde1e8; --v-bar:rgba(13,16,22,.88);}
 .viewer{background:var(--v-bg); color:var(--v-text);}
 
 /* 상단 바 */
@@ -34,12 +34,12 @@
 
 /* 나레이션 — 강조형(중앙 세리프) */
 .v-narr-em{
-  font-family:var(--serif); font-weight:300; font-size:18px; line-height:2.05;
+  font-family:var(--serif); font-weight:400; font-size:18px; line-height:2.05;
   color:var(--v-narr); text-align:center; margin:34px auto; max-width:560px; letter-spacing:.005em;
 }
 /* 나레이션 — 일반형(지문 느낌: 좌측 정렬, 작고 기울임) */
 .v-narr-normal{
-  font-family:var(--serif); font-weight:300; font-style:italic; font-size:14.5px; line-height:1.95;
+  font-family:var(--serif); font-weight:400; font-style:italic; font-size:14.5px; line-height:1.95;
   color:var(--v-soft); margin:18px auto; max-width:560px; padding-left:14px;
   border-left:2px solid var(--v-line);
 }
@@ -60,9 +60,9 @@
   padding:13px 17px; box-shadow:0 1px 3px rgba(0,0,0,.05); width:100%;
 }
 .v-line.right .v-bubble{border-left:1px solid var(--v-line); border-right:3px solid var(--seal); border-radius:13px 4px 13px 13px;}
-.v-bubble .speech{font-size:15.5px; line-height:1.78;}
+.v-bubble .speech{font-size:15.5px; line-height:1.78; color:var(--v-text);}
 .v-bubble .speech + .speech{margin-top:7px;}
-.v-bubble .stage{font-family:var(--serif); font-weight:300; font-style:italic; font-size:13.5px; color:var(--v-soft); line-height:1.7; margin:6px 0; display:block;}
+.v-bubble .stage{font-family:var(--serif); font-weight:400; font-style:italic; font-size:13.5px; color:var(--v-soft); line-height:1.7; margin:6px 0; display:block;}
 .v-bubble b{font-weight:700;} .v-bubble i{font-style:italic;}
 
 /* 다이스 — 판정명 강조 헤더 */

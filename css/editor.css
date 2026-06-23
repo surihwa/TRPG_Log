@@ -32,7 +32,7 @@
 /* 등장인물 행 */
 .char-list{display:flex; flex-direction:column; gap:10px;}
 .char-row{
-  display:grid; grid-template-columns:1.4fr .9fr 2.4fr 46px 36px; gap:10px; align-items:center;
+  display:grid; grid-template-columns:34px 1.4fr .9fr 2.4fr 44px 32px; gap:10px; align-items:center;
   background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:10px 12px;
 }
 .char-row .swatch{width:40px; height:40px; border-radius:8px; border:1px solid var(--line-2); padding:0; cursor:pointer;}
@@ -130,5 +130,8 @@
 
 @media (max-width:680px){
   .grid2,.grid3,.dice-fields{grid-template-columns:1fr;}
-  .char-row{grid-template-columns:1fr 1fr; row-gap:8px;}
+  .char-row{grid-template-columns:34px 1fr 32px; row-gap:8px;}
+  .char-row > select, .char-row > input[type=text], .char-row > .swatch{grid-column:2;}
+  .char-row .av-prev{grid-row:1; grid-column:1;}
+  .char-row .del{grid-row:1; grid-column:3;}
 }
