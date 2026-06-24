@@ -1,24 +1,24 @@
 {
   "id": "id_mqqfhvbq_0",
-  "folder": "람피온의 저택-달데",
-  "title": "2부: 미로의 회전축",
+  "folder": "달데",
+  "title": "람피온의 저택 2부: 미로의 회전축",
   "date": "",
   "theme": "light",
-  "cardImage": "image/lampion_dalde/card2.png",
+  "cardImage": "image/dalde/card2.png",
   "characters": [
     {
       "id": "id_mqqfhvbq_1",
       "name": "달리아 리모스",
       "role": "PC",
       "color": "#b01129",
-      "img": "image/lampion_dalde/dahlia1.png"
+      "img": "image/dalde/dahlia1.png"
     },
     {
       "id": "id_mqqfolrf_3",
       "name": "데시",
       "role": "KPC",
       "color": "#e4b9d0",
-      "img": "image/lampion_dalde/dessy2.png"
+      "img": "image/dalde/dessy2.png"
     },
     {
       "id": "id_mqqfom6r_4",

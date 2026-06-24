@@ -1,24 +1,24 @@
 {
   "id": "id_mqq711uu_2e",
-  "folder": "람피온의 저택-달데",
-  "title": "1부: 람피온의 저택",
+  "folder": "달데",
+  "title": "람피온의 저택 1부: 람피온의 저택",
   "date": "",
   "theme": "light",
-  "cardImage": "image/lampion_dalde/card1.png",
+  "cardImage": "image/dalde/card1.png",
   "characters": [
     {
       "id": "id_mqq711uu_2f",
       "name": "달리아 리모스",
       "role": "PC",
       "color": "#941434",
-      "img": "image/lampion_dalde/dahlia1.png"
+      "img": "image/dalde/dahlia1.png"
     },
     {
       "id": "id_mqq71rvy_2h",
       "name": "흰 옷의 아이",
       "role": "KPC",
       "color": "#f5cce0",
-      "img": "image/lampion_dalde/dessy1.png"
+      "img": "image/dalde/dessy1.png"
     },
     {
       "id": "id_mqq71s75_2i",
