@@ -4,21 +4,21 @@
   "title": "람피온의 저택 3부: 꽃의 뼈",
   "date": "",
   "theme": "light",
-  "cardImage": "image/lampion_dalde/card3.png",
+  "cardImage": "image/dalde/card3.png",
   "characters": [
     {
       "id": "id_mqqhvo68_1",
       "name": "달리아",
       "role": "PC",
       "color": "#a30f1e",
-      "img": "image/lampion_dalde/dahlia3.jpg"
+      "img": "image/dalde/dahlia3.jpg"
     },
     {
       "id": "id_mqqhwe7n_3",
       "name": "데시",
       "role": "PC",
       "color": "#e8c0d7",
-      "img": "image/lampion_dalde/dessy3.png"
+      "img": "image/dalde/dessy3.png"
     },
     {
       "id": "id_mqqhwwcn_4",
