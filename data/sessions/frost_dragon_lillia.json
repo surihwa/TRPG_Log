@@ -11,35 +11,35 @@
       "name": "릴리아 올드로즈",
       "role": "PC",
       "color": "#e9b9d0",
-      "img": "image/frost_dragon/lillia.png"
+      "img": "image/ff14/lillia.png"
     },
     {
       "id": "id_mqqm9xgf_3",
       "name": "서리화",
       "role": "KPC",
       "color": "#4c288f",
-      "img": "image/frost_dragon/surihwa.png"
+      "img": "image/ff14/surihwa.png"
     },
     {
       "id": "id_mqqma2g1_5",
       "name": "푸르슈노 올드로즈",
       "role": "NPC",
       "color": "#4b6faa",
-      "img": "image/frost_dragon/preshuno.png"
+      "img": "image/ff14/preshuno.png"
     },
     {
       "id": "id_mqqma727_6",
       "name": "야슈톨라 룰",
       "role": "NPC",
       "color": "#8244c1",
-      "img": "image/frost_dragon/ystola.png"
+      "img": "image/ff14/ystola.png"
     },
     {
       "id": "id_mqqmabj3_7",
       "name": "위리앙제 오귀레",
       "role": "NPC",
       "color": "#bbbdc3",
-      "img": "image/frost_dragon/uirange.png"
+      "img": "image/ff14/uirange.png"
     },
     {
       "id": "id_mqqmax9b_8",
