@@ -1,0 +1,4491 @@
+{
+  "id": "id_mqrsrpur_kg",
+  "folder": "소양유하",
+  "title": "바다의 혀",
+  "date": "",
+  "theme": "light",
+  "cardImage": "image/soyangyuha/seatongue_card.png",
+  "characters": [
+    {
+      "id": "id_mqrsrpur_kh",
+      "name": "남유하",
+      "role": "PC",
+      "color": "#0e157c",
+      "img": "image/soyangyuha/yuha.png"
+    },
+    {
+      "id": "id_mqrsskhw_kj",
+      "name": "강소양",
+      "role": "KPC",
+      "color": "#ad6225",
+      "img": "image/soyangyuha/soyang.png"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "id_mqrsw09l_od",
+      "title": "I. 여행의 시작",
+      "blocks": [
+        {
+          "id": "id_mqrsx7z6_ok",
+          "type": "narration",
+          "emphasis": true,
+          "text": "1일차<br>[ 20XX. 12. 28 PM 13 : 39… ]"
+        },
+        {
+          "id": "id_mqrsx7z6_om",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<b>\"유하야?\"</b><br><i>―아, 차가워.</i> 신발 가죽이 젖어드는 감각과 함께 정신을 차립니다. 그보다는 당신의 이름을 부르는 강소양의 목소리가 더 빨랐나요.<br>순서를 가늠할 새도 없이 살을 에는 냉기에 발끝이 곱아듭니다.<br>거품이 팔 할인 하얀 파도가 복사뼈를 적시고 부서집니다. 아무래도… 한 쪽 발이 통째로 젖은 것 같죠. 낭패입니다.<br>강소양은 당황한 표정으로 남유하를 끌어당기며 말합니다."
+        },
+        {
+          "id": "id_mqrsx7z6_on",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "갑자기 바다 쪽으로 걸어 들어가서 놀랐어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_oo",
+          "type": "narration",
+          "emphasis": false,
+          "text": "바다 쪽으로 걸어 들어가고 있었다고? 달리 그런 기억은 없습니다. 아무래도 머리까지 꽁꽁 얼어붙을 만큼의 강추위에 잠시 넋을 놓고 걸었던 것 같습니다. 젖은 모래가 신발코를 따라 미끄러집니다."
+        },
+        {
+          "id": "id_mqrsx7z6_op",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오늘따라 묘하네. 이 겨울에 수영이라도 하려고? 뭐, 유하라면 그럴리 없었겠지만 말이야."
+            },
+            {
+              "kind": "narr",
+              "text": "당황스러운 상황을 모면하려는 듯 더 크게 웃어보입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_oq",
+          "type": "narration",
+          "emphasis": false,
+          "text": "소금물에 양껏 젖은 한 쪽 발이 무겁습니다. 혹시 몰라 캐리어에 여분의 신발을 챙겨 넣었던 것이 다행이군요. 체크인 시간보다 이르게 도착해 시간을 떼울 겸 점심을 먹고 이 주변을 걷기로 한 것까지는 좋았는데… 애꿎은 신발을 버렸다는 생각에 어쩐지 억울한 마음이 듭니다.<br>하지만 <i>신발을 버렸다는 억울함도 잠시.</i> …깊이를 알 수 없는 검푸른 파랑, 다소 싱겁게 느껴지는 바닷바람, 핏기 없는 해변의 모래사장. 손가락이 꺾일 것만 같은 매서운 날씨도 기꺼이 감수할 수 있을 만큼 이곳은 아름답고, 완벽하고, 특별하군요.<br>문득 걸어온 길의 반대편을 돌아봅니다. 영하로 뚝 떨어진 기온을 이기지 못해 서늘함만을 간직한 모래사장 위로 오로지 두 사람의 발자국이 점점이 찍혀 있습니다. 하늘은 냉기를 머금은 바다의 색을 반대로 반사한듯 탁하고, 창백하며, 채도 낮은 푸른 색을 띠고 있습니다."
+        },
+        {
+          "id": "id_mqrsx7z6_or",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "신발은, 아니 발은 괜찮아?"
+            },
+            {
+              "kind": "narr",
+              "text": "다시 들어갈 건 아니지? 장난스레 묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_os",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "안 괜찮아."
+            },
+            {
+              "kind": "narr",
+              "text": "멍때리다가 이게 무슨 봉변이람. 툴툴거리며 반대쪽으로 걸어나옵니다. 젖은 발을 어떻게든 탈탈 털어 물기를 덜어내려고 하면서요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_ot",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그래도 캐리어는 맡겨뒀으니까, 체크인 하고 갈아신으면 괜찮을거야."
+            },
+            {
+              "kind": "narr",
+              "text": "이제는 유하의 툴툴거림은 일상인 듯 자연스럽게 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "안 괜찮아도 어쩔 수 없지, 뭐. 걸어들어간 건 유하잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "헤실 웃습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsyrx8_ql",
+          "type": "narration",
+          "emphasis": true,
+          "text": "듣기 판정"
+        },
+        {
+          "id": "id_mqrsx7z5_oe",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "59",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrsx7z6_ow",
+          "type": "narration",
+          "emphasis": false,
+          "text": "쏴아아. 메마른 백사장 위로 파도소리가 밀려 올라왔다가 스며들길 반복합니다. 어쩐지 기분이 몽롱합니다. <b>바다에는 사람을 홀리는 힘</b>이 있다던데, 틀린 말은 아니지 싶습니다."
+        },
+        {
+          "id": "id_mqrsx7z6_ox",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "으, 추워."
+            },
+            {
+              "kind": "narr",
+              "text": "바닷 바람이 서늘합니다. 빤히 바다를 쳐다보며 유하를 향해 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "지금 몇 시야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_oy",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "1시."
+            },
+            {
+              "kind": "narr",
+              "text": "뒷부분은 대뜸 생략하고...알려줍니다."
+            },
+            {
+              "kind": "line",
+              "text": "한낮인데도 이렇게 춥네."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_oz",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "..."
+            },
+            {
+              "kind": "narr",
+              "text": "분명 한참 전에 한시였으니 지금쯤 2시에 가까운 시간일겁니다."
+            },
+            {
+              "kind": "line",
+              "text": "고마워."
+            },
+            {
+              "kind": "narr",
+              "text": "별 태클을 걸지 않고는 고마움을 전합니다. 바닷 바람을 맞으며 두 팔을 손으로 문지릅니다. 딱히 따뜻해지진 않지만..."
+            },
+            {
+              "kind": "line",
+              "text": "슬슬 체크인 시간일테니까, 리조트로 들어갈래?"
+            },
+            {
+              "kind": "narr",
+              "text": "흘깃 유하의 신발을 바라봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_p0",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "가자."
+            },
+            {
+              "kind": "narr",
+              "text": "젖은 신발을 끌고 해변을 걸어나갑니다. 물기에 모래가 달라붙는 것이 영 기분이 나쁩니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_p1",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남유하와 강소양은 리조트 쪽으로 몸을 돌립니다. 시선이 온전히 거두어지기 전에..."
+        },
+        {
+          "id": "id_mqrsx7z6_p2",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqrsx7z6_of",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "98",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrsx7z6_p4",
+          "type": "narration",
+          "emphasis": false,
+          "text": "저만치 뒤따라 걷던 커플 한 쌍과 눈이 마주칩니다. 머쓱합니다."
+        },
+        {
+          "id": "id_mqrszonw_qm",
+          "type": "narration",
+          "emphasis": true,
+          "text": "로비<br>[ PM 14 : 13 ]"
+        },
+        {
+          "id": "id_mqrsx7z6_p6",
+          "type": "narration",
+          "emphasis": false,
+          "text": "회전문을 타고 로비에 들어서는 즉시 난방으로 인해 훈훈한 온기를 느낍니다. 빳빳이 굳어있던 손가락이며 양 뺨에 조금씩 감각이 돌아오기 무섭게 강소양이 남유하를 프런트 데스크 쪽으로 이끕니다.<br>유니폼을 단정히 차려입은 직원 두 어 명이 업무를 보고 있네요. 프런트는… 이미 체크인을 하기 위해 몰려든 투숙객 두 어 무리로 만석입니다.<br>겨울바다만의 운치를 만끽하기 위해 부러 성수기를 피해 투숙하는 방문객들도 적지 않더라는 말이 떠오릅니다.<br>그렇게 잠시 기다리면 금세 두 사람의 차례가 옵니다."
+        },
+        {
+          "id": "id_mqrsx7z6_p7",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "환영합니다 고객님. 무엇을 도와드릴까요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_p8",
+          "type": "narration",
+          "emphasis": false,
+          "text": "고객을 위해 진심으로 봉사하겠다는 양 지어보이는 미소가 퍽 자연스럽습니다."
+        },
+        {
+          "id": "id_mqrsx7z6_p9",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "체크인하려고요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pa",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "예약 확인을 도와드리겠습니다. 예약자분의 성함을 말씀해주시고, 신분증을 제시해 주세요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pb",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "남유하 이름으로 예약했어요. 잠시만요."
+            },
+            {
+              "kind": "narr",
+              "text": "뒤를 돌아 유하를 보며 손을 내밉니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pc",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "아, 소리를 내며 지갑을 꺼내 신분증을 빼내어 직원에게 내밉니다. 소양이의 손은 허공에 있는 채로 두고요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pd",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "머쓱하지 않은 척 손을 내립니다. 이럴 줄 알았어..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pe",
+          "type": "narration",
+          "emphasis": false,
+          "text": "신분증을 제시하면 직원은 프론트 한구석에 마련 되어 있는 <b>서류를 한 장</b> 건넵니다."
+        },
+        {
+          "id": "id_mqrsx7z6_pf",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "예약된 객실의 입실 가능 여부를 한 번 더 확인해 드리겠습니다. 잠시 기다려 주시는 동안 서류를 작성해주세요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pg",
+          "type": "narration",
+          "emphasis": false,
+          "text": "흰 색의 서류 위로 검은 색의 볼펜이 올라옵니다. 직원은 데스크 PC의 모니터 자판을 몇 번 두드리고는 어디론가 전화를 겁니다.<br>서류를 확인하면…<br>여느 숙박업소에서나 받아 볼 수 있을 법한 형식적인 사항이 주를 이루고 있습니다. 이름, 주소, 휴대폰 번호 등을 적을 수 있는 공란과 전염 위험성이 있는 병을 가지고 있지는 않은지에 관한 여부. 그런 것들.<br>서류를 적어내려가면 하단에 리조트 이용 약관, 주의사항, 취소 날짜에 따른 환불 금액 따위가 명시되어 있는 것이 보입니다.<br>서류를 모두 작성하고 직원에게 건네면 직원은 <b>대뜸 죄송하다는 말을 합니다.</b> <i>무슨 일 일까요?</i>"
+        },
+        {
+          "id": "id_mqrsx7z6_ph",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "시설 파손 문제로 인해 예약해주신 객실로의 입실이 불가능 할 것 같습니다."
+            },
+            {
+              "kind": "line",
+              "text": "급하게 입실 가능한 다른 객실을 알아보고 있으니, 잠시만 기다려주시겠어요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pi",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "갑자기 무슨..."
+            },
+            {
+              "kind": "narr",
+              "text": "황당함을 감추지 못하고 얼굴에 그대로 드러냅니다. 그 표정 그대로 고개를 돌려 소양을 바라봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pj",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "내가 한 거 아니야."
+            },
+            {
+              "kind": "narr",
+              "text": "추궁한 것도 아닌데 급하게 부정합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pk",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "왜 혼자 찔리는 거야."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pl",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "..."
+            },
+            {
+              "kind": "narr",
+              "text": "크흠."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pm",
+          "type": "narration",
+          "emphasis": false,
+          "text": "잠깐의 대화를 두고 직원은 죽을 죄를 지은 것처럼 연신 고개를 숙여 사과하고 있습니다.<br>클레임을 걸 생각도 없었겠지만... 직원의 모습에 뭐라고 하려던 것도 쏙 들어갑니다. 어쩔 수 없이 직원의 호출이 있기 전까지 로비에서 잠시 기다리는 편이 좋겠습니다.<br>로비를 전체적으로 둘러봅니다. 은은한 블랙펄과 화이트톤의 대리석 조합을 자랑하고 있어요. 간간이 배치되어있는 우드가 부담스럽지 않은 프라이빗한 느낌을 더합니다. <b>출입구</b>가 마련되어있는 <b>벽면</b> 전체는 유리로 처리되어 있어 탁 트인 뷰가 가히 인상적이군요. 중앙에 조형물을 올린 커다란 <b>분수</b>가 놓여 있고, 그 위로는 크리스털로 세공한 와인잔을 뒤집어 매단듯 눈부신 샹들리에가 금색의 빛을 쏟아내고 있습니다. <b>프론트 데스크</b> 주변에 예비 투숙객들을 위한 <b>라운지</b> 형식의 대기석이 마련되어 있고, 두 사람은 이 곳에 서있습니다. 한 켠에 자리하고 있는 <b>작은 카페</b>도 눈에 들어옵니다."
+        },
+        {
+          "id": "id_mqrsx7z6_pn",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "분수대가 눈에 띕니다. 화려한 샹들리에도요. 그쪽을 향해 걸어갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_po",
+          "type": "narration",
+          "emphasis": false,
+          "text": "대리석을 구석구석 깎아 만들어 고아한 느낌을 자아내는 그리스풍의 분수대입니다. 바닷물을 끌어다 사용한 모양인지 가까이 다가서면 약하게 소금 냄새가 맡아집니다. 그 위에 올려진 조형물은 꼭 추상적인 파도의 모습을 담았습니다. 쟁반처럼 생긴 넓은 홈에서 졸졸졸 물이 떨어집니다. 다시 보니 조형물 중앙의 홈에 동전을 던져 넣을 수 있을 것 같습니다.<br>행운 판정"
+        },
+        {
+          "id": "id_mqrsx7z6_og",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "69",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrsx7z6_oh",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "75",
+          "roll": "96",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrsx7z6_ps",
+          "type": "narration",
+          "emphasis": false,
+          "text": "유하의 손에 억지로 동전을 쥐여주고선... 활기차게 동전을 던진다."
+        },
+        {
+          "id": "id_mqrsx7z6_pt",
+          "type": "narration",
+          "emphasis": false,
+          "text": "얕은 금속음과 함께 동전이 튕겨지고… 남유하의 동전은 정확히 분수대 중앙의 홈에 떨어집니다. 나이스! 소원이라도 빌어보는 건 어때요?<br>반면 강소양의 동전은 그대로 분수대 구석에 입수합니다. 이런 날도 있는 법이죠."
+        },
+        {
+          "id": "id_mqrsx7z6_pu",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "앗! 아깝다!"
+            },
+            {
+              "kind": "narr",
+              "text": "하나도 안 아깝습니다."
+            },
+            {
+              "kind": "line",
+              "text": "유하야 너 오늘 하루 운 좋겠네!"
+            },
+            {
+              "kind": "narr",
+              "text": "부럽다는 듯 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pv",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "'...의 다음 권이 빨리 나왔으면.' 소박하지만 유하에겐 중요한 소원을 빠르게 속으로 빕니다."
+            },
+            {
+              "kind": "line",
+              "text": "그냥 들어간 것뿐인데 뭐가 있겠어?"
+            },
+            {
+              "kind": "narr",
+              "text": "방금 소원을 빌어놓고선 괜시리 안 믿는 척합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_pw",
+          "type": "narration",
+          "emphasis": false,
+          "text": "바다로 향하는 벽면 전체가 유리로 처리되어 있습니다. 탁 트인 뷰 덕인지 꼭 따듯한 모래사장에 서있는 것 같다는 착각이 들 정도입니다. 손으로 만져보면 지문이 남습니다."
+        },
+        {
+          "id": "id_mqrt4i7u_qn",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqrsx7z6_oi",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "72",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrsx7z6_pz",
+          "type": "narration",
+          "emphasis": false,
+          "text": "하루도 빠짐없이 닦고 문지르는 모양인지 먼지 한 올 묻어 있지 않아 깨끗합니다. 손으로 만지기 미안할 정도예요."
+        },
+        {
+          "id": "id_mqrsx7z6_q0",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "냅다 벽면에 손을 가져다 댑니다. 바다를 만지는 것처럼요."
+            },
+            {
+              "kind": "line",
+              "text": "엄청 깨끗하다."
+            },
+            {
+              "kind": "narr",
+              "text": "바다도 잘 보이고..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_q1",
+          "type": "narration",
+          "emphasis": false,
+          "text": "중앙에는 회전문이, 그 양 옆으로는 자동 문이 설치 되어 있습니다. 바깥을 거닐던 사람들이 체크인을 하기 위해 하나 둘 로비 안으로 들어서는 것이 보입니다. 자동문이 열릴 때마다 서늘한 한기와 함께 짭쪼롬한 바다 냄새가 유통됩니다.<br>담당 직원은 일사불란하면서도 쉴 틈 없이 한 쪽 손으로 전화를 받고, 한 쪽 손으로 서류에 무엇인가를 적어내리고 있습니다. 새 객실을 구하는데 여념이 없어 보입니다. 시간이 조금 걸릴 것 같습니다.<br>-<br>테이블이 함게 마련된 라운지의 대기석 듬성듬성 사람들이 앉아 있습니다. 한구석에 목이 마르다고 칭얼거리는 아이를 달래는 보호자도 눈에 띕니다."
+        },
+        {
+          "id": "id_mqrsx7z6_q2",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "우리 카페 가서 뭐라도 마시자."
+            },
+            {
+              "kind": "narr",
+              "text": "어쩐지 자기도 목이 마른 것 같습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_q3",
+          "type": "narration",
+          "emphasis": false,
+          "text": "로비의 창가쪽에 자리하고 있는 간소하고도 아담한 카페입니다. 바다를 눈요기삼아 커피 한 잔 마시는 것도 나쁘지 않은 일입니다."
+        },
+        {
+          "id": "id_mqrsx7z6_q4",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "좋아, 내가 사올까?"
+            },
+            {
+              "kind": "narr",
+              "text": "아니면 같이 갈래? 묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_q5",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "가서 앉아있자. 보니까 한참 걸릴 것 같고..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_q6",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "응!"
+            },
+            {
+              "kind": "narr",
+              "text": "유하가 무언가를 권유하다니 잘 없는 일인데. 들떠서 유하와 함께 카페로 들어갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_q7",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>\"어서오세요. 주문 도와드리겠습니다.\"</i> 화한 점심의 겨울 햇살이 들어오는 카페입니다. 동시에 청량한 직원의 목소리가 두 사람을 반깁니다. 찝찔한 바다향과 더불어 고소하고 쌉싸래한 원두 냄새가 사뭇 조화롭게 뒤섞여 있군요. 메뉴는 여느 카페에서나 볼 수 있을 법한 것들입니다. 아메리카노, 각종 라떼류, 모카, 프라푸치노, 과일차 등등. 쇼케이스 안의 조각케이크와 스콘, 쿠키, 베이글 정도의 디저트도 보입니다."
+        },
+        {
+          "id": "id_mqrsx7z6_q8",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뭐 마실거야? 나는 아바라!"
+            },
+            {
+              "kind": "narr",
+              "text": "아이스 바닐라라떼를 주문합니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_q9",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "핫초코."
+            },
+            {
+              "kind": "narr",
+              "text": "커피따윈 써서 싫습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_qa",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "아직 어리군. 속으로 고개를 절레 흔듭니다. 커피의 쓴맛을 모르다니, 인생이 더 쓰거늘... 이라는 말을 꾹 삼키고요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_qb",
+          "type": "narration",
+          "emphasis": false,
+          "text": "주문을 하고 기다리면 창가에 앉아있는 두 사람의 대화소리가 들려옵니다."
+        },
+        {
+          "id": "id_mqrt4yqo_qo",
+          "type": "narration",
+          "emphasis": true,
+          "text": "듣기 판정"
+        },
+        {
+          "id": "id_mqrsx7z6_oj",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "95",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrsx7z6_qe",
+          "type": "narration",
+          "emphasis": false,
+          "text": "\"시간 많이 남는데 한 잔 더 시킬까?\"<br>\"난 됐어. 그러다 저녁 못 먹고 남긴다?\"<br>잔잔한 소음같은 대화가 아무렇지 않게 귀를 스쳐 지나가고… 얼마 있지 않아 직원의 목소리가 들려옵니다.<br><i>\"주문하신 아이스 바닐라라떼랑 핫초코 나왔습니다.\"</i><br>픽업 카운터를 통해 음료를 건네주고는, \"맛있게 드세요. 시럽은 우측 카운터에, 스트로우와 티슈도 함께 마련되어 있습니다. 즐거운 하루 되시길 바라요.\" 감사 인사를 덧붙이는 것을 잊지 않습니다. 서비스 마인드가 투철한 직원인가봐요."
+        },
+        {
+          "id": "id_mqrsx7z6_qf",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "감사합니다!"
+            },
+            {
+              "kind": "narr",
+              "text": "주문한 음료를 챙기며 물 한잔을 요구합니다. 직원은 친절히 대응하여 줍니다. 자리로 걸어오며 눈을 동그랗게 뜨며 유하에게 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "여기 되게 친절하다. 조금은 부담스러운데?"
+            },
+            {
+              "kind": "narr",
+              "text": "하지만 기분 좋은 듯 헤실 웃습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_qg",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "맞아. 부담스러워."
+            },
+            {
+              "kind": "narr",
+              "text": "왠일로 소양의 말에 동의합니다. 의미는 조금 다른 것 같아도요. 휘핑이 잔뜩 올라간 컵을 들어 한모금 마십니다. 아, 이 단맛이지."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_qh",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하를 따라 한모금 마십니다. 아, 이 달콤씁쓸한 맛!"
+            },
+            {
+              "kind": "line",
+              "text": "다음에 또 와도 괜찮겠다."
+            },
+            {
+              "kind": "narr",
+              "text": "여름을 떠올립니다. 유하가 동의할 일일지는 모르겠지만. 떼를 쓰다보면 같이 와주지 않을까, 하고 당연하게 생각합니다."
+            },
+            {
+              "kind": "line",
+              "text": "불친절한 것보다 부담스러운게 낫잖아?"
+            },
+            {
+              "kind": "narr",
+              "text": "호롭."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_qi",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그래도 적당함이라는 게 있잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "입가에 묻은 휘핑크림을 닦으며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "그런데 여기 또 오려고?"
+            },
+            {
+              "kind": "narr",
+              "text": "고등학교 1학년때 있었던 사건만 떠올리면 마음이 싱숭생숭해지는 탓에, 바다로 놀러가자는 소양의 말에 마지못해 따라왔습니다. 물론 이번 한 번만이라는 생각이었다고요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_qj",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "응! 아 그리고, 봄에는 개강하고 같이 개강파티하고 벚꽃 피면 벚꽃 보러 가고. 중간고사 기간에는 같이... 쫑알대며 앞으로 '함께'할 대학교 생활을 줄줄 나열합니다. 공부보다는 노는 것에 초점이 맞춰져있는 것 같지만요. 당연히 유하가 자신과 같이하리라 생각합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrsx7z6_qk",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "......."
+            },
+            {
+              "kind": "narr",
+              "text": "저 김칫국을 어떡하면 좋지. 줄줄줄 일정을 쏟아내는 소양을 어이없어하며 쳐다봅니다. 물론 소양이 이거 하자고, 저거 하자고 달라붙으면 그렇게 매몰차게 거절하지도 못할 걸 압니다. 여태 그래왔던 것처럼."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_mqrt5gqy_qp",
+      "title": "II. 이벤트 당첨",
+      "blocks": [
+        {
+          "id": "id_mqrt6hee_qw",
+          "type": "narration",
+          "emphasis": false,
+          "text": "카페 밖, 로비를 돌아다니는 직원이 한 명 보입니다. <i>\"―님, ―하님!\"</i> 어렴풋이 누굴 부르며 찾는 소리가 들립니다. 저 직원은 분명 아까 연신 허리 숙여 사죄하던 그 직원인데요...<br>음료를 비우고 카페를 나오자, 남유하와 강소양을 발견한 직원의 얼굴이 환해집니다."
+        },
+        {
+          "id": "id_mqrt6hee_qx",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "남유하님! 체크인 도와드리겠습니다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_qy",
+          "type": "narration",
+          "emphasis": false,
+          "text": "보통... 체크인을 해주려고 이렇게 열심히 찾나요? 어찌되었든 객실 자리가 드디어 생겼나봅니다. 직원은 남유하와 강소양을 프론트 데스크로 안내합니다."
+        },
+        {
+          "id": "id_mqrt73mg_tu",
+          "type": "narration",
+          "emphasis": true,
+          "text": "행운 판정"
+        },
+        {
+          "id": "id_mqrt6hed_qq",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "45",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrt6hee_r1",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오래 기다리셨죠? 불편을 드려 죄송합니다. 사과의 의미에서 기존에 고객님께서 예약해주셨던 객실보다 한 등급 더 높은 프리미엄 객실로 무상 업그레이드를 해드렸습니다."
+            },
+            {
+              "kind": "line",
+              "text": "금일 12월 28일 정상적으로 체크인 되셨어요. 체크아웃은 12월 30일 정오까지 마쳐주셔야 하며, 1시간이 초과될 때 마다 추가 요금이 합산됩니다. 오후 3시 이후부터는 1박 가격이 추가적으로 부과되오니 유의해주세요."
+            },
+            {
+              "kind": "line",
+              "text": "모닝콜 및 룸서비스는 객실 내 배치되어 있는 로비폰을 사용해주시면 신속히 도와드리겠습니다. 부디 즐거운 일정이 되시길 바랍니다. 감사합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_r2",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>...라는군요!</i> 아무리 비수기라지만 혹시나 이용 가능한 객실이 없을까 조마조마 했던 것도 사실이니, 마음을 놓아도 될 것 같습니다. 짧은 안내 멘트를 끝마친 직원은 리조트 <b>팸플릿</b>과 함께 <b>객실의 열쇠</b>를 건네줍니다."
+        },
+        {
+          "id": "id_mqrt6hee_r3",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "업그레이드 됐대! 오히려 이득인데?"
+            },
+            {
+              "kind": "narr",
+              "text": "눈을 빛냅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_r4",
+          "type": "narration",
+          "emphasis": false,
+          "text": "리조트 폰테르고Pintergo. 리조트 소개, 객실 안내, 각종 부대시설 소개와 이벤트 목록이 기재되어 있는 팸플릿입니다. 맨 뒷면에는 쿠폰북도 포함되어 있습니다. …별안간 강소양이 손에 들려 있던 팸플릿을 쏙 빼갑니다. 더 읽어봤자 특별한 것은 없겠죠."
+        },
+        {
+          "id": "id_mqrt7kcd_tv",
+          "type": "dice",
+          "kind": "simple",
+          "speaker": "남유하",
+          "item": "객실",
+          "roll": "198",
+          "result": "",
+          "formula": "1d1000"
+        },
+        {
+          "id": "id_mqrt6hee_r5",
+          "type": "narration",
+          "emphasis": false,
+          "text": "파도 모양의 키링과 카드키가 부착되어 있는 객실 전용 열쇠입니다. 어디보자, 객실은… 198호.로비 측면에 자리하고 있는 엘리베이터를 이용해 객실로 이동합니다. 엘리베이터 역시 천장이 높고 시야가 개방 되어 있어 바다의 전경이 너르게 드러납니다. 이 리조트가 다른 어느 것 보다도 투숙객의 눈에 '바다를 담는 것'을 가장 중요한 가치로 매기고 있음이 여실히 느껴집니다.<br>방에 몸을 들이기 무섭게 인위적이지 않은 바다 특유의 소금내와, 기분이 좋아지는 시원달달한 향기를 맡습니다. 신발장을 지나쳐 객실 안쪽으로 들어서면 거실 한구석에 두 사람의 캐리어가 놓여있어요. 체크인 전에 데스크에 맡겨 두었으니, 친절한 이곳의 직원이 옮겨 놓은 모양입니다.<br>인테리어 대부분이 대리석이거나, 우드입니다. 정성껏 꾸며진 태가 나서일까요? 차갑고 건조하다는 느낌은 거의 들지 않습니다.야외 테라스로 향하는 거실 한 쪽은 <b>베란다</b>가 통째로 트여 있어 넘실대는 겨울 바다가 코 앞에서 느껴질 정도입니다. 그 너머로는 경치를 감상할 수 있도록 마련된 커피테이블이 놓여 있습니다. 세심하네요. 아일랜드 형식의 <b>주방</b>과, 중심에서 멀리 떨어지지 않은 곳에 배치된 킹사이즈의 <b>침대</b>, 한 구석에는 <b>화장대</b>나 <b>욕실</b> 또한 빠짐 없이 존재합니다."
+        },
+        {
+          "id": "id_mqrt6hee_r6",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "우와, 방 좋다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_r7",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "마음속으로 동의하면서 베란다로 향합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_r8",
+          "type": "narration",
+          "emphasis": false,
+          "text": "어찌나 깨끗이 닦여 있는지 조심하지 않으면 머리를 부딪힐 정도로 투명합니다. 양 옆으로 가지런히 정돈된 쉬폰 커튼이 묶여 있습니다. 가까이 다가서면 유리창 너머로 서늘한 냉기가 느껴집니다. 너머로 난간이 설치된 테라스가 보여요.<br>훅. 비린내가 꽝꽝 얼어붙은 바닷바람이 이제야 간신히 녹기 시작한 피부를 할퀴고 지나갑니다. 무시무시한 냉기의 기세에 절로 온몸이 움츠러드는군요.<br>문득 커피테이블 쪽으로 시선이 닿습니다. 아무래도 이 날씨에 테라스에서 바다의 정경을 감상하며 간식을 먹기는 무리가 있겠죠…."
+        },
+        {
+          "id": "id_mqrt6hee_r9",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "으, 추워. 뭐해? 들어와!"
+            },
+            {
+              "kind": "narr",
+              "text": "라고 말하지만 눈은 여전히 겨울 바다에 고정되어있습니다. 정말 예쁩니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_ra",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "덜덜 떨면서 창을 탁 닫습니다. 유리창이 깨끗하니 안에서 봐도 충분할 것 같습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rb",
+          "type": "narration",
+          "emphasis": false,
+          "text": "세련된 아일랜드 형식의 주방으로, 취사도구가 빠짐 없이 구비 되어 있습니다. 넓고 쾌적한 주방과 <b>조리대</b>에 대한 로망을 품고 있는 탐사자라면 조금 설렐 지도 모르겠어요. 테이블은 두 사람이 사용하기에는 턱없이 커보입니다. 당연한 이야기지만, 작은 사이즈의 <b>냉장고</b>도 눈에 띕니다.<br>냉장고 안에는 음료 몇 캔과 500ml 생수 몇 병인가가 채워져 있습니다.<br>별 것 없군요 냉장고를 닫으려는 찰나"
+        },
+        {
+          "id": "id_mqrt6hee_rc",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "생수 한 병을 꺼내 '까드득' 뚜껑을 돌려, 물을 세 모금 정도 마십니다. 그리곤 제가 조심스레 냉장고 문을 닫습니다. 유하를 바라보곤 늘 그랬듯이 헤실거리며 웃습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rd",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "갑작스레 끼어드는 것에 이제는 익숙해져 눈만 흘기고 맙니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_re",
+          "type": "narration",
+          "emphasis": false,
+          "text": "물기 하나 없이 깔끔하게 정리된 조리대. 두 사람이 함께 요리를 하기에 그 공간에 전혀 부족함이 없어 보입니다. 여느 호텔이나 리조트가 그러하듯 가스레인지 대신 인덕션이 놓여 있어요. 시간이 남는다면 밤중에 간단한 간식거리를 만들어 먹는 것도 좋겠죠."
+        },
+        {
+          "id": "id_mqrt6hee_rf",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "입가의 물기를 닦으며."
+            },
+            {
+              "kind": "line",
+              "text": "우리 파스타 해먹을래?"
+            },
+            {
+              "kind": "narr",
+              "text": "굳이 놀러와서 만들어 먹는 낭만도 좋지 않겠어요? 조금의 귀찮음을 감수하고서라도요! 들떠서 묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rg",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "요리할 줄 알아?"
+            },
+            {
+              "kind": "narr",
+              "text": "본인은 전혀 모릅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rh",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "모르지!"
+            },
+            {
+              "kind": "narr",
+              "text": "당당히 얘기합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_ri",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "실험을 하고 싶으면 하든지. 가스레인지가 아니니까 불은 안 나겠네..."
+            },
+            {
+              "kind": "narr",
+              "text": "말끝을 흐립니다. 일단 자기가 기미상궁이 되고싶지는 않습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rj",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "실험이라니..."
+            },
+            {
+              "kind": "narr",
+              "text": "조금 시무룩합니다. 사실 저도 못하니 유하에게 떠넘길려고 했는데 실패하고 말았습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rk",
+          "type": "narration",
+          "emphasis": false,
+          "text": "함께 자는데 불편함이 없을 정도로 커다란 침대입니다. 이불이 성심성의껏 정돈 되어 있어요. 토퍼가 따로 깔려 있지 않은데도 누워보면 놀랄만큼 푹신푹신합니다. 침대의 바로 옆에 위치한 협탁에는 스탠드와 로비폰, 객실용 전화기 등이 구비 되어 있습니다."
+        },
+        {
+          "id": "id_mqrt6hee_rl",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "이미 누워있습니다."
+            },
+            {
+              "kind": "line",
+              "text": "내가 창이랑 가까운 곳 쓸게!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rm",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "맘대로 해."
+            },
+            {
+              "kind": "narr",
+              "text": "방을 둘러보며 화장대로 향합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rn",
+          "type": "narration",
+          "emphasis": false,
+          "text": "나무로 제작된 흰색 계통의 화장대로, 서랍 두 개가 붙어 있습니다. 원한다면 드라이기나 빗, 스킨, 로션, 코롱, 티슈 따위의 전자제품과 기초화장품, 위생 용품을 찾을 수 있습니다."
+        },
+        {
+          "id": "id_mqrt6hee_ro",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "별의 별 게 다 있네."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rp",
+          "type": "narration",
+          "emphasis": false,
+          "text": "문을 열어보니 상큼한 시트러스 계열의 냄새가 맵돕니다. 가장 먼저 반투명한 샤워 부스와 커다란 욕조가 보이고, 선반에는 포장지를 뜯지 않은 각종 일회용 세안도구들이 마련되어 있습니다."
+        },
+        {
+          "id": "id_mqrt8vky_tw",
+          "type": "narration",
+          "emphasis": true,
+          "text": "'띵동'"
+        },
+        {
+          "id": "id_mqrt6hee_rq",
+          "type": "narration",
+          "emphasis": false,
+          "text": "객실을 둘러보고, 당장 사용할 짐을 솎아내고 있을 때쯤 인터폰이 울립니다.<br>인터폰 화면을 확인하면 당연하게도 일면식 없는 젊은 남성이 서있습니다. 유니폼을 입고 있지 않은 걸로 보아 이 리조트의 직원은 아닌듯 합니다."
+        },
+        {
+          "id": "id_mqrt6hee_rr",
+          "type": "dialogue",
+          "speaker": "일면식 없는 젊은 남성",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "실례합니다. 계시나요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rs",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "누구세요?"
+            },
+            {
+              "kind": "narr",
+              "text": "마치 불청객을 대하는 듯한 날카로운 말투로 묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rt",
+          "type": "narration",
+          "emphasis": false,
+          "text": "인터폰 너머로 소리가 들립니다."
+        },
+        {
+          "id": "id_mqrt6hee_ru",
+          "type": "dialogue",
+          "speaker": "옆 객실의 투숙객",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아, 다름이 아니라... 옆 객실의 투숙객입니다. 혹시 ―나요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rv",
+          "type": "narration",
+          "emphasis": false,
+          "text": "소리가 끊깁니다. 나가서 들어봐야할 것 같습니다."
+        },
+        {
+          "id": "id_mqrt6hee_rw",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "대체 무슨일이지. 언짢은 표정이 풀리지 않은 채로 문을 엽니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rx",
+          "type": "narration",
+          "emphasis": false,
+          "text": "문을 열어주면 초조한 기색이 역력한 얼굴이 당신을 반깁니다."
+        },
+        {
+          "id": "id_mqrt6hee_ry",
+          "type": "dialogue",
+          "speaker": "옆 객실의 투숙객",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아, 방해해서 죄송합니다. 혹시 일곱 살 정도 되는 어린 여자 아이를 못 보셨나요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_rz",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "못 봤는데요."
+            },
+            {
+              "kind": "narr",
+              "text": "바로 답합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s0",
+          "type": "dialogue",
+          "speaker": "옆 객실의 투숙객",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "제 딸아이인데요. 편의점에 다녀온다고 하길래 보냈더니… 세 시간이 넘도록 들어오질 않고 있어서요. 정말 못보셨나요?"
+            },
+            {
+              "kind": "narr",
+              "text": "표정이 점차 안 좋아집니다."
+            },
+            {
+              "kind": "line",
+              "text": "키는 이만하고…"
+            },
+            {
+              "kind": "narr",
+              "text": "허리춤 아래 쪽으로 손짓합니다."
+            },
+            {
+              "kind": "line",
+              "text": "머리를 양 옆으로 땋아서 묶고 있어요. 눈이 동글동글하고 푸른 계열의 겨울용 원피스를 입고 있어요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s1",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뭐....보게되면 알려드릴게요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s2",
+          "type": "dialogue",
+          "speaker": "옆 객실의 투숙객",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아이고, 감사합니다. 리조트 측에 사정을 설명하기는 했는데 가만히 기다리고 있기에는 걱정이 되어서 이곳 저곳에 물어보고 있는 중이라... 실례 끼쳐 죄송합니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s3",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남성은 복도 너머로 사라집니다. \"아, 도대체 어디로 간 거지….\" 작은 혼잣말과 함께요."
+        },
+        {
+          "id": "id_mqrt6hee_s4",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "무슨 일이야?"
+            },
+            {
+              "kind": "narr",
+              "text": "문을 닫고 돌아온 유하에게 묻습니다. 초조한 기색이 역력하던 남성과 다르게 소양의 표정은 평온합니다. 침대에 앉아서 팜플렛이나 이리저리 넘기고 있어요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s5",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "딸이 없어졌대. 리조트에서 찾아주겠지."
+            },
+            {
+              "kind": "narr",
+              "text": "사정은 안타깝게 됐지만, 뭔가 해줄 수도 없는 일입니다. 대수롭지 않은 일처럼 짧게 말하고는 푹신한 침대에 털썩 눕습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s6",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 어떡해."
+            },
+            {
+              "kind": "narr",
+              "text": "금새 눈썹이 팔자가 됩니다. 괜히 제가 잃어버린 것 마냥 수심에 가득한 표정이다가 안타까운 기색으로 고개를 끄덕입니다."
+            },
+            {
+              "kind": "line",
+              "text": "그래, 리조트에서 찾아주겠지... 우리도 돌아다니다가 보면 꼭! 도와주자."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s7",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그럴 줄 알았다는 듯이 대충 답합니다."
+            },
+            {
+              "kind": "line",
+              "text": "그러지 뭐. 뭐랬더라...일곱살이고...땋은머리고....파란 원피스랬나."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s8",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "머릿속에 정보를 입력합니다. 그래봤자 어린 여자아이만 보면 득달같이 달려가 미아인지 여부를 확인하겠지만요."
+            },
+            {
+              "kind": "narr",
+              "text": "그렇게 있기를 잠시 고개를 휙 돌려 유하를 바라봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "어때, 침대 좋지? 푹신하지?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_s9",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "말없이 폭신한 베개에 얼굴을 파묻습니다. 나름 동의의 표현입니다. 금방이라도잠이 솔솔 올 것 같은 좋은 침대다, 생각합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sa",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "자면 안돼. 이것 봐봐."
+            },
+            {
+              "kind": "narr",
+              "text": "따뜻한 손이 유하의 등을 톡톡 두들깁니다. 그러고는 리조트 내 이벤트 목록을 모아둔 페이지 중, 한 면을 유하에게 보여줍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt9n5g_tx",
+          "type": "handout",
+          "style": "paper",
+          "title": "이벤트",
+          "body": "",
+          "image": "image/soyangyuha/event.png"
+        },
+        {
+          "id": "id_mqrt6hee_sb",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나 안 자."
+            },
+            {
+              "kind": "narr",
+              "text": "웅얼거리면서 고개만 돌려 페이지를 확인합니다."
+            },
+            {
+              "kind": "line",
+              "text": "...어. 이거 가자고? 난 별 관심없는데."
+            },
+            {
+              "kind": "narr",
+              "text": "밍기적거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sc",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "눈을 빛내며 말합니다. 혼자라도 갈 의향이 있어보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "드링크 무료 시음회잖아! 원래 이런 곳 놀러와서 즐길 수 있는 거 다 즐겨야 해. 얼른 가자."
+            },
+            {
+              "kind": "narr",
+              "text": "유하를 톡톡톡 건듭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sd",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "마지못해 몸을 천천히 일으킵니다. 추워서 바깥도 그다지 나가고 싶지 않으니, 할 게 없긴 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_se",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "야호!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sf",
+          "type": "narration",
+          "emphasis": false,
+          "text": "두 사람이 객실 바깥으로 나섬과 동시에 복도 전체에 안내 방송이 울립니다.<br>[ 리조트 폰테르고에서 안내방송 드립니다. 아이를 찾고 있습니다. 머리를 양 옆으로 땋아 묶고, 푸른색 원피스를 입고 있는 여자 아이를 보호하고 계신 투숙객 분께서는 1층 안내데스크로 찾아와 주시면 감사드리겠습니다. 다시 한 번 안내방송 드립니다… ]<br>딸을 잃어버렸다던 옆 객실 투숙객이 떠오릅니다. 관련 방송인가 보군요."
+        },
+        {
+          "id": "id_mqrt6hee_sg",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "최상층으로 향하는 엘레베이터 버튼을 누르며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "어떻게 해, 걱정이 많으시겠다. 어서 찾았으면 좋겠는데..."
+            },
+            {
+              "kind": "narr",
+              "text": "예의상 두리번 거려봅니다. 여기에 있을리 없겠지만요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sh",
+          "type": "narration",
+          "emphasis": true,
+          "text": "스카이 라운지<br>[ PM 17 : 13 ]"
+        },
+        {
+          "id": "id_mqrt6hee_si",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>지이잉.</i> 깨끗이 닦인 자동문이 양 옆으로 몸을 기울입니다. 라운지에 입장하면 비수기임에도 연말인지라 사람이 꽤 몰려 있습니다. 라운지는 둥근 원형 모양입니다. 때문에 어느 곳으로 시선을 돌려도 먹먹한 겨울 하늘이 시선을 사로잡을 것입니다. 서로의 깊이를 마주 반사하듯, 하늘과 바다가 이어진 절경이 황홀의 극치입니다. 그 중앙에 마찬가지로 둥근 형식의 카운터겸 바bar가 놓여 있습니다. 유니폼을 차려 입은 바텐더 두 명이 손을 바삐 움직여 음료를 제조하고 있어요.<br>어디에 앉으면 좋을까? 자리를 물색하면 얼마 지나지 않아 라운지 한구석에 대기하고 있던 리조트 직원 한 명이 두 사람에게 다가옵니다."
+        },
+        {
+          "id": "id_mqrt6hee_sj",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "환영합니다. 무엇을 도와드릴까요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sk",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그...시음회 때문에 왔어요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sl",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아, 네. 이쪽으로 와주세요."
+            },
+            {
+              "kind": "narr",
+              "text": "두 사람을 바다가 가장 잘 보이는 창가쪽 테이블로 안내합니다."
+            },
+            {
+              "kind": "line",
+              "text": "여기서 잠시만 기다려 주시겠어요?"
+            },
+            {
+              "kind": "narr",
+              "text": "친절하게 미소를 띠어 보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "본 드링크 시음회에서 운이 좋으면 여덟 시간 코스의 크루즈 무료 승선권을 얻을 기회도 잡을 수 있으니 많은 관심 부탁드려요. 매우 인기리에 진행되고 있으니 마음껏 즐겨주시기 바랍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sm",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오...이벤트가 많네."
+            },
+            {
+              "kind": "narr",
+              "text": "되면 좋겠다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sn",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "되면 같이 가자!"
+            },
+            {
+              "kind": "narr",
+              "text": "이미 당첨 될 생각에 기분이 좋습니다. 드링크 무료 시음회가 김칫국 시음회였나요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_so",
+          "type": "narration",
+          "emphasis": false,
+          "text": "기다리다 보면 직원이 음료를 가져다 줍니다. 짙은 남색의 드링크 위로 흰색의 크림소다 층이 얕게 쌓여 흔들립니다. 마치 파도 같다는 생각을 할 때 쯤... 친절한 직원이 설명을 덧붙입니다. 국내외 최고의 서비스를 책임진다던 팸플릿 속의 포부가 거짓은 아닌 듯 쏟아지는 말들이 청산유수입니다."
+        },
+        {
+          "id": "id_mqrt6hee_sp",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "토닉워터와 블루큐라소, 레모네이드를 채워 넣은 드링크에, 달콤한 크림 소다를 얹어 겨울 바다의 깊은 맛을 구현했습니다. 오직 저희 스카이 라운지에서만 맛보실 수 있는 특별한 드링크랍니다. 입맛에 맞으셨으면 좋겠어요."
+            },
+            {
+              "kind": "line",
+              "text": "이벤트 당첨 여부는 글라스를 픽업카운터에 반납해주실 때 확인하실 수 있습니다. 하늘과 바다와 가장 가까운 라운지에 모시게 되어 영광입니다. 부디 즐거운 시간 보내세요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_sq",
+          "type": "narration",
+          "emphasis": false,
+          "text": "설명을 끝마친 직원은 막 스카이 라운지에 들어서는 또다른 투숙객에게로 이동합니다. 얼핏 들어서는 평범한 재료로 조합된 드링크가 분명한데, 거창하게 겨울바다의 깊은 맛을 구현했다는 사족에 관심이 갑니다."
+        },
+        {
+          "id": "id_mqrt6hee_sr",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "무슨 맛이길래...생각하며 한모금 마십니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_ss",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남유하가 글라스를 입에 대기도 전에 강소양이 먼저 잔을 들어올립니다. 그대로 입술 너머로 겨울바다를 닮은 것을 들이키고…"
+        },
+        {
+          "id": "id_mqrtc9wi_ty",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqrt6hee_qr",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "46",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrt6hee_sv",
+          "type": "narration",
+          "emphasis": false,
+          "text": "꿀꺽꿀꺽. 목넘김이 시원해보입니다. <i>그런데… 무언가, 조금… 급하게 마시는 것 같지는 않나요?</i> 목이 말랐던 걸까요?"
+        },
+        {
+          "id": "id_mqrt6hee_qs",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "16",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqrt6hee_sy",
+          "type": "narration",
+          "emphasis": false,
+          "text": "목이 말랐으리라 치부하기에는 몇 시간 전에 로비에서 음료를 사 마시지 않았나요? 분명 객실에서도 연달아 물을 마셨던 것이 떠오릅니다."
+        },
+        {
+          "id": "id_mqrt6hee_sz",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음! 많이 시지도 않고 달지도 않고, 끝맛이 좀... 짭짤한데? 인상적이다!"
+            },
+            {
+              "kind": "narr",
+              "text": "만족한 듯 베시시 웃습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_t0",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "왜이렇게 급하게 마셔? 빨리 당첨여부라도 확인하고 싶은 거야?"
+            },
+            {
+              "kind": "narr",
+              "text": "그럴 듯한 이유를 덧붙입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_t1",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "아, 급하게 마셨었나요? 사실을 이제야 눈치챈 듯 능청스레 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "아니, 오늘따라 이상하게 목이 말라서. 나도 모르게 빨리 마시게 됐나봐."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_t2",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "왠지 이상하지만...소양은 늘 특이했으니까요. 그런 생각으로 대수롭지 않게 넘깁니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_t3",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "빈 잔에 입을 가져다 대고는 창 밖을 바라봅니다. 눈을 떼지 못하고 하염없이요."
+            },
+            {
+              "kind": "line",
+              "text": "그래도 맛있었어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtdzw4_tz",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqrt6hee_qt",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "45",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrt6hee_t6",
+          "type": "narration",
+          "emphasis": false,
+          "text": "오션뷰 아래 해안선을 따라 백사장을 걷는 관광객들이 보이는군요. 단조로운만큼 평화롭기 짝이 없는 풍경입니다. 저 멀리 바다에 들어가겠다고 엄마 손을 잡고 물가로 이끄는 아이와, 그런 아이를 뜯어 말리는 아빠의 모습도 보입니다. 고생이겠지 싶어요."
+        },
+        {
+          "id": "id_mqrt6hee_t7",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "추우니까 물 속에 들어가는 건 무리겠지? 아쉽다..."
+            },
+            {
+              "kind": "narr",
+              "text": "바다에 시선을 떼지 못한 채, 혼잣말을 하듯 작게 읊조립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_t8",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "응. 무리야."
+            },
+            {
+              "kind": "narr",
+              "text": "단칼에 잘라 말합니다. 이 날씨에 물이라니, 절대 싫어."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_qu",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "98",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrt6hee_qv",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "75",
+          "roll": "46",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrt6hee_tc",
+          "type": "narration",
+          "emphasis": false,
+          "text": "강소양의 잔 아래 덜그럭거리는 푸른색의 원석이 드러납니다. 바다를 담아놓은 듯 찬란한 푸른 빛이 무척 아름답습니다.<br>시간을 떼우고 난 뒤 스카이 라운지에서 퇴장하기 전,<br>픽업 카운터로 빈 잔을 가져다 주면,<br><b>\"축하합니다!\"</b><br>라스 안의 원석을 확인한 직원이 박수를 칩니다. 그 뒤를 따라 함께 있던 또 다른 직원도 박수를 칩니다. 듣자하니 크루즈 무료 승선권에 당첨되었다는 소식이군요! 곧 직원이 티켓을 건넵니다.<br>-"
+        },
+        {
+          "id": "id_mqrtfidb_u0",
+          "type": "handout",
+          "style": "paper",
+          "title": "크루즈 티켓",
+          "body": "",
+          "image": "image/soyangyuha/cruse.png"
+        },
+        {
+          "id": "id_mqrt6hee_td",
+          "type": "narration",
+          "emphasis": false,
+          "text": "＊크루즈 운항 기간: 20XX. 12. 20. ~ 20XX. 12. 30.<br>* 운항 시간: PM 13 : 00 운항 15분 전까지 탑승을 완료해주세요.<br>* 소요 시간: 약 8시간.<br>1매당 최대 2인 탑승 가능."
+        },
+        {
+          "id": "id_mqrtgkwb_u1",
+          "type": "narration",
+          "emphasis": false,
+          "text": "-<br>티켓 뒷면을 살피면 승하선이 가능한 선착장의 위치가 약도로 표기 되어 있습니다. 차를 끌고 20분 가량 이동해야 하는 거리예요. 차가 없는 이용객을 위해 리조트 측에서 셔틀 버스를 운행한다고 하니 그 쪽을 이용하는 것도 좋을 법 합니다."
+        },
+        {
+          "id": "id_mqrt6hee_tg",
+          "type": "narration",
+          "emphasis": false,
+          "text": "강소양은 눈에 띄게 기뻐합니다. 겨울 바다가 운치있고 아름답긴 해도, 2박 3일 내리 바다 감상만 하며 시간을 보내는 것보다는 뭐든 낫지 않겠어요?<br>훌륭한 무료 드링크도 마셨겠다, 더불어 크루즈 승선권도 얻었겠다. 수완이 좋습니다."
+        },
+        {
+          "id": "id_mqrt6hee_th",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이게 어떻게 되네....?"
+            },
+            {
+              "kind": "narr",
+              "text": "기뻐하는 소양을 신기하게 바라봅니다. 어쨌거나 잘된 일입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_ti",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아까 동전 못 넣은게, 다 액땜이었나봐!"
+            },
+            {
+              "kind": "narr",
+              "text": "너무 기쁩니다. 무료 크루즈라니!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_tj",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이후 스카이 라운지에서 벗어나 방으로 돌아옵니다."
+        },
+        {
+          "id": "id_mqrt6hee_tk",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "방으로 와 침대에 다시 털썩 눕고는 스마트폰을 꺼냅니다. 벌써 내일 탈 크루즈가 기대되는지 검색해봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "크루즈에서 보통 뭐하지? 한번도 가본 적 없어서 모르겠네."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_tl",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "글쎄...바다 구경?"
+            },
+            {
+              "kind": "narr",
+              "text": "전혀 모르는 건 마찬가지입니다."
+            },
+            {
+              "kind": "line",
+              "text": "아님 공연같은 거라도 하려나."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_tm",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "공연 있으면 좋겠다! 재밌겠다!"
+            },
+            {
+              "kind": "narr",
+              "text": "벌써 크루즈에 탄 것 마냥 침대 위에서 방방 뛰며 즐거워합니다."
+            },
+            {
+              "kind": "line",
+              "text": "여기 평도 좋다! 다들 만족스러웠대."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_tn",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "솔깃합니다. 티는 안 내지만, 나름 기대가 됩니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_to",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그렇게 기대에 들떠 시간을 보냅니다. 수평선 너머로 빛이 가라앉고, 짙은 군청색의 밤하늘이 깔릴 무렵..."
+        },
+        {
+          "id": "id_mqrt6hee_tp",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "유하야, 같이 나가자."
+            },
+            {
+              "kind": "narr",
+              "text": "양 손에 무엇인가를 잔뜩 들고는 평소와 똑같이 유하를 끌어들입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_tq",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뭐야, 지금? 춥잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "늘 그렇듯이 투덜거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_tr",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "양 손에 들린 5개의 스파클라를 보여줍니다."
+            },
+            {
+              "kind": "line",
+              "text": "나가자!"
+            },
+            {
+              "kind": "narr",
+              "text": "그러고는 유하의 겉옷을 꺼내 들려줍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_ts",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "한숨을 푹 쉽니다. 자신이 뭐라 해도 절대 물러서지 않을 사람인 걸 이제는 압니다. 겉옷을 받아 입으며 지퍼를 끝까지 꼭 잠급니다. 물론 밤이라 더 추울텐데 굳이, 따위의 말들을 내뱉는 건 잊지 않습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrt6hee_tt",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "뿌듯!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_mqrthm4q_u2",
+      "title": "III. 밤바다",
+      "blocks": [
+        {
+          "id": "id_mqrthr68_u3",
+          "type": "narration",
+          "emphasis": true,
+          "text": "밤바다 모래사장<br>[ PM 20 : 56 ]"
+        },
+        {
+          "id": "id_mqrtim5k_uc",
+          "type": "narration",
+          "emphasis": false,
+          "text": "바람은 여전히 매섭고, 파도 소리는 아침에 들었던 것보다 더욱 거셉니다. 숨을 뱉을 때마다 서리가 낀듯 희뿌연 입김이 퍼졌다 즉시 자취를 감춥니다. 해가 완전히 진 이래임에도 낮보다 인구가 많습니다. 그래서일까요? 걷기가 조금 수월합니다. 이 정도 추위라면 버틸만 할지도 몰라요."
+        },
+        {
+          "id": "id_mqrtim5k_ud",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "생각보다는 안 추운데? 다행이다."
+            },
+            {
+              "kind": "narr",
+              "text": "유하를 앞질러 총총 뛰어가며 괜찮은 자리를 물색합니다. 우리만의 작은 불꽃놀이를 즐길 만족스러운 장소를 찾아야만 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_ue",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그런 소양을 앞에 두고 천천히 걸어갑니다. 다들 소양이 같은 사람들인 걸까. 이 추운 밤에 나오길 좋아하는 사람이 많은 것에 새삼 의문을 느끼면서요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_uf",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "스파클라를 꺼내들더니, 잠시...멈추어서 주위를 둘러봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "유하야, 너 라이터 있어?"
+            },
+            {
+              "kind": "narr",
+              "text": "당연히 없을테지만 물어봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_ug",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "있겠어?"
+            },
+            {
+              "kind": "narr",
+              "text": "당연하다는 듯 대답합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_uh",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "스파클라 5개를 유하의 손에 소중히 쥐어주고는 어디론가 달려갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_u5",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "말재주",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "11",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqrtim5k_uj",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "담배를 필 것 같은 무리에게 다가가 열변을 토해내더니...<br>라이터를 들고 돌아옵니다."
+            },
+            {
+              "kind": "line",
+              "text": "내가 미래의 폐암환자의 수를 줄이는데에 공헌했을지도 몰라."
+            },
+            {
+              "kind": "narr",
+              "text": "열변을 토하는 것 처럼 보이더니, 모두의 라이터를 뺏어 강제 금연을 시킨 것 같습니다. 뒤를 돌아 무리를 살펴보면 질린 표정입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_ul",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "너 참 대단하다."
+            },
+            {
+              "kind": "narr",
+              "text": "칭찬은 아닌 것 같은 말투로 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_um",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "고마워!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_un",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그러고는 스파클라를 각자 하나씩 들고 라이터로 불을 붙입니다.<br>쨍한 주황색의 빛이 사방으로 튑니다. 몸을 태우기 시작한 스파클라의 빛이 꼭 잘게 부서지는 별의 모습과 닮았습니다.<br>모래사장 도처에 두 사람과 같은 스파클라를 가지고 불꽃놀이를 즐기거나, 이따금 허공에 싸구려 폭죽을 쏘아 올리는 무리도 심심찮게 보입니다.<br>...<br>부서지는 파도에 녹는 모래, 떠내려가는 조개껍질의 무덤. 어쩐지 마음이 더없이 가볍습니다.<br>무언가를 훌훌 털어낸 것처럼… 가끔 이렇게 여행을 오는 것도 나쁘지 않은 것 같아. 무의식중에 그런 생각을 할 때쯤."
+        },
+        {
+          "id": "id_mqrtim5k_uo",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "예쁘지 않아?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_up",
+          "type": "narration",
+          "emphasis": false,
+          "text": "쏟아지는 저온의 불빛을 받아내며 강소양이 읊조립니다."
+        },
+        {
+          "id": "id_mqrtkdrx_vo",
+          "type": "narration",
+          "emphasis": true,
+          "text": "지능 판정"
+        },
+        {
+          "id": "id_mqrtim5k_u6",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "98",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtim5k_us",
+          "type": "narration",
+          "emphasis": false,
+          "text": "피곤한 걸까요? 음성의 높낮이가 조금 가라 앉아 있는 것 같은데. 어쩌면 이 추위에 목소리부터 얼어 붙은 걸 지도 몰라요."
+        },
+        {
+          "id": "id_mqrtkx0p_vp",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mqrtim5k_u7",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "35",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqrtim5k_uv",
+          "type": "narration",
+          "emphasis": false,
+          "text": "다시보니 스파클라를 보고 한 말이 아닌 것 같습니다. 그 시선은 저 너머 넘실대는 겨울 밤바다에 고정되어 있어요. ―그래요. 강소양의 눈이 꽤 오래 전부터 그곳을 향해 있었음을 깨닫습니다.<br><i>팟.</i> 느릿느릿 스파클라의 몸통을 좀 먹고 들어가던 빛의 파편이 그 수명을 달리하고...<br>시간을 떼우다 보면 어느 순간 주변이 소란스럽습니다. 그러고보니 <b>사이렌 소리</b>가 들리는 것 같기도 한데? 무슨 일일까요.<br>너무 멀지도 가깝지도 않은 모래사장 어드매에서 붉은색 불빛이 번쩍입니다. 보는 것만으로도 가슴 설레던 스파클라의 불꽃과는 새삼 다른 형태의 것. 아무래도 앰뷸런스 사이렌 소리였나봐요. 구급차뿐 아니라 경찰차도 두어 대 도착해 있군요. 그 주변에 듬성듬성 호기심 많은 관광객들이 몰려들어 인산인해를 이룹니다."
+        },
+        {
+          "id": "id_mqrtim5k_u8",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "90",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtim5k_uy",
+          "type": "narration",
+          "emphasis": false,
+          "text": "인파의 틈 사이로… 하얀 천이 덮인 들것에 들린 무언가가 구급차에 실려 올라가는 것을 봅니다. 사고라도 난 걸까요."
+        },
+        {
+          "id": "id_mqrtim5k_u9",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "73",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtim5k_v1",
+          "type": "narration",
+          "emphasis": false,
+          "text": "낮부터 종일 고요하기만 하던 리조트 앞바다가 온통 떠들썩합니다. …얽히는 목소리는 두서가 없고 정신이 사납습니다. 상황이 정리가 되지 않습니다.<br><b>\"거 찍지 마시라니까 그러네. 물러 서 주세요!\"</b>"
+        },
+        {
+          "id": "id_mqrtim5k_v2",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이게 무슨 일이래...."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_v3",
+          "type": "narration",
+          "emphasis": false,
+          "text": "조끼를 착용한 경찰 두어 명이 몰려드는 구경꾼들을 제지합니다. 앰뷸런스가 서둘러 자리를 뜨자 밀집 되어 있던 인원 몇 명은 무리에서 이탈합니다."
+        },
+        {
+          "id": "id_mqrtim5k_v4",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "당황한 표정으로 소양을 봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_v5",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>...어라?</i><br><b>강소양이 없습니다.</b>"
+        },
+        {
+          "id": "id_mqrtim5k_v6",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "뭐야, 어디갔어. 군중을 열심히 살펴봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_v7",
+          "type": "narration",
+          "emphasis": false,
+          "text": "인파는 점점 와해되는 중입니다. 그 어디를 둘러봐도 강소양은 찾을 수 없습니다. 저 옆에서 사람들이 이야기하는 소리가..."
+        },
+        {
+          "id": "id_mqrtim5k_ua",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "34",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrtim5k_va",
+          "type": "narration",
+          "emphasis": false,
+          "text": "중년의 여성이 목소리를 낮출 생각도 안한 채 속상한 목소리로 말합니다."
+        },
+        {
+          "id": "id_mqrtim5k_vb",
+          "type": "dialogue",
+          "speaker": "중년의 여성",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아이고, 어린 애가 불쌍하게 됐어. 신도 야속하시지, 부모가 잠깐 한 눈 판 사이에 파도에 휩쓸려서..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_vc",
+          "type": "narration",
+          "emphasis": false,
+          "text": "정처 없이 바다를 돌아다니며 이름을 불러도, 로비에 들어서도, 안내 데스크에 물어도, 편의점에서도 강소양을 찾을 수 없습니다.<br>설상가상으로 전화도 받지 않는군요."
+        },
+        {
+          "id": "id_mqrtim5k_vd",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그저 이 상황이 황당하기만 합니다. 곧 20살이나 될 애가, 미아가 되어서 어디 떠돌고 다니지도 않을 거고, 도대체 어디로 간 거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_ve",
+          "type": "narration",
+          "emphasis": false,
+          "text": "한참을 헤매다 객실로 돌아가면 문이 열려있습니다."
+        },
+        {
+          "id": "id_mqrtim5k_vf",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "깜짝이야, 어디 갔다 왔었어?"
+            },
+            {
+              "kind": "line",
+              "text": "네가 미아된 줄 알고 깜짝 놀랐잖아."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_vg",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "....그건 내가 할 말이거든?"
+            },
+            {
+              "kind": "narr",
+              "text": "소양을 보자 안심하기도 전에 짜증이 치밉니다."
+            },
+            {
+              "kind": "line",
+              "text": "전화는 왜 안 받고, 왜 혼자 들어가버린 거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_vh",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "편의점 들렀다 오겠다고 했잖아? 못 들었어?"
+            },
+            {
+              "kind": "narr",
+              "text": "유하의 청력을 걱정합니다."
+            },
+            {
+              "kind": "line",
+              "text": "휴대폰 배터리 방전돼서, 아무리 찾아도 유하 네가 안 보이길래. 먼저 방으로 돌아왔지."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_ub",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "57",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrtim5k_vk",
+          "type": "narration",
+          "emphasis": false,
+          "text": "아, 꽝꽝 얼어붙은 머리통 너머로 '따듯한 음료를 사러 편의점에 다녀 올 테니, 기다리고 있으라'던 소양의 목소리를 떠올립니다. 아무래도 주변이 소란스럽던 탓에 한 귀로 흘려 보냈던 것 같군요.<br>편의점에 다녀왔다는 말은 거짓이 아닌듯 테이블 위에 비닐 봉투가 놓여 있습니다. 주류, 음료, 따듯한 커피 등의 간단한 마실 것과 함께 간식이 조금 담겨 있습니다.<br>어쩐지 맥이 빠집니다."
+        },
+        {
+          "id": "id_mqrtim5k_vl",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그래도 이렇게 방에서 만나다니, 다행이네. 나도 미아찾기 방송 부탁드려야 하나 했다니까."
+            },
+            {
+              "kind": "narr",
+              "text": "걱정스럽게, 진심으로 걱정스럽게 말합니다. 유하의 청력은 괜찮은 거겠지? 아까의 소란스러운 바깥 상황에 휩쓸리지 않았는지 평온한 표정입니다."
+            },
+            {
+              "kind": "line",
+              "text": "저녁도 안 먹었는데, 간단하게 뭐 먹고... 쉬다가 잘까? 시간이 늦어서."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_vm",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "말없이 소양을 휙 지나쳐 테이블에서 음료를 하나 집어든 뒤 침대 위에 털썩 앉습니다. 그렇게 열심히 찾아다닌 것에 짜증이 납니다. 기분이 굉장히 언짢은 표정으로 음료수만 홀짝입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtim5k_vn",
+          "type": "narration",
+          "emphasis": false,
+          "text": "강소양은 남유하의 눈치를 살핍니다. 둘은 어색한 기류를 사이에 두고 킹사이즈의 푹신한 침대에서 잠이 듭니다. 사고 현장을 목도하고, 강소양을 찾으러 한참이나 돌아다녔으니 피곤할만도요."
+        }
+      ]
+    },
+    {
+      "id": "id_mqrtosbp_vq",
+      "title": "IV. 크루즈",
+      "blocks": [
+        {
+          "id": "id_mqrtq6n9_w2",
+          "type": "narration",
+          "emphasis": true,
+          "text": "2일차<br>[ 20XX. 12. 29 AM 08 : 03 ]"
+        },
+        {
+          "id": "id_mqrtq6n9_w4",
+          "type": "narration",
+          "emphasis": false,
+          "text": "전날 맞춰두었던 알람이 울리기도 전의 이른 시간입니다. 남유하가 잠에서 깨어나면 먼저 아침을 맞이한 강소양이 침대 끝에 걸터 앉아 창 바깥의 어딘가를 바라 보고 있습니다.<br>집요한 시선을 따라간 끝에 걸리는 것은 당연히도 바다입니다. 이 객실의 창 바깥에서 볼 수 있는 것은 기껏해야 시푸른 바다, 혹은 하늘 뿐이니 어쩌면 당연한 일이겠죠.<br>한겨울인지라 어둠이 완전히 가시지 않아 사방이 어슴푸레합니다. 그 사이로…"
+        },
+        {
+          "id": "id_mqrtq6n9_vr",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "37",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrtq6n9_w7",
+          "type": "narration",
+          "emphasis": false,
+          "text": "*'꿀꺽.' 잔잔하고도 희미하게 부서지는 파도 속에 섞인... 군침 삼키는 소리가 들립니다."
+        },
+        {
+          "id": "id_mqrtq6n9_w8",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "일어났어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_w9",
+          "type": "narration",
+          "emphasis": false,
+          "text": "기척을 느낀 강소양이 남유하를 돌아봅니다. 살짝 드리운 역광 묘하게 부산스러워보이는 머리칼...그리고,"
+        },
+        {
+          "id": "id_mqrtq6n9_vs",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "10",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqrtq6n9_wc",
+          "type": "narration",
+          "emphasis": false,
+          "text": "잠을 제대로 자지 못한 걸까요? 양 눈 아래가 퀭한 것이 어딘가 아파보이고, 정신 없어 보이는 것 같기도 합니다."
+        },
+        {
+          "id": "id_mqrtq6n9_wd",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "좋은 아침."
+            },
+            {
+              "kind": "narr",
+              "text": "언제나 늘 하던 아침인사입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_we",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "어제부터 이상하네, 신경 쓰이게. 이런 말은 속으로만 삼킨 채 고개만 까딱입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wf",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나 먼저 씻는다."
+            },
+            {
+              "kind": "narr",
+              "text": "뒷목을 문지르며 욕실로 들어갑니다. 잠자리가 꽤나 사나웠던 모양입니다."
+            },
+            {
+              "kind": "narr",
+              "text": "씻고 나왔다!"
+            },
+            {
+              "kind": "line",
+              "text": "아침은 뭐 먹을래? 우리 리조트 가기 전에 뭐라도 먹어야해."
+            },
+            {
+              "kind": "narr",
+              "text": "피곤해보이는 기색에도 불구하고 들떠보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "룸서비스? 어제 사온 간식거리도 있긴 한데..."
+            },
+            {
+              "kind": "narr",
+              "text": "과자는 딱히 아침이 될 법하진 않습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wg",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "과자면 됐지 뭐."
+            },
+            {
+              "kind": "narr",
+              "text": "과자가 몇 개 놓여 있는 테이블로 손을 뻗습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wh",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하보다 날렵하게 달려가 과자를 낚아챕니다. 그대로 캐리어 안에 욱여넣고는 아무 일 없었다는 듯이 웃어보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "여기 조식도 있던데 우리 '밥'을 먹어야지 않겠어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wi",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "쳇. 입을 삐죽 내밀고는 일어납니다."
+            },
+            {
+              "kind": "line",
+              "text": "귀찮지만..............조식이 맛있을 지도..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wj",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "가자, 가자."
+            },
+            {
+              "kind": "narr",
+              "text": "이런 곳에서는 조식이 또 묘미입니다. 언제나 들떠있지만 오늘도 들떠 보입니다. 눈 밑의 다크써클만 빼면요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wk",
+          "type": "narration",
+          "emphasis": false,
+          "text": "조식 뷔페에는 대체로 그래놀라, 후르츠링 등 부담 없이 배를 채울 수 있는 시리얼 몇 종류나 갓 구운 머핀, 모닝빵, 바게뜨 등의 속재료가 채워지지 않은 빵이 주를 이룹니다. 원한다면 샐러드와 드레싱바, 요거트도 섭취할 수 있습니다.<br>이른 아침부터 돌아다니는 직원들은 한 없이 친절합니다. 아침이 가져다 주는 피로에 표정을 구길 법도 한데, 그 누구도 부정적인 표정을 짓지 않습니다. 이곳의 모든 직원들은 항상 친절하며, 투철한 서비스 마인드를 자랑합니다."
+        },
+        {
+          "id": "id_mqrtq6n9_wl",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "초코시리얼에 우유를 부어옵니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wm",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "빵을 종류별로 담아와서 종류별로 가져온 잼을 각각 발라 열심히 먹습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wn",
+          "type": "narration",
+          "emphasis": false,
+          "text": "조식으로 배를 채운 뒤 시간을 확인하면 막 오전 11시가 지나가는 이릇. 배는 오후 1시에 출발한다고 했던가요? 선착장까지는 차를 타고 20분 가량이 소요됩니다. 15분 전인 12시 45분까지 도착해야 할 것을 감안하더라도 꽤 여유롭군요.<br><i>…아차.</i> 리조트 셔틀버스 운행 시간을 먼저 묻지 않았던 것이 떠오릅니다.<br>안내 데스크 직원에게서 도움을 받을 수 있을 것 같습니다."
+        },
+        {
+          "id": "id_mqrtq6n9_wo",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "무엇을 도와드릴까요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wp",
+          "type": "narration",
+          "emphasis": false,
+          "text": "어제의 연신 사죄를 하던 그 직원이 친절한 미소를 지으며 도움이 필요한지 묻습니다."
+        },
+        {
+          "id": "id_mqrtq6n9_wq",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "선착장에 가야되는데, 셔틀버스는 언제 가요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wr",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "리조트와 선착장간의 왕복 버스는 매일 하루에 한 대, 12시 정각에 리조트에서 출발하고, 항해가 끝나는 오후 9시 30분에 선착장에서 출발합니다."
+            },
+            {
+              "kind": "line",
+              "text": "리조트 본관의 뒷편 주차장 A열에서 탑승을 도와드리고 있답니다."
+            },
+            {
+              "kind": "narr",
+              "text": "친절합니다."
+            },
+            {
+              "kind": "line",
+              "text": "버스 이용은 무료입니다. 출발 10분 전까지 미리 탑승해주세요."
+            },
+            {
+              "kind": "narr",
+              "text": "꾸벅 인사를 하며 둘을 배웅합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_ws",
+          "type": "narration",
+          "emphasis": false,
+          "text": "버스를 타고 이동하던 중, 강소양은 별안간 물을 찾습니다. 난방용으로 틀어진 히터가 건조한 모양이에요. 남유하 역시 먼지를 들이킨듯한 텁텁함을 느낍니다. 물을 챙겨 왔던가요?"
+        },
+        {
+          "id": "id_mqrtq6n9_wt",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "콜록, 콜록"
+            },
+            {
+              "kind": "narr",
+              "text": "물을 찾더니 이내 잔기침을 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wu",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "크흠, 헛기침을 하며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "좀만 참아 봐. 금방 가니까."
+            },
+            {
+              "kind": "narr",
+              "text": "어쩌면 본인한테도 하는 말일지도요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_wv",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "응..."
+            },
+            {
+              "kind": "narr",
+              "text": "연이어 콜록댑니다. 최대한 기침을 참으려고 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_ww",
+          "type": "narration",
+          "emphasis": false,
+          "text": "버스는 얼마안가 선착장에 도착합니다."
+        },
+        {
+          "id": "id_mqrtq6n9_wx",
+          "type": "narration",
+          "emphasis": true,
+          "text": "선착장 -크루즈-<br>[ PM 12 : 36… ]"
+        },
+        {
+          "id": "id_mqrtq6n9_wy",
+          "type": "narration",
+          "emphasis": false,
+          "text": "비교적 여유를 느끼며 선착장에 도착합니다. 차에서 내리면 리조트 앞바다에서 맡았던 것보다 조금 더 깊고 농밀한 짠내가 호흡기를 덮칩니다. 멀지 않은 곳에서 커다란 호화 여객선을 발견합니다. 벌어진 배의 입구는 뭍과 맞닿은 다리에 이어져 있고, 그 앞에서 직원이 입장을 돕고 있습니다.<br>유니폼을 확인하면 리조트의 직원들이 입고 있던 것과 동일한 디자인의 것입니다. 아무래도 이 크루즈 항해 또한 리조트 측의 연계로 진행되는 이벤트중 하나인 거겠죠.<br>티켓을 건네면 직원은 귀퉁이의 점선을 따라 티켓 일부를 잘라간 뒤 크루즈 안쪽으로 손짓합니다"
+        },
+        {
+          "id": "id_mqrtq6n9_wz",
+          "type": "dialogue",
+          "speaker": "직원",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "즐거운 시간 되시길 바라요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_x0",
+          "type": "narration",
+          "emphasis": false,
+          "text": "친절한 배웅의 인사도 잊지 않습니다. 승선하고 얼마 지나지 않아 웅장한 기적소리와 함께 배가 천천히 물길을 가르고 움직입니다.<br><b>\"환영합니다, 승객 여러분! 이곳, 바다 위를 항해하는 작은 섬에서 멋진 시간을 보내시기를!\"</b><br>들뜬 해초 냄새와 함께 짧고도 제법 기다란 복도를 걷습니다. 안으로 들어서면 내부가 꼭 커다란 파티장처럼 꾸며져 있습니다. 적지도 많지도 않은 적당한 수의 사람들이 한 손에 샴페인이 담긴 글라스를 들고 삼삼오오 모여 바다를 향한 찬미를 속삭입니다. 꼭 분위기가 무르익은 저녁의 연회장과도 진배 없습니다.<br>자, 하선까지 여덟 시간이 남았습니다. 훗날 이 시간을 후회하지 않도록, 무어라도 눈에 담고 삼키며 즐기기로 할까요. 마침 크루즈 내의 모든 서비스가 무료라는 반가운 소식입니다. 저기, 2층으로 올라가는 엘리베이터 앞에 지도가 부착되어 있군요."
+        },
+        {
+          "id": "id_mqrttviz_yr",
+          "type": "narration",
+          "emphasis": true,
+          "text": "1층"
+        },
+        {
+          "id": "id_mqrtq6n9_x1",
+          "type": "narration",
+          "emphasis": false,
+          "text": "뻥 뚫린 난간 너머에서부터 불어오는 겨울 바다의 바람은 많은 것을 품고 있어요. 비단 짠내만을 말하는 것이 아닙니다. 꼭 맡아본 사람들만이 머릿속에 공굴려 형체를 만들 수 있을 만큼 추상적인 무언가.<br>옷가지를 여민 승객들이 종종 이곳저곳 이동하며 시간을 떼울 것들을 탐색합니다. 두 사람은 그 사이에 섞여듭니다. 간단히 시간을 보낼 수 있게끔 여러 부대시설과 편의시설이 갖추어져 있습니다.<br>[카페]<br><i>\"어서 오세요.\"</i> 카운터를 보고 있던 직원이 살갑게 인사합니다. 차갑고 건조한 대리석이 깔려 있던 리조트나 크루즈의 인테리어와 달리, 전체적으로 부드러운 우드 풍이 인상적인 협소한 카페입니다. 메뉴와 디저트는 어떤 평범한 카페에서도 볼 수 있을 법한 것들입니다."
+        },
+        {
+          "id": "id_mqrtq6n9_x2",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뭐 마실래?"
+            },
+            {
+              "kind": "narr",
+              "text": "당연히 무언가를 사 마실 것이라 생각하며 묻습니다. 목도 말랐으니, 마실 법 하잖아요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_x3",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "핫초코."
+            },
+            {
+              "kind": "narr",
+              "text": "한결같습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_x4",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소양이 자연스럽게 핫초코 한 잔과 아이스티 한 잔을 시켜 갖고 옵니다. 건네 줌과 동시에 음료를 꿀꺽꿀꺽 들이킵니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_x5",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "빨리도 마시네."
+            },
+            {
+              "kind": "narr",
+              "text": "핫초코를 홀짝이면서 중얼거립니다. 요즘따라 자주 목말라하는 것 같은데, 말이 많아서일까. 말도 안 되는 이유를 제멋대로 갖다 붙입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_x6",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아까 버스가 너무 답답해서 목 말랐어..."
+            },
+            {
+              "kind": "narr",
+              "text": "얼음까지 아작아작 씹어먹으며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "어디 더 가볼래? 무료라잖아."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_x7",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음...카지노 가볼까. 소설에서나 보던 데인데, 궁금하긴 해."
+            },
+            {
+              "kind": "narr",
+              "text": "턱을 괴며 책에서 읽으며 상상했던 모습들을 떠올립니다. 딱히 참여하고 싶지는 않지만, 그 분위기라는 게 있잖아요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_x8",
+          "type": "narration",
+          "emphasis": false,
+          "text": "[미니 카지노]<br>카지노의 구색만을 갖추어 둔 협소한 공간입니다. 게임장과 합쳐진 탓에 카지노라기보다는 게임센터의 느낌이 강합니다. 실제로 금전은 오고 가지 않으며, 슬롯을 터트리거나 점수를 획득할 경우 백화점 상품권이나 인형 따위의 선물을 준다고 해요. <b>슬롯 머신과 다트, 사격게임, 인형 뽑기</b> 따위의 기계가 보입니다."
+        },
+        {
+          "id": "id_mqrtq6n9_x9",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "게임 센터의 분위기에 두 팔을 걷어붙이며 참여할 준비를 합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xa",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뭐야, 진짜 카지노도 아니잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "실망한 기색을 내비치다가, 이미 준비 만땅인 소양을 보고는 한숨을 쉽니다. 그럴 줄 알았다는 듯이. 뭐, 간단히 운이나 볼까...라면서 슬롯 머신으로 갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xb",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "아싸."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xc",
+          "type": "narration",
+          "emphasis": false,
+          "text": "▷슬롯 머신<br>슬롯을 돌렸을 때 같은 숫자, 혹은 같은 색과 같은 모양의 과일 세 개가 나란히 나올 경우 당첨되는 게임기입니다."
+        },
+        {
+          "id": "id_mqru1t9k_ys",
+          "type": "narration",
+          "emphasis": true,
+          "text": "행운 극단적 판정"
+        },
+        {
+          "id": "id_mqrtq6n9_vt",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "행운",
+          "grade": "극단적",
+          "standard": "14",
+          "roll": "68",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtq6na_xf",
+          "type": "narration",
+          "emphasis": false,
+          "text": "어쩜 이리 다채로운 과일 가게일까요! 하나도 겹치는 게 없습니다."
+        },
+        {
+          "id": "id_mqrtq6n9_vu",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "행운",
+          "grade": "극단적",
+          "standard": "15",
+          "roll": "54",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtq6na_xi",
+          "type": "narration",
+          "emphasis": false,
+          "text": "둘이서 과일가게를 했다면 여러 가지 종류를 파는 것으로 유명했을 겁니다."
+        },
+        {
+          "id": "id_mqrtq6na_xj",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "난 운보단 실력파라서."
+            },
+            {
+              "kind": "narr",
+              "text": "변명합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xk",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그럼 실력 보여줘 봐."
+            },
+            {
+              "kind": "narr",
+              "text": "눈짓으로 다트판을 가리킵니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xl",
+          "type": "narration",
+          "emphasis": false,
+          "text": "▷다트<br>여느 게임장에서나 볼 수 있을 법한 평범한 다트 게임."
+        },
+        {
+          "id": "id_mqrtq6na_xm",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "보고 있어봐. 딱 멋지게 성공하니까!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_vv",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "민첩",
+          "grade": "보통",
+          "standard": "40",
+          "roll": "68",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtq6n9_vw",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "75",
+          "roll": "63",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrtq6na_xo",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "분명 다트의 날아가는 것은 형편없으나 겨우겨우 맞춰 5점에 들어갑니다. 딱히 잘 하는 실력은 아니네요."
+            },
+            {
+              "kind": "line",
+              "text": "...대, 대박이지?"
+            },
+            {
+              "kind": "narr",
+              "text": "자랑스럽게 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xp",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "........뭐가?"
+            },
+            {
+              "kind": "narr",
+              "text": "5점에 박힌 다트와 소양을 번갈아 보는 눈빛에는 실망만이 비칩니다. 아니, 기대도 안 했으니 실망이라고 부를 수는 없을지도 모릅니다. 소양을 뒤로 두고 사격게임으로 향합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xq",
+          "type": "narration",
+          "emphasis": false,
+          "text": "▷사격 게임<br>스크린 속의 좀비를 쏘아 맞추며 앞으로 나아가는 형식의 2인용 슈팅 액션 게임입니다. 시작 버튼을 누르면 게임이 진행됩니다."
+        },
+        {
+          "id": "id_mqrtq6na_xr",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "2인용이라니. 혼자 하는 거인 줄 알았는데."
+            },
+            {
+              "kind": "narr",
+              "text": "아까부터 어쩐지 실망의 연속입니다. 소양은 분명히 같이 하자고 할 것 같아, 눈을 피합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xt",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "분명히 같이 하자는 눈빛입니다. 눈을 빛냅니다."
+            },
+            {
+              "kind": "line",
+              "text": "안 할거야?"
+            },
+            {
+              "kind": "narr",
+              "text": "재밌을 거 같은데. 웃습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_xu",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "재밌을 것 같긴 한데......"
+            },
+            {
+              "kind": "narr",
+              "text": "말끝을 흐립니다. 여전히 반짝반짝한 소양의 눈빛을 간신히 피하고 있습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_vx",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "매혹",
+          "grade": "보통",
+          "standard": "15",
+          "roll": "31",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtq6n9_vy",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "정신력",
+          "grade": "보통",
+          "standard": "45",
+          "roll": "69",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtq6na_xz",
+          "type": "narration",
+          "emphasis": false,
+          "text": "소양의 꼬드김은 그저 허공에 흩어질 뿐입니다."
+        },
+        {
+          "id": "id_mqrtq6na_y0",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "안 한다면 안 하는 거겠지... 마지막 남은 인형 뽑기로 먼저 다가갑니다."
+            },
+            {
+              "kind": "line",
+              "text": "하나 뽑아줄까?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_y1",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뽑을 수는 있어?"
+            },
+            {
+              "kind": "narr",
+              "text": "조금은 관심을 보입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_y2",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "주머니를 뒤져 꼬깃한 천원짜리 몇장을 꺼냅니다. 두어장을 유하에게 맡기고는... 바로 인형뽑기를 시작합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_vz",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "37",
+          "roll": "89",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtq6na_y4",
+          "type": "narration",
+          "emphasis": false,
+          "text": "소양이 조종한 집게가 인형의 등을 긁어줬습니다."
+        },
+        {
+          "id": "id_mqrtq6na_y5",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아! 아까웠다. 조금 더 왼쪽이었으면 딱, 잡아서 딱 뽑혔을텐데..."
+            },
+            {
+              "kind": "narr",
+              "text": "이루어지지 않은 망상을 내뱉습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_y6",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그럼 한 번 더 해보든가."
+            },
+            {
+              "kind": "narr",
+              "text": "한 장을 소양에게 내밀며 말합니다. 물론 자기 돈은 아니지만요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_w0",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "행운",
+          "grade": "어려움",
+          "standard": "37",
+          "roll": "88",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrtq6na_y9",
+          "type": "narration",
+          "emphasis": false,
+          "text": "옆 친구의 등을 긁어 줍니다."
+        },
+        {
+          "id": "id_mqrtq6na_ya",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "조용히 자리를 비켜 유하에게 저 안쪽에 있는 핑크색의 곰 인형을 가리킵니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yb",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뭐, 나보고 하라고?"
+            },
+            {
+              "kind": "narr",
+              "text": "잠시 어이없어 하다가, 덧붙입니다."
+            },
+            {
+              "kind": "line",
+              "text": "내 돈으로는 안 할 거야."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yc",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "내가 준 돈 한장 남지 않았어?"
+            },
+            {
+              "kind": "narr",
+              "text": "초롱초롱 눈을 빛내며 간절히 말합니다. 유하라면 뽑아줄 수도 있어요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6n9_w1",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "행운",
+          "grade": "어려움",
+          "standard": "35",
+          "roll": "5",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqrtq6na_yf",
+          "type": "narration",
+          "emphasis": false,
+          "text": "인형 택 사이로 집게가 걸립니다... 어? 떨어지면서 파란색의 곰인형이 비스듬히 기울더니 같이 떨어집니다."
+        },
+        {
+          "id": "id_mqrtq6na_yg",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "후다닥 두 개의 곰인형을 꺼내고, 제가 성공한 것 마냥 기뻐합니다."
+            },
+            {
+              "kind": "line",
+              "text": "와! 두개나 뽑다니, 대단하다!"
+            },
+            {
+              "kind": "narr",
+              "text": "자연스럽게 핑크 곰인형은 제것, 파란 곰인형은 유하에게 건냅니다."
+            },
+            {
+              "kind": "line",
+              "text": "기념품으로 딱이네!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yh",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "말없이 곰인형을 받아듭니다. 나름 뿌듯한 표정입니다."
+            },
+            {
+              "kind": "line",
+              "text": "이제 배고픈데 식당이나 가자."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yi",
+          "type": "narration",
+          "emphasis": false,
+          "text": "[식당]<br>승객이 편히 오고갈 수 있도록 양문형의 문이 활짝 열려 있고, 그 사이로 맛있는 음식 냄새가 풍겨요. 'open' 팻말이 달려 있는 것이 보입니다. 안쪽으로 들어서니 낮에 들렀던 호텔 뷔페와도 견줄바 없습니다. 감미조운 곡조의 클래식이 흘러나오고, 늦은 점심을 해결하는 사람들이 각 메뉴를 개인 접시에 담아가며 움직입니다.<br>일렬로 늘어선 테이블 위에 각종 산해진미가 놓여 있습니다."
+        },
+        {
+          "id": "id_mqrtq6na_yj",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이게 무료라니... 대박이다. 우리 정말 당첨되길 잘 한거 같아."
+            },
+            {
+              "kind": "narr",
+              "text": "들떠서 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yk",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고개를 살짝 끄덕여 긍정하고는 접시를 집어듭니다. 처음보는 신기한 음식들 위주로 담습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yl",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "여기에서만 먹을 수 있을 것 같은 음식들로 산을 쌓아옵니다. 접시 수 제한이 있는 것도 아닌데...."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_ym",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "쟤도 참 대단해....생각하며 천천히 하나씩 음미합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yn",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유독 맛있는 것들을 하나씩 유하에게 추천해주고는 바쁘게 발을 움직입니다. 이 몸에 이 음식들이 가득 들어갈 장소가 있는 자신이 신기합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yo",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "자신이 한 접시를 끝내기도 전에 일어나 움직이는 소양을 신기하게 쳐다봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yp",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "배가 부른지 동그란 제 배를 유하에게 자랑합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrtq6na_yq",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그런거 안 궁금해. 눈살을 찌푸리며 마지막 접시를 끝냅니다. 그래도 나름 맛있고 좋은 식사였습니다."
+            },
+            {
+              "kind": "narr",
+              "text": "그럼 이제 볼 곳은 다 봤나...다른 층으로 가볼까. 생각합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_mqru6uv0_yt",
+      "title": "V. 불꽃놀이",
+      "blocks": [
+        {
+          "id": "id_mqru7ahr_z0",
+          "type": "narration",
+          "emphasis": false,
+          "text": "본인들의 객실로 향합니다."
+        },
+        {
+          "id": "id_mqru7ahr_z1",
+          "type": "narration",
+          "emphasis": false,
+          "text": "지금 묵고 있는 리조트의 구조와 흡사한 선실. 호텔 방으로써 갖추어야 할 기본적 구색은 모두 갖추고 있으며, 취사 시설은 사용이 불가능 하다고 합니다."
+        },
+        {
+          "id": "id_mqru7ahr_z2",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "침대에 드러눕습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqru7ahr_z3",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "침대에 드러누워 버린 유하를 잡아 다시 일으킵니다! 8시간을 꽉 채워서 즐겨야죠!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqru7ahr_z4",
+          "type": "narration",
+          "emphasis": false,
+          "text": "뜨거운 손이 유하를 일으킵니다. 뜨겁다고요?"
+        },
+        {
+          "id": "id_mqru859m_zy",
+          "type": "narration",
+          "emphasis": true,
+          "text": "의학 판정"
+        },
+        {
+          "id": "id_mqru7ahr_yu",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "의학",
+          "grade": "보통",
+          "standard": "1",
+          "roll": "58",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqru7ahr_z7",
+          "type": "narration",
+          "emphasis": false,
+          "text": "몸살? 간만의 휴가에 들떠 무턱대고 어제 밤바다를 거닐었던 것이 화근이었을 지도 모릅니다."
+        },
+        {
+          "id": "id_mqru7ahr_z8",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "너 손이 왜이렇게 뜨거워? 몸살난 거 같은데 그냥 같이 누워나 있자."
+            },
+            {
+              "kind": "narr",
+              "text": "걱정보단 핑계에 더 가까운 말입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqru7ahr_z9",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하의 말을 무시하고 질질 끌고갑니다. 아까 창문으로 본 풍경이 정말 예뻤다고요."
+            },
+            {
+              "kind": "line",
+              "text": "조금만 더 구경하다가 쉬자. 아직은 멀쩡해."
+            }
+          ]
+        },
+        {
+          "id": "id_mqru7ahr_za",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "무력하게 끌려갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqru7ahr_zb",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "질질..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqru7ahr_zc",
+          "type": "narration",
+          "emphasis": false,
+          "text": "[창문]<br>보기만 해도 뼈와 살이 꽁꽁 얼 것만 같은 냉기를 품은 푸른 바닷물이 갈라지고, 흔들립니다. 저 너머 해저 밑바닥은 실제로 존재하는 걸까요?<br>그런 생각이 들 만큼... 파랑의 끝을 가늠하기 힘들어 보입니다.<br>강소양은 창틀에 손을 얹은 채 한참이고 바다를 바라봅니다.<br>그렇게 시간이 흐르고, 선내 방송이 흘러나옵니다.<br>잠시 후 갑판 위에서 불꽃놀이가 진행된다는 내용으로, 선장은 이 이벤트가 크루즈의 하이라이트라는 설명을 덧붙입니다. 어느 새 창 바깥을 짙게 깔린 어둠을 목도합니다."
+        },
+        {
+          "id": "id_mqru7ahr_zd",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>자, 갑판 위로 올라갈까요?</i> 하이라이트 이벤트를 놓칠 수 없는 법이니.<br>올라갈까... 싶어서 강소양이 서있는 쪽으로 고개를 돌리면... 어라, 그 사이에 강소양이 없어졌습니다.<br>주변을 둘러보아도 서둘러 갑판 위로 이동하는 사람만이 가득할 뿐입니다.<br>어느 곳에서도 강소양의 흔적을 찾을 수 없어요.<br>이전처럼 기억을 떠올려봐도 그 사이 존재하는 강소양의 언질 따위 없습니다.<br>이번에야말로 말도 없이 사라진 겁니다."
+        },
+        {
+          "id": "id_mqru7ahr_ze",
+          "type": "narration",
+          "emphasis": false,
+          "text": "혹시 인파에 떠밀려 길을 잃고 갑판 위로 올라간 것이 아닐까요?"
+        },
+        {
+          "id": "id_mqru7ahr_zf",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "얘 너무 신나서 먼저 가버린 거 아냐? 생각하며 갑판위로 올라갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqru8ql8_zz",
+          "type": "narration",
+          "emphasis": true,
+          "text": "지능 판정"
+        },
+        {
+          "id": "id_mqru7ahr_yv",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "5",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqru7ahr_zi",
+          "type": "narration",
+          "emphasis": false,
+          "text": "문득 심장이 너무나도 빠르게 뛰고 있음을 느낍니다. <b>왜 이렇게 불안한 걸까요.</b> 이 불안감의 근원은 어디에서 비롯되었나요…"
+        },
+        {
+          "id": "id_mqru93jx_100",
+          "type": "narration",
+          "emphasis": true,
+          "text": "이성 판정 (0/1)"
+        },
+        {
+          "id": "id_mqru7ahr_yw",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "이성",
+          "grade": "보통",
+          "standard": "45",
+          "roll": "96",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqru7ahr_zl",
+          "type": "narration",
+          "emphasis": false,
+          "text": "갑판 위로 올라섬과 동시에,<br><b><i>펑!</i></b><br>남색의 깊고 푸른 밤하늘을 오색으로 물들이는 휘황찬란한 불꽃의 파열을 맞이합니다.<br>행성이 터지는 것만 같은 눈이 부신 빛의 산란이 몇 차례나, 몇 차례나 연속해서 쏟아집니다.<br>어디서 이렇게 많은 사람들이 흘러 나온걸까요.<br>감탄과 환호로 젖어든 크루즈는 무척이나 시끄럽고 열띤 분위기를 풍깁니다.<br>강소양의 이름을 불러도 들을 수 있을 리 만무해요. 그 누구도 당신을 신경쓰지 않으며..."
+        },
+        {
+          "id": "id_mqru7ahr_zm",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰 판정"
+        },
+        {
+          "id": "id_mqru7ahr_yx",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "4",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqru7ahr_zp",
+          "type": "narration",
+          "emphasis": false,
+          "text": "눈동자 너머로 파고드는 찬란한 빛의 점멸. 많은 승객들이 하나같이 <b>축제의 광기</b>에 젖어있는 것처럼 보입니다. <i>어째서?</i>"
+        },
+        {
+          "id": "id_mqru7ahr_yy",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "31",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqru7ahr_zs",
+          "type": "narration",
+          "emphasis": false,
+          "text": "자연히 뱃머리에 시선이 기웁니다. 온 세계의 빛과 열기를 뚝 떼어 모아 둔 것 같은 이곳의 갑판과 대비될 만큼 어둡고 음습하며 차가운 공간.<br>본디 인간의 감이란 인간이 진화를 거듭한 만큼 그 어떤 다른 감각보다도 예리하며 발달되어 있기 마련입니다. 쎄한 직감과 함께 뱃머리 쪽으로 이동하면 어둠 속에 파묻힌 저 너머 멀리에서 누군가의 실루엣을 발견합니다.<br>강소양입니다.<br>강소양은 뱃머리 끝에 서 난간을 붙잡고 바다 아래를 내려다 보고 있습니다. 이름을 불러도 들리지 않는 모양인지 부답하며, 시선이 몽롱하고 어딘가 나사가 하나 풀렸거나 정신이 나간 것 같습니다. 무어라고 계속해서 중얼거리는 것도 같은데, 작달만한 목소리는 거센 밤바다 바람에 파묻혀 흩날립니다.<br>남유하는 어떤 반응인가요?"
+        },
+        {
+          "id": "id_mqru7ahr_zt",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "쟤 왜 저러고 있는 거야? 꼭 빠질 것처럼. 몹시 당황합니다. 지난 날의, 학교 옥상 너머로 떨어질 뻔했던 기억도 지나갑니다. 소양을 향해 뛰듯 다가갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqru7ahr_zu",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그 때, 강소양의 몸이 난간 너머로 기웁니다."
+        },
+        {
+          "id": "id_mqrua5gz_101",
+          "type": "narration",
+          "emphasis": true,
+          "text": "민첩 판정"
+        },
+        {
+          "id": "id_mqru7ahr_yz",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "민첩",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "2",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqru7ahr_zx",
+          "type": "narration",
+          "emphasis": false,
+          "text": "일촉즉발의 상황에 생각보다 몸이 나가는 것이 먼저였나요. 강소양의 팔을 억세게 붙잡고 끌어 당깁니다.<br>남유하 쪽으로 기운 강소양의 몸은 마치 불덩이처럼 뜨겁습니다.<br>계속 해서 유하의 손을 뿌리치려하며 바다쪽으로 이동하려는 모습을 보입니다."
+        },
+        {
+          "id": "id_mqrubhqd_103",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "잠깐, 놔 봐. 유하야."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrubhqd_104",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "대체 왜 그래, 정신 차려!"
+            },
+            {
+              "kind": "narr",
+              "text": "상황 파악이 전혀 안 되고 있지만, 적어도 이건 막아야겠다는 생각에 소양을 끌어당깁니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrubhqd_105",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하의 말을 제대로 듣지 못하는 것 같습니다. 시선은 바다에 고정됩니다. 무슨 약이라도 먹은 걸까요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrubhqd_106",
+          "type": "narration",
+          "emphasis": false,
+          "text": "온몸이 불덩이인 강소양을 끌어 객실에 도착하면, 강소양은 기절하듯 제 풀에 지쳐 잠에 듭니다.<br>바깥에서 요란스러운 불꽃축제의 열기가 식을 무렵 크루즈는 다시 선착장에 도착합니다.<br>두 사람은 다시 리조트로 돌아갈 수 있습니다."
+        },
+        {
+          "id": "id_mqrubhqd_107",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아까는 대체 왜 그런 거야?"
+            },
+            {
+              "kind": "narr",
+              "text": "다그쳐 묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrubhqd_108",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "잠에 취한 건지 정신이 나간건지 목이 마르다는 말만 연신 중얼거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrubhqd_102",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "행운",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "6",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mqrubhqd_10b",
+          "type": "narration",
+          "emphasis": false,
+          "text": "버스 구석에서 까지 않은 새 것의 물을 발견합니다."
+        },
+        {
+          "id": "id_mqrubhqd_10c",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "뚜껑을 따서 냅다 소양한테 내밉니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrubhqd_10d",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소양은 유하에게 물병을 받아 한 번에 물을 들이킵니다. 어지간히 목이 말랐나봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrubhqd_10e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "객실로 돌아오면... 강소양은 곧장 깊은 수마에 빠집니다. 몸도 마음도 지친 하루입니다.<br>휴양을 위해 방문한 바다인데 나날이 축적된 피로만이 허파에 가득 얹힙니다. 이게 도대체... 무슨 일일까요.<br>오늘이 짧았던 여행의 마지막 일정이니 그나마 다행인 걸까요. 어서 집으로 돌아가고 싶다는 마음이 앞섭니다.<br><i>온종일 곤혹을 치뤘던 탓일까요?</i> 남유하 역시 머리를 대고 얼마 지나지 않아 빠르게 잠에 빠져듭니다."
+        }
+      ]
+    },
+    {
+      "id": "id_mqrudfk4_10f",
+      "title": "VI. 새벽의 바다",
+      "blocks": [
+        {
+          "id": "id_mqrudqi2_10n",
+          "type": "narration",
+          "emphasis": true,
+          "text": "새벽의 바다<br>[ 20XX. 12. 30 AM 02 : 19 ]"
+        },
+        {
+          "id": "id_mqrudqi2_10p",
+          "type": "narration",
+          "emphasis": true,
+          "text": "남유하, 듣기 판정"
+        },
+        {
+          "id": "id_mqrudqi2_10r",
+          "type": "narration",
+          "emphasis": false,
+          "text": "잠결에… 근처에서 무언가 <b>부스럭 거리는 인기척</b>을 들었던 것도 같습니다. 꿈을 꾼 걸까요?<br>번쩍.<br>반사적으로 눈을 뜨면 새벽 두 시가 넘어가는 늦은 새벽입니다. 몸을 돌리면, 잠결에 들었던 소리의 원인을 밝히기라도 하듯 청 비어 있군요.<br>그저 주름진 침대 시트만이 강소양이 이곳에서 잠들어 있었음을 설명합니다.<br>손으로 만져보면 온기가 전부 날아가지 않았음을 눈치챕니다."
+        },
+        {
+          "id": "id_mqrudqi2_10s",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "호텔 로비로 내려갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_10t",
+          "type": "narration",
+          "emphasis": false,
+          "text": "활짝 열려 있는 현관을 발견할 수 있습니다.<br>강소양의 신발은 그대로 있습니다. 맨 발로 나간 걸까요?<br>...난간 너머로 몸을 기울이던 강소양을 마주쳤던 기억이 생생해요.<br>로비는... 친절했던 직원들이 가득했던 어제가 무색하게 아무도 없이 조용합니다. 문 너머로 들어오는 찬 바람이 이 상황이 현실임을 깨우쳐주는 듯 합니다."
+        },
+        {
+          "id": "id_mqrudqi2_10u",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "이제 정말 뭔가 잘못된 것 같다. 반사적으로 찬 바람이 들어오는 문으로 향합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_10v",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남유하는 리조트 바깥으로 나옵니다. 찬 바람이 뺨을 긁고 지나갑니다. 얼음을 굳혀 만든 소금이 목구멍을 틀어막는 듯 묘연한 바다의 냄새는 숨막힐 정도로 짜고, 무겁고, 소름끼쳐요. 폭력적이라는 생각이 들 만큼.<br>새벽의 밤바다는 어둡고도 스산합니다. 파도의 노랫소리가 꼭 모독적 존재의 속삭임처럼 느껴집니다. 사방에는 불이 들어와 있는 가로등 하나 보이지 않아 한치 앞을 구분하기 힘듭니다."
+        },
+        {
+          "id": "id_mqrufmue_11z",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰 판정"
+        },
+        {
+          "id": "id_mqrudqi1_10h",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "73",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrudqi2_10y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "모래 사장에 점점이 수놓여 있는 누군가의 발자국을 발견합니다.<br>머리를 굴리지 않아도 알 수 있잖아요.<br>본능이 소리치고 있습니다.<br>찍힌지 얼마 되지 않은 듯 선명하기만 한 자욱.<br><i>강소양의 것입니다.</i><br>이동 방향을 살피면 저 너머 바닷가 쪽으로 지체 없이 이어져 있음을 알 수 있습니다."
+        },
+        {
+          "id": "id_mqrudqi2_10z",
+          "type": "narration",
+          "emphasis": false,
+          "text": "발자국을 따라가면 금세 파도 앞에 당도합니다.<br>바다를 향해 이어진 발자국을, 보글보글. 밀려드는 파도가 야금야금 먹어 치우고 있군요.<br>불안함에 떨리는 눈으로 이곳저곳 급히 둘러보면 얼음장처럼 차가운 바닷물과 불안정한 파도를 가르고...<br><b>바다 안 쪽으로 걸어 들어가고 있는 강소양을 발견</b>합니다.<br><b>이성 판정 1/1d3</b>"
+        },
+        {
+          "id": "id_mqrudqi1_10i",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "이성",
+          "grade": "보통",
+          "standard": "44",
+          "roll": "87",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrudqi2_111",
+          "type": "dice",
+          "kind": "simple",
+          "speaker": "",
+          "item": "판정",
+          "roll": "2",
+          "result": "",
+          "formula": "1d3"
+        },
+        {
+          "id": "id_mqrudqi2_112",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남유하는... 바다의 깊은 곳을 향하는 강소양을 어떻게 하나요?"
+        },
+        {
+          "id": "id_mqrudqi2_113",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "당황해서 일단 들이치는 파도에 발을 내딛습니다. 차갑디 차가운 물살에 잠시 흠칫하지만, 이윽고 소양의 이름을 부르며 천천히 따라 갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_114",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하의 목소리가 들리지 않는 듯, 무언가에 홀린 듯 걸음을 멈추지 않고 더 깊이, 더 깊은 곳으로 나아갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_115",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "들어갈수록 차오르는 찬기에 몸이 떨립니다. 그래도 소양을 그대로 둘 수는 없습니다. 자꾸만 멈춰서는 발을 끌고 소양을 쫓아갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_10j",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "근력",
+          "grade": "보통",
+          "standard": "40",
+          "roll": "54",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrudqi2_117",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하의 손은 그대로 뿌리치고 계속해서... 해수면이 점점 종아리를 지나고 무릎을 향할때까지 걸어갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_10k",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "민첩",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "21",
+          "result": "어려움 성공"
+        },
+        {
+          "id": "id_mqrudqi2_119",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그런 소양을 앞서나가 앞을 막아섭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_10l",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "근력",
+          "grade": "보통",
+          "standard": "40",
+          "roll": "25",
+          "result": "성공"
+        },
+        {
+          "id": "id_mqrudqi2_11b",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소양은 제 앞을 막는 유하를 밀쳐내려 하지만... 넋이 나가 제대로 힘을 쓰기도 어려워 보입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그렇게 강소양의 앞을 막은 남유하가... 소양을 뭍으로 건져올리면.<br>강소양은 체온을 모두 빼앗긴 몸을 사시나무처럼 떱니다. 곧 죽을 것처럼 창백하게 질린 피부다 자꾸만 어둠에 좀먹힙니다. 뭍으로 건져진 강소양은 드디어 입을 엽니다."
+        },
+        {
+          "id": "id_mqrudqi2_11d",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아, 자꾸. 자꾸 나를 부르잖아, 유하야. 시끄러워서 잘 수가 없어. 왜 나를 방해하는 거야?"
+            },
+            {
+              "kind": "line",
+              "text": "<b>이거 봐! 지금도 나를 부르고 있어!</b>"
+            },
+            {
+              "kind": "line",
+              "text": "<b><i>들리지 않아?</i></b>"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11e",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "하나도 안 들리니까 정신 좀 차려!"
+            },
+            {
+              "kind": "narr",
+              "text": "양손으로 소양의 어깨를 붙잡고 흔듭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11f",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "너무, 너무 시끄러워. 왜 자꾸 방해하는 거야? 날 부르는 거지?"
+            },
+            {
+              "kind": "narr",
+              "text": "몽롱한 눈빛으로 바다를 바라보며 힘이 들어가지 않는 사지를 휘두르며 발버둥칩니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11g",
+          "type": "narration",
+          "emphasis": false,
+          "text": "한참을 발버둥 치길, 제풀에 지친 모양인지 강소양에게 붙잡혀 있던 강소양의 눈에 흐릿하게나마 생기가 돌아옵니다."
+        },
+        {
+          "id": "id_mqrudqi2_11h",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...."
+            },
+            {
+              "kind": "narr",
+              "text": "축축합니다."
+            },
+            {
+              "kind": "line",
+              "text": "뭐야, 아, 추워."
+            },
+            {
+              "kind": "narr",
+              "text": "주위를 둘러봅니다. 이 상황이 이해가지 않습니다."
+            },
+            {
+              "kind": "line",
+              "text": "유하야, 어쩐 일이야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11i",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그건 내가 물어볼 말이야! 갑자기 이 한밤중에 바닷속으로 들어가려고 하질 않나, 대체 왜 그러는 거야?"
+            },
+            {
+              "kind": "narr",
+              "text": "본인도 춥기는 마찬가지라, 떨리는 목소리로 다그쳐 묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11j",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "치아가 떨리며 부딪혀 딱딱 소리를 냅니다. 영문을 모르는 눈치입니다."
+            },
+            {
+              "kind": "line",
+              "text": "내가, ...바다에 들어가려 했다고? 내가 그럴 일이 뭐가 있어서..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11k",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "추우니까 빨리 들어가기나 하자."
+            },
+            {
+              "kind": "narr",
+              "text": "소양을 질질 끌고 다시 호텔로 향합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "<i>이상해요.</i><br><b>이 바다는, 이 리조트는, 너무나도 이상합니다.</b><br>말했잖아요. 본디 인간의 감이란 인간이 진화를 거듭한 만큼 그 어떤 다른 감각보다도 예리하며 발달 되어 있기 마련이라고."
+        },
+        {
+          "id": "id_mqrukmk1_120",
+          "type": "narration",
+          "emphasis": true,
+          "text": "지능 판정"
+        },
+        {
+          "id": "id_mqrudqi2_10m",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "73",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrudqi2_11o",
+          "type": "narration",
+          "emphasis": false,
+          "text": "…이제 어떻게 해야 하죠? 한번에 많은 일들을 겪은 탓에 머리는 생각 하는 것을 거부합니다."
+        },
+        {
+          "id": "id_mqrudqi2_11p",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "질질 끌려가면서도. 소양은 연신 뒤를 돌아봅니다. 바다가... 부르는 것 같아요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11q",
+          "type": "narration",
+          "emphasis": false,
+          "text": "아무도 없는 조용한 로비를 지나, 객실에 도달하면. 아까 나왔던 그대로의 모습입니다. 계속해서 들리는 파도 소리... 귀를 어지럽힙니다.<br>수건으로 몸을 수습하고 나면 조금 진정됩니다. 몸이 따뜻해지니 마음도 조금은, 아주 조금은 차분해졌어요.<br>웅크려 이불안에 몸을 말고 있는 소양이 눈에 걸립니다. ...당장 여기를 떠나야할 까요? 아니면 몸을 녹이며 동이 틀 때까지 기다려야할까요."
+        },
+        {
+          "id": "id_mqrudqi2_11r",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "여기 이상해. 빨리 가는 게 좋을 것 같아."
+            },
+            {
+              "kind": "narr",
+              "text": "불안한 말투로 소양에게 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11s",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "몸을 달달 떨며 불안하 눈빛으로 유하의 눈치를 봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "새벽이라... 너무 늦은 거 아닐까? 위험할지도 몰라. 위험..."
+            },
+            {
+              "kind": "narr",
+              "text": "숨을 들이키고는."
+            },
+            {
+              "kind": "line",
+              "text": "날이 밝으면 떠나자."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11t",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소양이 말하는 모습을 보니 믿음이 안 갑니다."
+            },
+            {
+              "kind": "line",
+              "text": "네가 더 위험한 것 같아. 그냥 빨리 가자."
+            },
+            {
+              "kind": "narr",
+              "text": "폰을 꺼내 택시를 부르며, 소양을 끌고 나갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrul2n1_121",
+          "type": "narration",
+          "emphasis": true,
+          "text": "END1. 바다가 보이지 않는 곳으로."
+        },
+        {
+          "id": "id_mqrudqi2_11u",
+          "type": "narration",
+          "emphasis": false,
+          "text": "우리는 즉시 이 리조트를 떠나기로 합니다. 바다라면 이제 지긋지긋합니다. 심각해 보이는 강소양의 상태가 걱정 되기는 하지만, 어느 정도 담요를 챙겨 나왔으니 버텨 줄 수 있을 거예요.<br>택시에 올라타 한참을 달립니다. 끝도 없이 펼쳐질 것만 같던 바다가 모습을 달리하고, 옷감과 차체에 달라 붙어 있던 소금냄새가 옅어질 무렵... 동이 터오릅니다.<br>하늘을 붉게 물들이며 해가 떠오를 때쯤 강소양의 떨림도 점차 멎기 시작합니다.<br>색색거리는 비교적 안정적인 호흡소리에 마음이 놓입니다.<br><i>덜컹.</i> 방지턱을 밟은 차가 흔들림과 동시에 라디오 너머에서 아나운서의 목소리가 흘러나옵니다. 아무래도 뉴스 채널에 맞춰 두었던 모양이에요.<br>[ 긴급 속보입니다. 모 호화 리조트의 앞바다에서 새벽결에 떠밀려온 30대의 익사체가 발견되었습니다. 경찰 및 관계자들은 사인을 자살이라고 추정하고 있으나, 발견된 유서가 없는 점을 미루어… ]"
+        },
+        {
+          "id": "id_mqrudqi2_11v",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "어디 쯤 왔어...?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11w",
+          "type": "narration",
+          "emphasis": false,
+          "text": "빠르게 흘러가는 뉴스의 소음 너머로 잠에서 깨어난 강소양의 목소리가 들려옵니다. 창백했던 피부에 혈색이 돌며, 어쩐지 개운해 보입니다.<br>택시 기사가 손 끝으로 버튼을 눌러 라디오의 채널을 바꿉니다. 잔잔한 노래가 들려옵니다.<br>당신은 대답합니다."
+        },
+        {
+          "id": "id_mqrudqi2_11x",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "일단 바다는 아니야."
+            },
+            {
+              "kind": "narr",
+              "text": "짧게 말하며 창틀로 고개를 기울입니다. 이제 정말 이상한 일들은 다 끝난 걸까. 피곤함이 몰려옵니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrudqi2_11y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "눈을 감으며, 그대로 바다에서 멀리, 멀리... 향합니다.<br>_"
+        },
+        {
+          "id": "id_mqrulb9i_122",
+          "type": "narration",
+          "emphasis": true,
+          "text": "&lt; 강소양, 남유하 생존. &gt;"
+        }
+      ]
+    }
+  ]
+}
