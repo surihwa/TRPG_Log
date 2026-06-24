@@ -309,8 +309,17 @@ function editorInsertBlock(type){
 function speakerSelectHTML(b){
   const opts = E().characters.map(c => `<option value="${escAttr(c.name)}" ${c.name===b.speaker?'selected':''}>${applyRich(c.name)} (${c.role})</option>`).join('');
   const extra = (b.speaker && !E().characters.some(c=>c.name===b.speaker))
-    ? `<option value="${escAttr(b.speaker)}" selected>${applyRich(b.speaker)} (미등록·NPC)</option>` : '';
-  return `<select onchange="editorSetField('${b.id}','speaker',this.value)">${extra}${opts}</select>`;
+    ? `<option value="${escAttr(b.speaker)}" selected>${applyRich(b.speaker)} (임시 NPC)</option>` : '';
+  return `<select class="speaker-pick" onchange="editorPickSpeaker('${b.id}',this)"><option value="">선택…</option>${extra}${opts}</select>
+    <input type="text" class="speaker-free" placeholder="임시 NPC 이름 직접 입력" value="${escAttr(b.speaker||'')}"
+      oninput="editorSetField('${b.id}','speaker',this.value)">`;
+}
+/* 등록된 캐릭터 중 하나를 고르면, 옆의 직접입력 칸도 같이 채워준다(재렌더 없이 — 포커스 유지) */
+function editorPickSpeaker(id, selEl){
+  const b = getBlock(id); if(!b || !selEl.value) return;
+  b.speaker = selEl.value;
+  const input = selEl.parentElement ? selEl.parentElement.querySelector('.speaker-free') : selEl.nextElementSibling;
+  if(input) input.value = selEl.value;
 }
 
 const RT_TOOLBAR = `<div class="rt-toolbar">
@@ -359,7 +368,8 @@ function buildBlockCard(b, idx){
   }
   else if(b.type === 'dice'){
     const kindSel = `<select onchange="editorSetDiceKind('${b.id}',this.value)" style="width:auto;padding:5px 8px;font-size:12px;">
-        <option value="check" ${b.kind!=='simple'?'selected':''}>기준치</option>
+        <option value="check" ${b.kind!=='simple'&&b.kind!=='attack'?'selected':''}>기준치</option>
+        <option value="attack" ${b.kind==='attack'?'selected':''}>공격</option>
         <option value="simple" ${b.kind==='simple'?'selected':''}>단순 굴림</option></select>`;
     let fields = '';
     if(b.kind === 'simple') fields = `
@@ -367,6 +377,12 @@ function buildBlockCard(b, idx){
       <div class="field"><label class="fld">공식</label><input value="${escAttr(b.formula)}" oninput="editorSetField('${b.id}','formula',this.value)"></div>
       <div class="field"><label class="fld">결과값</label><input value="${escAttr(b.roll)}" oninput="editorSetField('${b.id}','roll',this.value)"></div>
       <div class="field"><label class="fld">판정결과(선택)</label><input value="${escAttr(b.result)}" oninput="editorSetField('${b.id}','result',this.value)"></div>`;
+    else if(b.kind === 'attack') fields = `
+      <div class="field"><label class="fld">무기</label><input value="${escAttr(b.item)}" oninput="editorSetField('${b.id}','item',this.value)" placeholder="예: 야구방망이"></div>
+      <div class="field"><label class="fld">기준치(전체)</label><input value="${escAttr(b.standard)}" oninput="editorSetField('${b.id}','standard',this.value)" placeholder="45/22/9"></div>
+      <div class="field"><label class="fld">굴림</label><input value="${escAttr(b.roll)}" oninput="editorSetField('${b.id}','roll',this.value)"></div>
+      <div class="field"><label class="fld">판정결과</label><input value="${escAttr(b.result)}" oninput="editorSetField('${b.id}','result',this.value)"></div>
+      <div class="field"><label class="fld">피해</label><input value="${escAttr(b.damage)}" oninput="editorSetField('${b.id}','damage',this.value)"></div>`;
     else fields = `
       <div class="field"><label class="fld">판정명</label><input value="${escAttr(b.item)}" oninput="editorSetField('${b.id}','item',this.value)"></div>
       <div class="field"><label class="fld">등급</label><input value="${escAttr(b.grade)}" oninput="editorSetField('${b.id}','grade',this.value)" placeholder="보통 등"></div>
@@ -429,10 +445,11 @@ function editorAddSeg(id){ const b = getBlock(id); if(b){ b.segments.push({kind:
 function editorDelSeg(id, si){ const b = getBlock(id); if(b){ b.segments.splice(si,1); if(!b.segments.length) b.segments.push({kind:'line',text:''}); renderBlocks(); } }
 function editorSetDiceKind(id, kind){
   const b = getBlock(id); if(!b) return;
-  if(kind !== 'simple') kind = 'check';
+  if(kind !== 'simple' && kind !== 'attack') kind = 'check';
   b.kind = kind;
-  if(kind==='check'){ b.grade=b.grade||''; b.standard=b.standard||''; b.result=b.result||''; delete b.target; delete b.formula; }
-  else { b.formula=b.formula||'1d100'; b.result=b.result||''; delete b.target; delete b.grade; delete b.standard; }
+  if(kind==='check'){ b.grade=b.grade||'보통'; b.standard=b.standard||''; b.result=b.result||''; delete b.target; delete b.formula; delete b.damage; }
+  else if(kind==='attack'){ b.standard=b.standard||''; b.roll=b.roll||''; b.result=b.result||''; b.damage=b.damage||''; delete b.target; delete b.grade; delete b.formula; }
+  else { b.formula=b.formula||'1d100'; b.result=b.result||''; delete b.target; delete b.grade; delete b.standard; delete b.damage; }
   renderBlocks();
 }
 function editorSetBlockType(id, t){
@@ -447,7 +464,7 @@ function editorSetBlockType(id, t){
   renderBlocks();
 }
 function stripBlock(b, newType){
-  ['emphasis','text','speaker','segments','kind','item','grade','roll','target','standard','formula','result','ytId','title','style','body','image'].forEach(k => delete b[k]);
+  ['emphasis','text','speaker','segments','kind','item','grade','roll','target','standard','formula','result','damage','ytId','title','style','body','image'].forEach(k => delete b[k]);
   b.type = newType;
 }
 

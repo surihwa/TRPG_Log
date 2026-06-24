@@ -121,6 +121,9 @@
 .seg-row .sdel{border:none; background:transparent; color:var(--ink-faint); font-size:15px; align-self:center;}
 .seg-row .sdel:hover{color:var(--seal);}
 
+.speaker-pick{width:auto; min-width:130px; flex:0 0 auto;}
+.speaker-free{width:150px; flex:0 0 150px; font-size:12.5px; padding:7px 9px;}
+
 .dice-fields{display:grid; grid-template-columns:repeat(4,1fr); gap:9px;}
 .dice-fields .field{margin:0;}
 .dice-fields label.fld{font-size:11px;}

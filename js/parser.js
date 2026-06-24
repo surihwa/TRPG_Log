@@ -20,7 +20,8 @@ function stripTags(s){ return String(s == null ? '' : s).replace(/<[^>]+>/g, '')
 /* contenteditable HTML → 줄 배열 (img 제거, b/i 보존, 블록요소·br = 줄바꿈) */
 function htmlToLines(html){
   const tmp = document.createElement('div');
-  tmp.innerHTML = html || '';
+  const ALLOWED = ['br','b','strong','i','em','div','p','li','tr','h1','h2','h3','h4','h5','section','article','blockquote'];
+  tmp.innerHTML = escapeStrayAngles(html || '', ALLOWED);
   tmp.querySelectorAll('img, picture, svg, script, style, video, audio').forEach(n => n.remove());
   function ser(node){
     let out = '';
@@ -87,11 +88,20 @@ function findDiceSpans(lines){
     const t = stripTags(lines[i] || '').trim();
     if(t === '') continue;
 
+    /* 한 줄형 공격(무기/기준치 3개/굴림/판정결과/피해) — 기준치 뒤의 '고장' 항목은 표시하지 않고 건너뜀 */
+    const atk = t.match(/^(.*?)기준치\s*[:：]\s*([0-9/]+)\s*고장\s*[:：]\s*.*?굴림\s*[:：]\s*(\d+)\s*판정결과\s*[:：]\s*(.+?)\s*피해\s*[:：]\s*(.+)$/);
+    if(atk){
+      spans.push({ start:i, end:i, block:{ id:genId(), type:'dice', kind:'attack', speaker:null,
+        item:(atk[1].trim() || '무기'), standard:atk[2].trim(),
+        roll:atk[3].trim(), result:atk[4].trim(), damage:atk[5].trim() } });
+      used[i] = true; continue;
+    }
+
     /* 한 줄형 기준치 */
     const one = t.match(/^(.*?)기준치\s*[:：]\s*([0-9/]+)\s*굴림\s*[:：]\s*(\d+)\s*판정결과\s*[:：]\s*(.+)$/);
     if(one){
       spans.push({ start:i, end:i, block:{ id:genId(), type:'dice', kind:'check', speaker:null,
-        item:(one[1].trim() || '판정'), grade:'', standard:firstNum(one[2]),
+        item:(one[1].trim() || '판정'), grade:'보통', standard:firstNum(one[2]),
         roll:one[3].trim(), result:one[4].trim() } });
       used[i] = true; continue;
     }
@@ -120,6 +130,7 @@ function findDiceSpans(lines){
         item = rest || '판정';   // 이름+판정명 (이름은 fold 단계에서 제거)
         stripName = true;
       } else { headIdx = i; }
+      if(!grade) grade = '보통';   // 등급 표기가 없으면 기본값
       let end = i;
       if(lines[i+1] && isBonus(stripTags(lines[i+1]))) end = i + 1;
       const start = Math.min(headIdx, i);

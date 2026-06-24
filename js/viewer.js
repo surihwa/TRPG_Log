@@ -4,17 +4,26 @@
 let viewerSession = null;
 let viewerScene   = null;
 
-/* ---- 다이스 박스 (판정명 헤더 강조) ---- */
-function diceBoxHTML(b){
+/* ---- 다이스 박스 (판정명 헤더 강조 + 화자 색상 반영) ---- */
+function diceBoxHTML(ses, b){
   // 레거시 vs → 기준치(check)로 정규화
   if(b.kind === 'vs'){ b = Object.assign({}, b, { kind:'check', standard: b.standard || b.target }); }
   const v = diceVerdict(b);
   const name = applyRich(b.item || '판정');
+  const ch = findChar(ses, b.speaker);
+  const color = (ch && ch.color) || 'var(--seal)';
   let cells = '';
   if(b.kind === 'simple'){
     cells =
       `<div class="cell"><div class="k">${applyRich(b.formula || 'roll')}</div><div class="val">—</div></div>` +
       `<div class="cell roll"><div class="k">결과</div><div class="val">${applyRich(b.roll)}</div></div>`;
+  } else if(b.kind === 'attack'){
+    const parts = String(b.standard || '').split('/').map(s => s.trim()).filter(Boolean);
+    const std3 = `<div class="cell std3"><div class="k">기준치</div>
+        <div class="val std3-row">${parts.map(p=>`<span>${applyRich(p)}</span>`).join('')}</div></div>`;
+    cells = std3 +
+      `<div class="cell roll"><div class="k">굴림</div><div class="val">${applyRich(b.roll || '-')}</div></div>` +
+      `<div class="cell dmg"><div class="k">피해</div><div class="val">${applyRich(b.damage || '-')}</div></div>`;
   } else { // check (기준치)
     const gradeCell = (b.grade && b.grade !== '-')
       ? `<div class="cell"><div class="k">등급</div><div class="val">${applyRich(b.grade)}</div></div>` : '';
@@ -24,7 +33,7 @@ function diceBoxHTML(b){
   }
   const result = v.text ? `<div class="result ${v.cls}">${applyRich(v.text)}</div>` : '';
   return (
-    `<div class="v-dice">` +
+    `<div class="v-dice" style="--dice-color:${color}">` +
       `<div class="dh"><span class="d20">⬢</span><span class="check-name">${name}</span><span class="roll-of">판정</span></div>` +
       `<div class="db">${cells}</div>${result}` +
     `</div>`
@@ -64,7 +73,7 @@ function viewerBlockHTML(ses, b){
   }
   if(b.type === 'dice'){
     const who = b.speaker ? `<div class="who">${applyRich(b.speaker)}</div>` : '';
-    return `<div class="v-dice-solo">${who}${diceBoxHTML(b)}</div>`;
+    return `<div class="v-dice-solo">${who}${diceBoxHTML(ses, b)}</div>`;
   }
   if(b.type === 'dialogue'){
     const ch    = findChar(ses, b.speaker);
@@ -110,7 +119,7 @@ function openViewer(sessionId, sceneId){
       let html = viewerBlockHTML(ses, b);
       const next = blocks[i+1];
       if(next && next.type === 'dice' && (next.speaker || '') === (b.speaker || '')){
-        html = html.replace('__DICE_SLOT__', diceBoxHTML(next)); i++;
+        html = html.replace('__DICE_SLOT__', diceBoxHTML(ses, next)); i++;
       } else html = html.replace('__DICE_SLOT__', '');
       parts.push(html);
     } else parts.push(viewerBlockHTML(ses, b));

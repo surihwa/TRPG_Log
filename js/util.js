@@ -78,10 +78,20 @@ function editableToRich(el){
   return ser(el).replace(/(\s*<br>\s*)+$/i, '').replace(/^(\s*<br>\s*)+/i, '').replace(/\u00a0/g, ' ');
 }
 
+/* 허용된 태그 외의 '<','>' 는 모두 안전하게 텍스트로 escape.
+   (로그 안에 '<생각>', '<3' 같은 문자가 있으면 알 수 없는 HTML 태그로 잘못 해석되어
+   내용이 통째로 사라지는 문제를 막기 위해, DOM에 넣기 전에 반드시 이 함수를 거친다.) */
+function escapeStrayAngles(html, tagNames){
+  const s = String(html == null ? '' : html);
+  const pat = tagNames.join('|');
+  const re = new RegExp('(<\\/?(?:' + pat + ')(?:\\s[^<>]*)?\\/?>)|([<>])', 'gi');
+  return s.replace(re, (m, tag, lone) => tag ? tag : (lone === '<' ? '&lt;' : '&gt;'));
+}
+
 /* HTML → 허용 태그만 남기는 위생 처리 */
 function sanitizeHTML(html, allowed){
   const tmp = document.createElement('div');
-  tmp.innerHTML = html || '';
+  tmp.innerHTML = escapeStrayAngles(html || '', allowed);
   tmp.querySelectorAll('img, picture, svg, script, style, video, audio, iframe').forEach(n => n.remove());
   tmp.querySelectorAll('*').forEach(node => {
     Array.from(node.attributes).forEach(a => node.removeAttribute(a.name));

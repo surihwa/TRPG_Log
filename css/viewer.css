@@ -65,21 +65,30 @@
 .v-bubble .stage{font-family:var(--serif); font-weight:400; font-size:13.5px; color:var(--v-soft); line-height:1.7; margin:6px 0; display:block;}
 .v-bubble b{font-weight:700;} .v-bubble i{font-style:italic;}
 
-/* 다이스 — 판정명 강조 헤더 */
-.v-dice{margin:10px 0 2px; border:1px solid var(--v-line); border-radius:10px; overflow:hidden; background:linear-gradient(180deg,transparent,rgba(176,141,79,.05));}
+/* 다이스 — 판정명 강조 헤더 + 화자 색상 반영(--dice-color) */
+.v-dice{
+  margin:10px 0 2px; border:1px solid var(--dice-color, var(--v-line)); border-radius:10px; overflow:hidden;
+  background:linear-gradient(180deg,transparent,rgba(176,141,79,.05));
+}
 .v-dice .dh{
   display:flex; align-items:center; justify-content:center; gap:9px; padding:9px 13px;
-  border-bottom:1px solid var(--v-line); background:rgba(176,141,79,.1);
+  border-bottom:1px solid var(--dice-color, var(--v-line));
+  background:rgba(176,141,79,.1);
+  background:color-mix(in srgb, var(--dice-color, #b08d4f) 14%, transparent);
 }
-.v-dice .dh .d20{font-size:14px;}
+.v-dice .dh .d20{font-size:14px; color:var(--dice-color, var(--v-soft));}
 .v-dice .dh .check-name{font-family:var(--serif); font-size:15px; font-weight:700; color:var(--v-text); letter-spacing:.02em;}
 .v-dice .dh .roll-of{font-size:11px; color:var(--v-soft); letter-spacing:.1em; text-transform:uppercase;}
 .v-dice .db{display:flex; align-items:stretch;}
 .v-dice .cell{flex:1; padding:11px 13px; text-align:center; border-right:1px solid var(--v-line);}
 .v-dice .cell:last-child{border-right:0;}
 .v-dice .cell .k{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--v-soft); margin-bottom:3px;}
-.v-dice .cell .val{font-family:var(--serif); font-size:21px; font-weight:600; line-height:1;}
-.v-dice .cell.roll .val{color:var(--seal-soft);}
+.v-dice .cell .val{font-family:var(--serif); font-size:21px; font-weight:600; line-height:1; color:var(--dice-color, var(--v-text));}
+.v-dice .cell.roll .val{color:var(--dice-color, var(--seal-soft));}
+.v-dice .cell.dmg .val{color:var(--seal);}
+.v-dice .cell.std3 .val.std3-row{display:flex; gap:7px; justify-content:center; align-items:baseline;}
+.v-dice .cell.std3 .std3-row span{font-size:13px; font-weight:600; color:var(--v-text); opacity:.85;}
+.v-dice .cell.std3 .std3-row span:first-child{font-size:17px; opacity:1; color:var(--dice-color, var(--v-text));}
 .v-dice .result{padding:9px 13px; text-align:center; font-size:13px; font-weight:700; background:rgba(176,141,79,.08);}
 .v-dice .result.ok{color:#3f7d52;} .v-dice .result.crit{color:#b08d4f;} .v-dice .result.fail{color:var(--seal);}
 .v-dice-solo{max-width:440px; margin:24px auto;}
