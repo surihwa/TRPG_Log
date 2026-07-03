@@ -78,20 +78,25 @@ function editableToRich(el){
   return ser(el).replace(/(\s*<br>\s*)+$/i, '').replace(/^(\s*<br>\s*)+/i, '').replace(/\u00a0/g, ' ');
 }
 
-/* 허용된 태그 외의 '<','>' 는 모두 안전하게 텍스트로 escape.
-   (로그 안에 '<생각>', '<3' 같은 문자가 있으면 알 수 없는 HTML 태그로 잘못 해석되어
-   내용이 통째로 사라지는 문제를 막기 위해, DOM에 넣기 전에 반드시 이 함수를 거친다.) */
-function escapeStrayAngles(html, tagNames){
+/* 실제 HTML 태그 모양(<tag ...>, </tag>, <tag/>, <!-- -->)은 그대로 두고,
+   그 외의 '<','>' (예: <생각>, 5<10, <3) 만 텍스트로 escape.
+   → 허용/비허용 태그 판단은 이후 단계(sanitizeHTML / htmlToLines)에서 하고,
+     여기서는 "태그처럼 생겼는가"만 본다. 로그의 알 수 없는 태그로 인해 내용이 사라지거나
+     코드가 노출되는 문제를 근본적으로 막는다. */
+function escapeStrayAngles(html){
   const s = String(html == null ? '' : html);
-  const pat = tagNames.join('|');
-  const re = new RegExp('(<\\/?(?:' + pat + ')(?:\\s[^<>]*)?\\/?>)|([<>])', 'gi');
-  return s.replace(re, (m, tag, lone) => tag ? tag : (lone === '<' ? '&lt;' : '&gt;'));
+  const TAG = /<\/?[a-zA-Z][a-zA-Z0-9]*(?:\s[^<>]*?)?\/?>|<!--[\s\S]*?-->/g;
+  const holders = [];
+  let out = s.replace(TAG, m => { holders.push(m); return '\u0000' + (holders.length - 1) + '\u0001'; });
+  out = out.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  out = out.replace(/\u0000(\d+)\u0001/g, (m, i) => holders[+i]);
+  return out;
 }
 
 /* HTML → 허용 태그만 남기는 위생 처리 */
 function sanitizeHTML(html, allowed){
   const tmp = document.createElement('div');
-  tmp.innerHTML = escapeStrayAngles(html || '', allowed);
+  tmp.innerHTML = escapeStrayAngles(html || '');
   tmp.querySelectorAll('img, picture, svg, script, style, video, audio, iframe').forEach(n => n.remove());
   tmp.querySelectorAll('*').forEach(node => {
     Array.from(node.attributes).forEach(a => node.removeAttribute(a.name));

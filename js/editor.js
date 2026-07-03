@@ -212,17 +212,20 @@ function renderScenePanel(){
     </div>
     <div style="border-top:1px solid var(--line); margin:18px 0;"></div>
     <div class="blocks" id="blockList"></div>`;
-  // 붙여넣기 시 이미지 제거
+  // 붙여넣기: htmlToLines 로 정규화(주사위 템플릿 변환 · 이미지/링크/잡태그 제거 · b/i 보존)
   const pa = $('#pasteArea');
   pa.addEventListener('paste', e => {
     e.preventDefault();
     const cb = e.clipboardData || window.clipboardData;
-    let html = cb.getData('text/html');
-    if(html) html = sanitizeHTML(html, ['p','br','b','strong','i','em','div','span',
-                                        'table','tbody','thead','tfoot','tr','td','th','caption']);
-    else html = (cb.getData('text/plain')||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
+    const raw = cb.getData('text/html');
+    let html;
+    if(raw){
+      html = htmlToLines(raw).map(l => applyRich(l)).join('<br>');
+    } else {
+      html = escapeText(cb.getData('text/plain') || '').replace(/\n/g, '<br>');
+    }
     document.execCommand('insertHTML', false, html);
-    toast('이미지를 제거하고 텍스트만 붙여넣었습니다.');
+    toast('이미지·주사위 서식을 정리해 붙여넣었습니다.');
   });
   renderBlocks();
 }

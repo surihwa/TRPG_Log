@@ -17,22 +17,16 @@ const GRADE_RE = /(대단히\s*어려운|대단히\s*어려움|어려운\s*성�
 function firstNum(s){ const m = String(s == null ? '' : s).match(/-?\d+/); return m ? m[0] : ''; }
 function stripTags(s){ return String(s == null ? '' : s).replace(/<[^>]+>/g, ''); }
 
-/* contenteditable HTML → 줄 배열 (img 제거, b/i 보존, 블록요소·br = 줄바꿈)
-   Roll20 신형 포맷: 주사위가 <table> 로 오면 "판정명기준치:..굴림:..판정결과:.." 한 줄로 변환 */
+/* contenteditable/붙여넣기 HTML → 줄 배열
+   - 이미지/링크(a) 등 잡태그 제거, b/i 보존, 블록요소·br = 줄바꿈
+   - Roll20 주사위 표기 2형식을 한 줄 정규형으로 변환:
+     (1) <table> (caption=판정명, 기준치/굴림/판정결과/피해 행)
+     (2) <h2>캐릭터</h2><h1>판정명</h1><h3>등급</h3> + "결과" + "N vs. M" 줄  */
 function htmlToLines(html){
   const tmp = document.createElement('div');
-  const ALLOWED = ['br','b','strong','i','em','div','p','li',
-    'table','tbody','thead','tfoot','tr','td','th','caption',
-    'h1','h2','h3','h4','h5','section','article','blockquote'];
-  tmp.innerHTML = escapeStrayAngles(html || '', ALLOWED);
+  tmp.innerHTML = escapeStrayAngles(html || '');
 
-  /* Roll20 주사위 테이블 → 한 줄 정규 형식으로 변환
-     <caption>관찰력</caption>
-     <tr><td>기준치:</td><td>55/27/11</td></tr>  ← data-i18n="value"
-     <tr><td>굴림:</td><td>14</td></tr>          ← data-i18n="rolled"
-     <tr><td>판정결과:</td><td>어려운 성공</td></tr> ← data-i18n="result"
-     → "관찰력기준치:55/27/11굴림:14판정결과:어려운 성공"
-     피해 행이 있으면 공격 판정으로 처리(weapon기준치:../고장:-굴림:..판정결과:..피해:..) */
+  /* (1) 주사위 <table> → 한 줄 */
   tmp.querySelectorAll('table').forEach(tbl => {
     const cap = tbl.querySelector('caption');
     const skillName = (cap ? cap.textContent : '').trim() || '판정';
@@ -41,7 +35,7 @@ function htmlToLines(html){
       const cells = tr.querySelectorAll('td');
       if(cells.length < 2) return;
       const attr  = cells[0].getAttribute('data-i18n') || '';
-      const label = cells[0].textContent.replace(/:$/, '').trim();
+      const label = cells[0].textContent.replace(/[:：]$/, '').trim();
       const val   = cells[1].textContent.trim();
       if(attr === 'value'  || /기준치/i.test(label))   standard    = val;
       else if(attr === 'rolled' || /굴림/i.test(label))     roll        = val;
@@ -49,19 +43,37 @@ function htmlToLines(html){
       else if(/피해/i.test(label))                           damage      = val;
       else if(/고장/i.test(label))                           malfunction = val;
     });
-    let oneLine;
-    if(damage){
-      // 공격 판정 형식
-      const malf = malfunction || '-';
-      oneLine = skillName + '기준치:' + standard + '고장:' + malf +
-                '굴림:' + roll + '판정결과:' + result + '피해:' + damage;
-    } else {
-      oneLine = skillName + '기준치:' + standard + '굴림:' + roll + '판정결과:' + result;
-    }
+    const oneLine = damage
+      ? (skillName + '기준치:' + standard + '고장:' + (malfunction || '-') + '굴림:' + roll + '판정결과:' + result + '피해:' + damage)
+      : (skillName + '기준치:' + standard + '굴림:' + roll + '판정결과:' + result);
     tbl.parentNode.replaceChild(document.createTextNode('\n' + oneLine + '\n'), tbl);
   });
 
-  tmp.querySelectorAll('img, picture, svg, script, style, video, audio').forEach(n => n.remove());
+  /* (2) 주사위 h-템플릿 → "판정명등급" 한 줄 (뒤에 이어지는 결과·N vs. M 줄은 그대로 두면
+        기존 vs 파서가 처리한다). h2(캐릭터·소유자)는 버린다. */
+  tmp.querySelectorAll('h1').forEach(h1 => {
+    const parent = h1.parentNode; if(!parent) return;
+    const kids = Array.from(parent.childNodes);
+    const idx = kids.indexOf(h1); if(idx < 0) return;
+    let lo = idx, hi = idx;
+    const isHead = n => n && n.nodeType === 1 && /^h[1-4]$/i.test(n.tagName);
+    while(lo - 1 >= 0 && isHead(kids[lo-1])) lo--;
+    while(hi + 1 < kids.length && isHead(kids[hi+1])) hi++;
+    let item = '', grade = '';
+    for(let k = lo; k <= hi; k++){
+      const el = kids[k]; const tg = el.tagName.toLowerCase();
+      const txt = (el.textContent || '').trim();
+      if(tg === 'h1') item = txt;
+      else if((tg === 'h3' || tg === 'h4') && !grade) grade = txt;
+      /* h2 = 캐릭터/소유자명 → 버림 */
+    }
+    parent.insertBefore(document.createTextNode('\n' + item + grade + '\n'), kids[lo]);
+    for(let k = lo; k <= hi; k++) if(kids[k].parentNode) kids[k].remove();
+  });
+
+  /* 링크(bonus / penalty 등)·이미지·기타 잡태그 제거 */
+  tmp.querySelectorAll('a, img, picture, svg, script, style, video, audio').forEach(n => n.remove());
+
   function ser(node){
     let out = '';
     node.childNodes.forEach(child => {
@@ -72,7 +84,7 @@ function htmlToLines(html){
       if(tag === 'b' || tag === 'strong'){ out += '<b>' + ser(child) + '</b>'; return; }
       if(tag === 'i' || tag === 'em'){ out += '<i>' + ser(child) + '</i>'; return; }
       const block = ['div','p','li','tr','td','th','h1','h2','h3','h4','h5','section','article','blockquote'].includes(tag);
-      if(block) out += '\n' + ser(child) + '\n'; else out += ser(child);
+      if(block) out += '\n' + ser(child) + '\n'; else out += ser(child);   // 그 외 태그(span,a 등)는 텍스트만
     });
     return out;
   }
@@ -151,28 +163,34 @@ function findDiceSpans(lines){
       if(rf){ spans.push({ start:i, end:rf.end, block:rf.block }); for(let k=i;k<=rf.end;k++) used[k]=true; continue; }
     }
 
-    /* 줄바꿈형 vs → 기준치로 통일 */
+    /* 줄바꿈형 vs → 기준치로 통일 (사이에 낀 빈 줄은 건너뛴다) */
     const vsm = t.match(/(\d+)\s*vs\.?\s*(\d+)/i);
     if(vsm){
       const roll = vsm[1], standard = vsm[2];
-      let headIdx = i - 1, result = '';
-      const p1 = stripTags(lines[i-1] || '').trim();
+      const prevNonBlank = from => { let p = from; while(p >= 0 && stripTags(lines[p] || '').trim() === '') p--; return p; };
+      let result = '', headIdx = -1;
+      const rIdx = prevNonBlank(i - 1);
+      const p1 = rIdx >= 0 ? stripTags(lines[rIdx]).trim() : '';
       if(p1 && !/[:：]/.test(p1) && !/\d+\s*vs/i.test(p1) && /(대성공|대실패|성공|실패|펌블|크리)/.test(p1)){
-        result = p1; headIdx = i - 2;
+        result = p1; headIdx = prevNonBlank(rIdx - 1);
+      } else {
+        headIdx = rIdx;   // 결과 줄이 없으면 바로 위(공백 제외)가 헤드
       }
-      const head = stripTags(lines[headIdx] || '').trim();
-      let item = '판정', grade = '', stripName = false;
+      const head = headIdx >= 0 ? stripTags(lines[headIdx]).trim() : '';
+      let item = '판정', grade = '', stripName = false, startIdx = i;
       if(head && !/[:：]/.test(head)){
         let rest = head;
         const gm = rest.match(GRADE_RE);
         if(gm){ grade = gm[1].replace(/\s+/g,' ').trim(); rest = rest.slice(0, gm.index).trim(); }
         item = rest || '판정';   // 이름+판정명 (이름은 fold 단계에서 제거)
         stripName = true;
-      } else { headIdx = i; }
+        startIdx = headIdx;
+      }
       if(!grade) grade = '보통';   // 등급 표기가 없으면 기본값
       let end = i;
-      if(lines[i+1] && isBonus(stripTags(lines[i+1]))) end = i + 1;
-      const start = Math.min(headIdx, i);
+      const nextNB = (()=>{ let q=i+1; while(q<N && stripTags(lines[q]||'').trim()==='') q++; return q; })();
+      if(nextNB < N && isBonus(stripTags(lines[nextNB]))) end = nextNB;
+      const start = Math.min(startIdx, i);
       spans.push({ start, end, block:{ id:genId(), type:'dice', kind:'check', speaker:null,
         item, grade, standard, roll, result, _stripName:stripName } });
       for(let k=start;k<=end;k++) used[k]=true;
@@ -249,7 +267,11 @@ function parseRoll20(rawHtml, gmNames){
       startSpeaker(name, content);
       continue;
     }
-    if(!cur) cur = { type:'narration', lines:[] };
+    if(!cur){
+      // 주사위 직후 화자 표기 없이 이어지는 따옴표 대사는 방금 굴린 화자의 대사로 본다.
+      if(lastSpeaker && /["\u201C\u201D]/.test(trimmed)) cur = { type:'dialogue', speaker:lastSpeaker, segs:[] };
+      else cur = { type:'narration', lines:[] };
+    }
     if(cur.type === 'dialogue') splitDialogueSegments(trimmed).forEach(s => cur.segs.push(s));
     else cur.lines.push(applyRich(trimmed));
   }
