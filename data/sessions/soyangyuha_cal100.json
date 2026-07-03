@@ -1,0 +1,2967 @@
+{
+  "id": "id_mqryyyph_0",
+  "folder": "소양유하",
+  "title": "캘버리를 향해 걷는 100시간",
+  "date": "",
+  "theme": "light",
+  "cardImage": "image/100/cal100_card.png",
+  "characters": [
+    {
+      "id": "id_mqryyyph_1",
+      "name": "강소양",
+      "role": "PC",
+      "color": "#be7437",
+      "img": "image/soyangyuha/soyang2.png"
+    },
+    {
+      "id": "id_mqrz1pck_3",
+      "name": "남유하",
+      "role": "KPC",
+      "color": "#080b63",
+      "img": "image/soyangyuha/yuha2.png"
+    },
+    {
+      "id": "id_mqrz2lki_4",
+      "name": "줄리",
+      "role": "NPC",
+      "color": "#49654c",
+      "img": "image/100/jully.png"
+    },
+    {
+      "id": "id_mqrz7mob_5",
+      "name": "단민서",
+      "role": "NPC",
+      "color": "#193e22",
+      "img": "image/paradise/minseo.png"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "id_mqrzaamk_3v",
+      "title": "I. 좀비 사태",
+      "blocks": [
+        {
+          "id": "id_mqrzafwb_3z",
+          "type": "narration",
+          "emphasis": true,
+          "text": "캘버리를 향해 걷는 100시간<br>칙—치직, 칙.<br>아아, 아. 연합정부 소속 안전지대에서, 이 방송을 듣고 있을 생존자 여러분에게 알립니다.<br>여러분은, 파이로젠 바이러스, 통칭 좀비 바이러스로부터 생존한, 인류의 희망입니다.<br>아시다시피 아직까지 좀비 바이러스에 대한 치료제가 개발되지 않은 상황이므로, 생존자 여러분은 아직 좀비가 되지 않은 ‘감염자’를 보실 경우 속히 처단해 주십시오.<br>지금 여러분이 듣고 있을 곳에서 가장 가까운 안전지대는 캘버리 교도소에 위치해 있습니다.<br>좀비의 특성을 감안해 생존자 여러분은 최대한 해가 지고 움직여 주십시오. 낮에 움직이는 것은 위험합니다.<br>그곳의 좌표는 xxx.xxx.xxx.<br>다시 한번 반복합니다. 생존자 여러분은 캘버리의 안전지대로 와주십시오. 그곳의 좌표는...…"
+        },
+        {
+          "id": "id_mqrzafwb_40",
+          "type": "narration",
+          "emphasis": false,
+          "text": "뚝.<br>몇 번도 더 들은 라디오의 방송은 끄고, 주변을 돌아보면 어둡습니다.<br>이곳은 오늘 쉬어가기로 한 폐공장의 창고 한 구석. 유일한 광원인 벽 꼭대기에 위치한 환풍구에서 정오의 햇빛이 비치고, 당신의 옆에선 남유하가 고단한 얼굴로 잠들어 있습니다.<br>......."
+        },
+        {
+          "id": "id_mqrzafwb_41",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "잘 자네... 라고 생각한다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_42",
+          "type": "narration",
+          "emphasis": false,
+          "text": "2020년 10월 27일. 세계 곳곳의 사람들이 동일한 질병 증세를 보였습니다. 곧 학자들에 의해 이 질병이 전례 없는 바이러스 감염이 원인임을 알아냈고, 파이로젠 바이러스라 명명되었습니다. 하지만 사람들과 미디어는 이 바이러스를 좀비 바이러스라고 불렀고, 최초 감염자가 발생한 시점부터 이를 좀비 사태라 부르기 시작했습니<br>다.<br>인류는 곧 좀비들에게 몇 가지 특징을 발견했습니다.<br>첫째. 바이러스는 체액으로 전파되며 대표적인 감염경로는 좀비에게 물리는 것이다.<br>둘째. 바이러스에 감염된 사람은 24시간 안에 좀비로 변한다. 그 증거로 완전히 좀비가 된다면 눈동자의 동공이 희뿌옇게 탁해진다.<br>셋째. 좀비는 시력이 퇴화하지만 청력이 발달해, 빛이 없는 밤에는 거의 움직이지 않는다."
+        },
+        {
+          "id": "id_mqrzafwb_43",
+          "type": "narration",
+          "emphasis": false,
+          "text": "세계에서 동시다발적으로 퍼지기 시작한 이 바이러스는 곧 전 지구를 장악했고, 인류의 70% 이상이 바이러스에 감염되며 전 세계가 혼란에 휩싸였습니다.<br>정부는 힘을 잃고, 집단 자살이 성행했으며 많은 사람들이 인류의 멸망을 이야기했습니다.<br>하지만 언제나 인간은 생존할 길을 찾기 마련입니다. 좀비사태를 해결하기 위한 연합정부가 설립되었고, 이 기관은 생존자들을 위한 ‘안전지대’를 만들었습니다.<br>오늘은 좀비사태가 발발한지 1년 7개월 12일째. 당신과 남유하는 이 절망적인 세상 속에서 서로를 의지해가며 안전지대로 향하는 여정을 계속해오고 있습니다.<br>당신은 잠든 남유하의 얼굴을 가만히 내려다봅니다. 그런데, 남유하의 상태가 좀 이상합니다. 인상을 잔뜩 찌푸리고 알아들을 수 없는 말을 중얼거리고 있습니다."
+        },
+        {
+          "id": "id_mqrzbslw_54",
+          "type": "narration",
+          "emphasis": true,
+          "text": "듣기 판정"
+        },
+        {
+          "id": "id_mqrzafwb_3w",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "35",
+          "result": "어려운 성공"
+        },
+        {
+          "id": "id_mqrzafwb_44",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 남유하가 중얼거리는 말을 주의 깊게 들어봅니다."
+        },
+        {
+          "id": "id_mqrzafwb_45",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...약속해야 해, 반드시..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_46",
+          "type": "narration",
+          "emphasis": false,
+          "text": "뭘 약속한다는 걸까요, 남유하의 표정은 마치 악몽이라도 꾸는 것 같습니다."
+        },
+        {
+          "id": "id_mqrzafwb_47",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "좋은 꿈으로 만들어줘야겠다."
+            },
+            {
+              "kind": "line",
+              "text": "...소양이와 평생 함께하기로..."
+            },
+            {
+              "kind": "narr",
+              "text": "속삭인다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_48",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그 말을 들은건지 만건지, 표정은 그대로입니다."
+        },
+        {
+          "id": "id_mqrzafwb_49",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "서운...하지는 않다. 이렇게 지낸지가 몇년인데. 이마에 손가락을 갖다 댄다. 일그러진 표정을 피려는 듯 살며시 누르며."
+            },
+            {
+              "kind": "line",
+              "text": "...유하야, 유하야."
+            },
+            {
+              "kind": "narr",
+              "text": "일어날 때까지 이름을 부른다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_4a",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "얼마간 더 끙끙대다가, 갑자기 숨을 들이키며 벌떡 일어납니다. 다급하게 주위를 둘러보는가 싶더니, 소양에게 대뜸 시간을 물어봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "...지금이 몇 시야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_4b",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...정오?"
+            },
+            {
+              "kind": "narr",
+              "text": "일단 말을 내뱉고 시간을 확인한다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_4c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "손목시계를 확인해보면 지금 시간은 아침 11시 48분, 곧 정오가 될 시간이네요."
+        },
+        {
+          "id": "id_mqrzafwb_4d",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...12분 전!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_4e",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "자신의 손목시계도 확인해봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "음...그래. 이제 내가 보초 설게, 좀 자."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_4f",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "응! 고마워!"
+            },
+            {
+              "kind": "narr",
+              "text": "거절하지 않고 눈을 붙일 준비를 합니다. 그러나 눈을 부릅 뜨고 있습니다."
+            },
+            {
+              "kind": "line",
+              "text": "아까 무슨 꿈 꾼거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_4g",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "기억 안 나. 그냥 엄청 기분 나빴던 것 같아."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwb_4h",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그래도 깨기 직전에 좀 괜찮지 않았어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4i",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "영문을 모르겠다는 얼굴입니다."
+            },
+            {
+              "kind": "line",
+              "text": "무슨 소리야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4j",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "..."
+            },
+            {
+              "kind": "narr",
+              "text": "빤히"
+            },
+            {
+              "kind": "narr",
+              "text": "잠시 그러고는 곧 눈을 감습니다."
+            },
+            {
+              "kind": "line",
+              "text": "아무것도 아니야. 이제 자야겠다. 무슨 일 있으면 꼭, 꼭 깨워!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4k",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "알았다니까."
+            },
+            {
+              "kind": "narr",
+              "text": "가볍게 한숨을 쉽니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "눈을 감기 전 마지막으로 시야에 담긴 것은 무언가 말을 하려다 입을 다무는 남유하의 모습이었습니다."
+        },
+        {
+          "id": "id_mqrzafwb_3x",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "심리학",
+          "grade": "보통",
+          "standard": "10",
+          "roll": "31",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzafwc_4m",
+          "type": "narration",
+          "emphasis": false,
+          "text": "음, 알았다고 하니까. 자야겠다."
+        },
+        {
+          "id": "id_mqrzafwc_4n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "의식이 흐려지는 와중, 중얼거리는 소리가 들려온 것도 같습니다."
+        },
+        {
+          "id": "id_mqrzafwc_4o",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...네가 날 믿어줄까? ...."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "무슨 말인지 생각하기도 전에 당신은 금세 잠에 들었습니다."
+        },
+        {
+          "id": "id_mqrzcs4w_55",
+          "type": "narration",
+          "emphasis": true,
+          "text": "6월 8일 7 : 00 pm"
+        },
+        {
+          "id": "id_mqrzafwc_4r",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "일어나, 소양아."
+            },
+            {
+              "kind": "narr",
+              "text": "소양을 흔들어 깨웁니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4s",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "으음.... 살짝 숨을 들이키더니 기합을 내뱉고 상체를 벌떡 일으킵니다."
+            },
+            {
+              "kind": "line",
+              "text": "얍!"
+            },
+            {
+              "kind": "line",
+              "text": "아무 일 없었어? 피곤한 건 없고?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4t",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고개를 살짝 끄덕여보입니다."
+            },
+            {
+              "kind": "line",
+              "text": "이제 슬슬 해가 지고 있어. 출발하자."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4u",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "응, 피곤하면 얘기해야 돼. 내가 업어서라도 가줄테니까."
+            },
+            {
+              "kind": "narr",
+              "text": "짐을 챙기고 야구 배트를 두 손에 꼭 쥡니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4v",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그냥 내 발로 걸어갈게."
+            },
+            {
+              "kind": "narr",
+              "text": "마찬가지로 짐을 챙깁니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4w",
+          "type": "narration",
+          "emphasis": false,
+          "text": "어둠이 깔리고 달빛이 내려앉고, 넓은 공장 부지는 황량하기 그지 없습니다. 이따금 이 공장 유니폼으로 추정되는 옷을 입은 좀비들이 앞을 보지 못한 채 목적 없이 배회하는 것이 보입니다.<br>당신과 남유하는 숨을 죽인 채 살금살금, 폐공장 지대를 빠져나옵니다."
+        },
+        {
+          "id": "id_mqrzd922_56",
+          "type": "narration",
+          "emphasis": true,
+          "text": "행운 판정"
+        },
+        {
+          "id": "id_mqrzafwb_3y",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "운",
+          "grade": "보통",
+          "standard": "75",
+          "roll": "26",
+          "result": "어려운 성공"
+        },
+        {
+          "id": "id_mqrzafwc_4x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신이 한 발을 내딛으려는 순간, 턱, 하고 남유하가 당신의 앞길을 가로막습니다.<br>아래를 가리키는 손짓에 따라 땅바닥을 내려다보니 당신의 발 아래에 빈 과자봉지가 널브러져있었습니다."
+        },
+        {
+          "id": "id_mqrzafwc_4y",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "무슨 과자였는지 살펴본다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_4z",
+          "type": "narration",
+          "emphasis": false,
+          "text": "도리토스입니다."
+        },
+        {
+          "id": "id_mqrzafwc_50",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "'맛있었겠다.' 유하를 향해 입을 벙긋거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_51",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "눈을 흘깁니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_52",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "과자봉지를 피해 갈 길을 갑니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzafwc_53",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신과 남유하는 좀비들이 어슬렁거리는 공장 지대를 무사히 빠져나와 뻥 뚫린 들판을 걷습니다."
+        }
+      ]
+    },
+    {
+      "id": "id_mqrzdi5i_57",
+      "title": "II. 17시간 경과",
+      "blocks": [
+        {
+          "id": "id_mqrzdthl_5f",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이따금 들려오는 풀벌레 소리를 제외하고는 고요합니다. 오늘은 달이 밝아 다른 조명 없이도 길이 잘 보입니다."
+        },
+        {
+          "id": "id_mqrzdthl_5g",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "지도를 보며 길을 안내합니다."
+            },
+            {
+              "kind": "line",
+              "text": "...안전지대로 가는 길에 마을이 있어. 거기서 빈 집 같은 데서 좀 쉴 수 있겠다. 이제는 좀 침대에서 자고 싶단 말이야."
+            },
+            {
+              "kind": "narr",
+              "text": "투덜거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5h",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "멀쩡한 게...있겠지? 없으면 만들면 되니까. 가는 길에 좀비만 안 마주쳤으면 좋겠다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5i",
+          "type": "narration",
+          "emphasis": false,
+          "text": "걷는 도로가 흙길에서 아스팔트로 포장된 길로 바뀌고 난 얼마 후, [ 이스트 베일에 어서 오세요 ] 라고 적힌, 핏자국이 말라 붙어있는 간판이 새벽 어스름 너머로 보입니다.<br>한때 주민들이 살았을 마을의 거리는 을씨년스럽게 텅 비어있습니다.<br>이젠 사람이 살지 않을 빈 주택들이 일렬로 세워져 있고, 거리에는 드문드문 보이는 형체를 알 수 없는 시체 덩어리들과 쓰레기들이 널려있습니다.<br>당신과 남유하는 이따금 보이는 좀비들을 피해 거리를 걷다, 주변에 좀비들이 없는 집 한 채를 발견합니다. 저 집이라면 좀비들과 싸우지 않아도 들어갈 수 있을 것 같아요."
+        },
+        {
+          "id": "id_mqrzdthl_5j",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...침대를 좀비가 차지하고 있으면 어떡하지."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5k",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "좀비도 침대에서 자?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5l",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음... 우리가 만나보지 못한 새로운 좀비가 있을 수 있으니까..."
+            },
+            {
+              "kind": "line",
+              "text": "꿀잠자고 있으면 어쩌지..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5m",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "어쩔 수 없지...해치우는 수밖에...."
+            },
+            {
+              "kind": "narr",
+              "text": "침대를 향한 강한 열망."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5n",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그러면 침대가 더러워질텐데..."
+            },
+            {
+              "kind": "line",
+              "text": "비켜달라고 깨우면 비켜주지 않을까?"
+            },
+            {
+              "kind": "line",
+              "text": "응, 말도 안되는 소리하지 말라고. 알겠어. 들어가자....!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5o",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "흠. 소리를 내고는 문을 엽니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "평범한 단독주택의 가정집 안은 이미 생존자들이 다녀갔는지 엉망으로 어질러져 있습니다. 집안을 둘러보니 거실이었을 공간에 널브러진 [ 도끼 ] 와 세 개의 방, 그리고 [ 주방 ] 이 보입니다."
+        },
+        {
+          "id": "id_mqrzdthl_5q",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "도끼...?"
+            },
+            {
+              "kind": "narr",
+              "text": "꽤 좋은 무기 아닌가. 일단 상태를 살펴봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5r",
+          "type": "narration",
+          "emphasis": false,
+          "text": "꽤나 큼직한 손도끼입니다. 평소라면 나무를 다듬는 데나 쓰였겠지만 세상이 망해버린 지금은 그 쓰임새가 좀 달랐겠지요. 도끼날과 손잡이엔 핏자국이 검붉게 말라붙어 있습니다."
+        },
+        {
+          "id": "id_mqrzdthl_5s",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "털어놓고는 이건 안 가져간다고? 흠. 일단 챙깁니다."
+            },
+            {
+              "kind": "narr",
+              "text": "주방으로 갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5t",
+          "type": "narration",
+          "emphasis": false,
+          "text": "냉장고는 텅 비어있고, 검게 변한 핏자국으로 더러워진 식탁과 조리대 위에는 식칼과 쇠톱이 놓여 있습니다. 쇠톱의 날 사이사이에는 정체를 알 수 없는 살점들이 굳은 피와 엉겨 붙어있습니다. 주방 구석에 놓인 큼직한 검은 쓰레기통에선 악취가 풍겨오네요."
+        },
+        {
+          "id": "id_mqrzdthl_5u",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하에게 코를 막으라고 제스쳐를 취합니다"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5v",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "코를 막습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5w",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그리고 부들부들 떨며 쓰레기통을 슬쩍 엽니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "쓰레기통 뚜껑을 열어보면 그 안에는 썩어 문드러지고 있는 고깃덩이들, 뼛조각들, 그리고 시체를 파먹는 구더기들이 보입니다."
+        },
+        {
+          "id": "id_mqrzesfq_7p",
+          "type": "narration",
+          "emphasis": true,
+          "text": "이성 판정 (0/1)"
+        },
+        {
+          "id": "id_mqrzdthl_58",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "이성",
+          "grade": "보통",
+          "standard": "65",
+          "roll": "90",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzdthl_5y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "\"허업.\" 다급하게 다시 쓰레기통을 닫습니다."
+        },
+        {
+          "id": "id_mqrzdthl_5z",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "왜 쓰레기통을 뒤지지..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_60",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "호기심에 눈 먼 이야기..."
+            },
+            {
+              "kind": "narr",
+              "text": "식칼은 멀쩡한지 살펴본다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_61",
+          "type": "narration",
+          "emphasis": false,
+          "text": "피가 말라붙어 있을 뿐입니다."
+        },
+        {
+          "id": "id_mqrzdthl_62",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하에게 묻습니다."
+            },
+            {
+              "kind": "line",
+              "text": "챙길래?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_63",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그래. 뭔가 감쌀 만한 건 없나."
+            },
+            {
+              "kind": "line",
+              "text": "방에 옷가지라도 있으면 그걸로 감쌀 수 있을지도.."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_64",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 그 얘기하려고 했는데! 역시 우리는 운명인가봐."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_65",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "못들은척."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_66",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그러고 첫번째방으로 갑니다."
+            },
+            {
+              "kind": "line",
+              "text": "서재였나보네..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_67",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이 방은 서재로 쓰던 방인 모양입니다. 한쪽 벽면을 [ 책장 ] 이 차지하고 있고, 그 반대편인 [ 책상 ] 이 놓여있는 아담한 구조입니다."
+        },
+        {
+          "id": "id_mqrzdthl_68",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "일단 책상으로 다가갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_69",
+          "type": "narration",
+          "emphasis": false,
+          "text": "한쪽 벽에 딸려있는 작은 책상 위에는 작은 보라색 향초와 [메모 패드], [액자]가 놓여 있습니다. 메모패드는 작성된 지 꽤 오래 되었는지 먼지가 쌓여 있네요."
+        },
+        {
+          "id": "id_mqrzdthl_6a",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "메모 패드를 읽어봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6b",
+          "type": "narration",
+          "emphasis": false,
+          "text": "전에 이 집에 살던 사람이 작성하였던 것 같네요. 종이 곳곳에는 피로 보이는 얼룩이 묻어 있습니다."
+        },
+        {
+          "id": "id_mqrzfhj4_7q",
+          "type": "narration",
+          "emphasis": true,
+          "text": "자료조사 or 관찰력 판정"
+        },
+        {
+          "id": "id_mqrzdthl_59",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "자료조사",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "73",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzdthl_6c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이건, 이 집에 살던 생존자의 마지막 기록인 것 같습니다. 곳곳에 묻은 얼룩으로 읽기가 힘드네요. 당신은 그나마 멀쩡한 글씨들을 읽어 내려갑니다."
+        },
+        {
+          "id": "id_mqrzfqc6_7r",
+          "type": "handout",
+          "style": "paper",
+          "title": "메모 패드",
+          "body": "",
+          "image": "image/100/memo_fall.png"
+        },
+        {
+          "id": "id_mqrzdthl_6d",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음... 어떻게든 무언가를 해보시려고 하다가, 결국 실패하셨나보네."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6e",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그래? 안 됐네."
+            },
+            {
+              "kind": "narr",
+              "text": "책상 서랍에서 노트와 펜을 챙기고 있습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6f",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그건 어디다가 쓸건데?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6g",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그냥 뭐...그런 게 있어."
+            },
+            {
+              "kind": "narr",
+              "text": "얼버무립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5a",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "심리학",
+          "grade": "",
+          "standard": "10",
+          "roll": "98",
+          "result": "대실패"
+        },
+        {
+          "id": "id_mqrzdthl_6h",
+          "type": "narration",
+          "emphasis": false,
+          "text": "앗차차, 유하를 캐물으려 하다니. 내가 너무 바보같아진다.<br>마저 액자를 봅니다."
+        },
+        {
+          "id": "id_mqrzdthl_6i",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 액자를 들어 사진을 보았습니다. 이 집에 살았을 가족들의 사진입니다. 사진 속에는 젊은 부부와 두 아이가 행복하게 웃고 있습니다."
+        },
+        {
+          "id": "id_mqrzdthl_6j",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이 사람들이 제시, 벨, 쟝, 카샤 리센....인가봐. 안타깝다."
+            },
+            {
+              "kind": "line",
+              "text": "우리도 기록을 많이 남겨놔야해. 사진도 같이 많이 찍고... 같이 놀고..."
+            },
+            {
+              "kind": "narr",
+              "text": "희망사항을 얘기하며, 책장을 살핍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6k",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...이런 세계에서."
+            },
+            {
+              "kind": "narr",
+              "text": "비관적인 말투로 중얼거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "책을 보고 도로 꽂아놓지 않아 드문드문 책장이 비어있습니다. 책들은 주로 생물학에 관한 책인 걸 보아 집에 살던 사람의 전공을 짐작할 수 있습니다. 당신은 책꽂이를 돌아보던 와중 그중 반쯤 덜 꽂힌 책들이 눈에 들어옵니다. ‘감염에 관하여’, ‘정신이상 행동론’..."
+        },
+        {
+          "id": "id_mqrzdthl_6m",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "'감염에 관하여'를 꺼내 펼쳐봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzgvbc_7s",
+          "type": "narration",
+          "emphasis": true,
+          "text": "자료조사 판정"
+        },
+        {
+          "id": "id_mqrzdthl_5b",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "자료조사",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "83",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzdthl_6n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "너무 어려운 내용이라 잘 모르겠습니다."
+        },
+        {
+          "id": "id_mqrzdthl_6o",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "흠, 팔 한쪽에 책을 끼고 '정신이상 행동론'을 꺼내 펼쳐봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzhare_7t",
+          "type": "narration",
+          "emphasis": true,
+          "text": "자료조사 판정"
+        },
+        {
+          "id": "id_mqrzdthl_5c",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "자료조사",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "45",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mqrzdthl_6p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "여러 정신이상 상태에서 보이는 행동양식들이 적혀있습니다. 아까 읽었던 내용과 비슷한 부분도 보입니다. 불안 증세...발작...수면을 취하는 데 어려움을 보임. 폭력성으로 표출되어 다른사람을 공격하기도 함..."
+        },
+        {
+          "id": "id_mqrzdthl_6q",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "다시 접어 책장에 고이 끼워넣습니다."
+            },
+            {
+              "kind": "narr",
+              "text": "그리고 '감염에 관하여'를 유하에게 건넵니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6r",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "응?"
+            },
+            {
+              "kind": "narr",
+              "text": "받아들고는 책과 소양을 번갈아 봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6s",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "한 번 읽어볼래? 내용이 좀 흥미로워서."
+            },
+            {
+              "kind": "narr",
+              "text": "뻔뻔하게 나가기로 마음 먹습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6t",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "....이런 게?"
+            },
+            {
+              "kind": "narr",
+              "text": "내키지 않는 얼굴이지만, 펼쳐는 봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_5d",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "자료조사",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "63",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mqrzdthl_6u",
+          "type": "narration",
+          "emphasis": false,
+          "text": "\"...뭐 그냥, 바이러스 감염에 대한 이야기인데. 체액으로 감염되고, 어쩌구....\""
+        },
+        {
+          "id": "id_mqrzdthl_6v",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "음, 음. 듣고 고갤 끄덕끄덕 거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6w",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "탁, 책을 덮어 책상에 아무렇게나 둡니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6x",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "앗."
+            },
+            {
+              "kind": "line",
+              "text": "...그, 그런 내용이 다 였나?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6y",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그냥 바이러스 감염인데, 뭐가 더 있겠어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_6z",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "맞아."
+            },
+            {
+              "kind": "narr",
+              "text": "군말 없이 수긍합니다."
+            },
+            {
+              "kind": "narr",
+              "text": "나와서 두번째 방으로 갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_70",
+          "type": "narration",
+          "emphasis": false,
+          "text": "방문이 뻑뻑하게 닫힌 게 잘 열리지 않습니다."
+        },
+        {
+          "id": "id_mqrzdthl_71",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "방 안에 무슨 소리는 안 나나... 문 가까이 귀를 가져다댑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzhulm_7u",
+          "type": "narration",
+          "emphasis": true,
+          "text": "듣기 판정"
+        },
+        {
+          "id": "id_mqrzdthl_5e",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "74",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzdthl_72",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "귀가 침침...<br>노크해봅니다. 똑독"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_73",
+          "type": "narration",
+          "emphasis": false,
+          "text": "....쿵! 하는 소리가 답변처럼 문을 울립니다."
+        },
+        {
+          "id": "id_mqrzdthl_74",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "깜짝 놀라 유하를 바라봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "좀비가 있나봐... 진짜 침대에서 자고 있는 거 아니야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_75",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "놀란 표정으로 바라보다가 주방으로 가서 의자를 가져옵니다. 그리고 문고리 사이에 걸쳐 세워둡니다."
+            },
+            {
+              "kind": "line",
+              "text": "이..이러면 안 나오지 않을까."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_76",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "우와, 나 이런 거 미디어 매체에서 많이 봤었어. 실제는 처음이네."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_77",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...나도 소설에서 본 거야."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_78",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "엄지 척."
+            },
+            {
+              "kind": "narr",
+              "text": "세 번째 방으로 갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_79",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이번엔 문이 수월하게 열립니다. 비교적 깔끔한 침실이네요. 옷가지가 거의 남아있지 않은 옷장과, 킹사이즈의 침대가 놓여 있습니다."
+        },
+        {
+          "id": "id_mqrzdthl_7a",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "유하가 바라고 바라왔던 그 침대!"
+            },
+            {
+              "kind": "narr",
+              "text": "침대 주위를 빙글 돌면서 멀쩡한지 살핍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7b",
+          "type": "narration",
+          "emphasis": false,
+          "text": "사용감은 있지만 멀쩡합니다."
+        },
+        {
+          "id": "id_mqrzdthl_7c",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "멀쩡하군. 폴짝 뛰어 앉아봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "푹신합니다."
+        },
+        {
+          "id": "id_mqrzdthl_7e",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "먼저 자. 오늘은 내가 먼저 보초 설게."
+            },
+            {
+              "kind": "narr",
+              "text": "침대에 털썩 앉습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7f",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "좀비를 옆방에 두고 자는거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7g",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "의자로....해놨으니까 설마 나오겠어....? 무슨 일 생기면 깨울게."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7h",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "......한명 정도면 우리 둘이 처리할 수 있지 않을까?"
+            },
+            {
+              "kind": "narr",
+              "text": "불안해서 잠이 안 올거같다는 변명을 덧붙입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7i",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "한 명이 맞긴 해?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7j",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음.....네 명일 가능성도 있지만. 문을 못 여는 정도면... 이길 수 있지 않을까?"
+            },
+            {
+              "kind": "narr",
+              "text": "양손에 도끼와 방망이를 보여줍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7k",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "네 명이나 싸우는 건 좀 그래. 물리기라도 하면 끝이라고."
+            },
+            {
+              "kind": "narr",
+              "text": "완강한 태도입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7l",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그건 맞아..."
+            },
+            {
+              "kind": "narr",
+              "text": "갑자기 수긍합니다."
+            },
+            {
+              "kind": "line",
+              "text": "일단, 그럼 나 먼저 잘게. 꼭꼭 깨워줘야 해 무슨 일 있으면!"
+            },
+            {
+              "kind": "narr",
+              "text": "당부합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7m",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "알았다니까."
+            },
+            {
+              "kind": "narr",
+              "text": "데자뷰가 느껴집니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7n",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "방망이를 끌어안고 침대에 눕습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzdthl_7o",
+          "type": "narration",
+          "emphasis": false,
+          "text": "오랜만에 눕는 푹신한 침대에 잠이 솔솔 옵니다.<br>..."
+        }
+      ]
+    },
+    {
+      "id": "id_mqrzim9q_7v",
+      "title": "III. 30시간 경과",
+      "blocks": [
+        {
+          "id": "id_mqrztqzh_ay",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "판정",
+          "grade": "보통",
+          "standard": "",
+          "roll": "",
+          "result": ""
+        },
+        {
+          "id": "id_mqrzloeb_7y",
+          "type": "narration",
+          "emphasis": true,
+          "text": "6월 9일 6 : 11 pm"
+        },
+        {
+          "id": "id_mqrzloeb_7z",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 창 틈새로 비치는 햇빛에 눈을 떴습니다. 노을 지는 하늘이 붉네요. 분명 눈을 감을 땐 동이 터오던 시간이었는데.<br>...그렇다는 건, 해가 떠있을 내내, 남유하는 당신을 깨우지 않았다는 것입니다.<br>남유하는 당신에게서 등을 돌리고 무언가에 열중하고 있습니다."
+        },
+        {
+          "id": "id_mqrzloeb_80",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "조용히 다가가서 유하를 살핍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzm3d0_8g",
+          "type": "narration",
+          "emphasis": true,
+          "text": "은밀행동 판정"
+        },
+        {
+          "id": "id_mqrzloeb_7w",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "은밀행동",
+          "grade": "보통",
+          "standard": "40",
+          "roll": "67",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzloeb_81",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "황급히 감춥니다."
+            },
+            {
+              "kind": "line",
+              "text": "아, 일어났어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_82",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "왜 안 깨웠어?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_83",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아니, 그냥. 시간이 벌써 이렇게 된 줄도 몰랐네. 뭐 좀 할 게 있었어서."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_84",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그렇다고 안 깨우다니... 졸리지도 않아?"
+            },
+            {
+              "kind": "narr",
+              "text": "의심."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_85",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "괜찮아. 잠도 잘 안 오더라고. 일단 해가 졌으니까 빨리 안전지대로 가자."
+            },
+            {
+              "kind": "narr",
+              "text": "말을 돌립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_7x",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "심리학",
+          "grade": "실패",
+          "standard": "10",
+          "roll": "64",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzloeb_86",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "그렇구나!"
+            },
+            {
+              "kind": "line",
+              "text": "정말 괜찮겠어? 가다가 피곤해서 쓰러지면 어쩌려고..."
+            },
+            {
+              "kind": "narr",
+              "text": " 자기만 너무 잘 자서 개운한게 미안합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_87",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "안 쓰러져. 업어주지도 말고."
+            },
+            {
+              "kind": "narr",
+              "text": "괜한 걱정이라고 툴툴댑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_88",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...응!"
+            },
+            {
+              "kind": "narr",
+              "text": "기회가 되면 무조건 들쳐업어야 겠다 생각합니다. 짐을 챙기고..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_89",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "짐을 챙겨 현관문으로 가서 소양을 돌아봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_8a",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "미련이 남는 듯, 의자로 막힌 방문을 쳐다봅니다."
+            },
+            {
+              "kind": "narr",
+              "text": "하지만... 안전이 가장 중요하니까 좀비 한 마리라고 해도, 방심할 수는 없습니다."
+            },
+            {
+              "kind": "line",
+              "text": "...가자!"
+            },
+            {
+              "kind": "narr",
+              "text": "현관을 나섭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_8b",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신과 남유하는 다시 길을 떠납니다.<br>길을 걷는 블럭들마다 집들 사이로, 좀비들이 느릿하고 목적 없이 움직이는 것이 보입니다.<br>좀비들을 피해 조심조심 걸으며 마을을 거의 다 빠져나오자, 마을 외곽 즈음에 위치한 꽤나 큼직한 [마트]가 눈에 들어옵니다."
+        },
+        {
+          "id": "id_mqrzloeb_8c",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "자연스럽게 마트로 발을 옮깁니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_8d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "마을을 빠져나가는 곳에 위치해 있는 꽤나 큼직한 마트입니다. 이미 많은 생존자들이 다녀갔는지 빼곡히 늘어진 진열대가 휑합니다. 주변을 둘러보니 그나마 물건들이 올려진 [ 선반1 ], [ 선반2 ], 그리고 한쪽 벽으론 [ 창고 ] 라 써진 팻말이 보입니다."
+        },
+        {
+          "id": "id_mqrzloeb_8e",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "선반1을 확인합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzloeb_8f",
+          "type": "narration",
+          "emphasis": false,
+          "text": "장난감 코너입니다. 곰인형, 유니콘 인형, 비비탄 총…. 당신은 인형들을 둘러보다 [노래하는 곰돌이]라는 태그가 붙은 인형을 발견합니다. 등 뒤에 버튼이 달려있습니다."
+        },
+        {
+          "id": "id_mqrzobhu_8n",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이거 누르면 좀비가 몰려오겠지?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_8o",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "물끄러미 보다가, 다가와서 인형을 집어듭니다."
+            },
+            {
+              "kind": "line",
+              "text": "이거 챙기자."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_8p",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그래!"
+            },
+            {
+              "kind": "narr",
+              "text": "자기가 갖고 있다가는 눌러버릴 것 같으니 유하에게 넘깁니다."
+            },
+            {
+              "kind": "narr",
+              "text": "그리고 선반2를 살펴봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_8q",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "자연스럽게 자기 가방에 넣습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_8r",
+          "type": "narration",
+          "emphasis": false,
+          "text": "생존에 필수적인 식료품들이 있던 선반입니다. 생존자들이 다녀갔다는 것을 증명하기라도 하듯 빼곡했을 선반이 휑합니다. 드문드문 있는 것들도 쓰레기들이에요."
+        },
+        {
+          "id": "id_mqrzosjd_av",
+          "type": "narration",
+          "emphasis": true,
+          "text": "행운 판정"
+        },
+        {
+          "id": "id_mqrzobht_8h",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "운",
+          "grade": "보통",
+          "standard": "75",
+          "roll": "42",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mqrzobhu_8s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 쓰레기더미들 사이에서 멀쩡한 참치캔 하나를 발견했습니다. 운이 좋네요!"
+        },
+        {
+          "id": "id_mqrzobhu_8t",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "운하면 강소양이지!"
+            },
+            {
+              "kind": "narr",
+              "text": "빠밤- 하는 자세로 참치캔을 유하를 향해 보여줍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_8u",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그래도 뭐가 있구나. 잘 됐네."
+            },
+            {
+              "kind": "narr",
+              "text": "별다른 호응은 해주지 않습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_8v",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "언제나처럼 까칠 고양이네."
+            },
+            {
+              "kind": "narr",
+              "text": "답해줬다는 것에 만족하고 가방에 넣습니다."
+            },
+            {
+              "kind": "narr",
+              "text": "그리고 창고로 향합니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_8w",
+          "type": "narration",
+          "emphasis": false,
+          "text": "[ 창고 ] 라고 팻말이 쓰여 있는 문은 굳게 닫혀 있습니다. 잠겨 있지는 않은 것 같아요."
+        },
+        {
+          "id": "id_mqrzobht_8i",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "듣기",
+          "grade": "보통",
+          "standard": "70",
+          "roll": "67",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mqrzpbvv_aw",
+          "type": "narration",
+          "emphasis": true,
+          "text": "듣기 판정"
+        },
+        {
+          "id": "id_mqrzobhu_8x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 돌연 불쾌하고 익숙한 소리를 듣습니다. 아, 이 소리는 좀비가 내는 소리입니다."
+        },
+        {
+          "id": "id_mqrzobhu_8y",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소리를 듣고 유하랑 문을 번갈아 바라봅니다. 휙휙"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_8z",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "창고는...뭐가 더 있을 것 같은데."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_90",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "일단... 좀비는 있어."
+            },
+            {
+              "kind": "narr",
+              "text": "뭐가 더, 중에 최소 좀비 하나는 포함입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_91",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고민합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_92",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고민하는 유하를 잠시 바라보더니 생각합니다. 단호하지 않은 유하는..."
+            },
+            {
+              "kind": "line",
+              "text": "자, 연다. 준비해!"
+            },
+            {
+              "kind": "narr",
+              "text": "문을 냅다 엽니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_93",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "자, 잠깐,"
+            },
+            {
+              "kind": "narr",
+              "text": "황급히 쇠파이프를 손에 쥡니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_94",
+          "type": "narration",
+          "emphasis": false,
+          "text": "창고 문이 열리자 좀비의 희뿌연 눈이, 빛이 쏟아져 들어오는 창고 문의 입구를 향합니다. 이윽고 괴상한 소리를 내며 좀비가 당신들에게 달려옵니다."
+        },
+        {
+          "id": "id_mqrzpncn_ax",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "grade": "공격",
+          "standard": "45",
+          "roll": "24",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mqrzobhu_96",
+          "type": "dialogue",
+          "speaker": "쇠파이프기준치",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "35/17/7고장:-굴림:26판정결과:보통 성공피해:6"
+            },
+            {
+              "kind": "narr",
+              "text": "그렇게 해서 되겠어?라고 말하듯, 좀비의 머리를 정통으로 때립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_97",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "만루홈런!"
+            },
+            {
+              "kind": "narr",
+              "text": "감탄합니다"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_98",
+          "type": "narration",
+          "emphasis": false,
+          "text": "좀비는 바닥에 쓰러졌습니다.<br>아직 죽지는 않은 듯 합니다."
+        },
+        {
+          "id": "id_mqrzobhu_99",
+          "type": "dialogue",
+          "speaker": "도끼기준치",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "45/22/9고장:-굴림:47판정결과:실패피해:3"
+            },
+            {
+              "kind": "narr",
+              "text": "나무를 찍듯 내려칩니다. 맨바닥을요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9a",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "뭐하는 거야....라는 눈빛으로 쳐다봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9b",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "머쓱..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9c",
+          "type": "dialogue",
+          "speaker": "쇠파이프기준치",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "35/17/7고장:-굴림:59판정결과:실패피해:5"
+            },
+            {
+              "kind": "narr",
+              "text": "그러는 자기도 맨바닥을 내려칩니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9d",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "빤.히..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9e",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "눈을 피합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9f",
+          "type": "dialogue",
+          "speaker": "도끼기준치",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "45/22/9고장:-굴림:11판정결과:어려운 성공피해:2"
+            },
+            {
+              "kind": "narr",
+              "text": "도끼로 좀비를 쪼갭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9g",
+          "type": "narration",
+          "emphasis": false,
+          "text": "팔이 떨어져나갔지만, 아직 꿈틀대고 있습니다."
+        },
+        {
+          "id": "id_mqrzobhu_9h",
+          "type": "dialogue",
+          "speaker": "쇠파이프기준치",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "35/17/7고장:-굴림:73판정결과:실패피해:4"
+            },
+            {
+              "kind": "narr",
+              "text": "잠을 안 자서 그런가...."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9i",
+          "type": "dialogue",
+          "speaker": "도끼기준치",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "45/22/9고장:-굴림:37판정결과:보통 성공피해:6"
+            },
+            {
+              "kind": "narr",
+              "text": "훗 역시 사람은 잠을 자야지."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9j",
+          "type": "narration",
+          "emphasis": false,
+          "text": "마침내 좀비의 숨을 끊어내는 데에 성공했습니다.<br>썩은 살점과 피가 사방에 튀어 흘러내립니다. 언제 봐도 적응되지 않는 풍경이네요.<br>널찍한 창고에서 그나마 멀쩡한 큰 상자가 3개 있습니다."
+        },
+        {
+          "id": "id_mqrzobhu_9k",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "후, 죽여버린 좀비를 살핍니다..."
+            },
+            {
+              "kind": "narr",
+              "text": "관찰력 판정"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobht_8j",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "관찰력",
+          "grade": "",
+          "standard": "55",
+          "roll": "88",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzobht_8k",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "남유하",
+          "item": "관찰력",
+          "grade": "",
+          "standard": "65",
+          "roll": "52",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mqrzobhu_9l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "\"이거 봐. 총이 있어. 역시 미국이란 건가..\" 권총을 꺼내 보여줍니다."
+        },
+        {
+          "id": "id_mqrzobhu_9m",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오... 창고에? 권총...? ...마트인데? 조합이 좀 신기하네."
+            },
+            {
+              "kind": "line",
+              "text": "치안이 안 좋은 동네였으려나."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9n",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "있으면 나쁠 건 없겠지. 정말 위험한 상황이라면..."
+            },
+            {
+              "kind": "narr",
+              "text": "자신의 외투 안쪽 주머니에 넣습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9o",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "쓸 만한 상황이 오지 않았으면 좋겠다..."
+            },
+            {
+              "kind": "narr",
+              "text": "상자1을 살핍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "유행이 지난 옷들을 무더기로 세일할 때 쓰였던 상자인가 봅니다. 상의, 겉옷, 바지, 속옷, 양말 등…다양한 옷들이 쌓여있습니다."
+        },
+        {
+          "id": "id_mqrzobhu_9q",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "유하야, 너 부족한 옷 없어? 여기 있는 거 깨끗해보이는데..."
+            },
+            {
+              "kind": "narr",
+              "text": "뒤적거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9r",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "슬그머니 와서 속옷이나 양말을 챙깁니다. 나름 괜찮은 수확이라 여기는 것 같습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9s",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "나머지는 휙휙 버리고 괜찮은 면티 하나를 챙깁니다. 뭐하면 찢어서 붕대로 쓸 수 있으니까..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9t",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 멀쩡한 면티를 챙겼습니다."
+        },
+        {
+          "id": "id_mqrzobhu_9u",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "만족합니다."
+            },
+            {
+              "kind": "narr",
+              "text": "상자2를 오픈합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9v",
+          "type": "narration",
+          "emphasis": false,
+          "text": "상자 안을 열어보자 단백질 바 한 무더기를 발견할 수 있었습니다. 이거면 족히 며칠은 먹을 수 있을 거예요. 창고를 열길 잘 했다는 생각이 들었습니다."
+        },
+        {
+          "id": "id_mqrzobhu_9w",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "우와, 좀비 한 마리에 엄청난 수확이네!"
+            },
+            {
+              "kind": "narr",
+              "text": "되는 만큼 챙깁니다. 벌써 하나를 까 제 입에 물고 있습니다."
+            },
+            {
+              "kind": "narr",
+              "text": "새 것을 까서 유하의 입에 넣어줍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9x",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그래, 들어오길 잘했네."
+            },
+            {
+              "kind": "narr",
+              "text": "우물우물."
+            },
+            {
+              "kind": "narr",
+              "text": "자기 가방에도 가득가득 채워넣습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9y",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "상자3을 깝니다. 마저 씹으면서요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_9z",
+          "type": "narration",
+          "emphasis": false,
+          "text": "누군가에겐 정말 절실할… 술병들이 들어있습니다. 와인이에요. 마트에서 파는 싸구려 와인이지만 이 망해버린 세상에선 감지덕지일 것입니다."
+        },
+        {
+          "id": "id_mqrzobhu_a0",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": ",,,한 병을 꺼내서 챙깁니다. 마실 생각은 없지만... 언젠가 유용하게 쓰일지도 모르는 일이니까요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_a1",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "술을...챙기네. 묘한 눈빛으로 봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_a2",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "......나만 믿어!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_a3",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "믿어야 하나..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_a4",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "응!"
+            },
+            {
+              "kind": "narr",
+              "text": "쭈그려 앉아 가방을 주섬주섬 정리하고는 자리에서 일어납니다."
+            },
+            {
+              "kind": "line",
+              "text": "자, 챙길 거 다 챙겼지? 피곤하진 않아?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_a5",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "괜찮아. 빨리 나가자."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_a6",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그래!"
+            },
+            {
+              "kind": "narr",
+              "text": "걱정도 되고 의심도 됩니다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_a7",
+          "type": "narration",
+          "emphasis": false,
+          "text": "마트 밖으로 나오니 동이 터오고 있습니다. 언제 시간이 이렇게 됐을까요? 밤이 될 때까지 기다려야 할까 고민하던 차에 남유하가 말을 꺼냅니다."
+        },
+        {
+          "id": "id_mqrzobhu_a8",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이 이후에는 계속 도로라서 좀비들이 많이 없을 거야. 그러니까..낮에도 가는 게 어때? 하루라도 빨리 안전지대로 가는 게 좋잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "관찰력 판정"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobht_8l",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "관찰력",
+          "grade": "",
+          "standard": "55",
+          "roll": "80",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzobhu_a9",
+          "type": "narration",
+          "emphasis": false,
+          "text": "하루 빨리라도 안전지대로 가고 싶나 봅니다."
+        },
+        {
+          "id": "id_mqrzobhu_aa",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그, 유하야. 너 잠을 안 잤다는 사실을 잊고 있는 건 아니지?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ab",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "안 졸려, 괜찮아."
+            },
+            {
+              "kind": "narr",
+              "text": "손을 휘휘 젓고는 바로 발걸음을 옮깁니다. 어딘가 급해보이는 것 같기도 하고요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ac",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그러면 너 진짜 쓰러지면 내가 업는다?"
+            },
+            {
+              "kind": "narr",
+              "text": "유하의 뒤를 급히 따르며 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ad",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "멀쩡하대도."
+            },
+            {
+              "kind": "narr",
+              "text": "대꾸합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobht_8m",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "심리학",
+          "grade": "",
+          "standard": "10",
+          "roll": "11",
+          "result": "실패"
+        },
+        {
+          "id": "id_mqrzobhu_ae",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그렇구나!<br>(뭔가 아쉬운 기분이 든다.)"
+        },
+        {
+          "id": "id_mqrzobhu_af",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 남유하와 함께 동이 터오는 거리로 나왔습니다. 드문드문 보이는 좀비들을 피해 숨을 죽여 이동하며, 드디어 마을을 벗어나 고속도로가 나왔습니다.<br>...해가 이렇게 떠있을 때 이동한 건 정말로 오랜만이에요. 머리위로 내리쬐는 태양이 어떤지 따갑습니다."
+        },
+        {
+          "id": "id_mqrzobhu_ag",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "눈 부신 하늘을 바라보며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "...낮에 움직이는 건 오랜만이네. 지금까지 뱀파이어처럼 살았었는데 말이야!"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ah",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "응.....응? 뭐라고? 뱀파이어?"
+            },
+            {
+              "kind": "narr",
+              "text": "어쩐지 다른 생각에 빠져있는 듯 하다가, 퍼뜩 정신을 차리고 되묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ai",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "게슴츠레한 눈으로 유하를 쳐다봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "응, 나 뱀파이어라고."
+            },
+            {
+              "kind": "narr",
+              "text": "헛소리를 뱉습니다."
+            },
+            {
+              "kind": "line",
+              "text": "...무슨 일 있어? 요즘 들어 상태가 이상한 거 같아."
+            },
+            {
+              "kind": "narr",
+              "text": "까칠한 건 한결 같지만요."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_aj",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소양의 헛소리는 그럴 줄 알았다는 듯 자연스럽게 한숨으로 넘깁니다."
+            },
+            {
+              "kind": "line",
+              "text": "그냥 생각 좀 하느라."
+            },
+            {
+              "kind": "narr",
+              "text": "그러고는 작게 덧붙입니다."
+            },
+            {
+              "kind": "line",
+              "text": "빨리 안전지대에 가야..."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ak",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그러니까, 그게 무슨 생각인데?"
+            },
+            {
+              "kind": "narr",
+              "text": "유하 앞에 고개를 살짝 들이밀고 부담스럽게 묻습니다."
+            },
+            {
+              "kind": "line",
+              "text": "뭔데? 응?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_al",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "계속 물어오는 소양을 보고 인상을 살짝 찌푸립니다. 잠시 그렇게 있다가, 어쩔 수 없다는 듯이 퉁명스러운 말투로 내뱉습니다."
+            },
+            {
+              "kind": "line",
+              "text": "...전에 가져온 노트에 뭐 좀, 쓰고 있거든. 그러니까, 소설 같은 거."
+            },
+            {
+              "kind": "narr",
+              "text": "한숨을 한 번 쉽니다."
+            },
+            {
+              "kind": "line",
+              "text": "이런 세상에서는 이상하긴 하지...그래도 나한텐 일기 대용 같은 거니까."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_am",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 그렇구나."
+            },
+            {
+              "kind": "narr",
+              "text": "고개를 끄덕입니다."
+            },
+            {
+              "kind": "line",
+              "text": "기록을 남겨 놓는 건 좋으니까 말이야. 이상할 것까지야. 오히려 좋은데?"
+            },
+            {
+              "kind": "narr",
+              "text": "어깨를 으쓱입니다."
+            },
+            {
+              "kind": "line",
+              "text": "나한테 보여줄 생각은 없지?"
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_an",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "눈을 이리저리 굴리다가 시선을 아래를 향한채로 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "음....뭐, 완성하면, 보여줄게."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ao",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "웹 연재처럼 한 화정도씩 완성되면 보여준다는거지?"
+            },
+            {
+              "kind": "narr",
+              "text": "제뜻대로 해석하고 손을 내밉니다."
+            },
+            {
+              "kind": "line",
+              "text": "걸어가면서 읽어볼게."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ap",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "노트를 꺼낼 생각조차 하지 않습니다."
+            },
+            {
+              "kind": "line",
+              "text": "뭔소리야. 이건 웹이 아니라 아날로그 책이라고."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_aq",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "눈에 보이는 형태에 국한될 필요 없어! 즉각적으로 반응해주는 독자도 필요한 법이잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "진짜 안 보여줄거냐고 눈빛으로 묻습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_ar",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "필요없어."
+            },
+            {
+              "kind": "narr",
+              "text": "단호합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_as",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그럼 독자 말고, 편집자는 어때? 읽고 피드백을 주는거지."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_at",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...하, 이러니까 말 안 하려던 거야."
+            },
+            {
+              "kind": "narr",
+              "text": "미간을 짚습니다. 절대 보여줄 생각은 없어보입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mqrzobhu_au",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "힝."
+            },
+            {
+              "kind": "narr",
+              "text": "부러 서운한 표정을 짓습니다."
+            },
+            {
+              "kind": "line",
+              "text": "...그래도 최종으로 완성되면 보여주긴 할 거라는 거지? 그럼 됐어!"
+            },
+            {
+              "kind": "narr",
+              "text": "계속 유하를 바라보던 시선을 거두고 나아갈 앞 길을 바라봅니다."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
