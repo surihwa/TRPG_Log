@@ -17,11 +17,50 @@ const GRADE_RE = /(대단히\s*어려운|대단히\s*어려움|어려운\s*성�
 function firstNum(s){ const m = String(s == null ? '' : s).match(/-?\d+/); return m ? m[0] : ''; }
 function stripTags(s){ return String(s == null ? '' : s).replace(/<[^>]+>/g, ''); }
 
-/* contenteditable HTML → 줄 배열 (img 제거, b/i 보존, 블록요소·br = 줄바꿈) */
+/* contenteditable HTML → 줄 배열 (img 제거, b/i 보존, 블록요소·br = 줄바꿈)
+   Roll20 신형 포맷: 주사위가 <table> 로 오면 "판정명기준치:..굴림:..판정결과:.." 한 줄로 변환 */
 function htmlToLines(html){
   const tmp = document.createElement('div');
-  const ALLOWED = ['br','b','strong','i','em','div','p','li','tr','h1','h2','h3','h4','h5','section','article','blockquote'];
+  const ALLOWED = ['br','b','strong','i','em','div','p','li',
+    'table','tbody','thead','tfoot','tr','td','th','caption',
+    'h1','h2','h3','h4','h5','section','article','blockquote'];
   tmp.innerHTML = escapeStrayAngles(html || '', ALLOWED);
+
+  /* Roll20 주사위 테이블 → 한 줄 정규 형식으로 변환
+     <caption>관찰력</caption>
+     <tr><td>기준치:</td><td>55/27/11</td></tr>  ← data-i18n="value"
+     <tr><td>굴림:</td><td>14</td></tr>          ← data-i18n="rolled"
+     <tr><td>판정결과:</td><td>어려운 성공</td></tr> ← data-i18n="result"
+     → "관찰력기준치:55/27/11굴림:14판정결과:어려운 성공"
+     피해 행이 있으면 공격 판정으로 처리(weapon기준치:../고장:-굴림:..판정결과:..피해:..) */
+  tmp.querySelectorAll('table').forEach(tbl => {
+    const cap = tbl.querySelector('caption');
+    const skillName = (cap ? cap.textContent : '').trim() || '판정';
+    let standard = '', roll = '', result = '', damage = '', malfunction = '';
+    tbl.querySelectorAll('tr').forEach(tr => {
+      const cells = tr.querySelectorAll('td');
+      if(cells.length < 2) return;
+      const attr  = cells[0].getAttribute('data-i18n') || '';
+      const label = cells[0].textContent.replace(/:$/, '').trim();
+      const val   = cells[1].textContent.trim();
+      if(attr === 'value'  || /기준치/i.test(label))   standard    = val;
+      else if(attr === 'rolled' || /굴림/i.test(label))     roll        = val;
+      else if(attr === 'result' || /판정결과/i.test(label)) result      = val;
+      else if(/피해/i.test(label))                           damage      = val;
+      else if(/고장/i.test(label))                           malfunction = val;
+    });
+    let oneLine;
+    if(damage){
+      // 공격 판정 형식
+      const malf = malfunction || '-';
+      oneLine = skillName + '기준치:' + standard + '고장:' + malf +
+                '굴림:' + roll + '판정결과:' + result + '피해:' + damage;
+    } else {
+      oneLine = skillName + '기준치:' + standard + '굴림:' + roll + '판정결과:' + result;
+    }
+    tbl.parentNode.replaceChild(document.createTextNode('\n' + oneLine + '\n'), tbl);
+  });
+
   tmp.querySelectorAll('img, picture, svg, script, style, video, audio').forEach(n => n.remove());
   function ser(node){
     let out = '';
@@ -32,7 +71,7 @@ function htmlToLines(html){
       if(tag === 'br'){ out += '\n'; return; }
       if(tag === 'b' || tag === 'strong'){ out += '<b>' + ser(child) + '</b>'; return; }
       if(tag === 'i' || tag === 'em'){ out += '<i>' + ser(child) + '</i>'; return; }
-      const block = ['div','p','li','tr','h1','h2','h3','h4','h5','section','article','blockquote'].includes(tag);
+      const block = ['div','p','li','tr','td','th','h1','h2','h3','h4','h5','section','article','blockquote'].includes(tag);
       if(block) out += '\n' + ser(child) + '\n'; else out += ser(child);
     });
     return out;

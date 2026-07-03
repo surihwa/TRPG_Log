@@ -218,7 +218,8 @@ function renderScenePanel(){
     e.preventDefault();
     const cb = e.clipboardData || window.clipboardData;
     let html = cb.getData('text/html');
-    if(html) html = sanitizeHTML(html, ['p','br','b','strong','i','em','div','span']);
+    if(html) html = sanitizeHTML(html, ['p','br','b','strong','i','em','div','span',
+                                        'table','tbody','thead','tfoot','tr','td','th','caption']);
     else html = (cb.getData('text/plain')||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
     document.execCommand('insertHTML', false, html);
     toast('이미지를 제거하고 텍스트만 붙여넣었습니다.');
