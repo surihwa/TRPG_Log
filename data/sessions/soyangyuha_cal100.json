@@ -2962,6 +2962,2835 @@
           ]
         }
       ]
+    },
+    {
+      "id": "id_mr52281i_0",
+      "title": "IV. 47시간 경과",
+      "blocks": [
+        {
+          "id": "id_mr5231ko_4",
+          "type": "narration",
+          "emphasis": false,
+          "text": "......<br>얼마나 걸었을까요."
+        },
+        {
+          "id": "id_mr5231ko_5",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "많이..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_6",
+          "type": "narration",
+          "emphasis": false,
+          "text": "어느새 그림자가 많이 짧아졌습니다.<br>끝없이 이어지는 고속도로의 풍경. 드디어 저 멀리 건물이 보입니다.<br>가까이 가니 주유소인 것 같습니다."
+        },
+        {
+          "id": "id_mr5231ko_7",
+          "type": "narration",
+          "emphasis": true,
+          "text": "6월 11일 11 : 00 am"
+        },
+        {
+          "id": "id_mr5231ko_8",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "계속 걷기만 하니까 힘들어 죽겠네. 사무실 건물인가본데 저기서 좀 쉬자."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_9",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "유하가 잠을 안 자서 그래. 인간은 잠을 자야하는 존재라구."
+            },
+            {
+              "kind": "narr",
+              "text": "멀쩡?한 자신을 자랑합니다. 허리에 손을 올리고요."
+            },
+            {
+              "kind": "line",
+              "text": "안전한지 확인하고 잠깐이라도 눈 붙여! 내가 지켜줄게."
+            },
+            {
+              "kind": "narr",
+              "text": "사무실로 갑니다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "사무실의 문을 돌려봐도 굳게 잠겨 있습니다. 하나뿐인 창문엔 블라인드가 쳐있어 안이 보이지 않네요.<br>열쇠를 찾아봐야 할까요?"
+        },
+        {
+          "id": "id_mr5231ko_b",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "음..."
+            },
+            {
+              "kind": "narr",
+              "text": "똑똑똑."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "조용한 침묵이 감돌다가, 갑자기 창문의 블라인드가 올라갑니다."
+        },
+        {
+          "id": "id_mr5231ko_d",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "깜짝이야."
+            },
+            {
+              "kind": "narr",
+              "text": "창문을 향해 고개를 꾸벅이고."
+            },
+            {
+              "kind": "line",
+              "text": "안녕하세요. 계세요? 생존자이신가요? 바쁘신가요? 혹시 위험하신가요? 저희를 도와주실 여유가 있으신가요?"
+            },
+            {
+              "kind": "narr",
+              "text": "일단 창문을 향해 우다다 말해봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "창문 안으로 보인 건 30대로 보이는 청년입니다. 당신과 눈이 마주치자 눈을 크게 뜨고는 손을 흔듭니다.<br>그리고는 문을 열어줍니다."
+        },
+        {
+          "id": "id_mr5231ko_f",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이게 얼마 만에 만나는 생존자인지 모르겠네. 일단 들어올래요? 밖은 언제 좀비들이 올지 모르니까."
+            },
+            {
+              "kind": "narr",
+              "text": "생글생글 웃으며 말합니다.."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231kn_1",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "심리학",
+          "grade": "보통",
+          "standard": "10",
+          "roll": "26",
+          "result": "실패"
+        },
+        {
+          "id": "id_mr5231ko_g",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "와, 감사합니다!"
+            },
+            {
+              "kind": "narr",
+              "text": "언제나 새로운 사람은 반갑지만, 무섭기도 합니다. 유하의 손을 잡고, 사무실 안으로 향합니다."
+            },
+            {
+              "kind": "line",
+              "text": "저희도 생존자를 뵙는 건 오랜만이네요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_h",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아, 아니, 그렇게 의심도 안 하고..."
+            },
+            {
+              "kind": "narr",
+              "text": "얼떨결에 끌려갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_i",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "반가워요. 줄리라고 합니다. 안전지대로 가다가 여기서 잠깐 쉬고 있었는데, 다른 생존자를 만날 줄이야. 혹시 당신들도 캘버리 교도소 가요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_j",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "네! 저희도 가다가 좀 쉴려고 들렸어요. 누군가가 계실 줄은 몰랐네요. 반가워요! 오는 길은 괜찮으시던가요? 물론 힘드셨겠지만... 무슨 일이 있었다거나? 저희가 도울 수 있으면 도와드릴게요."
+            },
+            {
+              "kind": "narr",
+              "text": "오지랖을 부립니다. 그러곤 유하를 향해 말을 건넵니다."
+            },
+            {
+              "kind": "line",
+              "text": "눈 좀 붙일래?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_k",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "줄리를 슬쩍 보고는, 멀찍이 떨어진 곳에 앉습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_l",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "까칠한 검은 고양이가 자리를 잡았군."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_m",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "하하, 많은 일이 있었죠. 당신들도 그랬겠지만. 저는 원래 같이 다니는 친구들이 있었는데...전부 감염자가 되거나 죽어서 혼자 남았어요. 뭐...그런 일이 있었죠! 그래서 다른 사람을 만나는 건 삼 개월 만이네요."
+            },
+            {
+              "kind": "narr",
+              "text": "다른 사람의 이야기라도 하는 듯한 말투로 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "그나저나 왜 이 대낮에 돌아다니고 있어요? 되게 용감하시네, 그 야구방망이를 보니 싸움 좀 하시겠는데요."
+            },
+            {
+              "kind": "narr",
+              "text": "쾌활하게 웃습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_n",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고양이랑 다니다가, 간만에 강아지 같은 사람을 만나서 기분이 좋습니다. 야구방망이를 두 손에 꼭 쥐고 마주 웃습니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "아니요! 못 하니까 무기로라도 저를 보호해야죠!"
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 그러곤 바로 눈썹을 팔자로 휩니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "친구들을 떠나보내다니, 정말 슬픈 일이에요. 그들이 좋은 곳으로 갔길 빌게요."
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 짧게 고개를 내렸다 올립니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "저희는 처음부터 둘이 다녔어서, 그런 이별을 겪어본 적은 많지가 않아서요."
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 온전한 공감을 못해 아쉽다는 표정입니다."
+            },
+            {
+              "kind": "line",
+              "text": "줄리는... 아, 맞다. 제 소개를 안했네요! 저는 소양이에요! 저 친구는 유하라고 하고요."
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 다시 꾸벅 가볍게 인사합니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "줄리는 여기 얼마나 있었어요? 언제 출발하실 건가요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_o",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "저요? 어제요. 그냥 하룻밤-아니 이제 하룻낮이라고 불러야 하나 하하-자고 저녁에 출발하려 했어요."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_p",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>헉, 저희가 줄리의 잠을 방해했나요?!</i>"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_q",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "에이, 잠보다 이런 인연 만난 게 더 중요하죠. 이것도 인연인데 캘버리까지 같이 갈래요? 저기 유하도 피곤해보이는데 쉬다가 같이 출발해요."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_r",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>아니에요! 잠을 잘 자야죠. 중요한 인연으로 여겨준 건 감사하지만요...</i>"
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 머쓱하게 웃습니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "저 혼자 결정할 수 있는 일은 아니라서, 유하와 얘기해보고 말씀드릴게요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_s",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "앉은 채로 눈을 감고 있다가, 제 이름이 들리니까 슬쩍 눈을 뜹니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_t",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하의 옆에 어떻게든 자리를 만들어 앉습니다."
+            },
+            {
+              "kind": "line",
+              "text": "유하야, 저 분은 줄리! 우리처럼 캘버리 교도소까지 가던 길이래! 같이 가자고 하는데, 넌 어때?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_u",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그러던지."
+            },
+            {
+              "kind": "narr",
+              "text": "줄리를 썩 달갑게 여기는 얼굴은 아니지만, 잠시 고민하다 수락합니다."
+            },
+            {
+              "kind": "line",
+              "text": "어차피 같은 길 가면 계속 마주칠 거 아냐."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_v",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그렇네? 하지만 지금까지는 안 마주쳤는데. 신기하다. 하루 더 걸었다고 마주친 건가?"
+            },
+            {
+              "kind": "narr",
+              "text": "별 생각없이 우다다 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "어쨌든 다행이다. 우리는 식량도 많으니 걱정 없고, 좀비에 대항할 사람이 많아져서 나쁠 건 없지!"
+            },
+            {
+              "kind": "narr",
+              "text": "끄덕끄덕."
+            },
+            {
+              "kind": "narr",
+              "text": "줄리에게 다시 다가가 말합니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "같이 가도 좋을 것 같아요! 생존자들끼리 뭉쳐야죠. 잘 부탁드려요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_w",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "저야말로! 저는 일어난 김에 식사라도 할까 하는데, 어때요? 저 얼마전에 얻은 것도 꽤 있거든요."
+            },
+            {
+              "kind": "narr",
+              "text": "가방을 뒤적입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_x",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "뭘까,....?! 지켜본다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "줄리의 가방에서 나온 건 무화과입니다. 길가다가 무화과가 탐스럽게 핀 나무를 봐서 따왔다고, 자랑스럽게 말합니다."
+        },
+        {
+          "id": "id_mr5231ko_z",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 무화과다! 유하야, 과일이 있어. 대박."
+            },
+            {
+              "kind": "line",
+              "text": "<i>엄청난데요! 귀한 걸 구해오셨네요. 완전 럭키걸이시네.</i>"
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 그러고 자기도 가방을 뒤적거리며 단백질 바를 꺼냅니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "저도 신선한 건 아니지만, 잘 보관되어 있던 식량을 구했어요!"
+            },
+            {
+              "kind": "narr",
+              "text": "하나를 줄리에게 주고 제 몫을 마저 하나 꺼냅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_10",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 단백질 섭취 중요하죠! 감사히 먹겠습니다."
+            },
+            {
+              "kind": "narr",
+              "text": "무화과 몇 개를 꺼내놓고는 단백질 바를 받아 입에 넣습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_11",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "감사합니다!"
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 무화과 하나를 들어 반 갈라, 유하에게 건넵니다."
+            },
+            {
+              "kind": "line",
+              "text": "그거 알아 유하야? 무화과는 열매가 아니고, 꽃이래!"
+            },
+            {
+              "kind": "narr",
+              "text": "나머지 반 쪽을 냠냠."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_12",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "무화과를 보고는 눈빛이 살짝 반짝입니다. 받아서 한입 오물오물 먹으면서 대답합니다."
+            },
+            {
+              "kind": "line",
+              "text": "그래? 별 걸 다 아네."
+            },
+            {
+              "kind": "narr",
+              "text": "의외라는 투입니다."
+            },
+            {
+              "kind": "line",
+              "text": "과일 오랜만이긴 하다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_13",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "물론 진짠지 찾아보지 않았습니다. 하지만 흥미로웠으니 된 거죠!"
+            },
+            {
+              "kind": "line",
+              "text": "안전지대에 가면 과일 같은 게 좀 있으려나? 안전하다면 농사라도 지을 법 하지 않아?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_14",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그런 사방을 막아둔 곳에서 사람들이 모여 살려면 농사라도 지어야하지 않을까."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_15",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "당연한건가? 난 곤충 같은 거 식량으로 만들어서 먹고 있을 줄 알았는데."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_16",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "으. 그럼 안 갈래."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_17",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하의 반응에 키득댑니다."
+            },
+            {
+              "kind": "line",
+              "text": "그럼, 우리가 농사 지으면 되지. 어떻게든 씨앗 구해서, 심으면 뭐라도 자라겠지!"
+            },
+            {
+              "kind": "line",
+              "text": "유하야, 나 나가서 좀 살피고 올게! 쉬고 있어!"
+            },
+            {
+              "kind": "narr",
+              "text": "줄리에게도 나갔다 온다고 얘기하며 사무실을 나섭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_18",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 조심히 다녀와요! 좀비 만나면 부르고요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_19",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>줄리 부르려다가 주변에 있는 좀비 다 부르면 안되니까, 조용히 처리하고 올게요!</i>"
+            },
+            {
+              "kind": "narr",
+              "text": "자판기를 살핍니다. 비어있겠지만..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이미 생존자들이 자판기를 뜯어서 내용물을 다 가져갔는지, 깨지고 망가진 자판기는 텅 비어있습니다."
+        },
+        {
+          "id": "id_mr526dgy_2k",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mr5231kn_2",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "55",
+          "roll": "14",
+          "result": "어려운 성공"
+        },
+        {
+          "id": "id_mr5231ko_1b",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 자판기의 부품들과 쓰레기들 더미에서 생수 한 병을 발견했습니다. 깊숙이 있어서 보이지 않았나 봐요."
+        },
+        {
+          "id": "id_mr5231ko_1c",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "기쁨의 내적댄스."
+            },
+            {
+              "kind": "narr",
+              "text": "주유기를 확인합니다. 자동차는 없지만 기름은 보통 유용하게 쓰이지 않나?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1d",
+          "type": "narration",
+          "emphasis": false,
+          "text": "평범한 주유기입니다. 주변엔 근근이 널브러진 시체들이 있습니다.<br>당신이 기름을 챙겨 가면 좋을까 고민하던 찰나...<br>턱!! 하고, 피투성이인 손 하나가 당신의 발목을 붙잡습니다."
+        },
+        {
+          "id": "id_mr526t7b_2l",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\" 도와주세요... 제발 도와주세요... \""
+        },
+        {
+          "id": "id_mr5231ko_1e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신이 시체인 줄만 알았던 그는, 이미 감염된 지 많이 지난 듯, 코와 귀에서 피가 흐르고 있습니다. 상태는 처참합니다.<br>처참한 몰골의 그 생존자, 아니, 감연자일까요. 당신의 발목을 붙잡는 손가락들은 처절하기까지 합니다. 한쪽 눈은 어디로 갔는지 보이지 않고, 간신히 뜬 나머지 눈으로 당신을 올려다보며 애원합니다."
+        },
+        {
+          "id": "id_mr526y2l_2m",
+          "type": "narration",
+          "emphasis": true,
+          "text": "\"목이 너무 말라요, 물, 물 한 모금만, 제발....\""
+        },
+        {
+          "id": "id_mr5231ko_1f",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그가 당신의 다리를 향해 나머지 한쪽 손도 뻗으려던 찰나,<br><i>콰직,</i> 하고...남유하의 신발이 당신에게 뻗어진 손을 무참히 짓밟습니다. 언제 나온거죠?<br>당신이 뭐라 반응하기도 전에 남유하는 그를 향해, 쇠파이프를 내려칩니다."
+        },
+        {
+          "id": "id_mr5231ko_1g",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "유, 유하야...!"
+            },
+            {
+              "kind": "narr",
+              "text": "당황합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1h",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "걱정돼서 나와봤더니......괜찮아, 소양아?"
+            },
+            {
+              "kind": "narr",
+              "text": "숨을 몰아쉬며 소양을 돌아봅니다. 눈동자는 섬뜩하게 빛납니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1i",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "어...어. 괜찮아. 너야말로 괜찮아?"
+            },
+            {
+              "kind": "line",
+              "text": "좀 놀라긴 했는데... 그냥, 어... 아직 대화는 되는 거 같아서, 얘기 좀 들어보려고 했던 건데...."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1j",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "대화라니, 좀비랑? 정신 차려. 내가 괜히 낮에 이동하자고 했나봐. 들어가 있다가 해가 지면 나오자."
+            },
+            {
+              "kind": "narr",
+              "text": "가라앉은 목소리로 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1k",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "더 시간이 있었으면 좀비가 됐겠지. 하지만... 그들이 원해서 감염된 건 아닐 거 아니야. 좋게 보내줄 수 있으면, 그렇게 하는게 나으니까."
+            },
+            {
+              "kind": "narr",
+              "text": "차분히 말하며 고개를 기울입니다."
+            },
+            {
+              "kind": "line",
+              "text": "음, 일단 쉬자. 너도 자야 하고...!"
+            },
+            {
+              "kind": "narr",
+              "text": "유하를 다시 사무실로 이끕니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1l",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신을 따라 사무실로 가는 남유하의 얼굴은 왠지 모르게 어둡습니다."
+        },
+        {
+          "id": "id_mr5231ko_1m",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "괜찮아요? 아까 무슨 소동이 있었던 것 같던데...."
+            },
+            {
+              "kind": "narr",
+              "text": "유하의 표정을 보고는 괜히 쾌활하게 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "...뭐, 해결됐으면 말고요! 푹 쉬죠. 이따 움직여야 하니까요."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1n",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "대꾸없이 구석으로 갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1o",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "머쓱하게 볼을 긁습니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "유하가 해결했어요! 주변에 좀비도 없었으니 편하게 쉬어도 될 거 같아요."
+            },
+            {
+              "kind": "narr",
+              "text": "나중에 유하랑 더 얘기해봐야겠다..."
+            },
+            {
+              "kind": "narr",
+              "text": "쉽니다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 소파에 기대앉았습니다. 고개를 돌리면 당신과 줄리에게서 등을 돌린 채 노트에 무언가를 적어 내려가는 남유하가 보입니다.<br>왜 저렇게 열중하는 걸까요, 더 물어보려 했지만 눈꺼풀이 감겨옵니다. 오래 걸었으니 피곤한 탓인가요. 이내 금세 잠이 듭니다."
+        },
+        {
+          "id": "id_mr5231ko_1q",
+          "type": "narration",
+          "emphasis": true,
+          "text": "6월 10일 6 : 39 pm"
+        },
+        {
+          "id": "id_mr5231ko_1r",
+          "type": "narration",
+          "emphasis": false,
+          "text": "깜빡, 잠에서 깨어나니 창밖이 어둑합니다. 눈을 뜨면 가장 먼저 보이는 건, 당신이 잠에 들기 전 마지막으로 본 것과 똑같은 모습으로 앉아있는 남유하입니다. 밤새 그 소설이라는 걸 쓴 걸까요."
+        },
+        {
+          "id": "id_mr5231ko_1s",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "....아. 일어났어? ....나는 괜찮아, 괜찮아.... 캘버리로 가자. 하루라도 빨리..."
+            },
+            {
+              "kind": "narr",
+              "text": "초조하게 중얼거립니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1t",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...아니? 유하, 너 안 괜찮은 거 같은데? 잠은 잔거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1u",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "짐을 주섬주섬 챙겨서 자리에서 일어납니다."
+            },
+            {
+              "kind": "line",
+              "text": "아냐, 괜찮아. 빨리 가야지."
+            },
+            {
+              "kind": "narr",
+              "text": "줄리를 흘긋 보고는 문쪽으로 나섭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1v",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소양과 유하를 번갈아 보고는, 덩달아 짐을 챙깁니다."
+            },
+            {
+              "kind": "line",
+              "text": "어...뭐, 갈까요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1w",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...유하야. 너 스스로 이상하다는 거 알고 있지?"
+            },
+            {
+              "kind": "narr",
+              "text": "흠... <i>"
+            },
+            {
+              "kind": "line",
+              "text": "가죠, 줄리."
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 일단은 따라 나섭니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1x",
+          "type": "narration",
+          "emphasis": false,
+          "text": "밤은 찾아오고, 당신과 남유하, 줄리는 길을 떠났습니다.<br>달빛이 흐릿하게 세 사람을 비춥니다.<br>묵묵히 길을 걷던 당신은 문득 옆에서 걷는 남유하를 돌아보니, 그는 끊임없이 무언가를 중얼거리고 있습니다.<br>그런 그를 바라보는 당신의 옆으로 어느새 줄리가 다가와 말을 건넵니다."
+        },
+        {
+          "id": "id_mr5231ko_1y",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "행여 남유하가 들을지 걱정한 건지 목소리를 낮춰 속삭입니다."
+            },
+            {
+              "kind": "line",
+              "text": "그...저 친구, 유하 말이에요. 괜찮은 거에요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_1z",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>이틀 째 잠을 안 자고 있어서... 괜찮지 않은 거 같아요.</i>"
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 그렇게 얘기하고는 예의상의 웃음을 지어보입니다. 그리고 유하에게 다가갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_20",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남유하는 당신이 다가온 것을 눈치채지 못한 것 같습니다. 계속해서 중얼거리는 말은...무슨 말인지 못 알아듣겠어요. 영어가 조금 섞여있는 것 같긴 한데, 나머지는 전혀 모르겠습니다."
+        },
+        {
+          "id": "id_mr5231ko_21",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "소양을 톡톡 치고는, 속삭입니다."
+            },
+            {
+              "kind": "line",
+              "text": "당신들, 한국인인 거죠? 내가 이래 봬도 다른 나라 여행을 많이 다녀서 조금씩 배운 말이 많거든요. 그런데 저기 말하는 걸 들어보니 라틴어, 독일어, 스페인어 등...내가 알아듣지 못하는 그 외의 언어들도 많은 거 같아요. 원래 한 20개 국어는 하는 천재인 거에요? 아니면 좀...미쳐 버린건가."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_22",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>원래 좀 천재긴 한데. ...혼잣말을 중얼거릴 애는 아니긴 해요.</i>"
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 확실히 이상하다는 듯 표정을 굳히고 고개를 끄덕입니다."
+            },
+            {
+              "kind": "narr",
+              "text": "후, 하. 숨죽여 심호흡을 하고. 유하의 어깨를 톡 칩니다."
+            },
+            {
+              "kind": "line",
+              "text": "유하야."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_23",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "한 박자 늦게 반응합니다."
+            },
+            {
+              "kind": "line",
+              "text": "...뭔데?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_24",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뭐라고 중얼거리던거야?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_25",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...그냥, 그 소설 생각하느라."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_26",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "..."
+            },
+            {
+              "kind": "narr",
+              "text": "말 없이 잠시 쳐다봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "...유하, 너도 내가 납득할거라고 생각하고 한 말은 아니지?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_27",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "나는, ......"
+            },
+            {
+              "kind": "narr",
+              "text": "입술을 짓씹습니다."
+            },
+            {
+              "kind": "line",
+              "text": "그냥, 캘버리에 도착하면 그떄 얘기하면 안 돼? 그때 다 말할게. 소설이라는 걸 네가 믿든 말든, 다 보여줄테니까. 일단 안전지대로 가는 게 급선무잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "인상을 찌푸린 채 말합니다. 지금 중요한 건 그게 아니라는 듯이."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231kn_3",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "심리학",
+          "grade": "보통",
+          "standard": "10",
+          "roll": "23",
+          "result": "실패"
+        },
+        {
+          "id": "id_mr5231ko_28",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "안전지대로 가는 게 급선무인 건 맞아. 하지만, 가는 길에 최대한 안전하고 멀쩡하게 가야하는 거 아니었어?"
+            },
+            {
+              "kind": "narr",
+              "text": "살짝 한숨을 내쉽니다."
+            },
+            {
+              "kind": "line",
+              "text": "...어쨌거나, 난 네 친구고. 같이 살아남아 안전지대로 향하는 생존자인데... 네가 이런 상태인데 그냥 가자고 하면, 내가 그렇구나 하고 갈 성격이 아닌 거... 유하, 너도 알잖아."
+            },
+            {
+              "kind": "narr",
+              "text": "꿍한 표정을 짓습니다."
+            },
+            {
+              "kind": "line",
+              "text": "다 얘기 해달라는 게 아니고, 그냥.... 네가 좀 스스로를 챙기며 갔으면 좋겠어."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_29",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그러면, 넌 날 믿을 수 있어? 믿어줄 거야?"
+            },
+            {
+              "kind": "narr",
+              "text": "뭔가 더 말하려는 듯 입만 벙긋거리다가 다뭅니다."
+            },
+            {
+              "kind": "line",
+              "text": "...아니야, 난 괜찮으니까. 캘버리에 가면 다 괜찮아질 거야..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2a",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그래? 난 안 괜찮아."
+            },
+            {
+              "kind": "narr",
+              "text": "유하의 손을 잡습니다."
+            },
+            {
+              "kind": "line",
+              "text": "믿을 수 있어. 믿을게. 내가 유하 아니면 누굴 믿어?"
+            },
+            {
+              "kind": "narr",
+              "text": "말 하라는 듯 손을 한 번 더 꾹 쥡니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2b",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "손을 내려다봅니다. 그리고 줄리를 흘끗 봤다가, 작은 목소리로 소양을 보며 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "...내가, 감염되었다면, 좀비가 된다면, 어떻게 할 건데? 날 죽일 거야? 버리고 갈 거야? ....이거부터 말해."
+            },
+            {
+              "kind": "narr",
+              "text": "소양을 보는 눈빛은 불안해보입니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2c",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "설마, 하는 생각이 스치지만. 이런 질문에 표정 관리를 못하는 것은 정말 바보같은 일입니다. 눈을 두어번 깜빡이고는 유하를 똑바로 바라봅니다."
+            },
+            {
+              "kind": "line",
+              "text": "...네가 원하는대로 할 거야."
+            },
+            {
+              "kind": "narr",
+              "text": "그게 전부입니다."
+            },
+            {
+              "kind": "line",
+              "text": "뭐든지."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2d",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "....진짜?"
+            },
+            {
+              "kind": "narr",
+              "text": "소양이 쥔 손을 한참 쳐다봅니다. 숨기려했던 건, 내가 먼저 널 믿지 않아서일까."
+            },
+            {
+              "kind": "line",
+              "text": "그래, 나...감염자야. 하지만 더 이상 말할 수 없어. 노트, 노트를 완성하기 전까진....아무것도 말 못해. 그러니까....날 믿고 기다려 줘."
+            },
+            {
+              "kind": "narr",
+              "text": "오직 그게 내가 원하는 거야."
+            },
+            {
+              "kind": "line",
+              "text": "그냥 이렇게...아니, 아무것도 없었던 것처럼...캘버리로 가자."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2e",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...응, 말해줘서 고마워."
+            },
+            {
+              "kind": "narr",
+              "text": "평소처럼 웃어보입니다. 정말, 아무것도 없었던 것처럼..."
+            },
+            {
+              "kind": "line",
+              "text": "그래도 끼니 잘 챙겨야지. 잠도 좀 자야해. ...오지 않아도 말이야."
+            },
+            {
+              "kind": "narr",
+              "text": "눈을 살짝 굴려, 줄리를 힐끔 봅니다. 그리고 다시 유하와 눈을 마주쳐 헤실 웃습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2f",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고개를 끄덕입니다."
+            },
+            {
+              "kind": "line",
+              "text": "...노력해볼게."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2g",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "뭔가 심각한 대화를 나누나 보다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2h",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "좋아, 그럼, 갈까?"
+            },
+            {
+              "kind": "narr",
+              "text": "유하의 뜻대로, 캘버리로 가야합니다."
+            },
+            {
+              "kind": "narr",
+              "text": "슬쩍 줄리에게 가 작게 소근거립니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "상태가 안 좋지 않은데, 계속 갈 수는 있대요. 너무 신경 쓰지 않아줬으면 좋겠대요...!"
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 틀린 말은 아닙니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2i",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "뭐, 그렇군요. 이런 세상에서 멀쩡한 게 더 이상할지도 모르죠."
+            },
+            {
+              "kind": "narr",
+              "text": "아무렇지 않게 넘깁니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr5231ko_2j",
+          "type": "narration",
+          "emphasis": false,
+          "text": "셋은 다시 걸음을 옮깁니다."
+        }
+      ]
+    },
+    {
+      "id": "id_mr52ab6s_2n",
+      "title": "V. 65시간 경과",
+      "blocks": [
+        {
+          "id": "id_mr52bo85_3k",
+          "type": "narration",
+          "emphasis": false,
+          "text": "...어느새 새벽이 가까워져 오고, 저 멀리 건물이 하나 보입니다. 이번에는 저기서 쉬는 게 좋을 것 같아요."
+        },
+        {
+          "id": "id_mr52bo85_3l",
+          "type": "narration",
+          "emphasis": true,
+          "text": "6월 11일 5 : 03 am"
+        },
+        {
+          "id": "id_mr52bo85_3m",
+          "type": "narration",
+          "emphasis": false,
+          "text": "가까이 가보니 이 곳은 초등학교였나 봅니다. 불에 타 거꾸로 뒤집힌 스쿨버스와 낡고 망가진 놀이터를 지나 직사각형 모양의 학교 건물로 가까이 다가가면 어둑한 교실 안을 느릿하게 배회하는 검은 그림자들이 보입니다."
+        },
+        {
+          "id": "id_mr52c9q6_6c",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mr52bo84_2o",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "55",
+          "roll": "39",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mr52bo85_3n",
+          "type": "narration",
+          "emphasis": false,
+          "text": "아, 1층의 한 교실은 좀비가 없네요. 창문을 통해 안으로 들어가면 될 것 같아요."
+        },
+        {
+          "id": "id_mr52bo85_3o",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "얍. 들어갑니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_3p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "책상들을 교실문 앞으로 밀어 봉쇄하고, 넓어진 공간에 누웠습니다. 좁던 사무실보다는 훨씬 나은 것 같아요."
+        },
+        {
+          "id": "id_mr52bo85_3q",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그럼, 굿모닝? 이제 이게 잘자라는 인사인거죠. 하하."
+            },
+            {
+              "kind": "narr",
+              "text": "농담을 던집니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_3r",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "따라 웃고는 똑같이 얘기합니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "굿모닝이에요!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_3s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "남유하는 잠시 고민하다 따라 눕습니다. 드디어 잠을 청하려는 걸까요.<br>남유하가 오늘 했던 말들이 머릿속을 맴돕니다. 우리는 무사히 캘버리로 갈 수 있을까요? 남유하는 어떻게 되는 걸까요. 이런저런 생각을 안고 당신은 잠이 들었습니다."
+        },
+        {
+          "id": "id_mr52bo85_3t",
+          "type": "narration",
+          "emphasis": true,
+          "text": "6월 11일 2 : 48 pm"
+        },
+        {
+          "id": "id_mr52bo85_3u",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...소양, 소양아..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_3v",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 당신을 부르는 남유하의 목소리를 듣고 잠에서 깨어났습니다. 눈을 뜨고 자리에서 일어나니 당신의 옷자락을 잡은 채 인상을 찌푸리고 있는 남유하가 보입니다."
+        },
+        {
+          "id": "id_mr52bo85_3w",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "아파, 너무 아파.."
+            },
+            {
+              "kind": "narr",
+              "text": "숨을 가쁘게 내쉬며 말합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_3x",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "다급하게 유하의 어깨를 잡고 상태를 살핍니다."
+            },
+            {
+              "kind": "line",
+              "text": "어? 어디가? 어떻게 아파?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_3y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그런 남유하를 살펴보면, 온몸이 불덩이같이 뜨겁습니다."
+        },
+        {
+          "id": "id_mr52bo85_3z",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "몰라, 그냥, 아파...온 몸이 아파...."
+            },
+            {
+              "kind": "narr",
+              "text": "지능 판정"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo84_2p",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "지능",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "8",
+          "result": "극단적 성공"
+        },
+        {
+          "id": "id_mr52bo85_40",
+          "type": "narration",
+          "emphasis": false,
+          "text": "그러고 보니 이 곳은 초등학교였죠. 양호실을 찾아가면 약을 구할 수 있을지도 몰라요."
+        },
+        {
+          "id": "id_mr52bo85_41",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "자고 있는 줄리의 눈치를 살핍니다. 유하의 어깨를 다독이며, 한 손가락을 입에 대고 조용히 말합니다."
+            },
+            {
+              "kind": "line",
+              "text": "...힘들겠지만, 조용히 잠시만 누워있어. 내가... 뭐라도 구해와볼게."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52d9ls_6d",
+          "type": "narration",
+          "emphasis": true,
+          "text": "은밀행동 판정"
+        },
+        {
+          "id": "id_mr52bo84_2q",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "은밀행동",
+          "grade": "보통",
+          "standard": "40",
+          "roll": "26",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mr52bo85_42",
+          "type": "narration",
+          "emphasis": false,
+          "text": "복도로 나가면 8 마리의 좀비가 보입니다."
+        },
+        {
+          "id": "id_mr52bo84_2r",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "은밀행동",
+          "grade": "보통",
+          "standard": "40",
+          "roll": "28",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mr52bo85_43",
+          "type": "narration",
+          "emphasis": false,
+          "text": "창밖으로 햇빛이 들어오고 있어서일까요, 좀비들이 당신을 금방 알아챈 것 같습니다."
+        },
+        {
+          "id": "id_mr52bo85_44",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "일단, 다시 교실로 들어갑니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_45",
+          "type": "narration",
+          "emphasis": false,
+          "text": "교실로 들어가 문을 닫으니, 좀비들이 문을 쿵쿵 두드리는 소리가 납니다."
+        },
+        {
+          "id": "id_mr52bo85_46",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "줄리를 깨웁니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "...줄리! 도와줘요...!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_47",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "작은 소란에 이미 깬 듯 벌떡 일어납니다."
+            },
+            {
+              "kind": "line",
+              "text": "무, 무슨일이에요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_48",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "좀비를 마주쳐서 맺힌 식은땀을 닦으며 말합니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "배가 아파서, 조용히... 약을 찾아오려고 했는데, 들켜버렸어요. 미안해요. ...같이 처리해줄 수 있을까요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_49",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 이런. 도와줘야죠 그럼."
+            },
+            {
+              "kind": "narr",
+              "text": "빠루를 꺼내 쥡니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4a",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "양심의 가책이..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo84_2s",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "70",
+          "result": "실패",
+          "damage": "1"
+        },
+        {
+          "id": "id_mr52bo85_4b",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "공기를 홈런칩니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_2t",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "줄리",
+          "item": "빠루",
+          "standard": "50/25/10",
+          "roll": "74",
+          "result": "실패",
+          "damage": "4"
+        },
+        {
+          "id": "id_mr52bo85_2u",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "좀비",
+          "item": "비무장",
+          "standard": "30/15/6",
+          "roll": "19",
+          "result": "보통 성공",
+          "damage": "4"
+        },
+        {
+          "id": "id_mr52bo85_4c",
+          "type": "dice",
+          "kind": "simple",
+          "speaker": "좀비",
+          "item": "공격 대상",
+          "roll": "1",
+          "result": "강소양",
+          "formula": "1d2"
+        },
+        {
+          "id": "id_mr52bo85_2v",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "회피",
+          "grade": "보통",
+          "standard": "30",
+          "roll": "71",
+          "result": "실패"
+        },
+        {
+          "id": "id_mr52bo85_4d",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "이거, 쉽지 않겠는데요..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4e",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "아파서 말도 안 나온다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_2w",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "34",
+          "result": "보통 성공",
+          "damage": "6"
+        },
+        {
+          "id": "id_mr52bo85_2x",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "줄리",
+          "item": "빠루",
+          "standard": "50/25/10",
+          "roll": "8",
+          "result": "극단적 성공",
+          "damage": "9"
+        },
+        {
+          "id": "id_mr52bo85_4f",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "좀비 한 마리의 머리를 깹니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_2y",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "좀비",
+          "item": "비무장",
+          "standard": "30/15/6",
+          "roll": "57",
+          "result": "실패",
+          "damage": "5"
+        },
+        {
+          "id": "id_mr52bo85_2z",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "33",
+          "result": "보통 성공",
+          "damage": "5"
+        },
+        {
+          "id": "id_mr52bo85_30",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "줄리",
+          "item": "빠루",
+          "standard": "50/25/10",
+          "roll": "97",
+          "result": "실패",
+          "damage": "5"
+        },
+        {
+          "id": "id_mr52bo85_4g",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "안타다!"
+            },
+            {
+              "kind": "narr",
+              "text": "저긴 스트라이크다,,,"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_31",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "좀비",
+          "item": "비무장",
+          "standard": "30/15/6",
+          "roll": "57",
+          "result": "실패",
+          "damage": "6"
+        },
+        {
+          "id": "id_mr52bo85_32",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "6",
+          "result": "극단적 성공",
+          "damage": "1"
+        },
+        {
+          "id": "id_mr52bo85_4h",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "홈런이다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_33",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "줄리",
+          "item": "빠루",
+          "standard": "50/25/10",
+          "roll": "36",
+          "result": "보통 성공",
+          "damage": "7"
+        },
+        {
+          "id": "id_mr52bo85_34",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "좀비",
+          "item": "비무장",
+          "standard": "30/15/6",
+          "roll": "32",
+          "result": "실패",
+          "damage": "5"
+        },
+        {
+          "id": "id_mr52bo85_35",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "11",
+          "result": "어려운 성공",
+          "damage": "2"
+        },
+        {
+          "id": "id_mr52bo85_4i",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "바닥에 있는 좀비 한 마리를 친다...<br>퍽."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_36",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "줄리",
+          "item": "빠루",
+          "standard": "50/25/10",
+          "roll": "70",
+          "result": "실패",
+          "damage": "7"
+        },
+        {
+          "id": "id_mr52bo85_37",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "좀비",
+          "item": "비무장",
+          "standard": "30/15/6",
+          "roll": "77",
+          "result": "실패",
+          "damage": "4"
+        },
+        {
+          "id": "id_mr52bo85_38",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "4",
+          "result": "극단적 성공",
+          "damage": "5"
+        },
+        {
+          "id": "id_mr52bo85_4j",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "이번엔 만루홈런이다! 아마도!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_39",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "줄리",
+          "item": "빠루",
+          "standard": "50/25/10",
+          "roll": "77",
+          "result": "실패",
+          "damage": "2"
+        },
+        {
+          "id": "id_mr52bo85_3a",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "좀비",
+          "item": "비무장",
+          "standard": "30/15/6",
+          "roll": "73",
+          "result": "실패",
+          "damage": "2"
+        },
+        {
+          "id": "id_mr52bo85_3b",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "48",
+          "result": "실패",
+          "damage": "1"
+        },
+        {
+          "id": "id_mr52bo85_3c",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "줄리",
+          "item": "빠루",
+          "standard": "50/25/10",
+          "roll": "46",
+          "result": "보통 성공",
+          "damage": "7"
+        },
+        {
+          "id": "id_mr52bo85_3d",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "좀비",
+          "item": "비무장",
+          "standard": "30/15/6",
+          "roll": "11",
+          "result": "어려운 성공",
+          "damage": "3"
+        },
+        {
+          "id": "id_mr52bo85_4k",
+          "type": "dice",
+          "kind": "simple",
+          "speaker": "좀비",
+          "item": "공격 대상",
+          "roll": "2",
+          "result": "줄리",
+          "formula": "1d2"
+        },
+        {
+          "id": "id_mr52bo85_3e",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "줄리",
+          "item": "회피",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "14",
+          "result": "어려운 성공"
+        },
+        {
+          "id": "id_mr52bo85_4l",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "쇽쇽"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_3f",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "63",
+          "result": "실패",
+          "damage": "5"
+        },
+        {
+          "id": "id_mr52bo85_4m",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "삼진아웃..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_3g",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "줄리",
+          "item": "빠루",
+          "standard": "50/25/10",
+          "roll": "32",
+          "result": "보통 성공",
+          "damage": "3"
+        },
+        {
+          "id": "id_mr52bo85_3h",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "좀비",
+          "item": "비무장",
+          "standard": "30/15/6",
+          "roll": "70",
+          "result": "실패",
+          "damage": "6"
+        },
+        {
+          "id": "id_mr52bo85_3i",
+          "type": "dice",
+          "kind": "attack",
+          "speaker": "강소양",
+          "item": "야구방망이",
+          "standard": "45/22/9",
+          "roll": "42",
+          "result": "보통 성공",
+          "damage": "6"
+        },
+        {
+          "id": "id_mr52bo85_4n",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "깡~~~"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4o",
+          "type": "narration",
+          "emphasis": false,
+          "text": "마침내 좀비들을 모두 쓰러뜨렸습니다."
+        },
+        {
+          "id": "id_mr52bo85_4p",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "양호실에 갈 명분이 더 생겼습니다."
+            },
+            {
+              "kind": "narr",
+              "text": "긍정적으로 생각하면 오히려 이득입니다."
+            },
+            {
+              "kind": "line",
+              "text": "<i>고마워요, 줄리.... 괜찮으면, 양호실을 같이 찾아줄 수 있을까요?</i>"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4q",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "휴. 다 해치웠네요."
+            },
+            {
+              "kind": "narr",
+              "text": "이마를 닦습니다."
+            },
+            {
+              "kind": "line",
+              "text": "같이 가죠. 좀비가 더 얼마나 있을지도 모르고, 약은 챙겨두면 좋으니까요."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4r",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "엄지를 치켜세웁니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4s",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이 학교에 얼마나 많은 좀비들이 있을지 알 수 없으니 또 다른 좀비들이 당신들을 향해 달려오기 전에 빠르게 양호실 위치를 확인해야 할 것 같습니다. 오후의 강렬한 햇살이 복도에 비치고, 일렬로 늘어진 교실을 지나면 [ 캐비넛 ] 과 [ 사물함 ], [ 학교약도 ]가 보입니다."
+        },
+        {
+          "id": "id_mr52bo85_4t",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "학교약도를 확인합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4u",
+          "type": "narration",
+          "emphasis": false,
+          "text": "군데군데 묻은 핏자국과 그을림 사이로 희미한 글씨들이 보입니다."
+        },
+        {
+          "id": "id_mr52bo85_4v",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "사물함을...열어봅니다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4w",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이 초등학교에 다녔을 어린이들이 썼던 사물함입니다. 몇 개를 열어보자 교과서, 리코더, 크레파스, 빈 우유갑, 먼지… 이 상황에서 도움이 될 만한 것은 들어있지 않네요."
+        },
+        {
+          "id": "id_mr52bo85_4x",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "(불타는먼지는이세계의진상을아는데도움이될것같은데)"
+            },
+            {
+              "kind": "narr",
+              "text": "캐비넛의 손잡이를 잡고... 귀를 대봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_4y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "아무 소리도 들리지 않습니다."
+        },
+        {
+          "id": "id_mr52bo85_4z",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "진짜?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_50",
+          "type": "narration",
+          "emphasis": false,
+          "text": "진짜."
+        },
+        {
+          "id": "id_mr52bo85_51",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "캐비넛을 살펴봅니다. 틈이 없나?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_52",
+          "type": "narration",
+          "emphasis": false,
+          "text": "있습니다."
+        },
+        {
+          "id": "id_mr52bo85_53",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "틈으로 뭔가가 있는지 살펴봅니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo85_54",
+          "type": "narration",
+          "emphasis": false,
+          "text": "빗자루나 걸레들이 보입니다."
+        },
+        {
+          "id": "id_mr52bo85_55",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "휴, 안심하고 캐비넛을 엽니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_56",
+          "type": "narration",
+          "emphasis": false,
+          "text": "사람 한 명이 들어갈 수 있을 정도의 철제 캐비넛입니다. 청소도구함으로 사용했나봐요. 빗자루나 걸레 등은 어린아이들이 사용하던 것들이라 작고 가벼워서 무기로도 쓰지 못할 것 같습니다."
+        },
+        {
+          "id": "id_mr52bo86_57",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "빗자루랑 걸레를 밖에 빼둡니다... 혹시 모르면 여기로 도망쳐야지!"
+            },
+            {
+              "kind": "narr",
+              "text": "머쓱하게 웃으며 줄리에게 변명합니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "...저번에 다른 곳에서 뭘 열었다가 시체를 발견해서요. 그 뒤로 조심하게 되더라구요."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_58",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "오, 저런. 맞아요, 이런 상황에선 뭐든 조심해야죠."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_59",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "정말 좋은 사람이다..."
+            },
+            {
+              "kind": "narr",
+              "text": "원래의 목적지로 향합니다... 양호실을 가야해요..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5a",
+          "type": "narration",
+          "emphasis": false,
+          "text": "정돈되지 않은, 크지 않은 양호실엔 [ 환자용 침대 ] 와 [ 큰 서랍], [ 상자 ], [ 싱크대 ] 가 보입니다."
+        },
+        {
+          "id": "id_mr52bo86_5b",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "큰 서랍을 뒤져봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5c",
+          "type": "narration",
+          "emphasis": false,
+          "text": "당신은 책상 옆의 서랍을 열었습니다. 이미 누군가가 사용한 흔적이 있지만 남은 약들이 있네요. 서랍 안에는 아직 포장을 뜯지 않은 ‘소염진통제’ ‘해열제’ ‘소화제’ ‘제산제’ 등… 가지각색의 약 상자들이 들어있습니다."
+        },
+        {
+          "id": "id_mr52bo86_5d",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "다 챙깁니다."
+            },
+            {
+              "kind": "narr",
+              "text": "뿌듯합니다. 상자를 엽니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5e",
+          "type": "narration",
+          "emphasis": false,
+          "text": "책상 밑의 큼직한 상자를 열자 붕대와 소독솜, 소독약 등이 들어 있습니다. 전부 챙겨가긴 어렵겠지만 언젠간 쓸모가 있을 것 같아요."
+        },
+        {
+          "id": "id_mr52bo86_5f",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그러고보니 아까 다치지 않았어요? 치료라도 도와줄까요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5g",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>줄리... 줄리가 두고 온 게 있는 것 같아요.</i>"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5h",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "저요? 가방을 놓고오긴 했는데..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5i",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고개를 젓습니다. 그리고 손가락으로 하늘ㅡ사실은 천장ㅡ을 가리킵니다. <i>"
+            },
+            {
+              "kind": "line",
+              "text": "저기 하늘 위에 날개를 두고 왔잖아요."
+            },
+            {
+              "kind": "narr",
+              "text": "..."
+            },
+            {
+              "kind": "narr",
+              "text": "방긋 웃습니다. 이것보다 싸늘한 반응도 많이 받았는 걸요!"
+            },
+            {
+              "kind": "narr",
+              "text": "싸늘까진 아니고 까칠정도."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5j",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "띠용.하는 표정으로 잠시 보고는 푸핫 웃습니다."
+            },
+            {
+              "kind": "line",
+              "text": "뭐 그렇게까지~"
+            },
+            {
+              "kind": "narr",
+              "text": "손사래를 칩니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5k",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>매번 고마워요. 줄리.</i>"
+            },
+            {
+              "kind": "narr",
+              "text": "</i> 좋은 사람이다! 그리고는 치료를 부탁합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5l",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "줄리",
+          "item": "응급처치",
+          "grade": "보통",
+          "standard": "50",
+          "roll": "60",
+          "result": "실패"
+        },
+        {
+          "id": "id_mr52bo86_5m",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고맙다고 말하며, 줄리의 눈을 피해 수습합니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5n",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "응급처치",
+          "grade": "보통",
+          "standard": "60",
+          "roll": "39",
+          "result": "보통 성공"
+        },
+        {
+          "id": "id_mr52bo86_5o",
+          "type": "narration",
+          "emphasis": false,
+          "text": "좀비 사태 이후 환자들을 뉘였는지 꽤나 오래되고 정돈되지 못합니다. 좀비는 없습니다."
+        },
+        {
+          "id": "id_mr557juz_6e",
+          "type": "narration",
+          "emphasis": true,
+          "text": "관찰력 판정"
+        },
+        {
+          "id": "id_mr52bo85_3j",
+          "type": "dice",
+          "kind": "check",
+          "speaker": "강소양",
+          "item": "관찰력",
+          "grade": "보통",
+          "standard": "55",
+          "roll": "12",
+          "result": "어려운 성공"
+        },
+        {
+          "id": "id_mr52bo86_5p",
+          "type": "narration",
+          "emphasis": false,
+          "text": "침대들을 살펴보던 당신은 침대 아래의 서랍에서 안 쓴 수건들을 발견합니다."
+        },
+        {
+          "id": "id_mr52bo86_5q",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "오늘따라 운이 좋은 것 같습니다. 물론 좀비 8마리 만나긴 했지만, 좋은게 좋은거니까요."
+            },
+            {
+              "kind": "narr",
+              "text": "챙깁니다."
+            },
+            {
+              "kind": "narr",
+              "text": "싱크대를 확인합니다.."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5r",
+          "type": "narration",
+          "emphasis": false,
+          "text": "양호실은 위생이 중요한 곳이니 손을 씻기 위한 싱크대도 마련되어 있네요. 싱크대 아래에는 양동이도 있습니다."
+        },
+        {
+          "id": "id_mr52bo86_5s",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "수도꼭지를 돌려봅니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5t",
+          "type": "narration",
+          "emphasis": false,
+          "text": "물이 졸졸졸 나옵니다."
+        },
+        {
+          "id": "id_mr52bo86_5u",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "와, 물이라니! 이거 좋은데요?"
+            },
+            {
+              "kind": "line",
+              "text": "안 그래도 아까 좀비랑 싸우느라 묻은 피 좀 씻을 수 있겠네요."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5v",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>수건도 있으니, 양동이에 물 담아가서 천천히 닦을까요?</i>"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5w",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "그러죠. 좀비가 또 언제 올지도 모르고요. 자, 수확도 많았으니 돌아갑시다!"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5x",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "앗, 양심이."
+            },
+            {
+              "kind": "line",
+              "text": "<i>돌아가요!</i>"
+            },
+            {
+              "kind": "narr",
+              "text": "물을 담아 돌아갑니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_5y",
+          "type": "narration",
+          "emphasis": false,
+          "text": "들어갈 때와 다르게 양호실에서 나갈 땐 짐이 양손 가득 입니다.<br>교실로 돌아오니 남유하가 누운 채로 끙끙 앓고 있습니다."
+        },
+        {
+          "id": "id_mr52bo86_5z",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "저 친구 괜찮은거에요?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_60",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "<i>아마 며칠 잠 안자고 무리해서 그런 것 같아요. 제가 좀 확인하고 잘테니까, 줄리도 다 씻으면 더 주무세요! 체력 비축해둬야죠.</i>"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_61",
+          "type": "dialogue",
+          "speaker": "줄리",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "흠...무리하는 것 같아보이긴 했죠. 그래요, 시간도 시간이니 일단 자고 일어나죠."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_62",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "네! 굿애프터눈이에요, 줄리."
+            },
+            {
+              "kind": "narr",
+              "text": "유하를 살핍니다."
+            },
+            {
+              "kind": "narr",
+              "text": "...수건에 물을 적셔 꾹, 짜서 들고 가 유하의 땀을 닦아줍니다."
+            },
+            {
+              "kind": "line",
+              "text": "유하야, 얼마나 아파? 더 심해지는 거 같아?"
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_63",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "line",
+              "text": "...아파. 고등학생 때 그때 이후로 제일 아파."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_64",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "아파하는 모습에 눈물이 핑 돌지만, 꾹 참습니다. 소염진통제 두 개와, 해열제 하나를 꺼냅니다. 가방을 뒤져 생수를 꺼내 유하에게 건넵니다."
+            },
+            {
+              "kind": "line",
+              "text": "약부터 먹자. 먹고 좀 자고 일어나면... 될 거야."
+            },
+            {
+              "kind": "narr",
+              "text": "...괜찮아질지는 모르겠지만요."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_65",
+          "type": "dialogue",
+          "speaker": "남유하",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "고개를 끄덕이고 몸을 천천히 일으킵니다. 그리고 약을 받아 먹습니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_66",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "박수치는 시늉을 합니다."
+            },
+            {
+              "kind": "narr",
+              "text": "마저 수건으로 땀을 닦아주어 열을 내려줍니다..."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_67",
+          "type": "narration",
+          "emphasis": false,
+          "text": "이걸로 효과가 있는 걸까요. 확신할 수 있는 것은 없지만 당신은 정성껏 남유하를 간호합니다."
+        },
+        {
+          "id": "id_mr52bo86_68",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "유하가 잠들 때까지 옆에서 상태를 살핍니다."
+            }
+          ]
+        },
+        {
+          "id": "id_mr52bo86_69",
+          "type": "narration",
+          "emphasis": false,
+          "text": "간간히 내뱉는 호흡은 불규칙하지만, 잠에는 든 것 같습니다."
+        },
+        {
+          "id": "id_mr52bo86_6a",
+          "type": "dialogue",
+          "speaker": "강소양",
+          "segments": [
+            {
+              "kind": "narr",
+              "text": "바로 옆에서 잠듭니다."
+            }
+          ]
+        }
+      ]
     }
   ]
 }
