@@ -1,285 +1,369 @@
 /* =========================================================================
-   parser.js — Roll20 로그 → 블록 배열
+   parser.js — 원본 로그 HTML 가져오기
    --------------------------------------------------------------------------
-   규칙
-   - 블록은 줄 안의 화자 ':' 기호로 나눈다. 다음 화자가 나오기 전까지는
-     이전 화자(대사) 또는 나레이션을 그대로 유지하여 한 블록(여러 줄)으로 본다.
-   - ':' 앞의 화자명이 비었거나 '(GM)' 이 포함되면 나레이션으로 본다.
-   - 주사위 유형은 2가지: 기준치(check), 단순 굴림(simple).
-     · 기준치 필드: 판정명/등급/기준치/굴림/판정결과
-     · 두 형식(줄바꿈형 'vs.' 구조 + 한 줄형 '기준치:..굴림:..판정결과:..')을 하나로 통일
-     · 기준치가 65/32/13 처럼 여러 값이면 가장 앞 값(65)을 자동 입력
+   · Roll20  : 채팅 아카이브 페이지를 저장한 HTML (SingleFile 등)
+   · 코코포리아: (준비 중)
+   HTML 파일을 통째로 받아 DOM 구조로 메시지를 읽고, 사이트용 블록 배열로 바꾼다.
+   결과: { format, title, date, blocks[], speakers[], stats }
    ========================================================================= */
-const isNum   = s => s != null && /^-?\d+(?:\.\d+)?$/.test(String(s).trim());
-const isBonus = s => s != null && /bonus|penalty/i.test(String(s).trim());
-const isRollFormula = s => s != null && /^rolling\s+\d*d\d+/i.test(String(s).trim());
-const GRADE_RE = /(대단히\s*어려운|대단히\s*어려움|어려운\s*성공|어려운|어려움|보통|쉬운|쉬움|극단적|불가능|곤란)\s*$/;
-function firstNum(s){ const m = String(s == null ? '' : s).match(/-?\d+/); return m ? m[0] : ''; }
+
+/* ---- 형식 판별 ---- */
+function detectLogFormat(html){
+  const s = String(html || '');
+  if(/roll20\.net/i.test(s) || /class=["']?message[\s"'][^>]*data-messageid/i.test(s)) return 'roll20';
+  if(/ccfolia/i.test(s)) return 'ccfolia';
+  return 'unknown';
+}
+
+function importLogHTML(html, opts){
+  const fmt = detectLogFormat(html);
+  if(fmt === 'roll20')  return Object.assign({ format:'roll20' }, importRoll20(html, opts || {}));
+  if(fmt === 'ccfolia') { const e = new Error('ccfolia'); e.code = 'ccfolia'; throw e; }
+  const e = new Error('unknown'); e.code = 'unknown'; throw e;
+}
+
+/* ---- 공용 도우미 ---- */
+function isNarrationName(n){ const s = String(n || '').trim(); return !s || /\(\s*gm\s*\)/i.test(s); }
 function stripTags(s){ return String(s == null ? '' : s).replace(/<[^>]+>/g, ''); }
+function firstNum(s){ const m = String(s == null ? '' : s).match(/-?\d+/); return m ? m[0] : ''; }
+function isNum(s){ return s != null && /^-?\d+(?:\.\d+)?$/.test(String(s).trim()); }
 
-/* contenteditable/붙여넣기 HTML → 줄 배열
-   - 이미지/링크(a) 등 잡태그 제거, b/i 보존, 블록요소·br = 줄바꿈
-   - Roll20 주사위 표기 2형식을 한 줄 정규형으로 변환:
-     (1) <table> (caption=판정명, 기준치/굴림/판정결과/피해 행)
-     (2) <h2>캐릭터</h2><h1>판정명</h1><h3>등급</h3> + "결과" + "N vs. M" 줄  */
-function htmlToLines(html){
-  const tmp = document.createElement('div');
-  tmp.innerHTML = escapeStrayAngles(html || '');
+/* 크툴루 시트의 영문 판정명 → 한글 (앞의 '○○ 판정' 안내가 없을 때 사용) */
+const COC_SKILL_KO = {
+  'spot hidden':'관찰력', 'listen':'듣기', 'library use':'자료조사', 'psychology':'심리학',
+  'sanity':'이성', 'san':'이성', 'power':'정신력', 'pow':'정신력', 'intelligence':'지능', 'int':'지능',
+  'idea':'아이디어', 'know':'지식', 'size':'크기', 'siz':'크기', 'strength':'근력', 'str':'근력',
+  'constitution':'건강', 'con':'건강', 'dexterity':'민첩성', 'dex':'민첩성', 'appearance':'외모', 'app':'외모',
+  'education':'교육', 'edu':'교육', 'luck':'행운', 'own':'모국어', 'own language':'모국어', 'language (own)':'모국어',
+  'persuade':'설득', 'fast talk':'말재주', 'charm':'매혹', 'intimidate':'위협', 'stealth':'은밀행동',
+  'dodge':'회피', 'first aid':'응급처치', 'medicine':'의학', 'occult':'오컬트', 'history':'역사',
+  'navigate':'길찾기', 'track':'추적', 'climb':'오르기', 'jump':'도약', 'swim':'수영', 'throw':'투척',
+  'drive auto':'자동차 운전', 'locksmith':'자물쇠 따기', 'sleight of hand':'손놀림', 'credit rating':'신용',
+  'accounting':'회계', 'anthropology':'인류학', 'archaeology':'고고학', 'electrical repair':'전기 수리',
+  'mechanical repair':'기계 수리', 'law':'법률', 'natural world':'자연', 'cthulhu mythos':'크툴루 신화',
+  'fighting (brawl)':'근접전(격투)', 'firearms (handgun)':'사격(권총)', 'firearms (rifle/shotgun)':'사격(라이플/산탄총)',
+  'disguise':'변장', 'operate heavy machinery':'중장비 조작', 'ride':'승마', 'survival':'생존술'
+};
 
-  /* (1) 주사위 <table> → 한 줄 */
-  tmp.querySelectorAll('table').forEach(tbl => {
-    const cap = tbl.querySelector('caption');
-    const skillName = (cap ? cap.textContent : '').trim() || '판정';
-    let standard = '', roll = '', result = '', damage = '', malfunction = '';
-    tbl.querySelectorAll('tr').forEach(tr => {
-      const cells = tr.querySelectorAll('td');
-      if(cells.length < 2) return;
-      const attr  = cells[0].getAttribute('data-i18n') || '';
-      const label = cells[0].textContent.replace(/[:：]$/, '').trim();
-      const val   = cells[1].textContent.trim();
-      if(attr === 'value'  || /기준치/i.test(label))   standard    = val;
-      else if(attr === 'rolled' || /굴림/i.test(label))     roll        = val;
-      else if(attr === 'result' || /판정결과/i.test(label)) result      = val;
-      else if(/피해/i.test(label))                           damage      = val;
-      else if(/고장/i.test(label))                           malfunction = val;
-    });
-    const oneLine = damage
-      ? (skillName + '기준치:' + standard + '고장:' + (malfunction || '-') + '굴림:' + roll + '판정결과:' + result + '피해:' + damage)
-      : (skillName + '기준치:' + standard + '굴림:' + roll + '판정결과:' + result);
-    tbl.parentNode.replaceChild(document.createTextNode('\n' + oneLine + '\n'), tbl);
-  });
-
-  /* (2) 주사위 h-템플릿 → "판정명등급" 한 줄 (뒤에 이어지는 결과·N vs. M 줄은 그대로 두면
-        기존 vs 파서가 처리한다). h2(캐릭터·소유자)는 버린다. */
-  tmp.querySelectorAll('h1').forEach(h1 => {
-    const parent = h1.parentNode; if(!parent) return;
-    const kids = Array.from(parent.childNodes);
-    const idx = kids.indexOf(h1); if(idx < 0) return;
-    let lo = idx, hi = idx;
-    const isHead = n => n && n.nodeType === 1 && /^h[1-4]$/i.test(n.tagName);
-    while(lo - 1 >= 0 && isHead(kids[lo-1])) lo--;
-    while(hi + 1 < kids.length && isHead(kids[hi+1])) hi++;
-    let item = '', grade = '';
-    for(let k = lo; k <= hi; k++){
-      const el = kids[k]; const tg = el.tagName.toLowerCase();
-      const txt = (el.textContent || '').trim();
-      if(tg === 'h1') item = txt;
-      else if((tg === 'h3' || tg === 'h4') && !grade) grade = txt;
-      /* h2 = 캐릭터/소유자명 → 버림 */
-    }
-    parent.insertBefore(document.createTextNode('\n' + item + grade + '\n'), kids[lo]);
-    for(let k = lo; k <= hi; k++) if(kids[k].parentNode) kids[k].remove();
-  });
-
-  /* 링크(bonus / penalty 등)·이미지·기타 잡태그 제거 */
-  tmp.querySelectorAll('a, img, picture, svg, script, style, video, audio').forEach(n => n.remove());
-
-  function ser(node){
-    let out = '';
-    node.childNodes.forEach(child => {
-      if(child.nodeType === 3){ out += child.nodeValue; return; }
-      if(child.nodeType !== 1) return;
-      const tag = child.tagName.toLowerCase();
-      if(tag === 'br'){ out += '\n'; return; }
-      if(tag === 'b' || tag === 'strong'){ out += '<b>' + ser(child) + '</b>'; return; }
-      if(tag === 'i' || tag === 'em'){ out += '<i>' + ser(child) + '</i>'; return; }
-      const block = ['div','p','li','tr','td','th','h1','h2','h3','h4','h5','section','article','blockquote'].includes(tag);
-      if(block) out += '\n' + ser(child) + '\n'; else out += ser(child);   // 그 외 태그(span,a 등)는 텍스트만
-    });
-    return out;
-  }
-  return ser(tmp).replace(/\u00a0/g, ' ').split('\n');
+/* ---- 가벼운 DOM 탐색 (브라우저 DOMParser 결과에 사용) ---- */
+function _kids(n){ return Array.from((n && n.childNodes) || []); }
+function _cls(el){ return (el && el.nodeType === 1 && el.getAttribute('class')) || ''; }
+function hasCls(el, c){ return (' ' + _cls(el).trim().split(/\s+/).join(' ') + ' ').indexOf(' ' + c + ' ') >= 0; }
+function clsHas(el, part){ return _cls(el).indexOf(part) >= 0; }
+function tagIs(el, t){ return el && el.nodeType === 1 && el.tagName.toLowerCase() === t; }
+function findAll(root, pred, stopInside){
+  const out = [];
+  (function walk(n){ _kids(n).forEach(ch => {
+    if(ch.nodeType !== 1) return;
+    if(pred(ch)){ out.push(ch); if(stopInside) return; }
+    walk(ch);
+  }); })(root);
+  return out;
+}
+function findOne(root, pred){ return findAll(root, pred)[0] || null; }
+function textOf(el){ return el ? String(el.textContent || '').replace(/\s+/g, ' ').trim() : ''; }
+function wordsOf(el){           // <span>어려움</span><span>성공</span> → "어려움 성공"
+  if(!el) return '';
+  const parts = _kids(el).map(k => k.nodeType === 3 ? k.nodeValue : textOf(k)).map(t => String(t).trim()).filter(Boolean);
+  return parts.join(' ').replace(/\s+/g, ' ').trim();
 }
 
-/* 따옴표 기준 분해: 안=대사(line), 밖=지문(narr) */
-function splitDialogueSegments(text){
-  const norm = String(text).replace(/[\u201C\u201D]/g, '"');
-  const parts = norm.split('"');
+/* 메시지 안에서 본문이 아닌 부분 */
+const R20_SKIP = ['spacer', 'avatar', 'tstamp', 'by', 'flyout'];
+function r20Skip(el){ return R20_SKIP.some(c => hasCls(el, c)); }
+
+/* 메시지 본문 → 서식 텍스트(b/i/br만) */
+function r20Rich(node){
+  let out = '';
+  _kids(node).forEach(ch => {
+    if(ch.nodeType === 3){ out += escapeText(ch.nodeValue); return; }
+    if(ch.nodeType !== 1 || r20Skip(ch)) return;
+    const tag = ch.tagName.toLowerCase();
+    if(['img','svg','script','style','template','form','audio','video','picture','iframe','button'].includes(tag)) return;
+    if(tag === 'br'){ out += '<br>'; return; }
+    if(hasCls(ch, 'inlinerollresult')){ out += escapeText(textOf(ch)); return; }
+    if(tag === 'b' || tag === 'strong'){ out += '<b>' + r20Rich(ch) + '</b>'; return; }
+    if(tag === 'i' || tag === 'em'){ out += '<i>' + r20Rich(ch) + '</i>'; return; }
+    if(['div','p','li','ul','ol','h1','h2','h3','h4','h5','h6','blockquote','tr','table'].includes(tag)){
+      out += '<br>' + r20Rich(ch) + '<br>'; return;
+    }
+    out += r20Rich(ch);
+  });
+  return out;
+}
+function tidyRich(s){
+  let t = String(s || '').replace(/\u00a0/g, ' ').replace(/[ \t\r\n\f]+/g, ' ');
+  t = t.replace(/\s*<br>\s*/g, '<br>');
+  for(let k = 0; k < 3; k++) t = t.replace(/<(b|i)>\s*<\/\1>/g, '');
+  t = t.replace(/(<br>){3,}/g, '<br><br>').replace(/^(<br>)+|(<br>)+$/g, '');
+  return t.trim();
+}
+
+/* 대사 본문을 따옴표 기준으로 대사(line)/지문(narr) 분리 — b/i 태그 균형 유지 */
+function splitQuotedRich(html){
   const segs = [];
-  parts.forEach((p, idx) => {
-    const t = p.trim();
-    if(!t) return;
-    segs.push({ kind: (idx % 2 === 1) ? 'line' : 'narr', text: applyRich(t) });
+  const open = [];                       // 현재 열린 b/i
+  let buf = '', inQ = false;
+  const closeAll = () => open.slice().reverse().map(t => '</' + t + '>').join('');
+  const openAll  = () => open.map(t => '<' + t + '>').join('');
+  function cut(){
+    const text = tidyRich(buf + closeAll());
+    if(stripTags(text).trim()) segs.push({ kind: inQ ? 'line' : 'narr', text });
+    buf = openAll();
+  }
+  String(html || '').replace(/<\/?(?:b|i)>|<br>|[^<]+|</g, tok => {
+    const m = tok.match(/^<(\/?)(b|i)>$/);
+    if(m){
+      if(m[1]){ const k = open.lastIndexOf(m[2]); if(k >= 0) open.splice(k, 1); }
+      else open.push(m[2]);
+      buf += tok; return tok;
+    }
+    if(tok === '<br>' || tok === '<'){ buf += tok; return tok; }
+    const pieces = tok.split(/["\u201C\u201D]/);
+    pieces.forEach((p, i) => {
+      if(i > 0){ cut(); inQ = !inQ; }
+      buf += p;
+    });
+    return tok;
   });
-  if(segs.length === 0) segs.push({ kind: 'narr', text: applyRich(text) });
-  return segs;
+  cut();
+  // 같은 종류가 연달아 붙으면 합치기
+  const merged = [];
+  segs.forEach(s => {
+    const last = merged[merged.length - 1];
+    if(last && last.kind === s.kind && s.kind === 'narr') last.text += ' ' + s.text;
+    else merged.push(s);
+  });
+  return merged;
 }
 
-/* 단순 굴림형:  rolling 1d100 \n ( \n 80 \n ) \n = \n 80 */
-function detectRollFormula(lines, start){
-  const m = stripTags(lines[start] || '').trim().match(/^rolling\s+(\d*d\d+(?:\s*[+\-]\s*\d+)?)/i);
-  if(!m) return null;
-  const formula = m[1].replace(/\s+/g, '');
-  let result = '', lastNum = '', end = start;
-  for(let j = start + 1; j < Math.min(start + 8, lines.length); j++){
-    const t = stripTags(lines[j] || '').trim();
-    if(t === ''){ end = j; continue; }
-    if(isRollFormula(t) || /[:：]/.test(t)) break;
-    if(/^=$/.test(t)){
-      const nx = stripTags(lines[j+1] || '').trim();
-      if(isNum(nx)){ result = nx; end = j + 1; break; }
-    }
-    if(isNum(t)){ lastNum = t; end = j; continue; }
-    if(/^[()=]$/.test(t)){ end = j; continue; }
-    break;
+/* ---- 주사위 ---- */
+function _cleanFormula(f){
+  return String(f || '').replace(/(?:cs|cf)[<>=]?\d+/gi, '').replace(/\s+/g, '').replace(/^rolling/i, '');
+}
+function _formulaFromTitle(el){
+  const t = (el && el.getAttribute('title')) || '';
+  const m = t.replace(/<[^>]+>/g, '').match(/Rolling\s+(.+?)\s*=/i);
+  return m ? _cleanFormula(m[1]) : '';
+}
+function _labelFromDesc(prev){
+  if(!prev || prev.type !== 'narration') return '';
+  const lines = String(prev.text || '').split('<br>');
+  const last = stripTags(lines[lines.length - 1]).trim();
+  const m = last.match(/^(.+?)\s*판정/);
+  return m ? m[1].trim() : '';
+}
+
+/* 롤 템플릿(또는 표) → 주사위 블록 */
+function r20Dice(tpl, speaker, prevBlock){
+  const label = _labelFromDesc(prevBlock);
+  const base = { id:genId(), type:'dice', speaker: speaker || '' };
+
+  /* (1) 크툴루(CoC 7th) 템플릿: h1 판정명 · h3 등급 · 성공/실패 · 굴림 vs 기준치 */
+  const h1 = findOne(tpl, el => tagIs(el, 'h1'));
+  const rolls = findAll(tpl, el => hasCls(el, 'sheet-coc-roll__roll'), true);
+  if(h1 && rolls.length){
+    const en = textOf(h1);
+    const grade = textOf(findOne(tpl, el => tagIs(el, 'h3'))) || '보통';
+    const resEl = findOne(tpl, el => /sheet-coc-roll__(success|failure|fail|fumble|crit|extreme)/i.test(_cls(el)));
+    return Object.assign(base, {
+      kind:'check',
+      item: label || COC_SKILL_KO[en.toLowerCase()] || en || '판정',
+      grade, standard: firstNum(textOf(rolls[1])), roll: textOf(rolls[0]),
+      result: wordsOf(resEl)
+    });
   }
-  if(!result) result = lastNum;
-  if(!result) return null;
-  return { block: { id: genId(), type:'dice', kind:'simple', speaker:null,
-                    item:'굴림', formula, roll: result, result:'' }, end };
-}
 
-/* PASS 0 — 주사위 구간 탐지 */
-function findDiceSpans(lines){
-  const spans = [];
-  const N = lines.length;
-  const used = new Array(N).fill(false);
-  for(let i = 0; i < N; i++){
-    if(used[i]) continue;
-    const t = stripTags(lines[i] || '').trim();
-    if(t === '') continue;
-
-    /* 한 줄형 공격(무기/기준치 3개/굴림/판정결과/피해) — 기준치 뒤의 '고장' 항목은 표시하지 않고 건너뜀 */
-    const atk = t.match(/^(.*?)기준치\s*[:：]\s*([0-9/]+)\s*고장\s*[:：]\s*.*?굴림\s*[:：]\s*(\d+)\s*판정결과\s*[:：]\s*(.+?)\s*피해\s*[:：]\s*(.+)$/);
-    if(atk){
-      spans.push({ start:i, end:i, block:{ id:genId(), type:'dice', kind:'attack', speaker:null,
-        item:(atk[1].trim() || '무기'), standard:atk[2].trim(),
-        roll:atk[3].trim(), result:atk[4].trim(), damage:atk[5].trim() } });
-      used[i] = true; continue;
+  /* (2) 표 템플릿: caption=판정명 / 기준치 · 굴림 · 판정결과 · (피해 · 고장) */
+  const table = tagIs(tpl, 'table') ? tpl : findOne(tpl, el => tagIs(el, 'table'));
+  if(table){
+    const name = textOf(findOne(table, el => tagIs(el, 'caption'))) || textOf(findOne(table, el => tagIs(el, 'th')));
+    const f = {};
+    findAll(table, el => tagIs(el, 'tr')).forEach(tr => {
+      const cells = findAll(tr, el => tagIs(el, 'td') || tagIs(el, 'th'), true);
+      if(cells.length < 2) return;
+      const key = (cells[0].getAttribute('data-i18n') || '') + ' ' + textOf(cells[0]);
+      const val = textOf(cells[1]);
+      if(/value|기준치/i.test(key)) f.standard = val;
+      else if(/rolled|굴림/i.test(key)) f.roll = val;
+      else if(/result|판정결과/i.test(key)) f.result = val;
+      else if(/피해|damage/i.test(key)) f.damage = val;
+    });
+    if(f.damage != null){
+      return Object.assign(base, { kind:'attack', item: name || label || '무기',
+        standard: f.standard || '', roll: f.roll || '', result: f.result || '', damage: f.damage });
     }
-
-    /* 한 줄형 기준치 */
-    const one = t.match(/^(.*?)기준치\s*[:：]\s*([0-9/]+)\s*굴림\s*[:：]\s*(\d+)\s*판정결과\s*[:：]\s*(.+)$/);
-    if(one){
-      spans.push({ start:i, end:i, block:{ id:genId(), type:'dice', kind:'check', speaker:null,
-        item:(one[1].trim() || '판정'), grade:'보통', standard:firstNum(one[2]),
-        roll:one[3].trim(), result:one[4].trim() } });
-      used[i] = true; continue;
-    }
-
-    /* 단순 굴림 */
-    if(isRollFormula(t)){
-      const rf = detectRollFormula(lines, i);
-      if(rf){ spans.push({ start:i, end:rf.end, block:rf.block }); for(let k=i;k<=rf.end;k++) used[k]=true; continue; }
-    }
-
-    /* 줄바꿈형 vs → 기준치로 통일 (사이에 낀 빈 줄은 건너뛴다) */
-    const vsm = t.match(/(\d+)\s*vs\.?\s*(\d+)/i);
-    if(vsm){
-      const roll = vsm[1], standard = vsm[2];
-      const prevNonBlank = from => { let p = from; while(p >= 0 && stripTags(lines[p] || '').trim() === '') p--; return p; };
-      let result = '', headIdx = -1;
-      const rIdx = prevNonBlank(i - 1);
-      const p1 = rIdx >= 0 ? stripTags(lines[rIdx]).trim() : '';
-      if(p1 && !/[:：]/.test(p1) && !/\d+\s*vs/i.test(p1) && /(대성공|대실패|성공|실패|펌블|크리)/.test(p1)){
-        result = p1; headIdx = prevNonBlank(rIdx - 1);
-      } else {
-        headIdx = rIdx;   // 결과 줄이 없으면 바로 위(공백 제외)가 헤드
-      }
-      const head = headIdx >= 0 ? stripTags(lines[headIdx]).trim() : '';
-      let item = '판정', grade = '', stripName = false, startIdx = i;
-      if(head && !/[:：]/.test(head)){
-        let rest = head;
-        const gm = rest.match(GRADE_RE);
-        if(gm){ grade = gm[1].replace(/\s+/g,' ').trim(); rest = rest.slice(0, gm.index).trim(); }
-        item = rest || '판정';   // 이름+판정명 (이름은 fold 단계에서 제거)
-        stripName = true;
-        startIdx = headIdx;
-      }
-      if(!grade) grade = '보통';   // 등급 표기가 없으면 기본값
-      let end = i;
-      const nextNB = (()=>{ let q=i+1; while(q<N && stripTags(lines[q]||'').trim()==='') q++; return q; })();
-      if(nextNB < N && isBonus(stripTags(lines[nextNB]))) end = nextNB;
-      const start = Math.min(startIdx, i);
-      spans.push({ start, end, block:{ id:genId(), type:'dice', kind:'check', speaker:null,
-        item, grade, standard, roll, result, _stripName:stripName } });
-      for(let k=start;k<=end;k++) used[k]=true;
-      continue;
+    if(f.roll != null){
+      return Object.assign(base, { kind:'check', item: label || name || '판정', grade:'보통',
+        standard: firstNum(f.standard), roll: f.roll, result: f.result || '' });
     }
   }
-  spans.sort((a,b) => a.start - b.start);
-  return spans;
+
+  /* (3) 그 밖의 템플릿: 첫 인라인 굴림을 단순 굴림으로 */
+  const ir = findOne(tpl, el => hasCls(el, 'inlinerollresult'));
+  const name = textOf(findOne(tpl, el => tagIs(el, 'caption') || tagIs(el, 'h1') || tagIs(el, 'th')));
+  return Object.assign(base, { kind:'simple', item: label || name || '굴림',
+    formula: _formulaFromTitle(ir), roll: textOf(ir), result:'' });
 }
 
-/* 메인 파서 */
-function parseRoll20(rawHtml, gmNames){
-  const lines = htmlToLines(rawHtml);
-  const gmSet = new Set((gmNames || []).map(g => g.trim()).filter(Boolean));
-  const spans = findDiceSpans(lines);
-  const spanByStart = new Map(); spans.forEach(s => spanByStart.set(s.start, s));
-  const inSpan = new Array(lines.length).fill(false);
-  spans.forEach(s => { for(let k=s.start;k<=s.end;k++) inSpan[k] = true; });
+/* 타임스탬프 "April 30, 2025 5:26PM" → "2025.04.30" */
+const _MON = { january:1, february:2, march:3, april:4, may:5, june:6, july:7, august:8, september:9, october:10, november:11, december:12 };
+function _r20Date(s){
+  const m = String(s || '').match(/([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})/);
+  if(!m || !_MON[m[1].toLowerCase()]) return '';
+  return m[3] + '.' + String(_MON[m[1].toLowerCase()]).padStart(2, '0') + '.' + m[2].padStart(2, '0');
+}
+
+/* ======================= Roll20 가져오기 ======================= */
+function importRoll20(html, opts){
+  const includeWhispers = !!opts.includeWhispers;
+  const doc = new DOMParser().parseFromString(String(html), 'text/html');
+
+  /* SingleFile 이 CSS 변수로 옮겨둔 아바타 이미지 */
+  const sfImg = {};
+  String(html).replace(/--sf-img-(\d+)\s*:\s*url\(\s*(["']?)(data:[^"')\s]+)\2\s*\)/g, (m, n, q, url) => { sfImg[n] = url; return m; });
+
+  /* 제목: "Chat Log for [달리아&데시] 람피온의 저택 4부: ..." */
+  const titleEl = doc.querySelector('title');
+  let title = titleEl ? textOf(titleEl) : '';
+  title = title.replace(/^chat\s*log\s*for\s*/i, '').replace(/^\[[^\]]*\]\s*/, '').trim();
+
+  const msgs = findAll(doc.body || doc.documentElement, el => hasCls(el, 'message'), true);
 
   const blocks = [];
-  let cur = null;             // {type:'dialogue', speaker, segs:[]} | {type:'narration', lines:[]}
-  let lastSpeaker = null;
+  const speakers = new Map();            // name → {name,count,avatar,you,other}
+  const dates = new Map();
+  let cur = null, curSpeaker = '', hiddenCount = 0, whisperCount = 0;
+  const narrYou = { you:0, other:0 };
 
   function flush(){
     if(!cur) return;
     if(cur.type === 'dialogue'){
-      const segs = cur.segs.filter(s => stripTags(s.text).trim() !== '');
-      if(segs.length) blocks.push({ id:genId(), type:'dialogue', speaker:cur.speaker, segments:segs });
+      if(cur.segments.length) blocks.push({ id:genId(), type:'dialogue', speaker:cur.speaker, segments:cur.segments });
     } else {
-      const text = cur.lines.filter(l => stripTags(l).trim() !== '').join('<br>');
-      if(text) blocks.push({ id:genId(), type:'narration', emphasis:false, text });
+      const text = cur.lines.filter(l => stripTags(l).trim()).join('<br>');
+      if(text) blocks.push({ id:genId(), type:'narration', emphasis:!!cur.emphasis, text });
     }
     cur = null;
   }
-  function startSpeaker(name, content){
-    flush();
-    const isNarr = (name === '' || /\(\s*gm\s*\)/i.test(name) || gmSet.has(name));
-    if(isNarr){
-      cur = { type:'narration', lines:[] };
-      if(content) cur.lines.push(applyRich(content));
+  function spk(name){
+    if(!speakers.has(name)) speakers.set(name, { name, count:0, avatar:'', you:0, other:0 });
+    return speakers.get(name);
+  }
+  function addText(speaker, rich){
+    if(!stripTags(rich).trim()) return;
+    if(isNarrationName(speaker)){
+      if(!cur || cur.type !== 'narration' || cur.emphasis){ flush(); cur = { type:'narration', emphasis:false, lines:[] }; }
+      cur.lines.push(rich);
     } else {
-      lastSpeaker = name;
-      cur = { type:'dialogue', speaker:name, segs:[] };
-      if(content) splitDialogueSegments(content).forEach(s => cur.segs.push(s));
+      if(!cur || cur.type !== 'dialogue' || cur.speaker !== speaker){ flush(); cur = { type:'dialogue', speaker, segments:[] }; }
+      splitQuotedRich(rich).forEach(s => cur.segments.push(s));
+      spk(speaker).count++;
     }
   }
+  function lastBlock(){ flush(); return blocks[blocks.length - 1] || null; }
 
-  for(let i = 0; i < lines.length; i++){
-    if(inSpan[i]){
-      if(spanByStart.has(i)){
-        const sp = spanByStart.get(i);
-        const b = sp.block;
-        b.speaker = lastSpeaker;
-        if(b._stripName && lastSpeaker && b.item && b.item.indexOf(lastSpeaker) === 0){
-          b.item = b.item.slice(lastSpeaker.length).trim() || '판정';
+  msgs.forEach(msg => {
+    const isYou = hasCls(msg, 'you');
+    const ts = textOf(findOne(msg, el => hasCls(el, 'tstamp')));
+    if(ts){ const d = _r20Date(ts); if(d) dates.set(d, (dates.get(d) || 0) + 1); }
+
+    const byEl = findOne(msg, el => hasCls(el, 'by'));
+    const hasBy = !!byEl;
+    if(hasBy){
+      curSpeaker = textOf(byEl).replace(/[:：]\s*$/, '').trim();
+    }
+
+    /* 숨김 메시지 · 귓속말 */
+    if(hasCls(msg, 'hidden-message') || /This message has been hidden/i.test(textOf(msg))){ hiddenCount++; flush(); return; }
+    if(hasCls(msg, 'whisper') || hasCls(msg, 'private')){
+      whisperCount++;
+      if(!includeWhispers){ return; }
+      curSpeaker = curSpeaker.replace(/^\((?:to|from)[^)]*\)\s*/i, '');
+    }
+
+    /* 화자 통계 · 아바타 */
+    if(hasBy && !isNarrationName(curSpeaker)){
+      const s = spk(curSpeaker);
+      if(isYou) s.you++; else s.other++;
+      if(!s.avatar){
+        const img = findOne(findOne(msg, el => hasCls(el, 'avatar')) || msg, el => tagIs(el, 'img'));
+        if(img){
+          const st = img.getAttribute('style') || '';
+          const v = st.match(/var\(--sf-img-(\d+)\)/);
+          const src = img.getAttribute('src') || '';
+          if(v && sfImg[v[1]]) s.avatar = sfImg[v[1]];
+          else if(/^(https?:|data:image\/(png|jpe?g|gif|webp))/i.test(src)) s.avatar = src;
         }
-        delete b._stripName;
-        flush();
-        blocks.push(b);
-        i = sp.end;
       }
-      continue;
-    }
-    const raw = lines[i];
-    const trimmed = raw.trim();
-    if(trimmed === '') continue;          // 빈 줄은 같은 블록 유지
+    } else if(hasBy){ if(isYou) narrYou.you++; else narrYou.other++; }
 
-    const plain = stripTags(raw);
-    const sm = plain.match(/^([^:："\u201C\u201D]{0,30})[:：]([\s\S]*)$/);
-    if(sm){
-      const name = sm[1].trim();
-      const idx = raw.search(/[:：]/);
-      const content = raw.slice(idx + 1).trim();
-      startSpeaker(name, content);
-      continue;
+    if(hasBy) flush();                  // 화자 표기가 있으면 새 블록
+
+    /* 장면 설명(desc) → 강조 나레이션 (연속되면 한 블록) */
+    if(hasCls(msg, 'desc')){
+      const rich = tidyRich(r20Rich(msg));
+      if(!stripTags(rich).trim()) return;
+      if(!cur || cur.type !== 'narration' || !cur.emphasis){ flush(); cur = { type:'narration', emphasis:true, lines:[] }; }
+      cur.lines.push(rich);
+      return;
     }
-    if(!cur){
-      // 주사위 직후 화자 표기 없이 이어지는 따옴표 대사는 방금 굴린 화자의 대사로 본다.
-      if(lastSpeaker && /["\u201C\u201D]/.test(trimmed)) cur = { type:'dialogue', speaker:lastSpeaker, segs:[] };
-      else cur = { type:'narration', lines:[] };
+    /* 이모트 → 일반 나레이션 */
+    if(hasCls(msg, 'emote')){
+      flush();
+      const rich = tidyRich(r20Rich(msg));
+      if(stripTags(rich).trim()) blocks.push({ id:genId(), type:'narration', emphasis:false, text:rich });
+      return;
     }
-    if(cur.type === 'dialogue') splitDialogueSegments(trimmed).forEach(s => cur.segs.push(s));
-    else cur.lines.push(applyRich(trimmed));
-  }
+    /* /roll 결과 */
+    if(hasCls(msg, 'rollresult')){
+      const prev = lastBlock();
+      const formula = _cleanFormula(textOf(findOne(msg, el => hasCls(el, 'formula'))));
+      const roll = textOf(findOne(msg, el => hasCls(el, 'rolled')));
+      blocks.push({ id:genId(), type:'dice', kind:'simple', speaker:curSpeaker,
+        item: _labelFromDesc(prev) || (prev && prev.type === 'dice' ? prev.item : '') || '굴림', formula, roll, result:'' });
+      return;
+    }
+
+    /* 일반 메시지 */
+    const tpl = findOne(msg, el => /sheet-rolltemplate/.test(_cls(el)) || tagIs(el, 'table'));
+    if(tpl){
+      const prev = lastBlock();
+      blocks.push(r20Dice(tpl, curSpeaker, prev));
+      if(!isNarrationName(curSpeaker)) spk(curSpeaker).count++;
+      return;
+    }
+    /* 인라인 굴림만 있는 메시지 → 단순 굴림 */
+    const body = _kids(msg).filter(n => !(n.nodeType === 1 && r20Skip(n)));
+    const inl = findAll(msg, el => hasCls(el, 'inlinerollresult'), true);
+    const bodyText = body.map(n => n.nodeType === 3 ? n.nodeValue : textOf(n)).join('').trim();
+    if(inl.length && bodyText === inl.map(textOf).join('').trim()){
+      const prev = lastBlock();
+      blocks.push({ id:genId(), type:'dice', kind:'simple', speaker:curSpeaker,
+        item: (prev && prev.type === 'dice') ? prev.item : (_labelFromDesc(prev) || '굴림'),
+        formula: _formulaFromTitle(inl[0]), roll: inl.map(textOf).join(', '), result:'' });
+      return;
+    }
+    addText(curSpeaker, tidyRich(r20Rich(msg)));
+  });
   flush();
-  return blocks;
+
+  /* 날짜: 메시지가 가장 많은 날 */
+  let date = '', best = 0;
+  dates.forEach((n, d) => { if(n > best){ best = n; date = d; } });
+
+  /* 역할 추정: 나레이션을 쓴 쪽(보통 GM)과 같은 쪽이면 NPC, 다른 쪽이면 PC */
+  const gmIsYou = narrYou.you >= narrYou.other;
+  const list = Array.from(speakers.values()).map(s => {
+    const fromGM = gmIsYou ? s.you >= s.other : s.other > s.you;
+    return { name:s.name, count:s.count, avatar:s.avatar, guessRole: fromGM ? 'NPC' : 'PC' };
+  }).sort((a, b) => b.count - a.count);
+
+  return { title, date, blocks, speakers:list,
+           stats:{ messages:msgs.length, hidden:hiddenCount, whispers:whisperCount } };
 }
 
-/* 주사위 판정 분류 */
+/* ---- 주사위 판정 분류 (뷰어에서 사용) ---- */
 function diceVerdict(block){
   const r = block.result;
   if(r){
@@ -291,8 +375,7 @@ function diceVerdict(block){
   }
   const std = firstNum(block.standard != null && block.standard !== '' ? block.standard : block.target);
   if((block.kind === 'check' || block.kind === 'vs') && isNum(block.roll) && std !== ''){
-    const pass = Number(block.roll) <= Number(std);
-    return pass ? { cls:'ok', text:'성공' } : { cls:'fail', text:'실패' };
+    return Number(block.roll) <= Number(std) ? { cls:'ok', text:'성공' } : { cls:'fail', text:'실패' };
   }
   return { cls:'', text:'' };
 }

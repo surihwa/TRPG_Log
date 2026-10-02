@@ -109,27 +109,24 @@ function sanitizeHTML(html, allowed){
   });
   return tmp.innerHTML;
 }
-const HANDOUT_TAGS = ['p','br','b','strong','i','em','h4','ul','ol','li'];
-const INLINE_TAGS  = ['b','strong','i','em','br'];
-
-/* contenteditable 내부 → b/i 만 남긴 깔끔한 HTML */
-function cleanInlineHTML(el){
-  const norm = sanitizeHTML(el.innerHTML, INLINE_TAGS);
-  // strong/em → b/i
-  return norm.replace(/<\/?strong>/gi, m => m[1] === '/' ? '</b>' : '<b>')
-             .replace(/<\/?em>/gi,     m => m[1] === '/' ? '</i>' : '<i>')
-             .replace(/<br\s*\/?>/gi, ' ')
-             .trim();
-}
-
 /* 캐릭터 역할 */
 function charRole(session, name){
   const c = findChar(session, name);
-  return c ? (c.role || 'NPC') : 'NPC';   // 설정에 없는 캐릭터는 NPC 취급
+  return c ? (c.role || 'NPC') : 'NPC';   // 연결된 캐릭터가 없는 이름은 NPC 취급
 }
+/* 로그 속 화자 이름 → 캐릭터. 대표 이름(name) 또는 로그 이름(aliases) 중 하나와 일치하면 연결 */
 function findChar(session, name){
   const key = String(name || '').trim();
-  return ((session && session.characters) || []).find(c => c.name.trim() === key) || null;
+  if(!key) return null;
+  const list = (session && session.characters) || [];
+  return list.find(c => String(c.name || '').trim() === key)
+      || list.find(c => (c.aliases || []).some(a => String(a).trim() === key))
+      || null;
+}
+/* 뷰어에 표시할 이름: '대표 이름으로 통일'이 켜진 캐릭터면 대표 이름, 아니면 로그 이름 그대로 */
+function speakerLabel(session, name){
+  const c = findChar(session, name);
+  return (c && c.unify && c.name) ? c.name : (name || '');
 }
 /* PC = 오른쪽, KPC/NPC = 왼쪽 */
 function bubbleSide(role){ return role === 'PC' ? 'right' : 'left'; }

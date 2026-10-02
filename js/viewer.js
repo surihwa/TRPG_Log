@@ -4,40 +4,29 @@
 let viewerSession = null;
 let viewerScene   = null;
 
-/* ---- 다이스 박스 (판정명 헤더 강조 + 화자 색상 반영) ---- */
+/* ---- 다이스 박스 (판정명 헤더 강조 + 굴린 캐릭터 색상 반영) ---- */
 function diceBoxHTML(ses, b){
-  // 레거시 vs → 기준치(check)로 정규화
-  if(b.kind === 'vs'){ b = Object.assign({}, b, { kind:'check', standard: b.standard || b.target }); }
+  if(b.kind === 'vs') b = Object.assign({}, b, { kind:'check', standard: b.standard || b.target });   // 예전 형식
   const v = diceVerdict(b);
   const name = applyRich(b.item || '판정');
   const ch = findChar(ses, b.speaker);
   const color = (ch && ch.color) || 'var(--seal)';
+  const cell = (k, val, cls) => `<div class="cell ${cls || ''}"><div class="k">${k}</div><div class="val">${applyRich(val == null || val === '' ? '-' : val)}</div></div>`;
   let cells = '';
   if(b.kind === 'simple'){
-    cells =
-      `<div class="cell"><div class="k">${applyRich(b.formula || 'roll')}</div><div class="val">—</div></div>` +
-      `<div class="cell roll"><div class="k">결과</div><div class="val">${applyRich(b.roll)}</div></div>`;
+    cells = cell(applyRich(b.formula || 'roll'), '—') + cell('결과', b.roll, 'roll');
   } else if(b.kind === 'attack'){
-    const parts = String(b.standard || '').split('/').map(s => s.trim()).filter(Boolean);
-    const std3 = `<div class="cell std3"><div class="k">기준치</div>
-        <div class="val std3-row">${parts.map(p=>`<span>${applyRich(p)}</span>`).join('')}</div></div>`;
-    cells = std3 +
-      `<div class="cell roll"><div class="k">굴림</div><div class="val">${applyRich(b.roll || '-')}</div></div>` +
-      `<div class="cell dmg"><div class="k">피해</div><div class="val">${applyRich(b.damage || '-')}</div></div>`;
-  } else { // check (기준치)
-    const gradeCell = (b.grade && b.grade !== '-')
-      ? `<div class="cell"><div class="k">등급</div><div class="val">${applyRich(b.grade)}</div></div>` : '';
-    cells = gradeCell +
-      `<div class="cell"><div class="k">기준치</div><div class="val">${applyRich(b.standard || '-')}</div></div>` +
-      `<div class="cell roll"><div class="k">굴림</div><div class="val">${applyRich(b.roll || '-')}</div></div>`;
+    const parts = String(b.standard || '').split('/').map(x => x.trim()).filter(Boolean);
+    cells = `<div class="cell std3"><div class="k">기준치</div><div class="val std3-row">${
+              parts.map(p => `<span>${applyRich(p)}</span>`).join('') || '-'}</div></div>` +
+            cell('굴림', b.roll, 'roll') + cell('피해', b.damage, 'dmg');
+  } else {
+    cells = (b.grade && b.grade !== '-' ? cell('등급', b.grade) : '') + cell('기준치', b.standard) + cell('굴림', b.roll, 'roll');
   }
   const result = v.text ? `<div class="result ${v.cls}">${applyRich(v.text)}</div>` : '';
-  return (
-    `<div class="v-dice" style="--dice-color:${color}">` +
-      `<div class="dh"><span class="d20">⬢</span><span class="check-name">${name}</span><span class="roll-of">판정</span></div>` +
-      `<div class="db">${cells}</div>${result}` +
-    `</div>`
-  );
+  return `<div class="v-dice" style="--dice-color:${color}">` +
+           `<div class="dh"><span class="d20">⬢</span><span class="check-name">${name}</span><span class="roll-of">판정</span></div>` +
+           `<div class="db">${cells}</div>${result}</div>`;
 }
 
 /* ---- 블록 1개 → HTML ---- */
@@ -50,50 +39,41 @@ function viewerBlockHTML(ses, b){
       </div>`;
   }
   if(b.type === 'narration'){
-    const cls = b.emphasis ? 'v-narr-em' : 'v-narr-normal';
-    return `<div class="${cls}">${applyRich(b.text)}</div>`;
+    return `<div class="${b.emphasis ? 'v-narr-em' : 'v-narr-normal'}">${applyRich(b.text)}</div>`;
   }
   if(b.type === 'handout'){
-    const style = (b.style === 'paper') ? 'paper' : 'digital';
-    const icon  = style === 'paper' ? '✉' : '📄';
-    const img   = b.image ? `<img class="ho-img" src="${resolveImg(b.image)}" alt="">` : '';
-    const text  = b.body ? `<div class="ho-text">${applyRich(b.body)}</div>` : '';
-    return (
-      `<div class="v-handout ${style}">` +
-        `<div class="ho-card">` +
-          `<div class="ho-head" onclick="toggleHandout(this)">` +
-            `<span class="ho-icon">${icon}</span>` +
-            `<span class="ho-title">${applyRich(b.title || '핸드아웃')}</span>` +
-            `<span class="ho-toggle"><span class="when-closed">펼치기 ▾</span><span class="when-open">접기 ▴</span></span>` +
-          `</div>` +
-          `<div class="ho-body"><div class="ho-inner">${img}${text}</div></div>` +
-        `</div>` +
-      `</div>`
-    );
+    const style = b.style === 'digital' ? 'digital' : 'paper';
+    const img = b.image ? `<img class="ho-img" src="${resolveImg(b.image)}" alt="">` : '';
+    const text = b.body ? `<div class="ho-text">${applyRich(b.body)}</div>` : '';
+    return `<div class="v-handout ${style}"><div class="ho-card">` +
+             `<div class="ho-head" onclick="toggleHandout(this)">` +
+               `<span class="ho-icon">${style === 'paper' ? '✉' : '📄'}</span>` +
+               `<span class="ho-title">${applyRich(b.title || '핸드아웃')}</span>` +
+               `<span class="ho-toggle"><span class="when-closed">펼치기 ▾</span><span class="when-open">접기 ▴</span></span>` +
+             `</div>` +
+             `<div class="ho-body"><div class="ho-inner">${img}${text}</div></div>` +
+           `</div></div>`;
   }
   if(b.type === 'dice'){
-    const who = b.speaker ? `<div class="who">${applyRich(b.speaker)}</div>` : '';
+    const who = b.speaker ? `<div class="who">${applyRich(speakerLabel(ses, b.speaker))}</div>` : '';
     return `<div class="v-dice-solo">${who}${diceBoxHTML(ses, b)}</div>`;
   }
   if(b.type === 'dialogue'){
     const ch    = findChar(ses, b.speaker);
     const color = (ch && ch.color) || 'var(--seal)';
-    const side  = bubbleSide(charRole(ses, b.speaker));   // PC=right, KPC/NPC=left
+    const side  = bubbleSide(charRole(ses, b.speaker));   // PC=오른쪽, KPC/NPC=왼쪽
     const segs  = (b.segments || []).map(s =>
       s.kind === 'line'
         ? `<div class="speech">${applyRich(s.text)}</div>`
         : `<span class="stage">${applyRich(s.text)}</span>`).join('');
-    const bubbleStyle = side === 'right'
-      ? `border-right-color:${color}` : `border-left-color:${color}`;
-    return (
-      `<div class="v-line ${side}">` +
-        `<div class="avatar av" style="${avatarStyle(ch)};border:2px solid ${color}"></div>` +
-        `<div class="v-bubble-wrap">` +
-          `<div class="v-name" style="color:${color}">${applyRich(b.speaker || '')}</div>` +
-          `<div class="v-bubble" style="${bubbleStyle}">${segs}__DICE_SLOT__</div>` +
-        `</div>` +
-      `</div>`
-    );
+    const bubbleStyle = side === 'right' ? `border-right-color:${color}` : `border-left-color:${color}`;
+    return `<div class="v-line ${side}">` +
+             `<div class="avatar av" style="${avatarStyle(ch)};border:2px solid ${color}"></div>` +
+             `<div class="v-bubble-wrap">` +
+               `<div class="v-name" style="color:${color}">${applyRich(speakerLabel(ses, b.speaker))}</div>` +
+               `<div class="v-bubble" style="${bubbleStyle}">${segs}__DICE_SLOT__</div>` +
+             `</div>` +
+           `</div>`;
   }
   return '';
 }
@@ -131,7 +111,7 @@ function openViewer(sessionId, sceneId){
       `<button class="v-iconbtn" title="장면 목차" onclick="openSessionTOC('${ses.id}')">☰</button>` +
       `<div class="v-title">${applyRich(sc.title || '장면')}<small>${applyRich(ses.title)} · ${applyRich(ses.date||'')}</small></div>` +
       `<span class="spacer"></span>` +
-      `<button class="v-iconbtn" title="편집" onclick="editExistingSession('${ses.id}','${sc.id}')">✎</button>` +
+      `<button class="v-iconbtn" title="${state.previewReturn ? '편집으로 돌아가기' : '편집'}" onclick="editExistingSession('${ses.id}','${sc.id}')">✎</button>` +
       `<button class="v-iconbtn" title="라이트/다크" onclick="toggleViewerTheme()">◑</button>` +
     `</div></div>` +
     `<div class="v-cast"><div class="v-cast-inner">${cast || '<span style="color:var(--v-soft);font-size:13px">등장인물 없음</span>'}</div></div>` +
@@ -157,14 +137,14 @@ function closeViewer(){
   stopBgm();
   viewerSession = null; viewerScene = null;
 }
+function toggleHandout(headEl){
+  const ho = headEl.closest('.v-handout');
+  if(ho) ho.classList.toggle('open');
+}
 function toggleViewerTheme(){
   const v = $('#viewer');
   v.classList.toggle('dark'); v.classList.toggle('light');
   if(viewerSession) viewerSession.theme = v.classList.contains('dark') ? 'dark' : 'light';
-}
-function toggleHandout(headEl){
-  const ho = headEl.closest('.v-handout');
-  if(ho) ho.classList.toggle('open');
 }
 
 /* =========================================================================
