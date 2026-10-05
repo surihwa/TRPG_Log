@@ -1,8 +1,8 @@
 /* =========================================================================
    parser.js — 원본 로그 HTML 가져오기
    --------------------------------------------------------------------------
-   · Roll20  : 채팅 아카이브 페이지를 저장한 HTML (SingleFile 등)
-   · 코코포리아: (준비 중)
+   · Roll20    : 채팅 아카이브 페이지를 저장한 HTML (SingleFile 등)
+   · 코코포리아 : 로그 출력(ccfolia - logs) HTML
    HTML 파일을 통째로 받아 DOM 구조로 메시지를 읽고, 사이트용 블록 배열로 바꾼다.
    결과: { format, title, date, blocks[], speakers[], stats }
    ========================================================================= */
@@ -10,20 +10,27 @@
 /* ---- 형식 판별 ---- */
 function detectLogFormat(html){
   const s = String(html || '');
+  if(/<title>\s*ccfolia/i.test(s) || /<p[^>]*>\s*<span>\s*\[[^\]<]*\]\s*<\/span>/i.test(s)) return 'ccfolia';
   if(/roll20\.net/i.test(s) || /class=["']?message[\s"'][^>]*data-messageid/i.test(s)) return 'roll20';
-  if(/ccfolia/i.test(s)) return 'ccfolia';
   return 'unknown';
 }
 
 function importLogHTML(html, opts){
   const fmt = detectLogFormat(html);
   if(fmt === 'roll20')  return Object.assign({ format:'roll20' }, importRoll20(html, opts || {}));
-  if(fmt === 'ccfolia') { const e = new Error('ccfolia'); e.code = 'ccfolia'; throw e; }
+  if(fmt === 'ccfolia') return Object.assign({ format:'ccfolia' }, importCcfolia(html, opts || {}));
   const e = new Error('unknown'); e.code = 'unknown'; throw e;
 }
 
 /* ---- 공용 도우미 ---- */
-function isNarrationName(n){ const s = String(n || '').trim(); return !s || /\(\s*gm\s*\)/i.test(s); }
+/* 나레이션으로 볼 화자: 이름이 비었거나 '(GM)' 포함, 또는 사용자가 지정한 나레이션 이름 목록에 있음 */
+function isNarrationName(n, narrators){
+  const s = String(n || '').trim();
+  if(!s || /\(\s*gm\s*\)/i.test(s)) return true;
+  return (narrators || []).some(x => String(x).trim() === s);
+}
+/* '관찰력 판정', '[이성 판정 (1/1d3)]' 같은 판정 안내 한 줄 */
+const JUDGE_LABEL_RE = /^\[?\s*[^\[\]<>]{1,24}?\s*판정(?:\s*[(（][^)）]*[)）])?\s*\]?$/;
 function stripTags(s){ return String(s == null ? '' : s).replace(/<[^>]+>/g, ''); }
 function firstNum(s){ const m = String(s == null ? '' : s).match(/-?\d+/); return m ? m[0] : ''; }
 function isNum(s){ return s != null && /^-?\d+(?:\.\d+)?$/.test(String(s).trim()); }
@@ -99,11 +106,15 @@ function tidyRich(s){
   return t.trim();
 }
 
-/* 대사 본문을 따옴표 기준으로 대사(line)/지문(narr) 분리 — b/i 태그 균형 유지 */
+/* 대사 본문을 따옴표 기준으로 대사(line)/지문(narr) 분리 — b/i 태그 균형 유지
+   " “ ” : 따옴표 안 = 대사 (따옴표 기호도 그대로 유지)
+   「」『』〔〕 : 괄호 안 = 대사 (괄호 기호 유지. 예: AI·통신 음성) */
+const QUOTE_CH = new Set(['"', '\u201C', '\u201D']);
+const _BRACKET = { '\u300C':'\u300D', '\u300E':'\u300F', '\u3014':'\u3015' };
 function splitQuotedRich(html){
   const segs = [];
   const open = [];                       // 현재 열린 b/i
-  let buf = '', inQ = false;
+  let buf = '', inQ = false, closer = '';
   const closeAll = () => open.slice().reverse().map(t => '</' + t + '>').join('');
   const openAll  = () => open.map(t => '<' + t + '>').join('');
   function cut(){
@@ -119,22 +130,66 @@ function splitQuotedRich(html){
       buf += tok; return tok;
     }
     if(tok === '<br>' || tok === '<'){ buf += tok; return tok; }
-    const pieces = tok.split(/["\u201C\u201D]/);
-    pieces.forEach((p, i) => {
-      if(i > 0){ cut(); inQ = !inQ; }
-      buf += p;
-    });
+    for(const ch of tok){
+      if(!inQ){
+        if(QUOTE_CH.has(ch)){ cut(); inQ = true; closer = 'quote'; buf += ch; continue; }
+        if(_BRACKET[ch]){ cut(); inQ = true; closer = _BRACKET[ch]; buf += ch; continue; }
+      } else if(closer === 'quote' && QUOTE_CH.has(ch)){          // " “ ” 는 어느 것이든 닫힘으로 인정
+        buf += ch; cut(); inQ = false; closer = ''; continue;
+      } else if(ch === closer){
+        buf += ch; cut(); inQ = false; closer = ''; continue;
+      }
+      buf += ch;
+    }
     return tok;
   });
   cut();
-  // 같은 종류가 연달아 붙으면 합치기
-  const merged = [];
-  segs.forEach(s => {
+  const merged = [];                     // 연달아 붙은 지문은 합치기
+  segs.forEach(sg => {
     const last = merged[merged.length - 1];
-    if(last && last.kind === s.kind && s.kind === 'narr') last.text += ' ' + s.text;
-    else merged.push(s);
+    if(last && last.kind === sg.kind && sg.kind === 'narr') last.text += ' ' + sg.text;
+    else merged.push(sg);
   });
   return merged;
+}
+
+/* ---- 블록 생성기 (Roll20 · 코코포리아 공용) ----
+   같은 화자가 이어서 말하면 한 블록으로 묶고, 나레이션 화자의 판정 안내 줄은 강조 나레이션으로 뺀다. */
+function makeBuilder(narrators){
+  const blocks = []; let cur = null;
+  const isNarr = n => isNarrationName(n, narrators);
+  function flush(){
+    if(!cur) return;
+    if(cur.type === 'dialogue'){
+      if(cur.segments.length) blocks.push({ id:genId(), type:'dialogue', speaker:cur.speaker,
+        segments:cur.segments, _raw:cur.raw.join('<br>') });      // _raw: 나레이션 전환 시 원문 복원용(저장 안 됨)
+    } else {
+      const text = cur.lines.filter(l => stripTags(l).trim()).join('<br>');
+      if(text) blocks.push({ id:genId(), type:'narration', emphasis:!!cur.emphasis, text });
+    }
+    cur = null;
+  }
+  function em(rich){
+    if(!stripTags(rich).trim()) return;
+    if(!cur || cur.type !== 'narration' || !cur.emphasis){ flush(); cur = { type:'narration', emphasis:true, lines:[] }; }
+    cur.lines.push(rich);
+  }
+  /* 반환값: 대사로 들어갔으면 true */
+  function text(speaker, rich){
+    if(!stripTags(rich).trim()) return false;
+    if(isNarr(speaker)){
+      if(JUDGE_LABEL_RE.test(stripTags(rich).trim())){ em(rich); return false; }
+      if(!cur || cur.type !== 'narration' || cur.emphasis){ flush(); cur = { type:'narration', emphasis:false, lines:[] }; }
+      cur.lines.push(rich); return false;
+    }
+    if(!cur || cur.type !== 'dialogue' || cur.speaker !== speaker){ flush(); cur = { type:'dialogue', speaker, segments:[], raw:[] }; }
+    splitQuotedRich(rich).forEach(sg => cur.segments.push(sg));
+    cur.raw.push(rich);
+    return true;
+  }
+  return { blocks, flush, em, text, isNarr,
+           last(){ flush(); return blocks[blocks.length - 1] || null; },
+           push(b){ flush(); blocks.push(b); } };
 }
 
 /* ---- 주사위 ---- */
@@ -149,7 +204,7 @@ function _formulaFromTitle(el){
 function _labelFromDesc(prev){
   if(!prev || prev.type !== 'narration') return '';
   const lines = String(prev.text || '').split('<br>');
-  const last = stripTags(lines[lines.length - 1]).trim();
+  const last = stripTags(lines[lines.length - 1]).trim().replace(/^\[\s*/, '');
   const m = last.match(/^(.+?)\s*판정/);
   return m ? m[1].trim() : '';
 }
@@ -230,38 +285,17 @@ function importRoll20(html, opts){
 
   const msgs = findAll(doc.body || doc.documentElement, el => hasCls(el, 'message'), true);
 
-  const blocks = [];
+  const B = makeBuilder(opts.narrators);
+  const blocks = B.blocks, flush = B.flush, lastBlock = B.last, isNarr = B.isNarr;
   const speakers = new Map();            // name → {name,count,avatar,you,other}
   const dates = new Map();
-  let cur = null, curSpeaker = '', hiddenCount = 0, whisperCount = 0;
+  let curSpeaker = '', hiddenCount = 0, whisperCount = 0;
   const narrYou = { you:0, other:0 };
-
-  function flush(){
-    if(!cur) return;
-    if(cur.type === 'dialogue'){
-      if(cur.segments.length) blocks.push({ id:genId(), type:'dialogue', speaker:cur.speaker, segments:cur.segments });
-    } else {
-      const text = cur.lines.filter(l => stripTags(l).trim()).join('<br>');
-      if(text) blocks.push({ id:genId(), type:'narration', emphasis:!!cur.emphasis, text });
-    }
-    cur = null;
-  }
   function spk(name){
     if(!speakers.has(name)) speakers.set(name, { name, count:0, avatar:'', you:0, other:0 });
     return speakers.get(name);
   }
-  function addText(speaker, rich){
-    if(!stripTags(rich).trim()) return;
-    if(isNarrationName(speaker)){
-      if(!cur || cur.type !== 'narration' || cur.emphasis){ flush(); cur = { type:'narration', emphasis:false, lines:[] }; }
-      cur.lines.push(rich);
-    } else {
-      if(!cur || cur.type !== 'dialogue' || cur.speaker !== speaker){ flush(); cur = { type:'dialogue', speaker, segments:[] }; }
-      splitQuotedRich(rich).forEach(s => cur.segments.push(s));
-      spk(speaker).count++;
-    }
-  }
-  function lastBlock(){ flush(); return blocks[blocks.length - 1] || null; }
+  function addText(speaker, rich){ if(B.text(speaker, rich)) spk(speaker).count++; }
 
   msgs.forEach(msg => {
     const isYou = hasCls(msg, 'you');
@@ -283,7 +317,7 @@ function importRoll20(html, opts){
     }
 
     /* 화자 통계 · 아바타 */
-    if(hasBy && !isNarrationName(curSpeaker)){
+    if(hasBy && !isNarr(curSpeaker)){
       const s = spk(curSpeaker);
       if(isYou) s.you++; else s.other++;
       if(!s.avatar){
@@ -302,10 +336,7 @@ function importRoll20(html, opts){
 
     /* 장면 설명(desc) → 강조 나레이션 (연속되면 한 블록) */
     if(hasCls(msg, 'desc')){
-      const rich = tidyRich(r20Rich(msg));
-      if(!stripTags(rich).trim()) return;
-      if(!cur || cur.type !== 'narration' || !cur.emphasis){ flush(); cur = { type:'narration', emphasis:true, lines:[] }; }
-      cur.lines.push(rich);
+      B.em(tidyRich(r20Rich(msg)));
       return;
     }
     /* 이모트 → 일반 나레이션 */
@@ -330,7 +361,7 @@ function importRoll20(html, opts){
     if(tpl){
       const prev = lastBlock();
       blocks.push(r20Dice(tpl, curSpeaker, prev));
-      if(!isNarrationName(curSpeaker)) spk(curSpeaker).count++;
+      if(!isNarr(curSpeaker)) spk(curSpeaker).count++;
       return;
     }
     /* 인라인 굴림만 있는 메시지 → 단순 굴림 */
@@ -361,6 +392,100 @@ function importRoll20(html, opts){
 
   return { title, date, blocks, speakers:list,
            stats:{ messages:msgs.length, hidden:hiddenCount, whispers:whisperCount } };
+}
+
+/* ======================= 코코포리아 가져오기 ======================= */
+/* 파일 이름 "[상서고] 헤스페리데스의 정원[main] (1).html" → "헤스페리데스의 정원" */
+function _ccfTitle(fileName){
+  return String(fileName || '').replace(/\.html?$/i, '').replace(/\s*\(\d+\)\s*$/, '')
+    .replace(/\[(?:main|other|info|雑談|メイン|情報|메인|잡담|정보)\]/gi, '')
+    .replace(/^\s*\[[^\]]*\]\s*/, '').replace(/_+/g, ' ').trim();
+}
+function _normName(s){ return String(s || '').toLowerCase().replace(/[\s_\-\[\]()【】「」『』:：,.·!?~'"]+/g, ''); }
+
+/* BCDice 결과 한 줄 → 주사위 블록
+   "CC<=80 지능(아이디어) (1D100<=80) 보너스, 페널티 주사위[0] ＞ 74 ＞ 74 ＞ 보통 성공"
+   "1D3 (1D3) ＞ 2" */
+function ccfDice(text, speaker, prev){
+  const t = String(text || '').replace(/\s+/g, ' ').trim();
+  if(t.indexOf('＞') < 0) return null;
+  const segs = t.split('＞').map(x => x.trim());
+  const head = segs.shift();
+  const fm = head.match(/^(.*?)\(([^()]*?\d*[dD]\d+[^()]*)\)\s*(.*)$/);
+  if(!fm) return null;
+  const pre = fm[1].trim().replace(/^#\d+\s*/, '');
+  const formula = fm[2].replace(/\s+/g, '');
+  const toks = pre.split(' ');
+  const cmd = toks.shift() || '';
+  let label = toks.join(' ').replace(/[【】]/g, '').trim();
+  if(!label && !/\d*[dD]\d+|<=|CC|RES|CBR/i.test(cmd)) label = cmd;     // 명령어 없이 이름만 있는 경우
+  const parts = segs.filter(Boolean);
+  const last = parts[parts.length - 1] || '';
+  const nums = parts.filter(x => /^-?\d+$/.test(x));
+  const roll = nums.length ? nums[nums.length - 1] : ((last.match(/-?\d+/) || [])[0] || '');
+  const resText = /^-?\d+$/.test(last) ? '' : last;
+  const fromLabel = _labelFromDesc(prev);
+  const target = formula.match(/1D100<=(\d+)/i) || cmd.match(/<=\s*(\d+)/);
+  if(target && resText && /성공|실패|펌블|크리|스페셜|成功|失敗|ファンブル|クリティカル|スペシャル/.test(resText)){
+    return { id:genId(), type:'dice', kind:'check', speaker, item: label || fromLabel || '판정',
+             grade:'보통', standard: target[1], roll, result: resText };
+  }
+  return { id:genId(), type:'dice', kind:'simple', speaker,
+           item: label || fromLabel || (prev && prev.type === 'dice' ? prev.item : '') || '굴림',
+           formula, roll, result: resText };
+}
+
+function importCcfolia(html, opts){
+  const doc = new DOMParser().parseFromString(String(html), 'text/html');
+  const ps = findAll(doc.body || doc.documentElement, el => tagIs(el, 'p'), true);
+
+  /* 1) 메시지 수집: [탭] 이름 : 본문 — 탭 표기([main] 등)는 무시, system(수치 변경 기록)은 제외 */
+  const msgs = []; let systemCount = 0;
+  ps.forEach(p => {
+    const spans = _kids(p).filter(n => tagIs(n, 'span'));
+    if(spans.length < 2) return;
+    const nameEl = spans[spans.length - 2], bodyEl = spans[spans.length - 1];
+    const name = textOf(nameEl).replace(/^\[[^\]]*\]\s*/, '').trim();
+    if(/^system$/i.test(name)){ systemCount++; return; }
+    const color = ((p.getAttribute('style') || '').match(/color\s*:\s*(#[0-9a-fA-F]{3,8})/) || [])[1] || '';
+    msgs.push({ name, color, rich: tidyRich(r20Rich(bodyEl)), plain: textOf(bodyEl) });
+  });
+
+  /* 2) 나레이션 화자 자동 추정: 파일 이름(=방 이름)과 같은 이름이면서 가장 말이 많은 화자 */
+  const counts = new Map(); msgs.forEach(m => counts.set(m.name, (counts.get(m.name) || 0) + 1));
+  const top = Array.from(counts.entries()).sort((a, b) => b[1] - a[1])[0];
+  const fileNorm = _normName(opts.fileName);
+  const autoNarrators = [];
+  const narrators = (opts.narrators || []).slice();
+  if(opts.autoNarrator !== false && top && _normName(top[0]).length >= 2 && fileNorm.includes(_normName(top[0]))
+     && !isNarrationName(top[0], narrators)){
+    autoNarrators.push(top[0]); narrators.push(top[0]);
+  }
+
+  /* 3) 블록 만들기 */
+  const B = makeBuilder(narrators);
+  const speakers = new Map();
+  const spk = n => { if(!speakers.has(n)) speakers.set(n, { name:n, count:0, colors:new Map(), rolled:false }); return speakers.get(n); };
+  msgs.forEach(m => {
+    const narr = B.isNarr(m.name);
+    if(!narr && m.color){ const s = spk(m.name); s.colors.set(m.color, (s.colors.get(m.color) || 0) + 1); }
+    const dice = m.plain.indexOf('＞') >= 0 ? ccfDice(m.plain, m.name, B.last()) : null;   // 후보일 때만 직전 블록 조회
+    if(dice){
+      B.push(dice);
+      if(!narr){ const s = spk(m.name); s.count++; s.rolled = true; }
+      return;
+    }
+    if(B.text(m.name, m.rich)) spk(m.name).count++;
+  });
+  B.flush();
+
+  const list = Array.from(speakers.values()).map(s => {
+    const color = Array.from(s.colors.entries()).sort((a, b) => b[1] - a[1]).map(x => x[0])[0] || '';
+    return { name:s.name, count:s.count, avatar:'', color, guessRole: s.rolled ? 'PC' : 'NPC' };
+  }).sort((a, b) => b.count - a.count);
+
+  return { title: autoNarrators[0] || _ccfTitle(opts.fileName), date:'', blocks:B.blocks, speakers:list, autoNarrators,
+           stats:{ messages:msgs.length, hidden:0, whispers:0, system:systemCount } };
 }
 
 /* ---- 주사위 판정 분류 (뷰어에서 사용) ---- */

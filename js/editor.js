@@ -16,8 +16,9 @@ function sceneMarker(title){ return { id:genId(), type:'scene', title: title || 
 function blankEditor(){
   return {
     id: genId(), folder:'', title:'', date:'', theme:'light', cardImage:'',
-    characters: [], stream: [ sceneMarker('장면 1') ],
-    _avatars: {}, _sel: new Set(), _lastSel: null, _undo: [], _importMode: 'replace', _whispers: false
+    characters: [], narrators: [], stream: [ sceneMarker('장면 1') ],
+    _avatars: {}, _sel: new Set(), _lastSel: null, _undo: [], _importMode: 'replace', _whispers: false,
+    _src: null, _fresh: false          // _src: 마지막으로 불러온 원본 로그, _fresh: 불러온 뒤 아직 손대지 않았는지
   };
 }
 function normChar(c){
@@ -30,10 +31,11 @@ function sessionToEditor(ses){
   const e = blankEditor();
   ['id','folder','title','date','theme','cardImage'].forEach(k => { if(ses[k] != null) e[k] = ses[k]; });
   e.characters = (ses.characters || []).map(normChar);
+  e.narrators = Array.isArray(ses.narrators) ? ses.narrators.slice() : [];
   e.stream = [];
   (ses.scenes || []).forEach(sc => {
     e.stream.push({ id: sc.id || genId(), type:'scene', title: sc.title || '' });
-    (sc.blocks || []).forEach(b => e.stream.push(JSON.parse(JSON.stringify(b))));
+    (sc.blocks || []).forEach(b => e.stream.push(quoteDialogueBlock(JSON.parse(JSON.stringify(b)))));   // 대사에 따옴표가 없으면 붙임
   });
   if(!e.stream.length || e.stream[0].type !== 'scene') e.stream.unshift(sceneMarker('장면 1'));
   return e;
@@ -45,6 +47,7 @@ function editorToSession(){
     if(it.type === 'scene'){ sc = { id: it.id, title: (it.title || '').trim() || '장면', blocks: [] }; scenes.push(sc); return; }
     if(!sc){ sc = { id: genId(), title:'장면 1', blocks: [] }; scenes.push(sc); }
     const b = {}; Object.keys(it).forEach(k => { if(k[0] !== '_') b[k] = it[k]; });
+    if(b.type === 'dialogue') b.segments = (b.segments || []).map(sg => sg.kind === 'line' ? { kind:'line', text: quoteLine(sg.text) } : sg);
     sc.blocks.push(b);
   });
   return {
@@ -53,6 +56,7 @@ function editorToSession(){
     characters: e.characters.filter(c => (c.name || '').trim() || c.aliases.length).map(c => ({
       id: c.id, name: (c.name || '').trim() || c.aliases[0], role: c.role, color: c.color,
       img: (c.img || '').trim(), aliases: Array.from(new Set(c.aliases)), unify: !!c.unify })),
+    narrators: Array.from(new Set(e.narrators || [])),
     scenes
   };
 }
@@ -60,13 +64,14 @@ function editorToSession(){
 /* 되돌리기 */
 function snapshot(){
   const e = E();
-  e._undo.push(JSON.stringify({ stream: e.stream, characters: e.characters }));
+  e._undo.push(JSON.stringify({ stream: e.stream, characters: e.characters, narrators: e.narrators }));
   if(e._undo.length > 30) e._undo.shift();
+  e._fresh = false;
 }
 function editorUndo(){
   const e = E(); const s = e._undo.pop();
   if(!s){ toast('되돌릴 작업이 없습니다.'); return; }
-  const o = JSON.parse(s); e.stream = o.stream; e.characters = o.characters; e._sel.clear();
+  const o = JSON.parse(s); e.stream = o.stream; e.characters = o.characters; e.narrators = o.narrators || []; e._sel.clear();
   renderChars(); renderStream(); toast('되돌렸습니다.');
 }
 
@@ -136,13 +141,13 @@ function renderEditor(){
 
     <div class="panel">
       <h3><span class="step">2</span> 원본 로그 불러오기</h3>
-      <p class="desc">Roll20 채팅 아카이브를 저장한 <b>HTML 파일</b>을 넣으면 텍스트만 뽑아 자동으로 변환합니다.
-        (코코포리아 로그는 준비 중) · 작업하던 <b>세션 JSON</b>을 넣으면 이어서 편집할 수 있습니다.</p>
+      <p class="desc"><b>Roll20</b> 채팅 아카이브를 저장한 HTML 또는 <b>코코포리아</b> 로그 출력 HTML을 넣으면
+        텍스트만 뽑아 자동으로 변환합니다. 작업하던 <b>세션 JSON</b>을 넣으면 이어서 편집할 수 있습니다.</p>
       <label class="dropzone" id="dropZone">
         <input type="file" accept=".html,.htm,.json" onchange="editorFile(this.files[0]); this.value='';">
         <span class="dz-icon">⇪</span>
         <b>파일을 끌어다 놓거나 클릭해서 선택</b>
-        <small>.html (Roll20 로그) · .json (세션 파일)</small>
+        <small>.html (Roll20 · 코코포리아 로그) · .json (세션 파일)</small>
       </label>
       <div class="imp-opts">
         <span id="impModeWrap">${importModeHTML()}</span>
@@ -211,36 +216,59 @@ async function editorFile(file){
 
   toast('로그를 변환하는 중…');
   setTimeout(() => {
+    const e = E();
     let res;
-    try{ res = importLogHTML(text, { includeWhispers: E()._whispers }); }
+    try{ res = importLogHTML(text, { includeWhispers: e._whispers, narrators: e.narrators, fileName: file.name }); }
     catch(err){
-      if(err.code === 'ccfolia') toast('코코포리아 로그는 곧 지원될 예정입니다.');
-      else if(err.code === 'unknown') toast('인식할 수 없는 로그 형식입니다. Roll20 채팅 아카이브를 저장한 HTML인지 확인해 주세요.');
+      if(err.code === 'unknown') toast('인식할 수 없는 로그 형식입니다. Roll20 / 코코포리아 로그 HTML인지 확인해 주세요.');
       else { console.error(err); toast('변환 중 오류가 발생했습니다.'); }
       return;
     }
+    const replacing = !(e._importMode === 'append' && streamHasBlocks());
     applyImport(res);
+    if(replacing){ e._src = { text, name: file.name }; e._fresh = true; }
   }, 30);
+}
+/* 마지막으로 불러온 원본을 현재 나레이션 설정으로 다시 변환할 수 있는가 (불러온 뒤 손대지 않았을 때만) */
+function canReimport(){ const e = E(); return !!(e._src && e._fresh); }
+function reimportSource(){
+  const e = E();
+  let res;
+  try{ res = importLogHTML(e._src.text, { includeWhispers: e._whispers, narrators: e.narrators, fileName: e._src.name, autoNarrator: false }); }
+  catch(err){ return false; }
+  e.stream = [ sceneMarker('장면 1'), ...res.blocks ];
+  addSpeakersAsChars(res.speakers);
+  e._fresh = true;
+  return true;
+}
+function addSpeakersAsChars(speakers){
+  const e = E(); let added = 0;
+  speakers.forEach(s => {
+    if(s.avatar) e._avatars[s.name] = s.avatar;
+    if(isNarrationName(s.name, e.narrators) || findChar(e, s.name)) return;
+    const used = new Set(e.characters.map(c => c.color));
+    const color = (s.color && !used.has(s.color)) ? s.color : nextColor();
+    e.characters.push(normChar({ name:s.name, aliases:[s.name], role:s.guessRole, color }));
+    added++;
+  });
+  return added;
 }
 function applyImport(res){
   const e = E();
   snapshot();
+  (res.autoNarrators || []).forEach(n => { if(!e.narrators.includes(n)) e.narrators.push(n); });
   if(e._importMode === 'append' && streamHasBlocks()) e.stream.push(...res.blocks);
   else e.stream = [ sceneMarker('장면 1'), ...res.blocks ];
   if(!e.title && res.title) e.title = res.title;
   if(!e.date && res.date) e.date = res.date;
-
-  let added = 0;
-  res.speakers.forEach(s => {
-    if(s.avatar) e._avatars[s.name] = s.avatar;
-    if(isNarrationName(s.name) || findChar(e, s.name)) return;
-    e.characters.push(normChar({ name:s.name, aliases:[s.name], role:s.guessRole, color:nextColor() }));
-    added++;
-  });
+  const added = addSpeakersAsChars(res.speakers);
   e._sel.clear();
   renderEditor();
-  toast(`메시지 ${res.stats.messages}개 → 블록 ${res.blocks.length}개 · 새 등장인물 ${added}명` +
-        (res.stats.hidden ? ` · 숨김 메시지 ${res.stats.hidden}개 제외` : ''));
+  const fmt = res.format === 'ccfolia' ? '코코포리아' : 'Roll20';
+  let msg = `${fmt} 메시지 ${res.stats.messages}개 → 블록 ${res.blocks.length}개 · 새 등장인물 ${added}명`;
+  if(res.stats.hidden) msg += ` · 숨김 메시지 ${res.stats.hidden}개 제외`;
+  if((res.autoNarrators || []).length) msg += ` · '${res.autoNarrators.join(', ')}'을(를) 나레이션으로 처리`;
+  toast(msg);
 }
 function nextColor(){
   const used = new Set(E().characters.map(c => c.color));
@@ -251,7 +279,7 @@ function nextColor(){
 function speakerCounts(){
   const m = new Map();
   E().stream.forEach(b => {
-    if((b.type === 'dialogue' || b.type === 'dice') && b.speaker && !isNarrationName(b.speaker))
+    if((b.type === 'dialogue' || b.type === 'dice') && b.speaker && !isNarrationName(b.speaker, E().narrators))
       m.set(b.speaker, (m.get(b.speaker) || 0) + 1);
   });
   return m;
@@ -287,7 +315,7 @@ function renderChars(){
             <select class="ch-role" onchange="editorCharField('${c.id}','role',this.value)">
               ${['PC','KPC','NPC'].map(r => `<option value="${r}" ${c.role===r?'selected':''}>${r}</option>`).join('')}</select>
             <input type="color" class="swatch" value="${c.color}" oninput="editorCharField('${c.id}','color',this.value)" title="색상">
-            <button class="icon-btn" title="이 캐릭터의 대사를 모두 나레이션으로" onclick="editorCharToNarration('${c.id}')">☰</button>
+            <button class="tb-btn wide" title="이 캐릭터가 말한 내용을 모두 나레이션으로 처리" onclick="editorMarkNarrator('${c.id}')">나레이션 처리</button>
             <button class="icon-btn danger" title="캐릭터 삭제" onclick="editorRemoveChar('${c.id}')">✕</button>
           </div>
           <input type="text" class="ch-img" value="${escAttr(c.img)}" placeholder="프로필 이미지 경로 (예: image/dalde/dahlia.png)" oninput="editorCharField('${c.id}','img',this.value)">
@@ -309,6 +337,7 @@ function renderChars(){
     <h3><span class="step">3</span> 등장인물</h3>
     <p class="desc">로그에 나온 화자 이름이 자동으로 캐릭터가 됩니다. 같은 캐릭터가 여러 이름으로 나왔다면
       <b>옮기기</b>로 한 캐릭터에 묶어 주세요. <b>PC</b>는 뷰어 오른쪽, <b>KPC·NPC</b>는 왼쪽에 표시됩니다.</p>
+    ${narratorBoxHTML()}
     <div class="ch-list">${cards || '<div class="empty-note">로그를 불러오면 등장인물이 여기에 나타납니다.</div>'}</div>
     ${unl}
     <button class="btn sm" style="margin-top:12px" onclick="editorAddChar()">＋ 캐릭터 직접 추가</button>`;
@@ -351,19 +380,69 @@ function editorLinkName(name, to){
   else { const t = getChar(to); if(t && !t.aliases.includes(name)) t.aliases.push(name); }
   renderChars(); renderStream();
 }
-function editorCharToNarration(id){
-  const c = getChar(id); if(!c) return;
-  if(!confirm(`'${c.name}'의 대사 블록을 모두 나레이션으로 바꿀까요?\n(GM이 캐릭터 이름으로 서술한 경우 등)`)) return;
+/* ---- 나레이션으로 처리할 이름 ---- */
+function narratorBoxHTML(){
+  const e = E();
+  const chips = e.narrators.map(n => `<span class="alias narr"><span class="al-name">${escAttr(n)}</span>
+      <button class="al-x" title="나레이션 처리 해제" data-a="${escAttr(n)}" onclick="editorUnmarkNarrator(this.dataset.a)">✕</button></span>`).join('');
+  return `<div class="narr-box">
+      <div class="narr-row"><span class="al-label">나레이션으로 처리할 이름</span>${chips || '<span class="muted">없음</span>'}</div>
+      <div class="narr-row">
+        <input type="text" id="narrInput" placeholder="화자 이름 입력 (예: GM 캐릭터·시나리오 이름)"
+          onkeydown="if(event.key==='Enter'){event.preventDefault(); editorAddNarrator(this.value);}">
+        <button class="tb-btn wide" onclick="editorAddNarrator($('#narrInput').value)">추가</button>
+      </div>
+      <div class="hint">이 이름으로 말한 내용은 모두 나레이션이 됩니다. 로그를 불러오기 전에 적어 두어도 되고, 세션 파일에 저장되어 다음에 이어 붙이는 로그에도 적용됩니다.
+        이름이 비었거나 <code>(GM)</code>이 붙은 화자는 항상 나레이션입니다.</div>
+    </div>`;
+}
+/* 이름들을 나레이션으로: 목록에 추가 → 캐릭터에서 해당 로그 이름 제거 → 블록 반영 */
+function markNarratorNames(names){
+  const e = E();
+  names = Array.from(new Set(names.map(n => String(n || '').trim()).filter(Boolean)));
+  if(!names.length) return;
+  const re = canReimport();
   snapshot();
-  const names = new Set(c.aliases.concat([c.name]));
-  E().stream.forEach(b => {
-    if(b.type === 'dialogue' && names.has(b.speaker)){
-      const text = blockPlainRich(b);
-      stripBlock(b, 'narration'); b.emphasis = false; b.text = text;
-    }
-  });
-  E().characters = E().characters.filter(x => x.id !== id);
+  names.forEach(n => { if(!e.narrators.includes(n)) e.narrators.push(n); });
+  const set = new Set(names);
+  e.characters.forEach(c => { c.aliases = c.aliases.filter(a => !set.has(a)); });
+  e.characters = e.characters.filter(c => c.aliases.length || (!set.has(c.name) && c.name));
+  if(re && reimportSource()){
+    toast(`'${names.join(', ')}'을(를) 나레이션으로 처리해 로그를 다시 변환했습니다.`);
+  } else {
+    let n = 0;
+    e.stream.forEach(b => {
+      if(b.type === 'dialogue' && set.has(b.speaker)){
+        const text = b._raw || blockPlainRich(b);
+        stripBlock(b, 'narration'); b.emphasis = false; b.text = text; n++;
+      }
+    });
+    toast(`'${names.join(', ')}'의 대사 블록 ${n}개를 나레이션으로 바꿨습니다.`);
+  }
   renderChars(); renderStream();
+}
+function editorMarkNarrator(id){
+  const c = getChar(id); if(!c) return;
+  const names = c.aliases.concat(c.name ? [c.name] : []);
+  if(!confirm(`'${c.name || c.aliases[0]}' 캐릭터를 나레이션으로 처리할까요?\n이 이름(${c.aliases.join(', ')})으로 말한 내용이 모두 나레이션이 됩니다.`)) return;
+  markNarratorNames(names);
+}
+function editorAddNarrator(name){
+  name = String(name || '').trim(); if(!name) return;
+  markNarratorNames([name]);
+}
+function editorUnmarkNarrator(name){
+  const e = E();
+  const re = canReimport();
+  snapshot();
+  e.narrators = e.narrators.filter(n => n !== name);
+  if(re && reimportSource()){
+    toast(`'${name}'의 나레이션 처리를 해제하고 로그를 다시 변환했습니다.`);
+    renderChars(); renderStream();
+  } else {
+    toast(`'${name}'을(를) 목록에서 뺐습니다. 이미 나레이션으로 바뀐 블록은 그대로이며, 다음에 불러오는 로그부터 적용됩니다.`);
+    renderChars();
+  }
 }
 function editorSaveAvatar(alias){
   const url = E()._avatars[alias]; if(!url) return;
@@ -440,7 +519,7 @@ function typeKey(b){ return b.type === 'narration' ? (b.emphasis ? 'narration-em
 function speakerNames(){
   const e = E(); const set = new Set();
   e.characters.forEach(c => { c.aliases.forEach(a => set.add(a)); if(c.name) set.add(c.name); });
-  e.stream.forEach(b => { if(b.speaker && !isNarrationName(b.speaker)) set.add(b.speaker); });
+  e.stream.forEach(b => { if(b.speaker && !isNarrationName(b.speaker, e.narrators)) set.add(b.speaker); });
   return Array.from(set);
 }
 function speakerFieldHTML(b, names){
@@ -529,6 +608,7 @@ function blockCardHTML(b){
 /* ---- 인라인 편집 저장 (재렌더 없음 → 커서 유지) ---- */
 function editorSaveInline(el){
   const b = getBlock(el.dataset.bid); if(!b) return;
+  E()._fresh = false;
   const html = editableToRich(el);
   if(el.dataset.seg != null){ if(b.segments[+el.dataset.seg]) b.segments[+el.dataset.seg].text = html; }
   else if(el.dataset.field === 'body') b.body = html;
@@ -604,7 +684,7 @@ function editorDelete(id){
 }
 function blockPlainRich(b){
   if(b.type === 'narration') return b.text || '';
-  if(b.type === 'dialogue') return (b.segments || []).map(s => s.kind === 'line' ? '"' + s.text + '"' : s.text).join(' ');
+  if(b.type === 'dialogue') return (b.segments || []).map(s => s.kind === 'line' ? quoteLine(s.text) : s.text).join(' ');
   if(b.type === 'handout') return b.body || '';
   return '';
 }

@@ -128,6 +128,18 @@ function speakerLabel(session, name){
   const c = findChar(session, name);
   return (c && c.unify && c.name) ? c.name : (name || '');
 }
+/* 대사 줄이 따옴표·괄호로 시작하지 않으면 앞뒤에 쌍따옴표를 붙인다 (예전 형식 JSON 보정용) */
+function quoteLine(text){
+  const s = String(text == null ? '' : text).trim();
+  const plain = s.replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').trim();
+  if(!plain) return s;
+  if(/^["\u201C\u201D\u300C\u300E\u3014]/.test(plain)) return s;
+  return '"' + s + '"';
+}
+function quoteDialogueBlock(b){
+  if(b && b.type === 'dialogue') (b.segments || []).forEach(sg => { if(sg.kind === 'line') sg.text = quoteLine(sg.text); });
+  return b;
+}
 /* PC = 오른쪽, KPC/NPC = 왼쪽 */
 function bubbleSide(role){ return role === 'PC' ? 'right' : 'left'; }
 

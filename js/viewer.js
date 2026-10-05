@@ -64,7 +64,7 @@ function viewerBlockHTML(ses, b){
     const side  = bubbleSide(charRole(ses, b.speaker));   // PC=오른쪽, KPC/NPC=왼쪽
     const segs  = (b.segments || []).map(s =>
       s.kind === 'line'
-        ? `<div class="speech">${applyRich(s.text)}</div>`
+        ? `<div class="speech">${applyRich(quoteLine(s.text))}</div>`
         : `<span class="stage">${applyRich(s.text)}</span>`).join('');
     const bubbleStyle = side === 'right' ? `border-right-color:${color}` : `border-left-color:${color}`;
     return `<div class="v-line ${side}">` +
